@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapsExamplePage.xaml">
+    <Files>
+      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="19" Column="55" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="16" Column="1" />
+      <File FileName="MapsExample/App.xaml" Line="7" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F815B6C7-FBBC-4F95-80BF-55AC6E9AE03E" />
+</Properties>
