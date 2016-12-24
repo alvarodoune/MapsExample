@@ -19,7 +19,7 @@ namespace MapsExample
 			{
 				Position = new Position(-32.3145667, -58.0925143),
 				Address = "Adress 1",
-				Label = "Label 1"
+				Label = "The Label"
 			};
 
 			pin.Clicked += (sender, e) =>
