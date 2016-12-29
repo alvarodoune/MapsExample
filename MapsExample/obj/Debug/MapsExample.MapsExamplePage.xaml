@@ -5,7 +5,7 @@
 			<!--<BoxView x:Name="box" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional">
 				
 			</BoxView>-->
-			<maps:Map x:Name="MyMap" MinimumWidthRequest="200" WidthRequest="300" HeightRequest="600" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasZoomEnabled="true" IsShowingUser="true" MapType="Street"/>
+			<maps:Map x:Name="MyMap" WidthRequest="400" HeightRequest="600" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasZoomEnabled="true" IsShowingUser="true" MapType="Street"/>
 			<Button Text="Get position">
 			</Button>
 		</AbsoluteLayout>

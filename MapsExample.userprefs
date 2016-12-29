@@ -1,20 +1,23 @@
-﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample Status">
+﻿<Properties StartupConfiguration="{D7E058FF-8E60-4E7F-931B-746A652F534A}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapsExamplePage.xaml.cs">
     <Files>
-      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="1" Column="1" />
-      <File FileName="MapsExample/App.xaml" Line="7" Column="1" />
-      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="MapsExample Status" />
+      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="23" Column="6" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="8" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MapsExample" expanded="True">
             <Node name="MapsExample" expanded="True">
-              <Node name="MapsExamplePage.xaml" expanded="True" selected="True" />
+              <Node name="MapsExamplePage.xaml" expanded="True">
+                <Node name="MapsExamplePage.xaml.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="MapsExample.Droid" expanded="True" />
+            <Node name="MapsExample.Droid" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
             <Node name="MapsExample.iOS" expanded="True" />
           </Node>
         </State>
