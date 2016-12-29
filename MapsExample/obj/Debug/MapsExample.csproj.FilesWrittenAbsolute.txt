@@ -11,3 +11,5 @@
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Xamarin.Forms.Maps.dll
+/Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Plugin.Geolocator.dll

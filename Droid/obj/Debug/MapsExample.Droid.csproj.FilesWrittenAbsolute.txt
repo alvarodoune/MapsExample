@@ -35,3 +35,8 @@
 /Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Xamarin.Forms.Maps.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/MapsExample.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/MapsExample.dll.mdb
+/Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Plugin.CurrentActivity.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Plugin.Permissions.Abstractions.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Plugin.Permissions.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Plugin.Geolocator.Abstractions.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/Plugin.Geolocator.dll

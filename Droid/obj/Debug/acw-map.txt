@@ -2,6 +2,10 @@ MapsExample.Droid.MainActivity, MapsExample.Droid;md5d129da7f8c940aa269cda328f2c
 MapsExample.Droid.MainActivity, MapsExample.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d129da7f8c940aa269cda328f2ca558c.MainActivity
 MapsExample.Droid.MainActivity;md5d129da7f8c940aa269cda328f2ca558c.MainActivity
 mapsexample.droid.MainActivity;md5d129da7f8c940aa269cda328f2ca558c.MainActivity
+MapsExample.Droid.MainApplication, MapsExample.Droid;md5d129da7f8c940aa269cda328f2ca558c.MainApplication
+MapsExample.Droid.MainApplication, MapsExample.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d129da7f8c940aa269cda328f2ca558c.MainApplication
+MapsExample.Droid.MainApplication;md5d129da7f8c940aa269cda328f2ca558c.MainApplication
+mapsexample.droid.MainApplication;md5d129da7f8c940aa269cda328f2ca558c.MainApplication
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
@@ -674,3 +678,11 @@ Xamarin.Forms.Maps.Android.MapRenderer, Xamarin.Forms.Maps.Android;md5d956392b2b
 Xamarin.Forms.Maps.Android.MapRenderer, Xamarin.Forms.Maps.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5d956392b2b421ac2c9ccfc063253dcd9.MapRenderer
 Xamarin.Forms.Maps.Android.MapRenderer;md5d956392b2b421ac2c9ccfc063253dcd9.MapRenderer
 xamarin.forms.maps.android.MapRenderer;md5d956392b2b421ac2c9ccfc063253dcd9.MapRenderer
+Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+plugin.geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
+Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+Plugin.Geolocator.GeolocationSingleListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+Plugin.Geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener
+plugin.geolocator.GeolocationSingleListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationSingleListener

@@ -1,4 +1,5 @@
 ﻿using System;
+using Plugin.Geolocator;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -43,6 +44,18 @@ namespace MapsExample
 
 			MyMap.Pins.Add(pin);
 			MyMap.Pins.Add(pin2);
+		}
+
+		async void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			var locator = CrossGeolocator.Current;
+			locator.DesiredAccuracy = 50;
+
+			var position = await locator.GetPositionAsync(10000);
+
+			await DisplayAlert("Position Status: {0}", position.Timestamp.ToString(), "OK");
+			await DisplayAlert("Position Latitude: {0}", position.Latitude.ToString(), "OK");
+			await DisplayAlert("Position Longitude: {0}", position.Longitude.ToString(), "OK");
 		}
 	}
 }

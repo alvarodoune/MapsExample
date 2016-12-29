@@ -6,7 +6,7 @@
 				
 			</BoxView>-->
 			<maps:Map x:Name="MyMap" WidthRequest="400" HeightRequest="600" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasZoomEnabled="true" IsShowingUser="true" MapType="Street"/>
-			<Button Text="Get position">
+			<Button Text="Get position" Clicked="Handle_Clicked">
 			</Button>
 		</AbsoluteLayout>
 	</ContentPage>
