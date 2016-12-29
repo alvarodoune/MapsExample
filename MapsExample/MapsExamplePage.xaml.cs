@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Plugin.Geolocator;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -15,6 +16,8 @@ namespace MapsExample
 			MapSpan.FromCenterAndRadius(
 					new Position(-32, -56), Distance.FromKilometers(1))
 			);
+
+			positionLabel.Text = "alvaro";
 
 			var pin = new Pin
 			{
@@ -50,6 +53,12 @@ namespace MapsExample
 		{
 			var locator = CrossGeolocator.Current;
 			locator.DesiredAccuracy = 50;
+			locator.PositionChanged += (senderEv, ev) => 
+			{
+				positionLabel.Text = senderEv + ": " + ev; 
+				Debug.WriteLine(senderEv);
+				Debug.WriteLine(ev);
+			};
 
 			var position = await locator.GetPositionAsync(10000);
 

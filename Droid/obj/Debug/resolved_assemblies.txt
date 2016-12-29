@@ -24,10 +24,10 @@
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Xamarin.Forms.Maps.Android.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Xamarin.Forms.Maps.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.CurrentActivity.dll
-/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Permissions.Abstractions.dll
-/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Permissions.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Geolocator.Abstractions.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Geolocator.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Permissions.Abstractions.dll
+/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/Plugin.Permissions.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/MapsExample.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/mscorlib.dll
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/android/assets/System.Net.Http.dll

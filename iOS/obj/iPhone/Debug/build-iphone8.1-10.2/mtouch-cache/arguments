@@ -44,6 +44,10 @@
 	-r \
 	/Users/alvarodoune/Projects/MapsExample/packages/Xamarin.Forms.Maps.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll \
 	-r \
+	/Users/alvarodoune/Projects/MapsExample/packages/Xam.Plugin.Geolocator.3.0.4/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
+	-r \
+	/Users/alvarodoune/Projects/MapsExample/packages/Xam.Plugin.Geolocator.3.0.4/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
+	-r \
 	/Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/MapsExample.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -315,6 +319,10 @@
 	/Users/alvarodoune/Projects/MapsExample/packages/Xamarin.Forms.Maps.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll \
 	-r \
 	/Users/alvarodoune/Projects/MapsExample/packages/Xamarin.Forms.Maps.2.3.3.175/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll \
+	-r \
+	/Users/alvarodoune/Projects/MapsExample/packages/Xam.Plugin.Geolocator.3.0.4/lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll \
+	-r \
+	/Users/alvarodoune/Projects/MapsExample/packages/Xam.Plugin.Geolocator.3.0.4/lib/Xamarin.iOS10/Plugin.Geolocator.dll \
 	-r \
 	/Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/MapsExample.dll \
 	--target-framework \

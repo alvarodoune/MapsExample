@@ -36,6 +36,7 @@
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
+@class CoreLocation_CLLocationManager__CLLocationManagerDelegate;
 @class __UILongPressGestureRecognizer;
 @class __NSObject_Disposer;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
@@ -120,4 +121,5 @@
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Xamarin_Forms_Maps_iOS_MapRenderer;
 @class Xamarin_Forms_Maps_iOS_MapDelegate;
+@class Plugin_Geolocator_GeolocationSingleUpdateDelegate;
 

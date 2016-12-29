@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample Status">
     <Files>
-      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="51" Column="42" />
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="1" Column="1" />
+      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="20" Column="34" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="8" Column="21" />
       <File FileName="packages/Xam.Plugin.Geolocator.3.0.4/readme.txt" Line="47" Column="72" />
+      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="1" Column="1" />
       <File FileName="MapsExample Status" />
     </Files>
     <Pads>
@@ -12,12 +13,18 @@
         <State name="__root__">
           <Node name="MapsExample" expanded="True">
             <Node name="MapsExample" expanded="True">
-              <Node name="MapsExamplePage.xaml" expanded="True">
-                <Node name="MapsExamplePage.xaml.cs" selected="True" />
+              <Node name="MapsExamplePage.xaml" expanded="True" />
+            </Node>
+            <Node name="MapsExample.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
               </Node>
             </Node>
-            <Node name="MapsExample.Droid" expanded="True" />
-            <Node name="MapsExample.iOS" expanded="True" />
+            <Node name="MapsExample.iOS" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="map.png" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
