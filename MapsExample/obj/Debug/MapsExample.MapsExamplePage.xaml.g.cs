@@ -14,7 +14,7 @@ namespace MapsExample {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class MapsExamplePage : global::Xamarin.Forms.ContentPage {
+    public partial class MapsExamplePage : global::Xamarin.Forms.TabbedPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Maps.Map MyMap;

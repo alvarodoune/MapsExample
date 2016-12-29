@@ -2,17 +2,20 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample Status">
     <Files>
       <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="16" Column="1" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="1" Column="1" />
       <File FileName="MapsExample/App.xaml" Line="7" Column="1" />
+      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="1" Column="1" />
       <File FileName="MapsExample Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MapsExample" expanded="True" selected="True">
+          <Node name="MapsExample" expanded="True">
             <Node name="MapsExample" expanded="True">
-              <Node name="MapsExamplePage.xaml" expanded="True" />
+              <Node name="MapsExamplePage.xaml" expanded="True" selected="True" />
             </Node>
+            <Node name="MapsExample.Droid" expanded="True" />
+            <Node name="MapsExample.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -23,5 +26,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F815B6C7-FBBC-4F95-80BF-55AC6E9AE03E" />
+  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D6B9629-110E-4B0C-BDEB-9BC34218870F" />
 </Properties>

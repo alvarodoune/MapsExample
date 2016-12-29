@@ -1,15 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:local="clr-namespace:MapsExample" 
-		x:Class="MapsExample.MapsExamplePage"
-		xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
-	<StackLayout VerticalOptions="StartAndExpand" Padding="5">
-        <maps:Map WidthRequest="320" HeightRequest="600"
-            x:Name="MyMap"
-            IsShowingUser="true"
-            MapType="Street"
-        />
-		<Button>add</Button>
-    </StackLayout>
-</ContentPage>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MapsExample" x:Class="MapsExample.MapsExamplePage" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+	<ContentPage Padding="0, 20, 0, 0">
+		<AbsoluteLayout BackgroundColor="Fuchsia" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+			<!--<BoxView x:Name="box" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional">
+				
+			</BoxView>-->
+			<maps:Map x:Name="MyMap" MinimumWidthRequest="200" WidthRequest="300" HeightRequest="600" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasZoomEnabled="true" IsShowingUser="true" MapType="Street"/>
+			<Button Text="Get position">
+			</Button>
+		</AbsoluteLayout>
+	</ContentPage>
+</TabbedPage>

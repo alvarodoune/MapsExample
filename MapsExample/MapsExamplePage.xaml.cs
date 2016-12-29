@@ -4,7 +4,7 @@ using Xamarin.Forms.Maps;
 
 namespace MapsExample
 {
-	public partial class MapsExamplePage : ContentPage
+	public partial class MapsExamplePage : TabbedPage
 	{
 		public MapsExamplePage()
 		{
