@@ -23,14 +23,14 @@ namespace MapsExample {
         private global::Xamarin.Forms.Label positionLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.BoxView box;
+        private global::Xamarin.Forms.ListView listView;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MapsExamplePage));
             MyMap = this.FindByName <global::Xamarin.Forms.Maps.Map>("MyMap");
             positionLabel = this.FindByName <global::Xamarin.Forms.Label>("positionLabel");
-            box = this.FindByName <global::Xamarin.Forms.BoxView>("box");
+            listView = this.FindByName <global::Xamarin.Forms.ListView>("listView");
         }
     }
 }

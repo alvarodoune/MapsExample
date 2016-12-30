@@ -2,33 +2,49 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MapsExample" x:Class="MapsExample.MapsExamplePage" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
 	<ContentPage Title="Map">
 		<ContentPage.Padding>
-			<OnPlatform x:TypeArguments="Thickness" iOS="0,20, 0, 0">
+			<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
 			</OnPlatform>
 		</ContentPage.Padding>
 		<ContentPage.Icon>
-			<OnPlatform x:TypeArguments="FileImageSource"
-					iOS="map.png"
-					Android="map.png">
+			<OnPlatform x:TypeArguments="FileImageSource" iOS="map.png" Android="map.png">
 			</OnPlatform>
 		</ContentPage.Icon>
 		<AbsoluteLayout BackgroundColor="Fuchsia" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 			<!--<BoxView x:Name="box" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional">
 					</BoxView>-->
-			<maps:Map x:Name="MyMap" WidthRequest="400" HeightRequest="600" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HasZoomEnabled="true" IsShowingUser="true" MapType="Street" />
-			<Button Text="Get position" Clicked="Handle_Clicked">
-			</Button>
-			<Label x:Name="positionLabel">
-			</Label>
+			<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" AbsoluteLayout.LayoutFlags="All"  AbsoluteLayout.LayoutBounds="0,0,1,1">
+				<maps:Map x:Name="MyMap" HasZoomEnabled="true" IsShowingUser="true" MapType="Street" />
+				<Button Text="Get position" Clicked="Handle_Clicked">
+				</Button>
+				<Label x:Name="positionLabel">
+				</Label>
+			</StackLayout>
 		</AbsoluteLayout>
 	</ContentPage>
 	<ContentPage Title="List">
 		<ContentPage.Padding>
-			<OnPlatform x:TypeArguments="Thickness" iOS="0,20, 0, 0">
+			<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
 			</OnPlatform>
 		</ContentPage.Padding>
+		<ContentPage.Icon>
+			<OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png">
+			</OnPlatform>
+		</ContentPage.Icon>
 		<AbsoluteLayout BackgroundColor="Aqua" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-			<BoxView x:Name="box" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="SizeProportional">
-			</BoxView>
+			<ListView x:Name="listView" ItemSelected="OnItemSelected">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ImageCell Text="{Binding Name}" Detail="{Binding Status}" ImageSource="{Binding ImageUrl}">
+							<!--<StackLayout Padding="20,0,0,0" 
+									HorizontalOptions="StartAndExpand" 
+									Orientation="Horizontal">
+								<Label Text="{Binding Name}" YAlign="Center" />
+								<Image Source="{Binding ImageUrl}" IsVisible="true" />
+							</StackLayout>-->
+						</ImageCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
 		</AbsoluteLayout>
 	</ContentPage>
 </TabbedPage>

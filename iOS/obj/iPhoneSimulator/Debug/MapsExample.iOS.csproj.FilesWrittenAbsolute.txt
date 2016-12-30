@@ -18,3 +18,6 @@
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Plugin.Geolocator.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/map.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@2x.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@3x.png

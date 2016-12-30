@@ -10,6 +10,8 @@
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/res/drawable-hdpi/icon.png
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/res/drawable-xhdpi/icon.png
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/res/drawable/map.png
+/Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/res/drawable/list.png
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/R.cs.flag
 /Users/alvarodoune/Projects/MapsExample/Droid/bin/Debug/sf.xamarin.mapsexample-Signed.apk
 /Users/alvarodoune/Projects/MapsExample/Droid/obj/Debug/uploadflags.txt

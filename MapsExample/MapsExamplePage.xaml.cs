@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using Plugin.Geolocator;
 using Xamarin.Forms;
@@ -12,12 +13,17 @@ namespace MapsExample
 		{
 			InitializeComponent();
 
+			listView.ItemsSource = new List<Report> { 
+				new Report { Name="Reporte1", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/1" },
+				new Report { Name="Reporte2", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/2" }
+			};
+
 			MyMap.MoveToRegion(
 			MapSpan.FromCenterAndRadius(
 					new Position(-32, -56), Distance.FromKilometers(1))
 			);
 
-			positionLabel.Text = "alvaro";
+			//positionLabel.Text = "alvaro";
 
 			var pin = new Pin
 			{
@@ -55,9 +61,9 @@ namespace MapsExample
 			locator.DesiredAccuracy = 50;
 			locator.PositionChanged += (senderEv, ev) => 
 			{
-				positionLabel.Text = senderEv + ": " + ev; 
-				Debug.WriteLine(senderEv);
-				Debug.WriteLine(ev);
+				//positionLabel.Text = senderEv + ": " + ev; 
+				System.Diagnostics.Debug.WriteLine(senderEv);
+				System.Diagnostics.Debug.WriteLine(ev);
 			};
 
 			var position = await locator.GetPositionAsync(10000);
@@ -65,6 +71,16 @@ namespace MapsExample
 			await DisplayAlert("Position Status: {0}", position.Timestamp.ToString(), "OK");
 			await DisplayAlert("Position Latitude: {0}", position.Latitude.ToString(), "OK");
 			await DisplayAlert("Position Longitude: {0}", position.Longitude.ToString(), "OK");
+		}
+
+		void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+		{
+			if (e.SelectedItem == null)
+			{
+				return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
+			}
+			DisplayAlert("Item Selected", e.SelectedItem.ToString(), "Ok");
+			//((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
 		}
 	}
 }

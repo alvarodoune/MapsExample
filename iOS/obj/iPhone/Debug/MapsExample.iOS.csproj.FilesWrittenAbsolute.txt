@@ -2,6 +2,10 @@
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/actool/_PartialAppManifest.items
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/map.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/list.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/list@2x.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/list@3x.png
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhone/Debug/MapsExample.iOS.exe.mdb
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhone/Debug/MapsExample.iOS.exe
