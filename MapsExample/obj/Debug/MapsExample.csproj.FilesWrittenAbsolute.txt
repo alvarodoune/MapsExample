@@ -1,8 +1,14 @@
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.App.xaml
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.MapPage.xaml
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.LostPage.xaml
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.SettingsPage.xaml
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.App.xaml.g.cs
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.MapPage.xaml.g.cs
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.LostPage.xaml.g.cs
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.SettingsPage.xaml.g.cs
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/MapsExample.dll.mdb
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/MapsExample.dll
 /Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.dll

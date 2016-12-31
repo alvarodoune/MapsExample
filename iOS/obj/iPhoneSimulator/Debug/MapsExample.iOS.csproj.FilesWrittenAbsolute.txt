@@ -2,6 +2,10 @@
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/map.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@2x.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@3x.png
 /Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.iOS.exe.mdb
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.iOS.exe
@@ -13,11 +17,7 @@
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
-/Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.dll
-/Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.dll.mdb
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/Plugin.Geolocator.dll
-/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/map.png
-/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list.png
-/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@2x.png
-/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhoneSimulator/Debug/optimized/list@3x.png
+/Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.dll
+/Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhoneSimulator/Debug/MapsExample.dll.mdb

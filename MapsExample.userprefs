@@ -1,27 +1,41 @@
 ﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapsExamplePage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs">
     <Files>
-      <File FileName="MapsExample/MapsExamplePage.xaml.cs" Line="85" Column="1" />
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="22" Column="65" />
-      <File FileName="MapsExample/Models/Report.cs" Line="8" Column="39" />
-      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="30" Column="1" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="13" Column="14" />
+      <File FileName="MapsExample/MapPage.xaml" Line="18" Column="14" />
+      <File FileName="MapsExample/LostPage.xaml.cs" Line="31" Column="13" />
+      <File FileName="MapsExample/MapPage.xaml.cs" Line="17" Column="85" />
+      <File FileName="MapsExample/LostPage.xaml" Line="6" Column="15" />
+      <File FileName="MapsExample/obj/Debug/MapsExample.MapPage.xaml.g.cs" Line="4" Column="20" />
+      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MapsExample" expanded="True">
             <Node name="MapsExample" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="MapsExamplePage.xaml" expanded="True" selected="True" />
-            </Node>
-            <Node name="MapsExample.Droid" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="LostPage.xaml" expanded="True">
+                <Node name="LostPage.xaml.cs" selected="True" />
               </Node>
+              <Node name="MapPage.xaml" expanded="True" />
+              <Node name="MapsExamplePage.xaml" expanded="True" />
+              <Node name="SettingsPage.xaml" expanded="True" />
             </Node>
-            <Node name="MapsExample.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="MapsExample" expanded="True">
+            <Node name="MapsExample" expanded="True">
+              <Node name="MapsExample" expanded="True">
+                <Node name="MapsExample.MapPage" expanded="True">
+                  <Node name="Handle_Clicked(object sender, System.EventArgs e)" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
