@@ -21,3 +21,6 @@
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhone/Debug/Plugin.Geolocator.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhone/Debug/MapsExample.dll
 /Users/alvarodoune/Projects/MapsExample/iOS/bin/iPhone/Debug/MapsExample.dll.mdb
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/settings.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/settings@2x.png
+/Users/alvarodoune/Projects/MapsExample/iOS/obj/iPhone/Debug/build-iphone8.1-10.2/optimized/map@2x.png

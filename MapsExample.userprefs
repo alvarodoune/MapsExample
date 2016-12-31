@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapPage.xaml">
     <Files>
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="13" Column="14" />
-      <File FileName="MapsExample/MapPage.xaml" Line="18" Column="14" />
-      <File FileName="MapsExample/LostPage.xaml.cs" Line="31" Column="13" />
-      <File FileName="MapsExample/MapPage.xaml.cs" Line="17" Column="85" />
-      <File FileName="MapsExample/LostPage.xaml" Line="6" Column="15" />
-      <File FileName="MapsExample/obj/Debug/MapsExample.MapPage.xaml.g.cs" Line="4" Column="20" />
-      <File FileName="MapsExample/obj/Debug/MapsExample.MapsExamplePage.xaml.g.cs" Line="25" Column="1" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="4" Column="2" />
+      <File FileName="MapsExample/LostPage.xaml" Line="4" Column="33" />
+      <File FileName="MapsExample/LostDetailPage.xaml" Line="4" Column="28" />
+      <File FileName="MapsExample/LostDetailPage.xaml.cs" Line="13" Column="32" />
+      <File FileName="MapsExample/obj/Debug/MapsExample.LostDetailPage.xaml.g.cs" Line="29" Column="1" />
+      <File FileName="MapsExample/LostPage.xaml.cs" Line="24" Column="101" />
+      <File FileName="MapsExample/MapPage.xaml" Line="16" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,12 +17,14 @@
             <Node name="MapsExample" expanded="True">
               <Node name="Properties" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-              <Node name="LostPage.xaml" expanded="True">
-                <Node name="LostPage.xaml.cs" selected="True" />
-              </Node>
-              <Node name="MapPage.xaml" expanded="True" />
+              <Node name="LostDetailPage.xaml" expanded="True" />
+              <Node name="LostPage.xaml" expanded="True" />
+              <Node name="MapPage.xaml" expanded="True" selected="True" />
               <Node name="MapsExamplePage.xaml" expanded="True" />
               <Node name="SettingsPage.xaml" expanded="True" />
+            </Node>
+            <Node name="MapsExample.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -42,10 +44,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D6B9629-110E-4B0C-BDEB-9BC34218870F" />
+  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.67dc2ae47a684f9c72998b8af2525404ee8011d8" />
 </Properties>

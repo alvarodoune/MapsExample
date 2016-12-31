@@ -19,3 +19,5 @@
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Xamarin.Forms.Maps.dll
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Plugin.Geolocator.Abstractions.dll
 /Users/alvarodoune/Projects/MapsExample/MapsExample/bin/Debug/Plugin.Geolocator.dll
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.LostDetailPage.xaml
+/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.LostDetailPage.xaml.g.cs

@@ -16,7 +16,12 @@ namespace MapsExample
 				new Report { Name="Reporte2", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/2" },
 				new Report { Name="Reporte3", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/3" },
 				new Report { Name="Reporte4", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/4" },
-				new Report { Name="Reporte5", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/5" }
+				new Report { Name="Reporte5", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/5" },
+				new Report { Name="Reporte6", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/6" },
+				new Report { Name="Reporte7", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/7" },
+				new Report { Name="Reporte8", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/8" },
+				new Report { Name="Reporte9", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/9" },
+				new Report { Name="Reporte10", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/10" }
 			};
 		}
 
@@ -31,9 +36,16 @@ namespace MapsExample
 			this.NavigateToLost(sender, e);
 		}
 
-		async void NavigateToLost(Object sender, System.EventArgs e)
+		async void NavigateToLost(Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
-			await Navigation.PushAsync(new SettingsPage());
+			var report = e.SelectedItem as Report;
+			await Navigation.PushAsync(new LostDetailPage(report));
+		}
+
+		void ListView_Clicked(object sender, System.EventArgs e)
+		{
+			var report = (sender as MenuItem).CommandParameter as Report;
+			DisplayAlert("View", report.Name, "OK");
 		}
 	}
 }
