@@ -831,8 +831,8 @@ Lme_d:
 	.no_dead_strip MapsExample_MapPage__ctor
 MapsExample_MapPage__ctor:
 .file 7 "/Users/alvarodoune/Projects/MapsExample/MapsExample/MapPage.xaml.cs"
-.loc 7 12 0 prologue_end
-.word 0xa9a77bfd
+.loc 7 13 0 prologue_end
+.word 0xa9a37bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
@@ -859,34 +859,61 @@ ldr x16, [x16, #264]
 .word 0xf9406631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xaa1a03e0
-.word 0xaa1a03e0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #272]
+bl _p_3
+.word 0xf900e3a0
 bl _p_11
-.loc 7 13 0
 .word 0xf9401bb1
-.word 0xf9408231
+.word 0xf9408e31
 .word 0xb4000051
 .word 0xd63f0220
-.loc 7 14 0
-.word 0xf9401bb1
-.word 0xf9409231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1a03e0
+.word 0xf940e3a0
+.word 0xaa0003f9
+.loc 7 12 0
 .word 0xf9401bb1
 .word 0xf940a631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
+.word 0xaa1a03e0
 bl _p_12
+.word 0xf9401bb1
+.word 0xf940c231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xaa1a03e1
+.word 0xf9000f3a
+.word 0x91006000
+bl _p_10
+.loc 7 13 0
+.word 0xf9401bb1
+.word 0xf940e631
+.word 0xb4000051
+.word 0xd63f0220
+.loc 7 14 0
+.word 0xf9401bb1
+.word 0xf940f631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xf9401bb1
+.word 0xf9410a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+bl _p_13
 .loc 7 16 0
 .word 0xf9401bb1
-.word 0xf940be31
+.word 0xf9412231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940e740
-.word 0xf900c7a0
+.word 0xf900dfa0
 .word 0xd280001e
 .word 0xf2f8081e
 .word 0x9e6703c0
@@ -895,7 +922,7 @@ bl _p_12
 .word 0x9e6703c0
 .loc 7 17 0
 .word 0xf9401bb1
-.word 0xf940f231
+.word 0xf9415631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910283a0
@@ -909,7 +936,7 @@ bl _p_12
 .word 0xd280001e
 .word 0xf2f8099e
 .word 0x9e6703c1
-bl _p_13
+bl _p_14
 .word 0x910283a0
 .word 0x9101a3a0
 .word 0xf94053a0
@@ -917,14 +944,14 @@ bl _p_13
 .word 0xf94057a0
 .word 0xf9003ba0
 .word 0xf9401bb1
-.word 0xf9414a31
+.word 0xf941ae31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd280001e
 .word 0xf2e7fe1e
 .word 0x9e6703c0
 .word 0xf9401bb1
-.word 0xf9416631
+.word 0xf941ca31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910263a0
@@ -932,11 +959,11 @@ bl _p_13
 .word 0xd280001e
 .word 0xf2e7fe1e
 .word 0x9e6703c0
-bl _p_14
+bl _p_15
 .word 0xf9405bbe
 .word 0xfd0003c0
 .word 0xf9401bb1
-.word 0xf9419631
+.word 0xf941fa31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x9101a3a0
@@ -944,43 +971,49 @@ bl _p_14
 .word 0xfd403ba1
 .word 0x910263a0
 .word 0xfd404fa2
-bl _p_15
-.word 0xf900c3a0
+bl _p_16
+.word 0xf900dba0
 .loc 7 16 0
 .word 0xf9401bb1
-.word 0xf941c231
+.word 0xf9422631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940c3a1
-.word 0xf940c7a2
+.word 0xf940dba1
+.word 0xf940dfa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_16
+bl _p_17
 .loc 7 19 0
 .word 0xf9401bb1
-.word 0xf941e631
+.word 0xf9424a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xf900bfa0
+.word 0xf9401bb1
+.word 0xf9426231
 .word 0xb4000051
 .word 0xd63f0220
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 bl _p_3
-.word 0xf900bfa0
-bl _p_17
+.word 0xf900d7a0
+bl _p_18
 .word 0xf9401bb1
-.word 0xf9420e31
+.word 0xf9428a31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940bfa0
+.word 0xf940d7a0
 .word 0xaa0003f8
 .loc 7 21 0
 .word 0xf9401bb1
-.word 0xf9422631
+.word 0xf942a231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
-.word 0xf900bba0
+.word 0xf900d3a0
 .word 0xd28e921e
 .word 0xf2b7179e
 .word 0xf2c5087e
@@ -992,7 +1025,7 @@ bl _p_17
 .word 0xf2f809be
 .word 0x9e6703c0
 .word 0xf9401bb1
-.word 0xf9426631
+.word 0xf942e231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910223a0
@@ -1010,7 +1043,7 @@ bl _p_17
 .word 0xf2c17afe
 .word 0xf2f809be
 .word 0x9e6703c1
-bl _p_13
+bl _p_14
 .word 0x910223a0
 .word 0x910163a0
 .word 0xf94047a0
@@ -1018,89 +1051,94 @@ bl _p_13
 .word 0xf9404ba0
 .word 0xf90033a0
 .word 0xf9401bb1
-.word 0xf942ce31
+.word 0xf9434a31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940bba1
+.word 0xf940d3a1
 .word 0xaa0103e0
 .word 0x910163a2
 .word 0xfd402fa0
 .word 0xfd4033a1
 .word 0xf940003e
-bl _p_18
+bl _p_19
 .loc 7 22 0
 .word 0xf9401bb1
-.word 0xf942fa31
+.word 0xf9437631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
-.word 0xf900b7a0
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #280]
-.word 0xf900b3a0
-.word 0xf9401bb1
-.word 0xf9432231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf940b3a1
-.word 0xf940b7a2
-.word 0xaa0203e0
-.word 0xf940005e
-bl _p_19
-.loc 7 23 0
-.word 0xf9401bb1
-.word 0xf9434631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1803e0
-.word 0xf900afa0
+.word 0xf900cfa0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x0, [x16, #288]
-.word 0xf900aba0
+.word 0xf900cba0
 .word 0xf9401bb1
-.word 0xf9436e31
+.word 0xf9439e31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940aba1
-.word 0xf940afa2
+.word 0xf940cba1
+.word 0xf940cfa2
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_20
+.loc 7 23 0
 .word 0xf9401bb1
-.word 0xf9439231
+.word 0xf943c231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
-.word 0xaa0003f9
+.word 0xf900c7a0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #296]
+.word 0xf900c3a0
+.word 0xf9401bb1
+.word 0xf943ea31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf940c3a1
+.word 0xf940c7a2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_21
+.word 0xf9401bb1
+.word 0xf9440e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf940bfa0
+.word 0xaa1803e1
+.word 0xf900bba1
+.word 0xf9000b21
+.word 0x91004000
+bl _p_10
+.word 0xf940bba0
 .loc 7 26 0
 .word 0xf9401bb1
-.word 0xf943aa31
+.word 0xf9443a31
 .word 0xb4000051
 .word 0xd63f0220
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 bl _p_3
-.word 0xf900a7a0
-bl _p_17
+.word 0xf900b7a0
+bl _p_18
 .word 0xf9401bb1
-.word 0xf943d231
+.word 0xf9446231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940a7a0
+.word 0xf940b7a0
 .word 0xaa0003f8
 .loc 7 28 0
 .word 0xf9401bb1
-.word 0xf943ea31
+.word 0xf9447a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
-.word 0xf900a3a0
+.word 0xf900b3a0
 .word 0xd295165e
 .word 0xf2a8c7de
 .word 0xf2c745fe
@@ -1112,7 +1150,7 @@ bl _p_17
 .word 0xf2f8099e
 .word 0x9e6703c0
 .word 0xf9401bb1
-.word 0xf9442a31
+.word 0xf944ba31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x9101e3a0
@@ -1130,7 +1168,7 @@ bl _p_17
 .word 0xf2c33dfe
 .word 0xf2f8099e
 .word 0x9e6703c1
-bl _p_13
+bl _p_14
 .word 0x9101e3a0
 .word 0x910123a0
 .word 0xf9403fa0
@@ -1138,150 +1176,159 @@ bl _p_13
 .word 0xf94043a0
 .word 0xf9002ba0
 .word 0xf9401bb1
-.word 0xf9449231
+.word 0xf9452231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf940a3a1
+.word 0xf940b3a1
 .word 0xaa0103e0
 .word 0x910123a2
 .word 0xfd4027a0
 .word 0xfd402ba1
 .word 0xf940003e
-bl _p_18
+bl _p_19
 .loc 7 29 0
 .word 0xf9401bb1
-.word 0xf944be31
+.word 0xf9454e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
-.word 0xf9009fa0
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #296]
-.word 0xf9009ba0
-.word 0xf9401bb1
-.word 0xf944e631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9409ba1
-.word 0xf9409fa2
-.word 0xaa0203e0
-.word 0xf940005e
-bl _p_19
-.loc 7 30 0
-.word 0xf9401bb1
-.word 0xf9450a31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1803e0
-.word 0xf90097a0
+.word 0xf900afa0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x0, [x16, #304]
-.word 0xf90093a0
+.word 0xf900aba0
 .word 0xf9401bb1
-.word 0xf9453231
+.word 0xf9457631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94093a1
-.word 0xf94097a2
+.word 0xf940aba1
+.word 0xf940afa2
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_20
+.loc 7 30 0
 .word 0xf9401bb1
-.word 0xf9455631
+.word 0xf9459a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1803e0
+.word 0xf900a7a0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #312]
+.word 0xf900a3a0
+.word 0xf9401bb1
+.word 0xf945c231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf940a3a1
+.word 0xf940a7a2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_21
+.word 0xf9401bb1
+.word 0xf945e631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
 .word 0xaa0003f7
 .loc 7 33 0
 .word 0xf9401bb1
-.word 0xf9456e31
+.word 0xf945fe31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1903e0
-.word 0xf9008ba0
-.word 0xaa1a03e0
-.word 0xeb1f035f
+.word 0xf9400800
+.word 0xf90093a0
+.word 0xaa1903e0
+.word 0xf9009fa0
+.word 0xeb1f001f
 .word 0x10000011
-.word 0x54001540
+.word 0x54001640
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 bl _p_3
-.word 0xf900101a
-.word 0xf9008fa0
+.word 0xf9409fa1
+.word 0xf9009ba1
+.word 0xf9001001
+.word 0xf90097a0
 .word 0x91008000
 bl _p_10
-.word 0xf9408fa0
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #320]
-.word 0xf9001401
+.word 0xf94097a0
+.word 0xf9409ba1
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x1, [x16, #328]
-.word 0xf9002001
+.word 0xf9001401
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x1, [x16, #336]
+.word 0xf9002001
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x1, [x16, #344]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
 .word 0xf9000801
 .word 0xd2800001
 .word 0x3901801f
-.word 0xf90087a0
+.word 0xf9008fa0
 .word 0xf9401bb1
-.word 0xf9460231
+.word 0xf946a631
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94087a1
-.word 0xf9408ba2
+.word 0xf9408fa1
+.word 0xf94093a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_21
-.loc 7 39 0
+bl _p_22
+.loc 7 40 0
 .word 0xf9401bb1
-.word 0xf9462631
+.word 0xf946ca31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1703e0
 .word 0xf9007fa0
-.word 0xaa1a03e0
-.word 0xeb1f035f
+.word 0xaa1903e0
+.word 0xf9008ba0
+.word 0xeb1f001f
 .word 0x10000011
-.word 0x54000f80
+.word 0x54001000
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 bl _p_3
-.word 0xf900101a
+.word 0xf9408ba1
+.word 0xf90087a1
+.word 0xf9001001
 .word 0xf90083a0
 .word 0x91008000
 bl _p_10
 .word 0xf94083a0
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #344]
-.word 0xf9001401
+.word 0xf94087a1
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x1, [x16, #352]
-.word 0xf9002001
+.word 0xf9001401
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x1, [x16, #360]
+.word 0xf9002001
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x1, [x16, #368]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -1290,39 +1337,40 @@ ldr x1, [x16, #360]
 .word 0x3901801f
 .word 0xf9007ba0
 .word 0xf9401bb1
-.word 0xf946ba31
+.word 0xf9476e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9407ba1
 .word 0xf9407fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_21
-.loc 7 45 0
+bl _p_22
+.loc 7 46 0
 .word 0xf9401bb1
-.word 0xf946de31
+.word 0xf9479231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940e740
 .word 0xf90077a0
 .word 0xf9401bb1
-.word 0xf946fa31
+.word 0xf947ae31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94077a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_22
+bl _p_23
 .word 0xf90073a0
 .word 0xf9401bb1
-.word 0xf9471e31
+.word 0xf947d231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1903e0
+.word 0xf9400800
 .word 0xf9006fa0
 .word 0xf9401bb1
-.word 0xf9473631
+.word 0xf947ee31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9406fa1
@@ -1332,36 +1380,36 @@ bl _p_22
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #368]
+ldr x15, [x16, #376]
 .word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
-.loc 7 46 0
+.loc 7 47 0
 .word 0xf9401bb1
-.word 0xf9477231
+.word 0xf9482a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940e740
 .word 0xf9006ba0
 .word 0xf9401bb1
-.word 0xf9478e31
+.word 0xf9484631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9406ba1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_22
+bl _p_23
 .word 0xf90067a0
 .word 0xf9401bb1
-.word 0xf947b231
+.word 0xf9486a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1703e0
 .word 0xf90063a0
 .word 0xf9401bb1
-.word 0xf947ca31
+.word 0xf9488231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94063a1
@@ -1371,28 +1419,28 @@ bl _p_22
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #368]
+ldr x15, [x16, #376]
 .word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
-.loc 7 47 0
+.loc 7 48 0
 .word 0xf9401bb1
-.word 0xf9480631
+.word 0xf948be31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9481631
+.word 0xf948ce31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8d97bfd
+.word 0xa8dd7bfd
 .word 0xd65f03c0
 .word 0xd2800b20
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
 Lme_e:
 .text
@@ -1408,7 +1456,7 @@ MapsExample_MapPage_Handle_Clicked_object_System_EventArgs:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #376]
+ldr x16, [x16, #384]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -1417,7 +1465,7 @@ ldr x16, [x16, #376]
 .word 0xd2800a01
 .word 0xd2800001
 .word 0xd2800a02
-bl _p_24
+bl _p_25
 .word 0xf94017b1
 .word 0xf9405231
 .word 0xb4000051
@@ -1433,7 +1481,7 @@ bl _p_10
 .word 0xf90077a0
 .word 0x910103a0
 .word 0xaa0003e8
-bl _p_25
+bl _p_26
 .word 0xf94017b1
 .word 0xf9409231
 .word 0xb4000051
@@ -1477,8 +1525,8 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #384]
-bl _p_26
+ldr x15, [x16, #392]
+bl _p_27
 .word 0xf94017b1
 .word 0xf9414231
 .word 0xb4000051
@@ -1494,6 +1542,113 @@ bl _p_26
 Lme_f:
 .text
 	.align 4
+	.no_dead_strip MapsExample_MapPage_ShowModal_MapsExample_Report
+MapsExample_MapPage_ShowModal_MapsExample_Report:
+.loc 5 1 0
+.word 0xa9b17bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #400]
+.word 0xf90013b0
+.word 0xf9400a11
+.word 0xf90017b1
+.word 0x910163a0
+.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
+.word 0xf90043a0
+.word 0xf90047a0
+.word 0xf9004ba0
+.word 0xf94013b1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910163a0
+.word 0xf9400fa1
+.word 0xf90077a1
+.word 0xf9002fa1
+.word 0xaa0003e1
+bl _p_10
+.word 0xf94077a0
+.word 0x910163a0
+.word 0xf9400ba1
+.word 0xf90073a1
+.word 0xf90033a1
+.word 0x91002000
+bl _p_10
+.word 0xf94073a0
+.word 0x910163a0
+.word 0xf9006fa0
+.word 0x9100e3a0
+.word 0xaa0003e8
+bl _p_26
+.word 0xf94013b1
+.word 0xf940ba31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9406fa0
+.word 0x9100e3a1
+.word 0x91004001
+.word 0xaa0103e0
+.word 0xf9401fa2
+.word 0xf9006ba2
+.word 0xf9000022
+.word 0xf90067a0
+bl _p_10
+.word 0xf94067a0
+.word 0xf9406ba1
+.word 0x91002000
+.word 0xf94023a1
+.word 0xf90063a1
+.word 0xf9000001
+.word 0xf9005fa0
+bl _p_10
+.word 0xf9405fa0
+.word 0xf94063a1
+.word 0x91002000
+.word 0xf94027a1
+.word 0xf9005ba1
+.word 0xf9000001
+.word 0xf90057a0
+bl _p_10
+.word 0xf94057a0
+.word 0xf9405ba1
+.word 0x91002000
+.word 0xf9402ba1
+.word 0xf90053a1
+.word 0xf9000001
+bl _p_10
+.word 0xf94053a0
+.word 0x910163a0
+.word 0x91004000
+.word 0x910163a1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #408]
+bl _p_28
+.word 0xf94013b1
+.word 0xf9416a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9417a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8cf7bfd
+.word 0xd65f03c0
+
+Lme_10:
+.text
+	.align 4
 	.no_dead_strip MapsExample_MapPage_InitializeComponent
 MapsExample_MapPage_InitializeComponent:
 .file 8 "/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.MapPage.xaml.g.cs"
@@ -1505,7 +1660,7 @@ MapsExample_MapPage_InitializeComponent:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #392]
+ldr x16, [x16, #416]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -1530,7 +1685,7 @@ ldr x16, [x16, #392]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #424]
 .word 0xf90027a0
 .word 0xf9400fb1
 .word 0xf9408a31
@@ -1540,9 +1695,9 @@ ldr x0, [x16, #400]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #408]
+ldr x15, [x16, #432]
 .word 0xaa1a03e0
-bl _p_27
+bl _p_29
 .word 0xf9400fb1
 .word 0xf940b231
 .word 0xb4000051
@@ -1557,7 +1712,7 @@ bl _p_27
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #440]
 .word 0xf90023a0
 .word 0xf9400fb1
 .word 0xf940ea31
@@ -1567,9 +1722,9 @@ ldr x0, [x16, #416]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #424]
+ldr x15, [x16, #448]
 .word 0xaa1a03e0
-bl _p_28
+bl _p_30
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9411631
@@ -1595,143 +1750,229 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_10:
-.text
-	.align 4
-	.no_dead_strip MapsExample_MapPage__MapPagem__0_object_System_EventArgs
-MapsExample_MapPage__MapPagem__0_object_System_EventArgs:
-.loc 7 34 0 prologue_end
-.word 0xa9b87bfd
-.word 0x910003fd
-.word 0xa9015fb6
-.word 0xf90013b8
-.word 0xf90017a0
-.word 0xf9001ba1
-.word 0xf9001fa2
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #432]
-.word 0xf90023b0
-.word 0xf9400a11
-.word 0xf90027b1
-.word 0xd2800018
-.word 0xf94023b1
-.word 0xf9404631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94027b1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94023b1
-.word 0xf9406631
-.word 0xb4000051
-.word 0xd63f0220
-.loc 7 35 0
-.word 0xf94023b1
-.word 0xf9407631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb7
-.word 0xaa1703f6
-.word 0xeb1f02ff
-.word 0x54000160
-.word 0xf94002e0
-.word 0xf9400000
-.word 0xf9400800
-.word 0xf9400800
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #440]
-.word 0xeb01001f
-.word 0x54000040
-.word 0xd2800016
-.word 0xaa1603f8
-.loc 7 36 0
-.word 0xf94023b1
-.word 0xf940c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94017a0
-.word 0xf90033a0
-.word 0xaa1603e0
-.word 0xf94023b1
-.word 0xf940de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1603e0
-.word 0xf94002de
-bl _p_29
-.word 0xf90037a0
-.word 0xf94023b1
-.word 0xf940fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1603e0
-.word 0xf94023b1
-.word 0xf9411231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xaa1603e0
-.word 0xf94002de
-bl _p_30
-.word 0xf9003ba0
-.word 0xf94023b1
-.word 0xf9413231
-.word 0xb4000051
-.word 0xd63f0220
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #448]
-.word 0xf9003fa0
-.word 0xf94023b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94033a0
-.word 0xf94037a1
-.word 0xf9403ba2
-.word 0xf9403fa3
-bl _p_31
-.word 0xf94023b1
-.word 0xf9417631
-.word 0xb4000051
-.word 0xd63f0220
-.loc 7 37 0
-.word 0xf94023b1
-.word 0xf9418631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94023b1
-.word 0xf9419631
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xa9415fb6
-.word 0xf94013b8
-.word 0x910003bf
-.word 0xa8c87bfd
-.word 0xd65f03c0
-
 Lme_11:
 .text
 	.align 4
-	.no_dead_strip MapsExample_MapPage__MapPagem__1_object_System_EventArgs
-MapsExample_MapPage__MapPagem__1_object_System_EventArgs:
-.loc 7 40 0 prologue_end
-.word 0xa9b87bfd
+	.no_dead_strip MapsExample_MapPage__MapPagec__AnonStorey2__ctor
+MapsExample_MapPage__MapPagec__AnonStorey2__ctor:
+.loc 5 1 0
+.word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xa9015fb6
-.word 0xf90013b8
-.word 0xf90017a0
-.word 0xf9001ba1
-.word 0xf9001fa2
+.word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #456]
+.word 0xf9000fb0
+.word 0xf9400a11
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9403231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf9400fb1
+.word 0xf9404631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9405631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_12:
+.text
+	.align 4
+	.no_dead_strip MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs
+MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs:
+.loc 7 34 0 prologue_end
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0xa9015bb5
+.word 0xf90013b7
+.word 0xf90017b9
+.word 0xaa0003f9
+.word 0xf9001ba1
+.word 0xf9001fa2
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #464]
+.word 0xf90023b0
+.word 0xf9400a11
+.word 0xf90027b1
+.word 0xf9002fbf
+.word 0xd2800017
+.word 0xf94023b1
+.word 0xf9404e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94027b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023b1
+.word 0xf9406e31
+.word 0xb4000051
+.word 0xd63f0220
+.loc 7 35 0
+.word 0xf94023b1
+.word 0xf9407e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9401bb6
+.word 0xaa1603f5
+.word 0xeb1f02df
+.word 0x54000160
+.word 0xf94002c0
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x1, [x16, #472]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800015
+.word 0xf9002fb5
+.loc 7 37 0
+.word 0xf94023b1
+.word 0xf940ca31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xf9400f20
+.word 0xf90033a0
+.word 0xf94023b1
+.word 0xf940e631
+.word 0xb4000051
+.word 0xd63f0220
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #480]
+bl _p_3
+.word 0xf90053a0
+bl _p_31
+.word 0xf94023b1
+.word 0xf9410e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94053a0
+.word 0xaa0003f7
+.word 0xf94023b1
+.word 0xf9412631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1703e0
+.word 0xf9004ba0
+.word 0xaa1903e0
+.word 0xf9400b20
+.word 0xf9004fa0
+.word 0xf94023b1
+.word 0xf9414a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9404fa1
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_32
+.word 0xf90047a0
+.word 0xf94023b1
+.word 0xf9416e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94047a1
+.word 0xf9404ba2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_33
+.word 0xf94023b1
+.word 0xf9419231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1703e0
+.word 0xf90043a0
+.word 0xd2800000
+.word 0xf94023b1
+.word 0xf941ae31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94043a2
+.word 0xaa0203e0
+.word 0xd2800001
+.word 0xf940005e
+bl _p_34
+.word 0xf94023b1
+.word 0xf941d231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1703e0
+.word 0xf9003fa0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #488]
+.word 0xf9003ba0
+.word 0xf94023b1
+.word 0xf941fa31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9403ba1
+.word 0xf9403fa2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_35
+.word 0xf94023b1
+.word 0xf9421e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1703e0
+.word 0xf90037a0
+.word 0xf94023b1
+.word 0xf9423631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94033a0
+.word 0xf94037a1
+bl _p_36
+.loc 7 38 0
+.word 0xf94023b1
+.word 0xf9425231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023b1
+.word 0xf9426231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xa9415bb5
+.word 0xf94013b7
+.word 0xf94017b9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+
+Lme_13:
+.text
+	.align 4
+	.no_dead_strip MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs
+MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs:
+.loc 7 41 0 prologue_end
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa9015fb6
+.word 0xf90013b8
+.word 0xf90017a0
+.word 0xf9001ba1
+.word 0xf9001fa2
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #496]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
@@ -1748,7 +1989,7 @@ ldr x16, [x16, #456]
 .word 0xf9406631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 7 41 0
+.loc 7 42 0
 .word 0xf94023b1
 .word 0xf9407631
 .word 0xb4000051
@@ -1764,69 +2005,70 @@ ldr x16, [x16, #456]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #440]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800016
 .word 0xaa1603f8
-.loc 7 42 0
+.loc 7 43 0
 .word 0xf94023b1
 .word 0xf940c231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94017a0
+.word 0xf9400c00
 .word 0xf90033a0
 .word 0xaa1603e0
 .word 0xf94023b1
-.word 0xf940de31
+.word 0xf940e231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_29
+bl _p_37
 .word 0xf90037a0
 .word 0xf94023b1
-.word 0xf940fe31
+.word 0xf9410231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1603e0
 .word 0xf94023b1
-.word 0xf9411231
+.word 0xf9411631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_30
+bl _p_32
 .word 0xf9003ba0
 .word 0xf94023b1
-.word 0xf9413231
+.word 0xf9413631
 .word 0xb4000051
 .word 0xd63f0220
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #504]
 .word 0xf9003fa0
 .word 0xf94023b1
-.word 0xf9415231
+.word 0xf9415631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94033a0
 .word 0xf94037a1
 .word 0xf9403ba2
 .word 0xf9403fa3
-bl _p_31
+bl _p_38
 .word 0xf94023b1
-.word 0xf9417631
+.word 0xf9417a31
 .word 0xb4000051
 .word 0xd63f0220
-.loc 7 43 0
+.loc 7 44 0
 .word 0xf94023b1
-.word 0xf9418631
+.word 0xf9418a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023b1
-.word 0xf9419631
+.word 0xf9419a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa9415fb6
@@ -1835,9 +2077,9 @@ bl _p_31
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_12:
+Lme_14:
 .text
-ut_19:
+ut_21:
 add x0, x0, 16
 b MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
 ut_end:
@@ -1845,13 +2087,13 @@ ut_end:
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM3=ut_end - ut_19
+LDIFF_SYM3=ut_end - ut_21
 	.long LDIFF_SYM3
 .text
 	.align 4
 	.no_dead_strip MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
 MapsExample_MapPage__Handle_Clickedc__async0_MoveNext:
-.loc 7 50 0 prologue_end
+.loc 7 51 0 prologue_end
 .word 0xa9ab7bfd
 .word 0x910003fd
 .word 0xa90167b8
@@ -1860,7 +2102,7 @@ MapsExample_MapPage__Handle_Clickedc__async0_MoveNext:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #464]
+ldr x16, [x16, #512]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -1900,7 +2142,7 @@ ldr x16, [x16, #464]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #520]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -1913,7 +2155,7 @@ ldr x0, [x16, #472]
 .word 0xf940ea31
 .word 0xb4000051
 .word 0xd63f0220
-.loc 7 51 0
+.loc 7 52 0
 .word 0xf9401bb1
 .word 0xf940fa31
 .word 0xb4000051
@@ -1924,7 +2166,7 @@ ldr x0, [x16, #472]
 .word 0xf9411231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_32
+bl _p_39
 .word 0xf90087a0
 .word 0xf9401bb1
 .word 0xf9412a31
@@ -1936,7 +2178,7 @@ bl _p_32
 .word 0xf9000001
 bl _p_10
 .word 0xf9407fa0
-.loc 7 52 0
+.loc 7 53 0
 .word 0xf9401bb1
 .word 0xf9415231
 .word 0xb4000051
@@ -1960,12 +2202,12 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #480]
+ldr x15, [x16, #528]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.loc 7 53 0
+.loc 7 54 0
 .word 0xf9401bb1
 .word 0xf941be31
 .word 0xb4000051
@@ -1975,7 +2217,7 @@ ldr x15, [x16, #480]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #536]
 .word 0xf9400000
 .word 0xaa0103f8
 .word 0xb50003a0
@@ -1984,23 +2226,23 @@ ldr x0, [x16, #488]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #544]
 bl _p_3
 .word 0xaa0003e1
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #552]
 .word 0xf9001420
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #560]
 .word 0xf9002020
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #568]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -2010,13 +2252,13 @@ ldr x0, [x16, #520]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #536]
 .word 0xf9000001
 .word 0xaa1803e0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #536]
 .word 0xf9400000
 .word 0xf9008ba0
 .word 0xf9401bb1
@@ -2029,12 +2271,12 @@ ldr x0, [x16, #488]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #528]
+ldr x15, [x16, #576]
 .word 0x92800af0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
-.loc 7 60 0
+.loc 7 61 0
 .word 0xf9401bb1
 .word 0xf942ae31
 .word 0xb4000051
@@ -2065,7 +2307,7 @@ ldr x15, [x16, #528]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #536]
+ldr x15, [x16, #584]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf87068b0
@@ -2080,7 +2322,7 @@ ldr x15, [x16, #536]
 .word 0xf90063a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_33
+bl _p_40
 .word 0xf94063be
 .word 0xf90003c0
 .word 0xf9401bb1
@@ -2101,8 +2343,8 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #544]
-bl _p_34
+ldr x15, [x16, #592]
+bl _p_41
 .word 0x53001c00
 .word 0xf9007ba0
 .word 0xf9401bb1
@@ -2123,8 +2365,8 @@ bl _p_34
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #552]
-bl _p_35
+ldr x15, [x16, #600]
+bl _p_42
 .word 0xf9401bb1
 .word 0xf9440a31
 .word 0xb4000051
@@ -2143,8 +2385,8 @@ bl _p_35
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #544]
-bl _p_36
+ldr x15, [x16, #592]
+bl _p_43
 .word 0xf9009fa0
 .word 0xf9401bb1
 .word 0xf9445a31
@@ -2157,7 +2399,7 @@ bl _p_36
 .word 0x91002000
 bl _p_10
 .word 0xf94097a0
-.loc 7 62 0
+.loc 7 63 0
 .word 0xf9401bb1
 .word 0xf9448631
 .word 0xb4000051
@@ -2170,7 +2412,7 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #608]
 .word 0xf9008fa0
 .word 0xf94017a0
 .word 0xf9400401
@@ -2178,7 +2420,7 @@ ldr x0, [x16, #560]
 .word 0xf90063a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_37
+bl _p_44
 .word 0xf94063be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -2193,7 +2435,7 @@ bl _p_37
 .word 0xf9403fa0
 .word 0xf9004ba0
 .word 0x910223a0
-bl _p_38
+bl _p_45
 .word 0xf90093a0
 .word 0xf9401bb1
 .word 0xf9451631
@@ -2205,8 +2447,8 @@ bl _p_38
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x3, [x16, #448]
-bl _p_31
+ldr x3, [x16, #504]
+bl _p_38
 .word 0xf90087a0
 .word 0xf9401bb1
 .word 0xf9454631
@@ -2217,7 +2459,7 @@ bl _p_31
 .word 0xf90063a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_39
+bl _p_46
 .word 0xf94063be
 .word 0xf90003c0
 .word 0xf9401bb1
@@ -2235,7 +2477,7 @@ bl _p_10
 .word 0xf9407fa0
 .word 0xf94017a0
 .word 0x91012000
-bl _p_40
+bl _p_47
 .word 0x53001c00
 .word 0xf9007ba0
 .word 0xf9401bb1
@@ -2256,8 +2498,8 @@ bl _p_40
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #568]
-bl _p_41
+ldr x15, [x16, #616]
+bl _p_48
 .word 0xf9401bb1
 .word 0xf9460a31
 .word 0xb4000051
@@ -2265,8 +2507,8 @@ bl _p_41
 .word 0x140000f8
 .word 0xf94017a0
 .word 0x91012000
-bl _p_42
-.loc 7 63 0
+bl _p_49
+.loc 7 64 0
 .word 0xf9401bb1
 .word 0xf9462a31
 .word 0xb4000051
@@ -2279,13 +2521,13 @@ bl _p_42
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #624]
 .word 0xf9008fa0
 .word 0xf94017a0
 .word 0xf9400401
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_43
+bl _p_50
 .word 0xfd00a7a0
 .word 0xf9401bb1
 .word 0xf9467631
@@ -2294,7 +2536,7 @@ bl _p_43
 .word 0xfd40a7a0
 .word 0xfd0057a0
 .word 0x9102a3a0
-bl _p_44
+bl _p_51
 .word 0xf90093a0
 .word 0xf9401bb1
 .word 0xf9469a31
@@ -2306,8 +2548,8 @@ bl _p_44
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x3, [x16, #448]
-bl _p_31
+ldr x3, [x16, #504]
+bl _p_38
 .word 0xf90087a0
 .word 0xf9401bb1
 .word 0xf946ca31
@@ -2318,7 +2560,7 @@ bl _p_31
 .word 0xf90063a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_39
+bl _p_46
 .word 0xf94063be
 .word 0xf90003c0
 .word 0xf9401bb1
@@ -2336,7 +2578,7 @@ bl _p_10
 .word 0xf9407fa0
 .word 0xf94017a0
 .word 0x91012000
-bl _p_40
+bl _p_47
 .word 0x53001c00
 .word 0xf9007ba0
 .word 0xf9401bb1
@@ -2357,8 +2599,8 @@ bl _p_40
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #568]
-bl _p_41
+ldr x15, [x16, #616]
+bl _p_48
 .word 0xf9401bb1
 .word 0xf9478e31
 .word 0xb4000051
@@ -2366,8 +2608,8 @@ bl _p_41
 .word 0x14000097
 .word 0xf94017a0
 .word 0x91012000
-bl _p_42
-.loc 7 64 0
+bl _p_49
+.loc 7 65 0
 .word 0xf9401bb1
 .word 0xf947ae31
 .word 0xb4000051
@@ -2380,13 +2622,13 @@ bl _p_42
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #584]
+ldr x0, [x16, #632]
 .word 0xf9008fa0
 .word 0xf94017a0
 .word 0xf9400401
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_45
+bl _p_52
 .word 0xfd00a7a0
 .word 0xf9401bb1
 .word 0xf947fa31
@@ -2395,7 +2637,7 @@ bl _p_45
 .word 0xfd40a7a0
 .word 0xfd005ba0
 .word 0x9102c3a0
-bl _p_44
+bl _p_51
 .word 0xf90093a0
 .word 0xf9401bb1
 .word 0xf9481e31
@@ -2407,8 +2649,8 @@ bl _p_44
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x3, [x16, #448]
-bl _p_31
+ldr x3, [x16, #504]
+bl _p_38
 .word 0xf90087a0
 .word 0xf9401bb1
 .word 0xf9484e31
@@ -2419,7 +2661,7 @@ bl _p_31
 .word 0xf90063a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_39
+bl _p_46
 .word 0xf94063be
 .word 0xf90003c0
 .word 0xf9401bb1
@@ -2437,7 +2679,7 @@ bl _p_10
 .word 0xf9407fa0
 .word 0xf94017a0
 .word 0x91012000
-bl _p_40
+bl _p_47
 .word 0x53001c00
 .word 0xf9007ba0
 .word 0xf9401bb1
@@ -2458,8 +2700,8 @@ bl _p_40
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #568]
-bl _p_41
+ldr x15, [x16, #616]
+bl _p_48
 .word 0xf9401bb1
 .word 0xf9491231
 .word 0xb4000051
@@ -2467,7 +2709,7 @@ bl _p_41
 .word 0x14000036
 .word 0xf94017a0
 .word 0x91012000
-bl _p_42
+bl _p_49
 .word 0xf9401bb1
 .word 0xf9493231
 .word 0xb4000051
@@ -2485,19 +2727,19 @@ bl _p_42
 .word 0xf94017a0
 .word 0x91006000
 .word 0xf9405fa1
-bl _p_46
+bl _p_53
 .word 0xf9401bb1
 .word 0xf9497a31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_47
+bl _p_54
 .word 0xf90077a0
 .word 0xf94077a0
 .word 0xb4000060
 .word 0xf94077a0
-bl _p_48
+bl _p_55
 .word 0x14000016
-.loc 7 65 0
+.loc 7 66 0
 .word 0xf9401fb1
 .word 0xf9400231
 .word 0xb4000051
@@ -2514,7 +2756,7 @@ bl _p_48
 .word 0xb900381e
 .word 0xf94017a0
 .word 0x91006000
-bl _p_49
+bl _p_56
 .word 0xf9401bb1
 .word 0xf949ea31
 .word 0xb4000051
@@ -2529,9 +2771,9 @@ bl _p_49
 .word 0xa8d57bfd
 .word 0xd65f03c0
 
-Lme_13:
+Lme_15:
 .text
-ut_20:
+ut_22:
 add x0, x0, 16
 b MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 .text
@@ -2546,7 +2788,7 @@ MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_Comp
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #592]
+ldr x16, [x16, #640]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2557,7 +2799,7 @@ ldr x16, [x16, #592]
 .word 0xf9400ba0
 .word 0x91006000
 .word 0xf9400fa1
-bl _p_50
+bl _p_57
 .word 0xf94013b1
 .word 0xf9405631
 .word 0xb4000051
@@ -2570,16 +2812,16 @@ bl _p_50
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_14:
+Lme_16:
 .text
-ut_21:
+ut_23:
 add x0, x0, 16
 b MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
 .text
 	.align 4
 	.no_dead_strip MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
 MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs:
-.loc 7 54 0 prologue_end
+.loc 7 55 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -2587,7 +2829,7 @@ MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abst
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #600]
+ldr x16, [x16, #648]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2603,7 +2845,7 @@ ldr x16, [x16, #600]
 .word 0xf9405631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 7 56 0
+.loc 7 57 0
 .word 0xf94013b1
 .word 0xf9406631
 .word 0xb4000051
@@ -2615,8 +2857,8 @@ ldr x16, [x16, #600]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94027a0
-bl _p_51
-.loc 7 57 0
+bl _p_58
+.loc 7 58 0
 .word 0xf94013b1
 .word 0xf9409631
 .word 0xb4000051
@@ -2628,8 +2870,8 @@ bl _p_51
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
-bl _p_51
-.loc 7 58 0
+bl _p_58
+.loc 7 59 0
 .word 0xf94013b1
 .word 0xf940c631
 .word 0xb4000051
@@ -2642,7 +2884,267 @@ bl _p_51
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_15:
+Lme_17:
+.text
+ut_24:
+add x0, x0, 16
+b MapsExample_MapPage__ShowModalc__async1_MoveNext
+.text
+	.align 4
+	.no_dead_strip MapsExample_MapPage__ShowModalc__async1_MoveNext
+MapsExample_MapPage__ShowModalc__async1_MoveNext:
+.loc 7 69 0 prologue_end
+.word 0xa9b47bfd
+.word 0x910003fd
+.word 0xa9016bb9
+.word 0xf90013a0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #656]
+.word 0xf90017b0
+.word 0xf9400a11
+.word 0xf9001bb1
+.word 0xd280001a
+.word 0xf90027bf
+.word 0xf94017b1
+.word 0xf9403e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013a0
+.word 0xb9803000
+.word 0xaa0003fa
+.word 0xf94013a0
+.word 0x92800001
+.word 0xf2bfffe1
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb900301e
+.word 0xaa1a03f9
+.word 0xd280005e
+.word 0x6b1e035f
+.word 0x54000122
+.word 0xd37df320
+.word 0x2a0003e1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #664]
+.word 0x8b010000
+.word 0xf9400000
+.word 0xd61f0000
+.word 0x1400009c
+.word 0xf9401bb1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf940b631
+.word 0xb4000051
+.word 0xd63f0220
+.loc 7 70 0
+.word 0xf94017b1
+.word 0xf940c631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013a0
+.word 0xf9004ba0
+.word 0xf94013a0
+.word 0xf9400400
+bl _p_59
+.word 0xf90057a0
+.word 0xf94017b1
+.word 0xf940ee31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013a0
+.word 0xf9400000
+.word 0xf9005ba0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #672]
+bl _p_3
+.word 0xf9405ba1
+.word 0xf90053a0
+bl _p_60
+.word 0xf94017b1
+.word 0xf9412631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94053a1
+.word 0xf94057a2
+.word 0xaa0203e0
+.word 0xf9400042
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #680]
+.word 0x928002f0
+.word 0xf2bffff0
+.word 0xf8706850
+.word 0xd63f0200
+.word 0xf9004fa0
+.word 0xf94017b1
+.word 0xf9416631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9404fa1
+.word 0x910103a0
+.word 0xf9002ba0
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_46
+.word 0xf9402bbe
+.word 0xf90003c0
+.word 0xf94017b1
+.word 0xf9419631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9404ba0
+.word 0x910103a1
+.word 0x9100e001
+.word 0xaa0103e0
+.word 0xf94023a2
+.word 0xf90047a2
+.word 0xf9000022
+bl _p_10
+.word 0xf94047a0
+.word 0xf94013a0
+.word 0x9100e000
+bl _p_47
+.word 0x53001c00
+.word 0xf90043a0
+.word 0xf94017b1
+.word 0xf941de31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94043a0
+.word 0x35000260
+.word 0xf94013a0
+.word 0xd2800021
+.word 0xd280003e
+.word 0xb900301e
+.word 0xf94013a0
+.word 0x91004000
+.word 0xf94013a1
+.word 0x9100e021
+.word 0xf94013a2
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #688]
+bl _p_61
+.word 0xf94017b1
+.word 0xf9422a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x14000036
+.word 0xf94013a0
+.word 0x9100e000
+bl _p_49
+.word 0xf94017b1
+.word 0xf9424a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x14000019
+.word 0xf9002fa0
+.word 0xf9402fa0
+.word 0xf90027a0
+.word 0xf94013a0
+.word 0x92800001
+.word 0xf2bfffe1
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb900301e
+.word 0xf94013a0
+.word 0x91004000
+.word 0xf94027a1
+bl _p_53
+.word 0xf94017b1
+.word 0xf9429231
+.word 0xb4000051
+.word 0xd63f0220
+bl _p_54
+.word 0xf9003fa0
+.word 0xf9403fa0
+.word 0xb4000060
+.word 0xf9403fa0
+bl _p_55
+.word 0x14000016
+.loc 7 71 0
+.word 0xf9401bb1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf942ce31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013a0
+.word 0x92800001
+.word 0xf2bfffe1
+.word 0x9280001e
+.word 0xf2bffffe
+.word 0xb900301e
+.word 0xf94013a0
+.word 0x91004000
+bl _p_56
+.word 0xf94017b1
+.word 0xf9430231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf9431231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xa9416bb9
+.word 0x910003bf
+.word 0xa8cc7bfd
+.word 0xd65f03c0
+
+Lme_18:
+.text
+ut_25:
+add x0, x0, 16
+b MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+.text
+	.align 4
+	.no_dead_strip MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.loc 5 1 0
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #696]
+.word 0xf90013b0
+.word 0xf9400a11
+.word 0xf90017b1
+.word 0xf94013b1
+.word 0xf9403631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0x91004000
+.word 0xf9400fa1
+bl _p_57
+.word 0xf94013b1
+.word 0xf9405631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9406631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+
+Lme_19:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostPage__ctor
@@ -2661,7 +3163,7 @@ MapsExample_LostPage__ctor:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #608]
+ldr x16, [x16, #704]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -2681,7 +3183,7 @@ ldr x16, [x16, #608]
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xaa1a03e0
-bl _p_11
+bl _p_12
 .loc 9 11 0
 .word 0xf94017b1
 .word 0xf9408e31
@@ -2698,7 +3200,7 @@ bl _p_11
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
-bl _p_52
+bl _p_62
 .loc 9 14 0
 .word 0xf94017b1
 .word 0xf940ca31
@@ -2714,10 +3216,10 @@ bl _p_52
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #712]
 bl _p_3
 .word 0xf9016ba0
-bl _p_53
+bl _p_63
 .word 0xf94017b1
 .word 0xf9410e31
 .word 0xb4000051
@@ -2738,10 +3240,10 @@ bl _p_53
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90167a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf9416631
 .word 0xb4000051
@@ -2756,7 +3258,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #632]
+ldr x0, [x16, #720]
 .word 0xf90163a0
 .word 0xf94017b1
 .word 0xf941a231
@@ -2765,7 +3267,7 @@ ldr x0, [x16, #632]
 .word 0xf94163a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf941c231
 .word 0xb4000051
@@ -2775,7 +3277,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9015ba0
 .word 0xf94017b1
 .word 0xf941ea31
@@ -2785,7 +3287,7 @@ ldr x0, [x16, #640]
 .word 0xf9415fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf9420e31
 .word 0xb4000051
@@ -2795,7 +3297,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #728]
 .word 0xf90153a0
 .word 0xf94017b1
 .word 0xf9423631
@@ -2805,7 +3307,7 @@ ldr x0, [x16, #648]
 .word 0xf94157a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf9425a31
 .word 0xb4000051
@@ -2820,7 +3322,7 @@ bl _p_57
 .word 0xf9414fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 16 0
 .word 0xf94017b1
 .word 0xf9429631
@@ -2835,10 +3337,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90147a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf942d631
 .word 0xb4000051
@@ -2853,7 +3355,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #736]
 .word 0xf90143a0
 .word 0xf94017b1
 .word 0xf9431231
@@ -2862,7 +3364,7 @@ ldr x0, [x16, #656]
 .word 0xf94143a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf9433231
 .word 0xb4000051
@@ -2872,7 +3374,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9013ba0
 .word 0xf94017b1
 .word 0xf9435a31
@@ -2882,7 +3384,7 @@ ldr x0, [x16, #640]
 .word 0xf9413fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf9437e31
 .word 0xb4000051
@@ -2892,7 +3394,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #664]
+ldr x0, [x16, #744]
 .word 0xf90133a0
 .word 0xf94017b1
 .word 0xf943a631
@@ -2902,7 +3404,7 @@ ldr x0, [x16, #664]
 .word 0xf94137a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf943ca31
 .word 0xb4000051
@@ -2917,7 +3419,7 @@ bl _p_57
 .word 0xf9412fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 17 0
 .word 0xf94017b1
 .word 0xf9440631
@@ -2932,10 +3434,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90127a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf9444631
 .word 0xb4000051
@@ -2950,7 +3452,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #672]
+ldr x0, [x16, #752]
 .word 0xf90123a0
 .word 0xf94017b1
 .word 0xf9448231
@@ -2959,7 +3461,7 @@ ldr x0, [x16, #672]
 .word 0xf94123a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf944a231
 .word 0xb4000051
@@ -2969,7 +3471,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9011ba0
 .word 0xf94017b1
 .word 0xf944ca31
@@ -2979,7 +3481,7 @@ ldr x0, [x16, #640]
 .word 0xf9411fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf944ee31
 .word 0xb4000051
@@ -2989,7 +3491,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #680]
+ldr x0, [x16, #760]
 .word 0xf90113a0
 .word 0xf94017b1
 .word 0xf9451631
@@ -2999,7 +3501,7 @@ ldr x0, [x16, #680]
 .word 0xf94117a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf9453a31
 .word 0xb4000051
@@ -3014,7 +3516,7 @@ bl _p_57
 .word 0xf9410fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 18 0
 .word 0xf94017b1
 .word 0xf9457631
@@ -3029,10 +3531,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90107a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf945b631
 .word 0xb4000051
@@ -3047,7 +3549,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #688]
+ldr x0, [x16, #768]
 .word 0xf90103a0
 .word 0xf94017b1
 .word 0xf945f231
@@ -3056,7 +3558,7 @@ ldr x0, [x16, #688]
 .word 0xf94103a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf9461231
 .word 0xb4000051
@@ -3066,7 +3568,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf900fba0
 .word 0xf94017b1
 .word 0xf9463a31
@@ -3076,7 +3578,7 @@ ldr x0, [x16, #640]
 .word 0xf940ffa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf9465e31
 .word 0xb4000051
@@ -3086,7 +3588,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #696]
+ldr x0, [x16, #776]
 .word 0xf900f3a0
 .word 0xf94017b1
 .word 0xf9468631
@@ -3096,7 +3598,7 @@ ldr x0, [x16, #696]
 .word 0xf940f7a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf946aa31
 .word 0xb4000051
@@ -3111,7 +3613,7 @@ bl _p_57
 .word 0xf940efa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 19 0
 .word 0xf94017b1
 .word 0xf946e631
@@ -3126,10 +3628,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf900e7a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf9472631
 .word 0xb4000051
@@ -3144,7 +3646,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #704]
+ldr x0, [x16, #784]
 .word 0xf900e3a0
 .word 0xf94017b1
 .word 0xf9476231
@@ -3153,7 +3655,7 @@ ldr x0, [x16, #704]
 .word 0xf940e3a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf9478231
 .word 0xb4000051
@@ -3163,7 +3665,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf900dba0
 .word 0xf94017b1
 .word 0xf947aa31
@@ -3173,7 +3675,7 @@ ldr x0, [x16, #640]
 .word 0xf940dfa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf947ce31
 .word 0xb4000051
@@ -3183,7 +3685,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #712]
+ldr x0, [x16, #792]
 .word 0xf900d3a0
 .word 0xf94017b1
 .word 0xf947f631
@@ -3193,7 +3695,7 @@ ldr x0, [x16, #712]
 .word 0xf940d7a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf9481a31
 .word 0xb4000051
@@ -3208,7 +3710,7 @@ bl _p_57
 .word 0xf940cfa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 20 0
 .word 0xf94017b1
 .word 0xf9485631
@@ -3223,10 +3725,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf900c7a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf9489631
 .word 0xb4000051
@@ -3241,7 +3743,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #720]
+ldr x0, [x16, #800]
 .word 0xf900c3a0
 .word 0xf94017b1
 .word 0xf948d231
@@ -3250,7 +3752,7 @@ ldr x0, [x16, #720]
 .word 0xf940c3a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf948f231
 .word 0xb4000051
@@ -3260,7 +3762,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf900bba0
 .word 0xf94017b1
 .word 0xf9491a31
@@ -3270,7 +3772,7 @@ ldr x0, [x16, #640]
 .word 0xf940bfa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf9493e31
 .word 0xb4000051
@@ -3280,7 +3782,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #728]
+ldr x0, [x16, #808]
 .word 0xf900b3a0
 .word 0xf94017b1
 .word 0xf9496631
@@ -3290,7 +3792,7 @@ ldr x0, [x16, #728]
 .word 0xf940b7a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf9498a31
 .word 0xb4000051
@@ -3305,7 +3807,7 @@ bl _p_57
 .word 0xf940afa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 21 0
 .word 0xf94017b1
 .word 0xf949c631
@@ -3320,10 +3822,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf900a7a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf94a0631
 .word 0xb4000051
@@ -3338,7 +3840,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #816]
 .word 0xf900a3a0
 .word 0xf94017b1
 .word 0xf94a4231
@@ -3347,7 +3849,7 @@ ldr x0, [x16, #736]
 .word 0xf940a3a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf94a6231
 .word 0xb4000051
@@ -3357,7 +3859,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9009ba0
 .word 0xf94017b1
 .word 0xf94a8a31
@@ -3367,7 +3869,7 @@ ldr x0, [x16, #640]
 .word 0xf9409fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf94aae31
 .word 0xb4000051
@@ -3377,7 +3879,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #744]
+ldr x0, [x16, #824]
 .word 0xf90093a0
 .word 0xf94017b1
 .word 0xf94ad631
@@ -3387,7 +3889,7 @@ ldr x0, [x16, #744]
 .word 0xf94097a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf94afa31
 .word 0xb4000051
@@ -3402,7 +3904,7 @@ bl _p_57
 .word 0xf9408fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 22 0
 .word 0xf94017b1
 .word 0xf94b3631
@@ -3417,10 +3919,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90087a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf94b7631
 .word 0xb4000051
@@ -3435,7 +3937,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #752]
+ldr x0, [x16, #832]
 .word 0xf90083a0
 .word 0xf94017b1
 .word 0xf94bb231
@@ -3444,7 +3946,7 @@ ldr x0, [x16, #752]
 .word 0xf94083a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf94bd231
 .word 0xb4000051
@@ -3454,7 +3956,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9007ba0
 .word 0xf94017b1
 .word 0xf94bfa31
@@ -3464,7 +3966,7 @@ ldr x0, [x16, #640]
 .word 0xf9407fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf94c1e31
 .word 0xb4000051
@@ -3474,7 +3976,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #760]
+ldr x0, [x16, #840]
 .word 0xf90073a0
 .word 0xf94017b1
 .word 0xf94c4631
@@ -3484,7 +3986,7 @@ ldr x0, [x16, #760]
 .word 0xf94077a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf94c6a31
 .word 0xb4000051
@@ -3499,7 +4001,7 @@ bl _p_57
 .word 0xf9406fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 23 0
 .word 0xf94017b1
 .word 0xf94ca631
@@ -3514,10 +4016,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90067a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf94ce631
 .word 0xb4000051
@@ -3532,7 +4034,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #768]
+ldr x0, [x16, #848]
 .word 0xf90063a0
 .word 0xf94017b1
 .word 0xf94d2231
@@ -3541,7 +4043,7 @@ ldr x0, [x16, #768]
 .word 0xf94063a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf94d4231
 .word 0xb4000051
@@ -3551,7 +4053,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9005ba0
 .word 0xf94017b1
 .word 0xf94d6a31
@@ -3561,7 +4063,7 @@ ldr x0, [x16, #640]
 .word 0xf9405fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf94d8e31
 .word 0xb4000051
@@ -3571,7 +4073,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #776]
+ldr x0, [x16, #856]
 .word 0xf90053a0
 .word 0xf94017b1
 .word 0xf94db631
@@ -3581,7 +4083,7 @@ ldr x0, [x16, #776]
 .word 0xf94057a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf94dda31
 .word 0xb4000051
@@ -3596,7 +4098,7 @@ bl _p_57
 .word 0xf9404fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .loc 9 24 0
 .word 0xf94017b1
 .word 0xf94e1631
@@ -3611,10 +4113,10 @@ bl _p_58
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #480]
 bl _p_3
 .word 0xf90047a0
-bl _p_54
+bl _p_31
 .word 0xf94017b1
 .word 0xf94e5631
 .word 0xb4000051
@@ -3629,7 +4131,7 @@ bl _p_54
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #784]
+ldr x0, [x16, #864]
 .word 0xf90043a0
 .word 0xf94017b1
 .word 0xf94e9231
@@ -3638,7 +4140,7 @@ ldr x0, [x16, #784]
 .word 0xf94043a1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_55
+bl _p_33
 .word 0xf94017b1
 .word 0xf94eb231
 .word 0xb4000051
@@ -3648,7 +4150,7 @@ bl _p_55
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #488]
 .word 0xf9003ba0
 .word 0xf94017b1
 .word 0xf94eda31
@@ -3658,7 +4160,7 @@ ldr x0, [x16, #640]
 .word 0xf9403fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_56
+bl _p_35
 .word 0xf94017b1
 .word 0xf94efe31
 .word 0xb4000051
@@ -3668,7 +4170,7 @@ bl _p_56
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #792]
+ldr x0, [x16, #872]
 .word 0xf90033a0
 .word 0xf94017b1
 .word 0xf94f2631
@@ -3678,7 +4180,7 @@ ldr x0, [x16, #792]
 .word 0xf94037a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_57
+bl _p_34
 .word 0xf94017b1
 .word 0xf94f4a31
 .word 0xb4000051
@@ -3693,7 +4195,7 @@ bl _p_57
 .word 0xf9402fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_58
+bl _p_64
 .word 0xf94017b1
 .word 0xf94f8631
 .word 0xb4000051
@@ -3709,7 +4211,7 @@ bl _p_58
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_59
+bl _p_65
 .loc 9 26 0
 .word 0xf94017b1
 .word 0xf94fc231
@@ -3729,7 +4231,7 @@ bl _p_59
 .word 0x9100023f
 .word 0xd65f03c0
 
-Lme_16:
+Lme_1a:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
@@ -3745,7 +4247,7 @@ MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEven
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #800]
+ldr x16, [x16, #880]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -3773,7 +4275,7 @@ ldr x16, [x16, #800]
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_60
+bl _p_66
 .word 0xf9002ba0
 .word 0xf9401bb1
 .word 0xf940a631
@@ -3811,7 +4313,7 @@ bl _p_60
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #808]
+ldr x1, [x16, #888]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000561
@@ -3823,7 +4325,7 @@ ldr x1, [x16, #808]
 .word 0xaa1703e0
 .word 0xd2800001
 .word 0xf94002fe
-bl _p_61
+bl _p_67
 .loc 9 36 0
 .word 0xf9401bb1
 .word 0xf9415a31
@@ -3840,7 +4342,7 @@ bl _p_61
 .word 0xf9402ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_62
+bl _p_68
 .loc 9 37 0
 .word 0xf9401fb1
 .word 0xf9400231
@@ -3861,9 +4363,9 @@ bl _p_62
 .word 0xd65f03c0
 .word 0xd28029e0
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_17:
+Lme_1b:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
@@ -3877,7 +4379,7 @@ MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEven
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #816]
+ldr x16, [x16, #896]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -3886,7 +4388,7 @@ ldr x16, [x16, #816]
 .word 0xd2800901
 .word 0xd2800001
 .word 0xd2800902
-bl _p_24
+bl _p_25
 .word 0xf94017b1
 .word 0xf9405231
 .word 0xb4000051
@@ -3909,7 +4411,7 @@ bl _p_10
 .word 0xf90077a0
 .word 0x910103a0
 .word 0xaa0003e8
-bl _p_25
+bl _p_26
 .word 0xf94017b1
 .word 0xf940ae31
 .word 0xb4000051
@@ -3953,8 +4455,8 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #824]
-bl _p_63
+ldr x15, [x16, #904]
+bl _p_69
 .word 0xf94017b1
 .word 0xf9415e31
 .word 0xb4000051
@@ -3967,7 +4469,7 @@ bl _p_63
 .word 0xa8d07bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_1c:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostPage_ListView_Clicked_object_System_EventArgs
@@ -3984,7 +4486,7 @@ MapsExample_LostPage_ListView_Clicked_object_System_EventArgs:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #832]
+ldr x16, [x16, #912]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -4017,7 +4519,7 @@ ldr x16, [x16, #832]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #840]
+ldr x1, [x16, #920]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800016
@@ -4031,7 +4533,7 @@ ldr x1, [x16, #840]
 .word 0xd63f0220
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_64
+bl _p_70
 .word 0xaa0003f5
 .word 0xf9402bb1
 .word 0xf940f231
@@ -4047,7 +4549,7 @@ bl _p_64
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #848]
+ldr x1, [x16, #928]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800014
@@ -4062,7 +4564,7 @@ ldr x1, [x16, #848]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #936]
 .word 0xf9003fa0
 .word 0xaa1403e0
 .word 0xf9402bb1
@@ -4071,7 +4573,7 @@ ldr x0, [x16, #856]
 .word 0xd63f0220
 .word 0xaa1403e0
 .word 0xf940029e
-bl _p_65
+bl _p_71
 .word 0xf90043a0
 .word 0xf9402bb1
 .word 0xf9418631
@@ -4080,7 +4582,7 @@ bl _p_65
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #504]
 .word 0xf90047a0
 .word 0xf9402bb1
 .word 0xf941a631
@@ -4090,7 +4592,7 @@ ldr x0, [x16, #448]
 .word 0xf9403fa1
 .word 0xf94043a2
 .word 0xf94047a3
-bl _p_31
+bl _p_38
 .word 0xf9402bb1
 .word 0xf941ca31
 .word 0xb4000051
@@ -4111,7 +4613,7 @@ bl _p_31
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_19:
+Lme_1d:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostPage_InitializeComponent
@@ -4125,7 +4627,7 @@ MapsExample_LostPage_InitializeComponent:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #864]
+ldr x16, [x16, #944]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4150,7 +4652,7 @@ ldr x16, [x16, #864]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #952]
 .word 0xf90027a0
 .word 0xf9400fb1
 .word 0xf9408a31
@@ -4160,9 +4662,9 @@ ldr x0, [x16, #872]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #880]
+ldr x15, [x16, #960]
 .word 0xaa1a03e0
-bl _p_66
+bl _p_72
 .word 0xf9400fb1
 .word 0xf940b231
 .word 0xb4000051
@@ -4177,7 +4679,7 @@ bl _p_66
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #968]
 .word 0xf90023a0
 .word 0xf9400fb1
 .word 0xf940ea31
@@ -4187,9 +4689,9 @@ ldr x0, [x16, #888]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #896]
+ldr x15, [x16, #976]
 .word 0xaa1a03e0
-bl _p_67
+bl _p_73
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9411631
@@ -4215,9 +4717,9 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_1a:
+Lme_1e:
 .text
-ut_27:
+ut_31:
 add x0, x0, 16
 b MapsExample_LostPage__NavigateToLostc__async0_MoveNext
 .text
@@ -4234,7 +4736,7 @@ MapsExample_LostPage__NavigateToLostc__async0_MoveNext:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #904]
+ldr x16, [x16, #984]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
@@ -4262,7 +4764,7 @@ ldr x16, [x16, #904]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #992]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -4291,7 +4793,7 @@ ldr x0, [x16, #912]
 .word 0xf94053a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_60
+bl _p_66
 .word 0xaa0003f7
 .word 0xf94023b1
 .word 0xf9411231
@@ -4307,7 +4809,7 @@ bl _p_60
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #848]
+ldr x1, [x16, #928]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd2800016
@@ -4324,7 +4826,7 @@ bl _p_10
 .word 0xf9005ba0
 .word 0xf9401fa0
 .word 0xf9400800
-bl _p_68
+bl _p_59
 .word 0xf90067a0
 .word 0xf94023b1
 .word 0xf9418e31
@@ -4336,11 +4838,11 @@ bl _p_68
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #920]
+ldr x0, [x16, #672]
 bl _p_3
 .word 0xf9406ba1
 .word 0xf90063a0
-bl _p_69
+bl _p_60
 .word 0xf94023b1
 .word 0xf941c631
 .word 0xb4000051
@@ -4352,7 +4854,7 @@ bl _p_69
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #928]
+ldr x15, [x16, #1000]
 .word 0x928001f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -4367,7 +4869,7 @@ ldr x15, [x16, #928]
 .word 0xf90037a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_39
+bl _p_46
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94023b1
@@ -4385,7 +4887,7 @@ bl _p_10
 .word 0xf94057a0
 .word 0xf9401fa0
 .word 0x91010000
-bl _p_40
+bl _p_47
 .word 0x53001c00
 .word 0xf90053a0
 .word 0xf94023b1
@@ -4406,8 +4908,8 @@ bl _p_40
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #936]
-bl _p_70
+ldr x15, [x16, #1008]
+bl _p_74
 .word 0xf94023b1
 .word 0xf942ca31
 .word 0xb4000051
@@ -4415,7 +4917,7 @@ bl _p_70
 .word 0x14000036
 .word 0xf9401fa0
 .word 0x91010000
-bl _p_42
+bl _p_49
 .word 0xf94023b1
 .word 0xf942ea31
 .word 0xb4000051
@@ -4433,17 +4935,17 @@ bl _p_42
 .word 0xf9401fa0
 .word 0x91006000
 .word 0xf94033a1
-bl _p_46
+bl _p_53
 .word 0xf94023b1
 .word 0xf9433231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_47
+bl _p_54
 .word 0xf9004ba0
 .word 0xf9404ba0
 .word 0xb4000060
 .word 0xf9404ba0
-bl _p_48
+bl _p_55
 .word 0x14000016
 .loc 9 43 0
 .word 0xf94027b1
@@ -4462,7 +4964,7 @@ bl _p_48
 .word 0xb900381e
 .word 0xf9401fa0
 .word 0x91006000
-bl _p_49
+bl _p_56
 .word 0xf94023b1
 .word 0xf943a231
 .word 0xb4000051
@@ -4478,9 +4980,9 @@ bl _p_49
 .word 0xa8ce7bfd
 .word 0xd65f03c0
 
-Lme_1b:
+Lme_1f:
 .text
-ut_28:
+ut_32:
 add x0, x0, 16
 b MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 .text
@@ -4495,7 +4997,7 @@ MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_Com
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #944]
+ldr x16, [x16, #1016]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -4506,7 +5008,7 @@ ldr x16, [x16, #944]
 .word 0xf9400ba0
 .word 0x91006000
 .word 0xf9400fa1
-bl _p_50
+bl _p_57
 .word 0xf94013b1
 .word 0xf9405631
 .word 0xb4000051
@@ -4519,7 +5021,7 @@ bl _p_50
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_1c:
+Lme_20:
 .text
 	.align 4
 	.no_dead_strip MapsExample_SettingsPage__ctor
@@ -4533,7 +5035,7 @@ MapsExample_SettingsPage__ctor:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #952]
+ldr x16, [x16, #1024]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4551,7 +5053,7 @@ ldr x16, [x16, #952]
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xaa1a03e0
-bl _p_11
+bl _p_12
 .loc 11 11 0
 .word 0xf9400fb1
 .word 0xf9407231
@@ -4568,7 +5070,7 @@ bl _p_11
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
-bl _p_71
+bl _p_75
 .loc 11 13 0
 .word 0xf9400fb1
 .word 0xf940ae31
@@ -4583,7 +5085,7 @@ bl _p_71
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_1d:
+Lme_21:
 .text
 	.align 4
 	.no_dead_strip MapsExample_SettingsPage_InitializeComponent
@@ -4596,7 +5098,7 @@ MapsExample_SettingsPage_InitializeComponent:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #960]
+ldr x16, [x16, #1032]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4622,7 +5124,7 @@ ldr x16, [x16, #960]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #1040]
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9408a31
@@ -4633,8 +5135,8 @@ ldr x0, [x16, #968]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #976]
-bl _p_72
+ldr x15, [x16, #1048]
+bl _p_76
 .word 0xf9400fb1
 .word 0xf940b231
 .word 0xb4000051
@@ -4652,7 +5154,7 @@ bl _p_72
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_1e:
+Lme_22:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostDetailPage__ctor_MapsExample_Report
@@ -4667,7 +5169,7 @@ MapsExample_LostDetailPage__ctor_MapsExample_Report:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #984]
+ldr x16, [x16, #1056]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -4685,7 +5187,7 @@ ldr x16, [x16, #984]
 .word 0xd63f0220
 .word 0xaa1903e0
 .word 0xaa1903e0
-bl _p_11
+bl _p_12
 .loc 13 11 0
 .word 0xf94013b1
 .word 0xf9407631
@@ -4702,7 +5204,7 @@ bl _p_11
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1903e0
-bl _p_73
+bl _p_77
 .loc 13 13 0
 .word 0xf94013b1
 .word 0xf940b231
@@ -4720,7 +5222,7 @@ bl _p_73
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_65
+bl _p_71
 .word 0xf90023a0
 .word 0xf94013b1
 .word 0xf940fa31
@@ -4730,7 +5232,7 @@ bl _p_65
 .word 0xf94027a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_74
+bl _p_78
 .loc 13 14 0
 .word 0xf94013b1
 .word 0xf9411e31
@@ -4745,7 +5247,7 @@ bl _p_74
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_1f:
+Lme_23:
 .text
 	.align 4
 	.no_dead_strip MapsExample_LostDetailPage_InitializeComponent
@@ -4759,7 +5261,7 @@ MapsExample_LostDetailPage_InitializeComponent:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #992]
+ldr x16, [x16, #1064]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4784,7 +5286,7 @@ ldr x16, [x16, #992]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #1072]
 .word 0xf90027a0
 .word 0xf9400fb1
 .word 0xf9408a31
@@ -4794,9 +5296,9 @@ ldr x0, [x16, #1000]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1008]
+ldr x15, [x16, #1080]
 .word 0xaa1a03e0
-bl _p_75
+bl _p_79
 .word 0xf9400fb1
 .word 0xf940b231
 .word 0xb4000051
@@ -4811,7 +5313,7 @@ bl _p_75
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1088]
 .word 0xf90023a0
 .word 0xf9400fb1
 .word 0xf940ea31
@@ -4821,9 +5323,9 @@ ldr x0, [x16, #1016]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1024]
+ldr x15, [x16, #1096]
 .word 0xaa1a03e0
-bl _p_76
+bl _p_80
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9411631
@@ -4849,20 +5351,342 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_20:
+Lme_24:
+.text
+	.align 4
+	.no_dead_strip MapsExample_ViewReportModalPage__ctor_MapsExample_Report
+MapsExample_ViewReportModalPage__ctor_MapsExample_Report:
+.file 15 "/Users/alvarodoune/Projects/MapsExample/MapsExample/ViewReportModalPage.xaml.cs"
+.loc 15 10 0 prologue_end
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xf9000bb9
+.word 0xaa0003f9
+.word 0xf9000fa1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #1104]
+.word 0xf90013b0
+.word 0xf9400a11
+.word 0xf90017b1
+.word 0xf94013b1
+.word 0xf9403a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9405a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xaa1903e0
+bl _p_12
+.loc 15 11 0
+.word 0xf94013b1
+.word 0xf9407631
+.word 0xb4000051
+.word 0xd63f0220
+.loc 15 12 0
+.word 0xf94013b1
+.word 0xf9408631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xf94013b1
+.word 0xf9409a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+bl _p_81
+.loc 15 13 0
+.word 0xf94013b1
+.word 0xf940b231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1903e0
+.word 0xf940e720
+.word 0xf90027a0
+.word 0xf9400fa0
+.word 0xf9002ba0
+.word 0xf94013b1
+.word 0xf940d631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9402ba1
+.word 0xaa0103e0
+.word 0xf940003e
+bl _p_71
+.word 0xf90023a0
+.word 0xf94013b1
+.word 0xf940fa31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a1
+.word 0xf94027a2
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_78
+.loc 15 14 0
+.word 0xf94013b1
+.word 0xf9411e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9412e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400bb9
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+
+Lme_25:
+.text
+	.align 4
+	.no_dead_strip MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs
+MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs:
+.loc 15 17 0 prologue_end
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #1112]
+.word 0xf90017b0
+.word 0xf9400a11
+.word 0xf9001bb1
+.word 0xf94017b1
+.word 0xf9403a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9401bb1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf9405a31
+.word 0xb4000051
+.word 0xd63f0220
+.loc 15 18 0
+.word 0xf94017b1
+.word 0xf9406a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+.word 0xf90027a0
+.word 0xf94017b1
+.word 0xf9408231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94027a0
+bl _p_59
+.word 0xf90023a0
+.word 0xf94017b1
+.word 0xf9409e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a1
+.word 0xaa0103e0
+.word 0xf9400021
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #1120]
+.word 0x92800ff0
+.word 0xf2bffff0
+.word 0xf8706830
+.word 0xd63f0200
+.word 0xf94017b1
+.word 0xf940d631
+.word 0xb4000051
+.word 0xd63f0220
+.loc 15 19 0
+.word 0xf94017b1
+.word 0xf940e631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf940f631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_26:
+.text
+	.align 4
+	.no_dead_strip MapsExample_ViewReportModalPage_InitializeComponent
+MapsExample_ViewReportModalPage_InitializeComponent:
+.file 16 "/Users/alvarodoune/Projects/MapsExample/MapsExample/obj/Debug/MapsExample.ViewReportModalPage.xaml.g.cs"
+.loc 16 23 0 prologue_end
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #1128]
+.word 0xf9000fb0
+.word 0xf9400a11
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9403631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9405631
+.word 0xb4000051
+.word 0xd63f0220
+.loc 16 24 0
+.word 0xf9400fb1
+.word 0xf9406631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #1136]
+.word 0xf90027a0
+.word 0xf9400fb1
+.word 0xf9408a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94027a1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #1144]
+.word 0xaa1a03e0
+bl _p_82
+.word 0xf9400fb1
+.word 0xf940b231
+.word 0xb4000051
+.word 0xd63f0220
+.loc 16 25 0
+.word 0xf9400fb1
+.word 0xf940c231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xaa1a03e0
+.word 0xaa1a03e0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x0, [x16, #1088]
+.word 0xf90023a0
+.word 0xf9400fb1
+.word 0xf940ea31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94023a1
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x15, [x16, #1096]
+.word 0xaa1a03e0
+bl _p_80
+.word 0xf9001fa0
+.word 0xf9400fb1
+.word 0xf9411631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9401fa0
+.word 0xf9001ba0
+.word 0xf900e740
+.word 0x91072340
+bl _p_10
+.word 0xf9401ba0
+.loc 16 26 0
+.word 0xf9400fb1
+.word 0xf9413e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9414e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_27:
+.text
+	.align 4
+	.no_dead_strip MapsExample_PinReport__ctor
+MapsExample_PinReport__ctor:
+.file 17 "/Users/alvarodoune/Projects/MapsExample/MapsExample/Models/PinReport.cs"
+.loc 17 6 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #1152]
+.word 0xf9000fb0
+.word 0xf9400a11
+.word 0xf90013b1
+.word 0xf9400fb1
+.word 0xf9403231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94013b1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9405231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400ba0
+bl _p_31
+.loc 17 7 0
+.word 0xf9400fb1
+.word 0xf9406a31
+.word 0xb4000051
+.word 0xd63f0220
+.loc 17 8 0
+.word 0xf9400fb1
+.word 0xf9407a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9400fb1
+.word 0xf9408a31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_28:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_get_Count
 System_Array_InternalArray__ICollection_get_Count:
-.file 15 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 15 68 0 prologue_end
+.file 18 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 18 68 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1032]
+ldr x16, [x16, #1160]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4894,19 +5718,19 @@ ldr x16, [x16, #1032]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_22:
+Lme_2a:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_get_IsReadOnly
 System_Array_InternalArray__ICollection_get_IsReadOnly:
-.loc 15 73 0 prologue_end
+.loc 18 73 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1040]
+ldr x16, [x16, #1168]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4932,19 +5756,19 @@ ldr x16, [x16, #1040]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_23:
+Lme_2b:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Clear
 System_Array_InternalArray__ICollection_Clear:
-.loc 15 83 0 prologue_end
+.loc 18 83 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1048]
+ldr x16, [x16, #1176]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4964,14 +5788,14 @@ ldr x16, [x16, #1048]
 .word 0xf2a00020
 .word 0xd29d9820
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf9400fb1
 .word 0xf9409231
 .word 0xb4000051
@@ -4980,12 +5804,12 @@ bl _p_48
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_24:
+Lme_2c:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_REF_T_REF
 System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
-.loc 15 88 0 prologue_end
+.loc 18 88 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9001faf
@@ -4994,7 +5818,7 @@ System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1056]
+ldr x16, [x16, #1184]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5014,14 +5838,14 @@ ldr x16, [x16, #1056]
 .word 0xf2a00020
 .word 0xd29d9e20
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf94013b1
 .word 0xf9409a31
 .word 0xb4000051
@@ -5030,12 +5854,12 @@ bl _p_48
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_25:
+Lme_2d:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
 System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
-.loc 15 93 0 prologue_end
+.loc 18 93 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9001faf
@@ -5044,7 +5868,7 @@ System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1064]
+ldr x16, [x16, #1192]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5064,14 +5888,14 @@ ldr x16, [x16, #1064]
 .word 0xf2a00020
 .word 0xd29d9e20
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf94013b1
 .word 0xf9409a31
 .word 0xb4000051
@@ -5080,12 +5904,12 @@ bl _p_48
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_26:
+Lme_2e:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
 System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
-.loc 15 98 0 prologue_end
+.loc 18 98 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa90167b8
@@ -5096,7 +5920,7 @@ System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1072]
+ldr x16, [x16, #1200]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -5128,7 +5952,7 @@ ldr x16, [x16, #1072]
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 99 0
+.loc 18 99 0
 .word 0xf9401bb1
 .word 0xf940b231
 .word 0xb4000051
@@ -5137,8 +5961,8 @@ ldr x16, [x16, #1072]
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90033a0
 .word 0xf9401bb1
 .word 0xf940de31
@@ -5150,8 +5974,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 101 0
+bl _p_55
+.loc 18 101 0
 .word 0xf9401bb1
 .word 0xf9410a31
 .word 0xb4000051
@@ -5165,14 +5989,14 @@ bl _p_48
 .word 0xd63f0220
 .word 0xf94033a0
 .word 0xaa0003f9
-.loc 15 102 0
+.loc 18 102 0
 .word 0xf9401bb1
 .word 0xf9413e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800018
 .word 0x1400004d
-.loc 15 104 0
+.loc 18 104 0
 .word 0xf9401bb1
 .word 0xf9415631
 .word 0xb4000051
@@ -5181,28 +6005,28 @@ bl _p_48
 .word 0xaa1803e0
 .word 0x910143a0
 .word 0xf94027a0
-bl _p_79
+bl _p_85
 .word 0x93407f00
 .word 0xd37df000
 .word 0x8b000340
 .word 0x91008000
 .word 0xf9400000
 .word 0xf9002ba0
-.loc 15 105 0
+.loc 18 105 0
 .word 0xf9401bb1
 .word 0xf9419231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94017a0
 .word 0xb5000260
-.loc 15 106 0
+.loc 18 106 0
 .word 0xf9401bb1
 .word 0xf941aa31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
 .word 0xb5000100
-.loc 15 107 0
+.loc 18 107 0
 .word 0xf9401bb1
 .word 0xf941c231
 .word 0xb4000051
@@ -5210,13 +6034,13 @@ bl _p_79
 .word 0xd2800020
 .word 0xd2800020
 .word 0x1400003d
-.loc 15 110 0
+.loc 18 110 0
 .word 0xf9401bb1
 .word 0xf941de31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x1400001b
-.loc 15 113 0
+.loc 18 113 0
 .word 0xf9401bb1
 .word 0xf941f231
 .word 0xb4000051
@@ -5236,7 +6060,7 @@ bl _p_79
 .word 0xd63f0220
 .word 0xf94033a0
 .word 0x34000100
-.loc 15 114 0
+.loc 18 114 0
 .word 0xf9401bb1
 .word 0xf9423e31
 .word 0xb4000051
@@ -5244,7 +6068,7 @@ bl _p_79
 .word 0xd2800020
 .word 0xd2800020
 .word 0x1400001e
-.loc 15 102 0
+.loc 18 102 0
 .word 0xf9401fb1
 .word 0xf9400231
 .word 0xb4000051
@@ -5268,7 +6092,7 @@ bl _p_79
 .word 0xaa1903e0
 .word 0x6b19031f
 .word 0x54fff52b
-.loc 15 118 0
+.loc 18 118 0
 .word 0xf9401bb1
 .word 0xf942b631
 .word 0xb4000051
@@ -5285,12 +6109,12 @@ bl _p_79
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_27:
+Lme_2f:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
-.loc 15 123 0 prologue_end
+.loc 18 123 0 prologue_end
 .word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -5304,7 +6128,7 @@ System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1080]
+ldr x16, [x16, #1208]
 .word 0xf90027b0
 .word 0xf9400a11
 .word 0xf9002bb1
@@ -5322,22 +6146,22 @@ ldr x16, [x16, #1080]
 .word 0xd63f0220
 .word 0xaa1903e0
 .word 0xb50001f9
-.loc 15 124 0
+.loc 18 124 0
 .word 0xf94027b1
 .word 0xf9408631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2859920
 .word 0xd2859920
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b40
 .word 0xf2a04000
 .word 0xd2800b40
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 128 0
+bl _p_55
+.loc 18 128 0
 .word 0xf94027b1
 .word 0xf940be31
 .word 0xb4000051
@@ -5355,7 +6179,7 @@ bl _p_48
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 129 0
+.loc 18 129 0
 .word 0xf94027b1
 .word 0xf9410231
 .word 0xb4000051
@@ -5364,8 +6188,8 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90073a0
 .word 0xf94027b1
 .word 0xf9412e31
@@ -5377,8 +6201,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 130 0
+bl _p_55
+.loc 18 130 0
 .word 0xf94027b1
 .word 0xf9415a31
 .word 0xb4000051
@@ -5439,7 +6263,7 @@ bl _p_48
 .word 0xf94037a0
 .word 0x6b01001f
 .word 0x5400022d
-.loc 15 131 0
+.loc 18 131 0
 .word 0xf94027b1
 .word 0xf9424a31
 .word 0xb4000051
@@ -5448,15 +6272,15 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29db0a0
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b20
 .word 0xf2a04000
 .word 0xd2800b20
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 134 0
+bl _p_55
+.loc 18 134 0
 .word 0xf94027b1
 .word 0xf9428a31
 .word 0xb4000051
@@ -5474,7 +6298,7 @@ bl _p_48
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 135 0
+.loc 18 135 0
 .word 0xf94027b1
 .word 0xf942ce31
 .word 0xb4000051
@@ -5483,8 +6307,8 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90073a0
 .word 0xf94027b1
 .word 0xf942fa31
@@ -5496,8 +6320,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 136 0
+bl _p_55
+.loc 18 136 0
 .word 0xf94027b1
 .word 0xf9432631
 .word 0xb4000051
@@ -5506,21 +6330,21 @@ bl _p_48
 .word 0xd2800001
 .word 0x6b1f001f
 .word 0x5400038a
-.loc 15 137 0
+.loc 18 137 0
 .word 0xf94027b1
 .word 0xf9434631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd284c700
 .word 0xd284c700
-bl _p_77
+bl _p_83
 .word 0xf90073a0
 .word 0xd29dc900
 .word 0xf2a00020
 .word 0xd29dc900
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90077a0
 .word 0xf94027b1
 .word 0xf9438231
@@ -5533,8 +6357,8 @@ bl _p_78
 .word 0xd2800b60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_48
-.loc 15 140 0
+bl _p_55
+.loc 18 140 0
 .word 0xf94027b1
 .word 0xf943b231
 .word 0xb4000051
@@ -5585,7 +6409,7 @@ bl _p_48
 .word 0xf94057a2
 .word 0xf9405ba3
 .word 0xf94067a4
-bl _p_80
+bl _p_86
 .word 0xf94027b1
 .word 0xf9447e31
 .word 0xb4000051
@@ -5602,7 +6426,7 @@ bl _p_80
 .word 0xa8cf7bfd
 .word 0xd65f03c0
 
-Lme_28:
+Lme_30:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
@@ -5620,7 +6444,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_Pos
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1088]
+ldr x16, [x16, #1216]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -5644,7 +6468,7 @@ ldr x16, [x16, #1088]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -5655,14 +6479,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -5826,19 +6650,19 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_29:
+Lme_31:
 .text
-ut_42:
+ut_50:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
 System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken:
-.file 16 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Nullable.cs"
-.loc 16 94 0 prologue_end
+.file 19 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Nullable.cs"
+.loc 19 94 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -5847,7 +6671,7 @@ System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_Canc
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1104]
+ldr x16, [x16, #1232]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -5867,7 +6691,7 @@ ldr x16, [x16, #1104]
 .word 0xd2800020
 .word 0xd280003e
 .word 0x3900235e
-.loc 16 95 0
+.loc 19 95 0
 .word 0xf94017b1
 .word 0xf9407a31
 .word 0xb4000051
@@ -5895,23 +6719,23 @@ bl _p_10
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_2a:
+Lme_32:
 .text
-ut_43:
+ut_51:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_get_HasValue
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_get_HasValue
 System_Nullable_1_System_Threading_CancellationToken_get_HasValue:
-.loc 16 99 0 prologue_end
+.loc 19 99 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1112]
+ldr x16, [x16, #1240]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -5937,16 +6761,16 @@ ldr x16, [x16, #1112]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_2b:
+Lme_33:
 .text
-ut_44:
+ut_52:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_get_Value
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_get_Value
 System_Nullable_1_System_Threading_CancellationToken_get_Value:
-.loc 16 104 0 prologue_end
+.loc 19 104 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -5954,7 +6778,7 @@ System_Nullable_1_System_Threading_CancellationToken_get_Value:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1120]
+ldr x16, [x16, #1248]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -5973,7 +6797,7 @@ ldr x16, [x16, #1120]
 .word 0xaa1a03e0
 .word 0x39402340
 .word 0x35000220
-.loc 16 105 0
+.loc 19 105 0
 .word 0xf94017b1
 .word 0xf9407231
 .word 0xb4000051
@@ -5982,15 +6806,15 @@ ldr x16, [x16, #1120]
 .word 0xf2a00020
 .word 0xd28a8e00
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802a00
 .word 0xf2a04000
 .word 0xd2802a00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 16 107 0
+bl _p_55
+.loc 19 107 0
 .word 0xf94017b1
 .word 0xf940b231
 .word 0xb4000051
@@ -6014,16 +6838,16 @@ bl _p_48
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_2c:
+Lme_34:
 .text
-ut_45:
+ut_53:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_Equals_object
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_Equals_object
 System_Nullable_1_System_Threading_CancellationToken_Equals_object:
-.loc 16 113 0 prologue_end
+.loc 19 113 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa90163b7
@@ -6033,7 +6857,7 @@ System_Nullable_1_System_Threading_CancellationToken_Equals_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1128]
+ldr x16, [x16, #1256]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -6051,7 +6875,7 @@ ldr x16, [x16, #1128]
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xb500017a
-.loc 16 114 0
+.loc 19 114 0
 .word 0xf9401bb1
 .word 0xf9407631
 .word 0xb4000051
@@ -6062,7 +6886,7 @@ ldr x16, [x16, #1128]
 .word 0x6b1f001f
 .word 0x9a9f17e0
 .word 0x1400003a
-.loc 16 115 0
+.loc 19 115 0
 .word 0xf9401bb1
 .word 0xf9409e31
 .word 0xb4000051
@@ -6078,12 +6902,12 @@ ldr x16, [x16, #1128]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1136]
+ldr x1, [x16, #1264]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800017
 .word 0xb5000117
-.loc 16 116 0
+.loc 19 116 0
 .word 0xf9401bb1
 .word 0xf940ea31
 .word 0xb4000051
@@ -6091,7 +6915,7 @@ ldr x1, [x16, #1136]
 .word 0xd2800000
 .word 0xd2800000
 .word 0x14000020
-.loc 16 118 0
+.loc 19 118 0
 .word 0xf9401bb1
 .word 0xf9410631
 .word 0xb4000051
@@ -6101,23 +6925,23 @@ ldr x1, [x16, #1136]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1144]
+ldr x15, [x16, #1272]
 .word 0x910123a0
 .word 0xf9002fa0
 .word 0xaa1a03e0
-bl _p_82
+bl _p_88
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf90007c1
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1144]
+ldr x15, [x16, #1272]
 .word 0xaa1903e0
 .word 0x910123a1
 .word 0xf94027a1
 .word 0xf9402ba2
-bl _p_83
+bl _p_89
 .word 0x53001c00
 .word 0xf90033a0
 .word 0xf9401bb1
@@ -6135,16 +6959,16 @@ bl _p_83
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_2d:
+Lme_35:
 .text
-ut_46:
+ut_54:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
 System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken:
-.loc 16 123 0 prologue_end
+.loc 19 123 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6154,7 +6978,7 @@ System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_Sy
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1152]
+ldr x16, [x16, #1280]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -6176,7 +7000,7 @@ ldr x16, [x16, #1152]
 .word 0x39402341
 .word 0x6b01001f
 .word 0x54000100
-.loc 16 124 0
+.loc 19 124 0
 .word 0xf94017b1
 .word 0xf9408631
 .word 0xb4000051
@@ -6184,7 +7008,7 @@ ldr x16, [x16, #1152]
 .word 0xd2800000
 .word 0xd2800000
 .word 0x14000031
-.loc 16 126 0
+.loc 19 126 0
 .word 0xf94017b1
 .word 0xf940a231
 .word 0xb4000051
@@ -6192,7 +7016,7 @@ ldr x16, [x16, #1152]
 .word 0xaa1a03e0
 .word 0x39402340
 .word 0x35000100
-.loc 16 127 0
+.loc 19 127 0
 .word 0xf94017b1
 .word 0xf940be31
 .word 0xb4000051
@@ -6200,7 +7024,7 @@ ldr x16, [x16, #1152]
 .word 0xd2800020
 .word 0xd2800020
 .word 0x14000023
-.loc 16 129 0
+.loc 19 129 0
 .word 0xf94017b1
 .word 0xf940da31
 .word 0xb4000051
@@ -6215,7 +7039,7 @@ ldr x16, [x16, #1152]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1160]
+ldr x0, [x16, #1288]
 bl _p_3
 .word 0x910103a1
 .word 0xf90033a0
@@ -6228,7 +7052,7 @@ bl _p_10
 .word 0xf9402fa0
 .word 0xf94033a1
 .word 0xf94037a2
-bl _p_84
+bl _p_90
 .word 0x53001c00
 .word 0xf9002ba0
 .word 0xf94017b1
@@ -6245,16 +7069,16 @@ bl _p_84
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_2e:
+Lme_36:
 .text
-ut_47:
+ut_55:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_GetHashCode
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_GetHashCode
 System_Nullable_1_System_Threading_CancellationToken_GetHashCode:
-.loc 16 134 0 prologue_end
+.loc 19 134 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6262,7 +7086,7 @@ System_Nullable_1_System_Threading_CancellationToken_GetHashCode:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1168]
+ldr x16, [x16, #1296]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6281,7 +7105,7 @@ ldr x16, [x16, #1168]
 .word 0xaa1a03e0
 .word 0x39402340
 .word 0x35000100
-.loc 16 135 0
+.loc 19 135 0
 .word 0xf9400fb1
 .word 0xf9407231
 .word 0xb4000051
@@ -6289,7 +7113,7 @@ ldr x16, [x16, #1168]
 .word 0xd2800000
 .word 0xd2800000
 .word 0x14000010
-.loc 16 137 0
+.loc 19 137 0
 .word 0xf9400fb1
 .word 0xf9408e31
 .word 0xb4000051
@@ -6297,7 +7121,7 @@ ldr x16, [x16, #1168]
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xaa1a03e0
-bl _p_85
+bl _p_91
 .word 0x93407c00
 .word 0xf9001ba0
 .word 0xf9400fb1
@@ -6314,23 +7138,23 @@ bl _p_85
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_2f:
+Lme_37:
 .text
-ut_48:
+ut_56:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
 System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault:
-.loc 16 142 0 prologue_end
+.loc 19 142 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf90013a0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1176]
+ldr x16, [x16, #1304]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -6363,16 +7187,16 @@ ldr x16, [x16, #1176]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_30:
+Lme_38:
 .text
-ut_49:
+ut_57:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_ToString
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_ToString
 System_Nullable_1_System_Threading_CancellationToken_ToString:
-.loc 16 152 0 prologue_end
+.loc 19 152 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6380,7 +7204,7 @@ System_Nullable_1_System_Threading_CancellationToken_ToString:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1184]
+ldr x16, [x16, #1312]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6399,7 +7223,7 @@ ldr x16, [x16, #1184]
 .word 0xaa1a03e0
 .word 0x39402340
 .word 0x34000480
-.loc 16 153 0
+.loc 19 153 0
 .word 0xf9400fb1
 .word 0xf9407231
 .word 0xb4000051
@@ -6413,7 +7237,7 @@ ldr x16, [x16, #1184]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1160]
+ldr x0, [x16, #1288]
 bl _p_3
 .word 0x9100c3a1
 .word 0xf9002ba0
@@ -6436,7 +7260,7 @@ bl _p_10
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0x14000009
-.loc 16 155 0
+.loc 19 155 0
 .word 0xf9400fb1
 .word 0xf940fe31
 .word 0xb4000051
@@ -6444,7 +7268,7 @@ bl _p_10
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1320]
 .word 0xf9400000
 .word 0xf9400fb1
 .word 0xf9411e31
@@ -6455,16 +7279,16 @@ ldr x0, [x16, #1192]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_31:
+Lme_39:
 .text
-ut_50:
+ut_58:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
 System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken:
-.loc 16 177 0 prologue_end
+.loc 19 177 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -6472,7 +7296,7 @@ System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_Syste
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1200]
+ldr x16, [x16, #1328]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6491,7 +7315,7 @@ ldr x16, [x16, #1200]
 .word 0x910043a0
 .word 0x394063a0
 .word 0x35000100
-.loc 16 178 0
+.loc 19 178 0
 .word 0xf94013b1
 .word 0xf9407231
 .word 0xb4000051
@@ -6499,7 +7323,7 @@ ldr x16, [x16, #1200]
 .word 0xd2800000
 .word 0xd2800000
 .word 0x14000017
-.loc 16 180 0
+.loc 19 180 0
 .word 0xf94013b1
 .word 0xf9408e31
 .word 0xb4000051
@@ -6511,7 +7335,7 @@ ldr x16, [x16, #1200]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1160]
+ldr x0, [x16, #1288]
 bl _p_3
 .word 0x9100e3a1
 .word 0xf90023a0
@@ -6531,16 +7355,16 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_32:
+Lme_3a:
 .text
-ut_51:
+ut_59:
 add x0, x0, 16
 b System_Nullable_1_System_Threading_CancellationToken_Unbox_object
 .text
 	.align 4
 	.no_dead_strip System_Nullable_1_System_Threading_CancellationToken_Unbox_object
 System_Nullable_1_System_Threading_CancellationToken_Unbox_object:
-.loc 16 185 0 prologue_end
+.loc 19 185 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6548,7 +7372,7 @@ System_Nullable_1_System_Threading_CancellationToken_Unbox_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1208]
+ldr x16, [x16, #1336]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -6570,7 +7394,7 @@ ldr x16, [x16, #1208]
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xb50002da
-.loc 16 186 0
+.loc 19 186 0
 .word 0xf94017b1
 .word 0xf9407e31
 .word 0xb4000051
@@ -6592,7 +7416,7 @@ ldr x16, [x16, #1208]
 .word 0xf94033a0
 .word 0xf90013a0
 .word 0x14000032
-.loc 16 187 0
+.loc 19 187 0
 .word 0xf94017b1
 .word 0xf940d231
 .word 0xb4000051
@@ -6608,7 +7432,7 @@ ldr x16, [x16, #1208]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1136]
+ldr x1, [x16, #1264]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000541
@@ -6624,10 +7448,10 @@ ldr x1, [x16, #1136]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1144]
+ldr x15, [x16, #1272]
 .word 0x910143a1
 .word 0xf9402ba1
-bl _p_86
+bl _p_92
 .word 0x9101a3a0
 .word 0x910103a0
 .word 0xf94037a0
@@ -6656,9 +7480,9 @@ bl _p_86
 .word 0xd65f03c0
 .word 0xd28029e0
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_33:
+Lme_3b:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
@@ -6675,7 +7499,7 @@ wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Posi
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1216]
+ldr x16, [x16, #1344]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -6700,7 +7524,7 @@ ldr x16, [x16, #1216]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -6711,14 +7535,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -6902,9 +7726,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_34:
+Lme_3c:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
@@ -6920,7 +7744,7 @@ wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_in
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1224]
+ldr x16, [x16, #1352]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -6945,7 +7769,7 @@ ldr x16, [x16, #1224]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -6956,14 +7780,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -7141,9 +7965,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_35:
+Lme_3d:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
@@ -7160,7 +7984,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geo
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1232]
+ldr x16, [x16, #1360]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -7184,7 +8008,7 @@ ldr x16, [x16, #1232]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -7195,14 +8019,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -7360,9 +8184,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_36:
+Lme_3e:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
@@ -7379,7 +8203,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1240]
+ldr x16, [x16, #1368]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -7404,7 +8228,7 @@ ldr x16, [x16, #1240]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -7415,14 +8239,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -7606,9 +8430,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_37:
+Lme_3f:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
@@ -7624,7 +8448,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1248]
+ldr x16, [x16, #1376]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -7649,7 +8473,7 @@ ldr x16, [x16, #1248]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -7660,14 +8484,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -7845,9 +8669,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_38:
+Lme_40:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
@@ -7864,7 +8688,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1256]
+ldr x16, [x16, #1384]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -7888,7 +8712,7 @@ ldr x16, [x16, #1256]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -7899,14 +8723,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -8064,9 +8888,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_39:
+Lme_41:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
@@ -8083,7 +8907,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1264]
+ldr x16, [x16, #1392]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -8108,7 +8932,7 @@ ldr x16, [x16, #1264]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -8119,14 +8943,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -8310,9 +9134,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3a:
+Lme_42:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
@@ -8329,7 +9153,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1272]
+ldr x16, [x16, #1400]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -8353,7 +9177,7 @@ ldr x16, [x16, #1272]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -8364,14 +9188,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -8529,9 +9353,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3b:
+Lme_43:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
@@ -8549,7 +9373,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1280]
+ldr x16, [x16, #1408]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -8574,7 +9398,7 @@ ldr x16, [x16, #1280]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -8585,14 +9409,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_48
+bl _p_55
 .word 0xf9403fa0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -8783,9 +9607,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3c:
+Lme_44:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
@@ -8802,7 +9626,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1288]
+ldr x16, [x16, #1416]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -8827,7 +9651,7 @@ ldr x16, [x16, #1288]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -8838,14 +9662,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -9029,9 +9853,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3d:
+Lme_45:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult
@@ -9048,7 +9872,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abst
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1296]
+ldr x16, [x16, #1424]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -9073,7 +9897,7 @@ ldr x16, [x16, #1296]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -9084,14 +9908,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -9275,9 +10099,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3e:
+Lme_46:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
@@ -9294,7 +10118,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1304]
+ldr x16, [x16, #1432]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -9319,7 +10143,7 @@ ldr x16, [x16, #1304]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -9330,14 +10154,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -9521,14 +10345,14 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_3f:
+Lme_47:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.loc 15 78 0 prologue_end
+.loc 18 78 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf9002baf
@@ -9536,7 +10360,7 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1312]
+ldr x16, [x16, #1440]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -9561,11 +10385,11 @@ ldr x16, [x16, #1312]
 .word 0x910103a0
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_87
+bl _p_93
 .word 0xaa0003ef
 .word 0xf9403fa0
 .word 0xf94043a1
-bl _p_88
+bl _p_94
 .word 0x910103a0
 .word 0x9100c3a0
 .word 0xf94023a0
@@ -9577,8 +10401,8 @@ bl _p_88
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_87
-bl _p_89
+bl _p_93
+bl _p_95
 .word 0x9100c3a1
 .word 0xf90033a0
 .word 0x91004001
@@ -9602,7 +10426,7 @@ bl _p_10
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_40:
+Lme_48:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report
@@ -9619,7 +10443,7 @@ wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_Maps
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1320]
+ldr x16, [x16, #1448]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -9644,7 +10468,7 @@ ldr x16, [x16, #1320]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -9655,14 +10479,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -9848,9 +10672,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_41:
+Lme_49:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report
@@ -9867,7 +10691,7 @@ wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExa
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1328]
+ldr x16, [x16, #1456]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -9891,7 +10715,7 @@ ldr x16, [x16, #1328]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -9902,14 +10726,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -10067,9 +10891,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_42:
+Lme_4a:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report
@@ -10087,7 +10911,7 @@ wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_Ma
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1336]
+ldr x16, [x16, #1464]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -10112,7 +10936,7 @@ ldr x16, [x16, #1336]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -10123,14 +10947,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_48
+bl _p_55
 .word 0xf9403fa0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -10324,18 +11148,18 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_43:
+Lme_4b:
 .text
-ut_69:
+ut_77:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
-.loc 15 239 0 prologue_end
+.loc 18 239 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb9
@@ -10345,7 +11169,7 @@ System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1344]
+ldr x16, [x16, #1472]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -10369,7 +11193,7 @@ ldr x16, [x16, #1344]
 .word 0xaa1903e0
 bl _p_10
 .word 0xf94023a0
-.loc 15 240 0
+.loc 18 240 0
 .word 0xf94013b1
 .word 0xf9408e31
 .word 0xb4000051
@@ -10389,16 +11213,16 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_45:
+Lme_4d:
 .text
-ut_70:
+ut_78:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST_Dispose
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_Dispose
 System_Array_InternalEnumerator_1_T_INST_Dispose:
-.loc 15 245 0 prologue_end
+.loc 18 245 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9001baf
@@ -10406,7 +11230,7 @@ System_Array_InternalEnumerator_1_T_INST_Dispose:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1352]
+ldr x16, [x16, #1480]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -10436,16 +11260,16 @@ ldr x16, [x16, #1352]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_46:
+Lme_4e:
 .text
-ut_71:
+ut_79:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST_MoveNext
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_MoveNext
 System_Array_InternalEnumerator_1_T_INST_MoveNext:
-.loc 15 250 0 prologue_end
+.loc 18 250 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa9015fb6
@@ -10456,7 +11280,7 @@ System_Array_InternalEnumerator_1_T_INST_MoveNext:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1360]
+ldr x16, [x16, #1488]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -10481,7 +11305,7 @@ ldr x16, [x16, #1360]
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000201
-.loc 15 251 0
+.loc 18 251 0
 .word 0xf9401fb1
 .word 0xf9409631
 .word 0xb4000051
@@ -10497,7 +11321,7 @@ ldr x16, [x16, #1360]
 .word 0xd63f0220
 .word 0xf94033a0
 .word 0xb9000b40
-.loc 15 253 0
+.loc 18 253 0
 .word 0xf94023b1
 .word 0xf9400231
 .word 0xb4000051
@@ -10552,16 +11376,16 @@ ldr x16, [x16, #1360]
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_47:
+Lme_4f:
 .text
-ut_72:
+ut_80:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST_get_Current
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_get_Current
 System_Array_InternalEnumerator_1_T_INST_get_Current:
-.loc 15 258 0 prologue_end
+.loc 18 258 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -10570,7 +11394,7 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1368]
+ldr x16, [x16, #1496]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -10594,7 +11418,7 @@ ldr x16, [x16, #1368]
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000221
-.loc 15 259 0
+.loc 18 259 0
 .word 0xf94017b1
 .word 0xf9408a31
 .word 0xb4000051
@@ -10603,15 +11427,15 @@ ldr x16, [x16, #1368]
 .word 0xf2a00020
 .word 0xd29ed620
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802a00
 .word 0xf2a04000
 .word 0xd2802a00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 260 0
+bl _p_55
+.loc 18 260 0
 .word 0xf94017b1
 .word 0xf940ca31
 .word 0xb4000051
@@ -10624,7 +11448,7 @@ bl _p_48
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000221
-.loc 15 261 0
+.loc 18 261 0
 .word 0xf94017b1
 .word 0xf940fa31
 .word 0xb4000051
@@ -10633,15 +11457,15 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29ee0e0
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802a00
 .word 0xf2a04000
 .word 0xd2802a00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 263 0
+bl _p_55
+.loc 18 263 0
 .word 0xf94017b1
 .word 0xf9413a31
 .word 0xb4000051
@@ -10664,7 +11488,7 @@ bl _p_48
 .word 0x4b010000
 .word 0xf90037a0
 .word 0xf9402ba0
-bl _p_90
+bl _p_96
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9003ba1
@@ -10672,7 +11496,7 @@ bl _p_90
 .word 0xf940001e
 .word 0xf90033a0
 .word 0xf9402ba0
-bl _p_91
+bl _p_97
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -10704,16 +11528,16 @@ bl _p_91
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_48:
+Lme_50:
 .text
-ut_73:
+ut_81:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
 System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset:
-.loc 15 269 0 prologue_end
+.loc 18 269 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9001baf
@@ -10721,7 +11545,7 @@ System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1376]
+ldr x16, [x16, #1504]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -10751,16 +11575,16 @@ ldr x16, [x16, #1376]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_49:
+Lme_51:
 .text
-ut_74:
+ut_82:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current:
-.loc 15 274 0 prologue_end
+.loc 18 274 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf90023af
@@ -10768,7 +11592,7 @@ System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Curr
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1384]
+ldr x16, [x16, #1512]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -10787,14 +11611,14 @@ ldr x16, [x16, #1384]
 .word 0xf9400ba0
 .word 0xf90043a0
 .word 0xf94023a0
-bl _p_92
+bl _p_98
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xf9003fa1
 .word 0xf940001e
 .word 0xf9003ba0
 .word 0xf94023a0
-bl _p_93
+bl _p_99
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf9403faf
@@ -10809,8 +11633,8 @@ bl _p_93
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
-bl _p_94
-bl _p_89
+bl _p_100
+bl _p_95
 .word 0x9100c3a1
 .word 0xf9002ba0
 .word 0x91004001
@@ -10837,12 +11661,12 @@ bl _p_10
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_4a:
+Lme_52:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
-.loc 15 78 0 prologue_end
+.loc 18 78 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf9002baf
@@ -10850,7 +11674,7 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1392]
+ldr x16, [x16, #1520]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -10875,10 +11699,10 @@ ldr x16, [x16, #1392]
 .word 0x910103a0
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_95
+bl _p_101
 .word 0xf90047a0
 .word 0xf9402ba0
-bl _p_96
+bl _p_102
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -10895,8 +11719,8 @@ bl _p_96
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
+bl _p_101
 bl _p_95
-bl _p_89
 .word 0x9100c3a1
 .word 0xf90033a0
 .word 0x91004001
@@ -10920,13 +11744,13 @@ bl _p_10
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_4b:
+Lme_53:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
 System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT:
-.file 17 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
-.loc 17 164 0 prologue_end
+.file 20 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
+.loc 20 164 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -10935,7 +11759,7 @@ System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1400]
+ldr x16, [x16, #1528]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -10952,7 +11776,7 @@ ldr x16, [x16, #1400]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
-.loc 17 165 0
+.loc 20 165 0
 .word 0xf94017b1
 .word 0xf9406e31
 .word 0xb4000051
@@ -10960,7 +11784,7 @@ ldr x16, [x16, #1400]
 .word 0xf9400ba0
 .word 0xb9801ba1
 .word 0xb9001001
-.loc 17 166 0
+.loc 20 166 0
 .word 0xf94017b1
 .word 0xf9408a31
 .word 0xb4000051
@@ -10976,19 +11800,19 @@ ldr x16, [x16, #1400]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_4c:
+Lme_54:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_get_Item1
 System_Tuple_2_T1_INT_T2_INT_get_Item1:
-.loc 17 161 0 prologue_end
+.loc 20 161 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1408]
+ldr x16, [x16, #1536]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -11014,19 +11838,19 @@ ldr x16, [x16, #1408]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_4d:
+Lme_55:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_get_Item2
 System_Tuple_2_T1_INT_T2_INT_get_Item2:
-.loc 17 162 0 prologue_end
+.loc 20 162 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1416]
+ldr x16, [x16, #1544]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -11052,12 +11876,12 @@ ldr x16, [x16, #1416]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_4e:
+Lme_56:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_Equals_object
 System_Tuple_2_T1_INT_T2_INT_Equals_object:
-.loc 17 170 0 prologue_end
+.loc 20 170 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -11065,7 +11889,7 @@ System_Tuple_2_T1_INT_T2_INT_Equals_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1424]
+ldr x16, [x16, #1552]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11088,8 +11912,8 @@ ldr x16, [x16, #1424]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1432]
-bl _p_97
+ldr x15, [x16, #1560]
+bl _p_103
 .word 0xf9002ba0
 .word 0xf94013b1
 .word 0xf9408a31
@@ -11103,7 +11927,7 @@ bl _p_97
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1440]
+ldr x15, [x16, #1568]
 .word 0x92800af0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11123,12 +11947,12 @@ ldr x15, [x16, #1440]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_4f:
+Lme_57:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
 System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer:
-.loc 17 174 0 prologue_end
+.loc 20 174 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -11140,7 +11964,7 @@ System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_obje
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1448]
+ldr x16, [x16, #1576]
 .word 0xf90027b0
 .word 0xf9400a11
 .word 0xf9002bb1
@@ -11166,7 +11990,7 @@ ldr x16, [x16, #1448]
 .word 0xd2800000
 .word 0xd2800000
 .word 0x1400007a
-.loc 17 176 0
+.loc 20 176 0
 .word 0xf94027b1
 .word 0xf9409e31
 .word 0xb4000051
@@ -11174,7 +11998,7 @@ ldr x16, [x16, #1448]
 .word 0xaa1903f7
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_98
+bl _p_104
 .word 0xf90033a0
 .word 0xaa1903f5
 .word 0xeb1f033f
@@ -11188,14 +12012,14 @@ bl _p_98
 .word 0x54000040
 .word 0xd2800015
 .word 0xaa1503f8
-.loc 17 178 0
+.loc 20 178 0
 .word 0xf94027b1
 .word 0xf940f231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1503e0
 .word 0xb5000115
-.loc 17 179 0
+.loc 20 179 0
 .word 0xf94027b1
 .word 0xf9410a31
 .word 0xb4000051
@@ -11203,7 +12027,7 @@ bl _p_98
 .word 0xd2800000
 .word 0xd2800000
 .word 0x14000058
-.loc 17 182 0
+.loc 20 182 0
 .word 0xf94027b1
 .word 0xf9412631
 .word 0xb4000051
@@ -11214,8 +12038,8 @@ bl _p_98
 .word 0xf90047a0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_99
-bl _p_89
+bl _p_105
+bl _p_95
 .word 0xf94047a1
 .word 0xb9001001
 .word 0xf90043a0
@@ -11224,8 +12048,8 @@ bl _p_89
 .word 0xf9003fa0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_99
-bl _p_89
+bl _p_105
+bl _p_95
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -11235,7 +12059,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1456]
+ldr x15, [x16, #1584]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11254,8 +12078,8 @@ ldr x15, [x16, #1456]
 .word 0xf90047a0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_100
-bl _p_89
+bl _p_106
+bl _p_95
 .word 0xf94047a1
 .word 0xb9001001
 .word 0xf90043a0
@@ -11264,8 +12088,8 @@ bl _p_89
 .word 0xf9003fa0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_100
-bl _p_89
+bl _p_106
+bl _p_95
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -11275,7 +12099,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1456]
+ldr x15, [x16, #1584]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11304,12 +12128,12 @@ ldr x15, [x16, #1456]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 
-Lme_50:
+Lme_58:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object
 System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object:
-.loc 17 186 0 prologue_end
+.loc 20 186 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -11317,7 +12141,7 @@ System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1464]
+ldr x16, [x16, #1592]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11340,8 +12164,8 @@ ldr x16, [x16, #1464]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1472]
-bl _p_101
+ldr x15, [x16, #1600]
+bl _p_107
 .word 0xf9002ba0
 .word 0xf94013b1
 .word 0xf9408a31
@@ -11355,7 +12179,7 @@ bl _p_101
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1480]
+ldr x15, [x16, #1608]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11375,12 +12199,12 @@ ldr x15, [x16, #1480]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_51:
+Lme_59:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
 System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer:
-.loc 17 190 0 prologue_end
+.loc 20 190 0 prologue_end
 .word 0xa9b67bfd
 .word 0x910003fd
 .word 0xa90153b3
@@ -11393,7 +12217,7 @@ System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1488]
+ldr x16, [x16, #1616]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -11420,7 +12244,7 @@ ldr x16, [x16, #1488]
 .word 0xd2800020
 .word 0xd2800020
 .word 0x140000c9
-.loc 17 192 0
+.loc 20 192 0
 .word 0xf9402bb1
 .word 0xf940a631
 .word 0xb4000051
@@ -11428,7 +12252,7 @@ ldr x16, [x16, #1488]
 .word 0xaa1903f6
 .word 0xf94027a0
 .word 0xf9400000
-bl _p_102
+bl _p_108
 .word 0xf90037a0
 .word 0xaa1903f4
 .word 0xeb1f033f
@@ -11442,14 +12266,14 @@ bl _p_102
 .word 0x54000040
 .word 0xd2800014
 .word 0xaa1403f8
-.loc 17 194 0
+.loc 20 194 0
 .word 0xf9402bb1
 .word 0xf940fa31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1403e0
 .word 0xb50008b4
-.loc 17 195 0
+.loc 20 195 0
 .word 0xf9402bb1
 .word 0xf9411231
 .word 0xb4000051
@@ -11458,15 +12282,15 @@ bl _p_102
 .word 0xf2a00020
 .word 0xd28ddb40
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xf9003fa0
 .word 0xd2800020
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1496]
+ldr x0, [x16, #1624]
 .word 0xd2800021
-bl _p_103
+bl _p_109
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xf90043a0
@@ -11500,7 +12324,7 @@ bl _p_103
 .word 0xd63f0200
 .word 0xf9403fa0
 .word 0xf94043a1
-bl _p_104
+bl _p_110
 .word 0xf9003ba0
 .word 0xf9402bb1
 .word 0xf941de31
@@ -11510,7 +12334,7 @@ bl _p_104
 .word 0xf2a00020
 .word 0xd2816d60
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e2
 .word 0xf9403ba1
 .word 0xd2800b20
@@ -11518,14 +12342,14 @@ bl _p_77
 .word 0xd2800b20
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_48
-.loc 17 198 0
+bl _p_55
+.loc 20 198 0
 .word 0xf9402bb1
 .word 0xf9422231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800017
-.loc 17 200 0
+.loc 20 200 0
 .word 0xf9402bb1
 .word 0xf9423631
 .word 0xb4000051
@@ -11536,8 +12360,8 @@ bl _p_48
 .word 0xf9004ba0
 .word 0xf94027a0
 .word 0xf9400000
-bl _p_105
-bl _p_89
+bl _p_111
+bl _p_95
 .word 0xf9404ba1
 .word 0xb9001001
 .word 0xf90047a0
@@ -11546,8 +12370,8 @@ bl _p_89
 .word 0xf90043a0
 .word 0xf94027a0
 .word 0xf9400000
-bl _p_105
-bl _p_89
+bl _p_111
+bl _p_95
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf94047a1
@@ -11557,7 +12381,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1504]
+ldr x15, [x16, #1632]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11571,7 +12395,7 @@ ldr x15, [x16, #1504]
 .word 0xf9403fa0
 .word 0xf9003ba0
 .word 0xaa0003f7
-.loc 17 202 0
+.loc 20 202 0
 .word 0xf9402bb1
 .word 0xf942e631
 .word 0xb4000051
@@ -11586,7 +12410,7 @@ ldr x15, [x16, #1504]
 .word 0xaa1703e0
 .word 0xaa1703e0
 .word 0x1400002b
-.loc 17 204 0
+.loc 20 204 0
 .word 0xf9402bb1
 .word 0xf9431e31
 .word 0xb4000051
@@ -11597,8 +12421,8 @@ ldr x15, [x16, #1504]
 .word 0xf90047a0
 .word 0xf94027a0
 .word 0xf9400000
-bl _p_106
-bl _p_89
+bl _p_112
+bl _p_95
 .word 0xf94047a1
 .word 0xb9001001
 .word 0xf90043a0
@@ -11607,8 +12431,8 @@ bl _p_89
 .word 0xf9003fa0
 .word 0xf94027a0
 .word 0xf9400000
-bl _p_106
-bl _p_89
+bl _p_112
+bl _p_95
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -11618,7 +12442,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1504]
+ldr x15, [x16, #1632]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -11642,19 +12466,19 @@ ldr x15, [x16, #1504]
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_52:
+Lme_5a:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_GetHashCode
 System_Tuple_2_T1_INT_T2_INT_GetHashCode:
-.loc 17 208 0 prologue_end
+.loc 20 208 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1512]
+ldr x16, [x16, #1640]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -11675,8 +12499,8 @@ ldr x16, [x16, #1512]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1432]
-bl _p_97
+ldr x15, [x16, #1560]
+bl _p_103
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9407e31
@@ -11689,7 +12513,7 @@ bl _p_97
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1520]
+ldr x15, [x16, #1648]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -11709,12 +12533,12 @@ ldr x15, [x16, #1520]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_53:
+Lme_5b:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
 System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer:
-.loc 17 212 0 prologue_end
+.loc 20 212 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -11723,7 +12547,7 @@ System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1528]
+ldr x16, [x16, #1656]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11745,8 +12569,8 @@ ldr x16, [x16, #1528]
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_107
-bl _p_89
+bl _p_113
+bl _p_95
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xb9001020
@@ -11755,7 +12579,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1536]
+ldr x15, [x16, #1664]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -11772,8 +12596,8 @@ ldr x15, [x16, #1536]
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_108
-bl _p_89
+bl _p_114
+bl _p_95
 .word 0xaa0003e1
 .word 0xf9402fa0
 .word 0xb9001020
@@ -11782,7 +12606,7 @@ bl _p_89
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1536]
+ldr x15, [x16, #1664]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -11795,7 +12619,7 @@ ldr x15, [x16, #1536]
 .word 0xd63f0220
 .word 0xf94027a0
 .word 0xf9402ba1
-bl _p_109
+bl _p_115
 .word 0x93407c00
 .word 0xf90023a0
 .word 0xf94013b1
@@ -11812,12 +12636,12 @@ bl _p_109
 .word 0xa8c77bfd
 .word 0xd65f03c0
 
-Lme_54:
+Lme_5c:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_ToString
 System_Tuple_2_T1_INT_T2_INT_ToString:
-.loc 17 219 0 prologue_end
+.loc 20 219 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -11825,7 +12649,7 @@ System_Tuple_2_T1_INT_T2_INT_ToString:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1544]
+ldr x16, [x16, #1672]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11845,17 +12669,17 @@ ldr x16, [x16, #1544]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1680]
 bl _p_3
 .word 0xf90027a0
-bl _p_110
+bl _p_116
 .word 0xf94013b1
 .word 0xf9408231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94027a0
 .word 0xaa0003fa
-.loc 17 220 0
+.loc 20 220 0
 .word 0xf94013b1
 .word 0xf9409a31
 .word 0xb4000051
@@ -11864,15 +12688,15 @@ bl _p_110
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1560]
+ldr x1, [x16, #1688]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_111
+bl _p_117
 .word 0xf94013b1
 .word 0xf940c631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 17 221 0
+.loc 20 221 0
 .word 0xf94013b1
 .word 0xf940d631
 .word 0xb4000051
@@ -11884,7 +12708,7 @@ bl _p_111
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x15, [x16, #1568]
+ldr x15, [x16, #1696]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -11904,12 +12728,12 @@ ldr x15, [x16, #1568]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_55:
+Lme_5d:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder
 System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder:
-.loc 17 225 0 prologue_end
+.loc 20 225 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -11918,7 +12742,7 @@ System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1576]
+ldr x16, [x16, #1704]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11940,19 +12764,19 @@ ldr x16, [x16, #1576]
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_112
-bl _p_89
+bl _p_118
+bl _p_95
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xb9001020
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_113
+bl _p_119
 .word 0xf94013b1
 .word 0xf940a231
 .word 0xb4000051
 .word 0xd63f0220
-.loc 17 226 0
+.loc 20 226 0
 .word 0xf94013b1
 .word 0xf940b231
 .word 0xb4000051
@@ -11961,15 +12785,15 @@ bl _p_113
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1584]
+ldr x1, [x16, #1712]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_111
+bl _p_117
 .word 0xf94013b1
 .word 0xf940de31
 .word 0xb4000051
 .word 0xd63f0220
-.loc 17 227 0
+.loc 20 227 0
 .word 0xf94013b1
 .word 0xf940ee31
 .word 0xb4000051
@@ -11980,19 +12804,19 @@ bl _p_111
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_114
-bl _p_89
+bl _p_120
+bl _p_95
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xb9001020
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_113
+bl _p_119
 .word 0xf94013b1
 .word 0xf9413631
 .word 0xb4000051
 .word 0xd63f0220
-.loc 17 228 0
+.loc 20 228 0
 .word 0xf94013b1
 .word 0xf9414631
 .word 0xb4000051
@@ -12001,15 +12825,15 @@ bl _p_113
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1592]
+ldr x1, [x16, #1720]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_111
+bl _p_117
 .word 0xf94013b1
 .word 0xf9417231
 .word 0xb4000051
 .word 0xd63f0220
-.loc 17 229 0
+.loc 20 229 0
 .word 0xf94013b1
 .word 0xf9418231
 .word 0xb4000051
@@ -12034,7 +12858,7 @@ bl _p_111
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_56:
+Lme_5e:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell
@@ -12051,7 +12875,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xama
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1600]
+ldr x16, [x16, #1728]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -12076,7 +12900,7 @@ ldr x16, [x16, #1600]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -12087,14 +12911,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -12280,9 +13104,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_57:
+Lme_5f:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell
@@ -12299,7 +13123,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1608]
+ldr x16, [x16, #1736]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -12323,7 +13147,7 @@ ldr x16, [x16, #1608]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -12334,14 +13158,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -12499,9 +13323,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_58:
+Lme_60:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
@@ -12519,7 +13343,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xa
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1616]
+ldr x16, [x16, #1744]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -12544,7 +13368,7 @@ ldr x16, [x16, #1616]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -12555,14 +13379,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_48
+bl _p_55
 .word 0xf9403fa0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -12756,9 +13580,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_59:
+Lme_61:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
@@ -12775,7 +13599,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xa
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1624]
+ldr x16, [x16, #1752]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -12800,7 +13624,7 @@ ldr x16, [x16, #1624]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -12811,14 +13635,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -13004,9 +13828,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_5a:
+Lme_62:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
@@ -13023,7 +13847,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamar
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1632]
+ldr x16, [x16, #1760]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -13047,7 +13871,7 @@ ldr x16, [x16, #1632]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -13058,14 +13882,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -13223,9 +14047,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_5b:
+Lme_63:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
@@ -13243,7 +14067,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_X
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1640]
+ldr x16, [x16, #1768]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -13268,7 +14092,7 @@ ldr x16, [x16, #1640]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -13279,14 +14103,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_48
+bl _p_55
 .word 0xf9403fa0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -13480,65 +14304,14 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
-
-Lme_5c:
-.text
-	.align 4
-	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_INST_T_INST
-System_Array_InternalArray__ICollection_Add_T_INST_T_INST:
-.loc 15 88 0 prologue_end
-.word 0xa9bb7bfd
-.word 0x910003fd
-.word 0xf90023af
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xf90013a2
-
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1648]
-.word 0xf90017b0
-.word 0xf9400a11
-.word 0xf9001bb1
-.word 0xf94017b1
-.word 0xf9403e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9400231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94017b1
-.word 0xf9405e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xd29d9e20
-.word 0xf2a00020
-.word 0xd29d9e20
-.word 0xf2a00020
-bl _p_77
-.word 0xaa0003e1
-.word 0xd2802f60
-.word 0xf2a04000
-.word 0xd2802f60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_48
-.word 0xf94017b1
-.word 0xf9409e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0x910003bf
-.word 0xa8c57bfd
-.word 0xd65f03c0
+bl _p_24
 
 Lme_64:
 .text
 	.align 4
-	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
-System_Array_InternalArray__ICollection_Remove_T_INST_T_INST:
-.loc 15 93 0 prologue_end
+	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_INST_T_INST
+System_Array_InternalArray__ICollection_Add_T_INST_T_INST:
+.loc 18 88 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf90023af
@@ -13548,7 +14321,7 @@ System_Array_InternalArray__ICollection_Remove_T_INST_T_INST:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1656]
+ldr x16, [x16, #1776]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -13568,14 +14341,14 @@ ldr x16, [x16, #1656]
 .word 0xf2a00020
 .word 0xd29d9e20
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf94017b1
 .word 0xf9409e31
 .word 0xb4000051
@@ -13584,12 +14357,63 @@ bl _p_48
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_65:
+Lme_6c:
+.text
+	.align 4
+	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
+System_Array_InternalArray__ICollection_Remove_T_INST_T_INST:
+.loc 18 93 0 prologue_end
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xf90023af
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #1784]
+.word 0xf90017b0
+.word 0xf9400a11
+.word 0xf9001bb1
+.word 0xf94017b1
+.word 0xf9403e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9401bb1
+.word 0xf9400231
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf94017b1
+.word 0xf9405e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xd29d9e20
+.word 0xf2a00020
+.word 0xd29d9e20
+.word 0xf2a00020
+bl _p_83
+.word 0xaa0003e1
+.word 0xd2802f60
+.word 0xf2a04000
+.word 0xd2802f60
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_55
+.word 0xf94017b1
+.word 0xf9409e31
+.word 0xb4000051
+.word 0xd63f0220
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+
+Lme_6d:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
 System_Array_InternalArray__ICollection_Contains_T_INST_T_INST:
-.loc 15 98 0 prologue_end
+.loc 18 98 0 prologue_end
 .word 0xa9b07bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -13603,7 +14427,7 @@ System_Array_InternalArray__ICollection_Contains_T_INST_T_INST:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1664]
+ldr x16, [x16, #1792]
 .word 0xf9002fb0
 .word 0xf9400a11
 .word 0xf90033b1
@@ -13638,7 +14462,7 @@ ldr x16, [x16, #1664]
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 99 0
+.loc 18 99 0
 .word 0xf9402fb1
 .word 0xf940ca31
 .word 0xb4000051
@@ -13647,8 +14471,8 @@ ldr x16, [x16, #1664]
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90073a0
 .word 0xf9402fb1
 .word 0xf940f631
@@ -13660,8 +14484,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 101 0
+bl _p_55
+.loc 18 101 0
 .word 0xf9402fb1
 .word 0xf9412231
 .word 0xb4000051
@@ -13675,14 +14499,14 @@ bl _p_48
 .word 0xd63f0220
 .word 0xf94073a0
 .word 0xaa0003f9
-.loc 15 102 0
+.loc 18 102 0
 .word 0xf9402fb1
 .word 0xf9415631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800018
 .word 0x140000aa
-.loc 15 104 0
+.loc 18 104 0
 .word 0xf9402fb1
 .word 0xf9416e31
 .word 0xb4000051
@@ -13692,7 +14516,7 @@ bl _p_48
 .word 0x910323a0
 .word 0xf9007fa0
 .word 0xf94063a0
-bl _p_115
+bl _p_121
 .word 0xf9407fa1
 .word 0x93407f00
 .word 0xd37cec00
@@ -13718,7 +14542,7 @@ bl _p_10
 .word 0xf9000001
 bl _p_10
 .word 0xf94073a0
-.loc 15 105 0
+.loc 18 105 0
 .word 0xf9402fb1
 .word 0xf941fa31
 .word 0xb4000051
@@ -13730,7 +14554,7 @@ bl _p_10
 .word 0xf9402ba0
 .word 0xf90057a0
 .word 0x14000018
-.loc 15 106 0
+.loc 18 106 0
 .word 0xf9402fb1
 .word 0xf9422631
 .word 0xb4000051
@@ -13742,7 +14566,7 @@ bl _p_10
 .word 0xf9406ba0
 .word 0xf9004fa0
 .word 0x14000008
-.loc 15 107 0
+.loc 18 107 0
 .word 0xf9402fb1
 .word 0xf9425231
 .word 0xb4000051
@@ -13750,13 +14574,13 @@ bl _p_10
 .word 0xd2800020
 .word 0xd2800020
 .word 0x1400007c
-.loc 15 110 0
+.loc 18 110 0
 .word 0xf9402fb1
 .word 0xf9426e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x1400005a
-.loc 15 113 0
+.loc 18 113 0
 .word 0xf9402fb1
 .word 0xf9428231
 .word 0xb4000051
@@ -13769,8 +14593,8 @@ bl _p_10
 .word 0xf9406ba0
 .word 0xf90047a0
 .word 0xf94063a0
-bl _p_116
-bl _p_89
+bl _p_122
+bl _p_95
 .word 0xaa0003f6
 .word 0x910203a0
 .word 0x910042c1
@@ -13789,10 +14613,10 @@ bl _p_10
 bl _p_10
 .word 0xf94073a0
 .word 0xf94063a0
-bl _p_117
+bl _p_123
 .word 0xaa0003f5
 .word 0xf94063a0
-bl _p_118
+bl _p_124
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000c0
@@ -13808,8 +14632,8 @@ bl _p_118
 .word 0xf94006e0
 .word 0xf9003fa0
 .word 0xf94063a0
-bl _p_116
-bl _p_89
+bl _p_122
+bl _p_95
 .word 0x9101c3a1
 .word 0xf90073a0
 .word 0x91004001
@@ -13839,7 +14663,7 @@ bl _p_10
 .word 0xd63f0220
 .word 0xf94073a0
 .word 0x34000100
-.loc 15 114 0
+.loc 18 114 0
 .word 0xf9402fb1
 .word 0xf943ca31
 .word 0xb4000051
@@ -13847,7 +14671,7 @@ bl _p_10
 .word 0xd2800020
 .word 0xd2800020
 .word 0x1400001e
-.loc 15 102 0
+.loc 18 102 0
 .word 0xf94033b1
 .word 0xf9400231
 .word 0xb4000051
@@ -13871,7 +14695,7 @@ bl _p_10
 .word 0xaa1903e0
 .word 0x6b19031f
 .word 0x54ffe98b
-.loc 15 118 0
+.loc 18 118 0
 .word 0xf9402fb1
 .word 0xf9444231
 .word 0xb4000051
@@ -13890,12 +14714,12 @@ bl _p_10
 .word 0xa8d07bfd
 .word 0xd65f03c0
 
-Lme_66:
+Lme_6e:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
 System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int:
-.loc 15 123 0 prologue_end
+.loc 18 123 0 prologue_end
 .word 0xa9b17bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -13909,7 +14733,7 @@ System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1672]
+ldr x16, [x16, #1800]
 .word 0xf90027b0
 .word 0xf9400a11
 .word 0xf9002bb1
@@ -13927,22 +14751,22 @@ ldr x16, [x16, #1672]
 .word 0xd63f0220
 .word 0xaa1903e0
 .word 0xb50001f9
-.loc 15 124 0
+.loc 18 124 0
 .word 0xf94027b1
 .word 0xf9408631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2859920
 .word 0xd2859920
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b40
 .word 0xf2a04000
 .word 0xd2800b40
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 128 0
+bl _p_55
+.loc 18 128 0
 .word 0xf94027b1
 .word 0xf940be31
 .word 0xb4000051
@@ -13960,7 +14784,7 @@ bl _p_48
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 129 0
+.loc 18 129 0
 .word 0xf94027b1
 .word 0xf9410231
 .word 0xb4000051
@@ -13969,8 +14793,8 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90073a0
 .word 0xf94027b1
 .word 0xf9412e31
@@ -13982,8 +14806,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 130 0
+bl _p_55
+.loc 18 130 0
 .word 0xf94027b1
 .word 0xf9415a31
 .word 0xb4000051
@@ -14044,7 +14868,7 @@ bl _p_48
 .word 0xf94037a0
 .word 0x6b01001f
 .word 0x5400022d
-.loc 15 131 0
+.loc 18 131 0
 .word 0xf94027b1
 .word 0xf9424a31
 .word 0xb4000051
@@ -14053,15 +14877,15 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29db0a0
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b20
 .word 0xf2a04000
 .word 0xd2800b20
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 134 0
+bl _p_55
+.loc 18 134 0
 .word 0xf94027b1
 .word 0xf9428a31
 .word 0xb4000051
@@ -14079,7 +14903,7 @@ bl _p_48
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 135 0
+.loc 18 135 0
 .word 0xf94027b1
 .word 0xf942ce31
 .word 0xb4000051
@@ -14088,8 +14912,8 @@ bl _p_48
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90073a0
 .word 0xf94027b1
 .word 0xf942fa31
@@ -14101,8 +14925,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 136 0
+bl _p_55
+.loc 18 136 0
 .word 0xf94027b1
 .word 0xf9432631
 .word 0xb4000051
@@ -14111,21 +14935,21 @@ bl _p_48
 .word 0xd2800001
 .word 0x6b1f001f
 .word 0x5400038a
-.loc 15 137 0
+.loc 18 137 0
 .word 0xf94027b1
 .word 0xf9434631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd284c700
 .word 0xd284c700
-bl _p_77
+bl _p_83
 .word 0xf90073a0
 .word 0xd29dc900
 .word 0xf2a00020
 .word 0xd29dc900
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90077a0
 .word 0xf94027b1
 .word 0xf9438231
@@ -14138,8 +14962,8 @@ bl _p_78
 .word 0xd2800b60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_48
-.loc 15 140 0
+bl _p_55
+.loc 18 140 0
 .word 0xf94027b1
 .word 0xf943b231
 .word 0xb4000051
@@ -14190,7 +15014,7 @@ bl _p_48
 .word 0xf94057a2
 .word 0xf9405ba3
 .word 0xf94067a4
-bl _p_80
+bl _p_86
 .word 0xf94027b1
 .word 0xf9447e31
 .word 0xb4000051
@@ -14207,7 +15031,7 @@ bl _p_80
 .word 0xa8cf7bfd
 .word 0xd65f03c0
 
-Lme_67:
+Lme_6f:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
@@ -14224,7 +15048,7 @@ wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1680]
+ldr x16, [x16, #1808]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -14249,7 +15073,7 @@ ldr x16, [x16, #1680]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -14260,14 +15084,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_48
+bl _p_55
 .word 0xf9403ba0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -14453,9 +15277,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_68:
+Lme_70:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
@@ -14472,7 +15296,7 @@ wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1688]
+ldr x16, [x16, #1816]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -14496,7 +15320,7 @@ ldr x16, [x16, #1688]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -14507,14 +15331,14 @@ ldr x0, [x16, #1096]
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_48
+bl _p_55
 .word 0xf94037a0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -14672,9 +15496,9 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_69:
+Lme_71:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
@@ -14692,7 +15516,7 @@ wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1696]
+ldr x16, [x16, #1824]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -14717,7 +15541,7 @@ ldr x16, [x16, #1696]
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1224]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -14728,14 +15552,14 @@ ldr x0, [x16, #1096]
 .word 0xf940b631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_81
+bl _p_87
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_48
+bl _p_55
 .word 0xf9403fa0
 .word 0xf9402fb1
 .word 0xf9400231
@@ -14929,14 +15753,14 @@ bl _p_48
 .word 0xd65f03c0
 .word 0xd2802940
 .word 0xaa1103e1
-bl _p_23
+bl _p_24
 
-Lme_6a:
+Lme_72:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__Insert_T_REF_int_T_REF
 System_Array_InternalArray__Insert_T_REF_int_T_REF:
-.loc 15 160 0 prologue_end
+.loc 18 160 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf90023af
@@ -14946,7 +15770,7 @@ System_Array_InternalArray__Insert_T_REF_int_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1704]
+ldr x16, [x16, #1832]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -14966,14 +15790,14 @@ ldr x16, [x16, #1704]
 .word 0xf2a00020
 .word 0xd29d9e20
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf94017b1
 .word 0xf9409e31
 .word 0xb4000051
@@ -14982,12 +15806,12 @@ bl _p_48
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_6b:
+Lme_73:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__RemoveAt_int
 System_Array_InternalArray__RemoveAt_int:
-.loc 15 165 0 prologue_end
+.loc 18 165 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -14995,7 +15819,7 @@ System_Array_InternalArray__RemoveAt_int:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1712]
+ldr x16, [x16, #1840]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -15015,14 +15839,14 @@ ldr x16, [x16, #1712]
 .word 0xf2a00020
 .word 0xd29d9e20
 .word 0xf2a00020
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2802f60
 .word 0xf2a04000
 .word 0xd2802f60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
+bl _p_55
 .word 0xf94013b1
 .word 0xf9409631
 .word 0xb4000051
@@ -15031,12 +15855,12 @@ bl _p_48
 .word 0xa8c47bfd
 .word 0xd65f03c0
 
-Lme_6c:
+Lme_74:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IndexOf_T_REF_T_REF
 System_Array_InternalArray__IndexOf_T_REF_T_REF:
-.loc 15 170 0 prologue_end
+.loc 18 170 0 prologue_end
 .word 0xa9b57bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -15048,7 +15872,7 @@ System_Array_InternalArray__IndexOf_T_REF_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1720]
+ldr x16, [x16, #1848]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
@@ -15080,7 +15904,7 @@ ldr x16, [x16, #1720]
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540002ed
-.loc 15 171 0
+.loc 18 171 0
 .word 0xf94023b1
 .word 0xf940b631
 .word 0xb4000051
@@ -15089,8 +15913,8 @@ ldr x16, [x16, #1720]
 .word 0xf2a00020
 .word 0xd29da5a0
 .word 0xf2a00020
-bl _p_77
-bl _p_78
+bl _p_83
+bl _p_84
 .word 0xf90053a0
 .word 0xf94023b1
 .word 0xf940e231
@@ -15102,8 +15926,8 @@ bl _p_78
 .word 0xd2803100
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 173 0
+bl _p_55
+.loc 18 173 0
 .word 0xf94023b1
 .word 0xf9410e31
 .word 0xb4000051
@@ -15117,14 +15941,14 @@ bl _p_48
 .word 0xd63f0220
 .word 0xf94053a0
 .word 0xaa0003f8
-.loc 15 174 0
+.loc 18 174 0
 .word 0xf94023b1
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd2800017
 .word 0x1400006e
-.loc 15 176 0
+.loc 18 176 0
 .word 0xf94023b1
 .word 0xf9415a31
 .word 0xb4000051
@@ -15133,28 +15957,28 @@ bl _p_48
 .word 0xaa1703e0
 .word 0x910183a0
 .word 0xf9402fa0
-bl _p_119
+bl _p_125
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
 .word 0x91008000
 .word 0xf9400000
 .word 0xf90033a0
-.loc 15 177 0
+.loc 18 177 0
 .word 0xf94023b1
 .word 0xf9419631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1a03e0
 .word 0xb50004da
-.loc 15 178 0
+.loc 18 178 0
 .word 0xf94023b1
 .word 0xf941ae31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94033a0
 .word 0xb5000360
-.loc 15 179 0
+.loc 18 179 0
 .word 0xf94023b1
 .word 0xf941c631
 .word 0xb4000051
@@ -15181,13 +16005,13 @@ bl _p_119
 .word 0xf94043a1
 .word 0xb010000
 .word 0x1400005c
-.loc 15 181 0
+.loc 18 181 0
 .word 0xf94023b1
 .word 0xf9422e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x14000029
-.loc 15 183 0
+.loc 18 183 0
 .word 0xf94023b1
 .word 0xf9424231
 .word 0xb4000051
@@ -15208,7 +16032,7 @@ bl _p_119
 .word 0xd63f0220
 .word 0xf94053a0
 .word 0x340002a0
-.loc 15 186 0
+.loc 18 186 0
 .word 0xf94023b1
 .word 0xf9429231
 .word 0xb4000051
@@ -15229,7 +16053,7 @@ bl _p_119
 .word 0xf94037a0
 .word 0xb140000
 .word 0x1400002f
-.loc 15 174 0
+.loc 18 174 0
 .word 0xf94027b1
 .word 0xf9400231
 .word 0xb4000051
@@ -15253,7 +16077,7 @@ bl _p_119
 .word 0xaa1803e0
 .word 0x6b1802ff
 .word 0x54fff10b
-.loc 15 191 0
+.loc 18 191 0
 .word 0xf94023b1
 .word 0xf9433e31
 .word 0xb4000051
@@ -15288,12 +16112,12 @@ bl _p_119
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 
-Lme_6d:
+Lme_75:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_REF_int
 System_Array_InternalArray__get_Item_T_REF_int:
-.loc 15 197 0 prologue_end
+.loc 18 197 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -15303,7 +16127,7 @@ System_Array_InternalArray__get_Item_T_REF_int:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1728]
+ldr x16, [x16, #1856]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -15331,22 +16155,22 @@ ldr x16, [x16, #1728]
 .word 0xf9402ba0
 .word 0x6b00035f
 .word 0x540001e3
-.loc 15 198 0
+.loc 18 198 0
 .word 0xf94013b1
 .word 0xf9409e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd284c700
 .word 0xd284c700
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b60
 .word 0xf2a04000
 .word 0xd2800b60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 201 0
+bl _p_55
+.loc 18 201 0
 .word 0xf94013b1
 .word 0xf940d631
 .word 0xb4000051
@@ -15355,14 +16179,14 @@ bl _p_48
 .word 0xaa1a03e0
 .word 0x910103a0
 .word 0xf9401fa0
-bl _p_120
+bl _p_126
 .word 0x93407f40
 .word 0xd37df000
 .word 0x8b000320
 .word 0x91008000
 .word 0xf9400000
 .word 0xf90023a0
-.loc 15 202 0
+.loc 18 202 0
 .word 0xf94013b1
 .word 0xf9411231
 .word 0xb4000051
@@ -15377,12 +16201,12 @@ bl _p_120
 .word 0xa8c67bfd
 .word 0xd65f03c0
 
-Lme_6e:
+Lme_76:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__set_Item_T_REF_int_T_REF
 System_Array_InternalArray__set_Item_T_REF_int_T_REF:
-.loc 15 207 0 prologue_end
+.loc 18 207 0 prologue_end
 .word 0xa9b87bfd
 .word 0x910003fd
 .word 0xa90157b4
@@ -15396,7 +16220,7 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1736]
+ldr x16, [x16, #1864]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -15424,22 +16248,22 @@ ldr x16, [x16, #1736]
 .word 0xf9403ba0
 .word 0x6b00035f
 .word 0x540001e3
-.loc 15 208 0
+.loc 18 208 0
 .word 0xf9402bb1
 .word 0xf940ae31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd284c700
 .word 0xd284c700
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b60
 .word 0xf2a04000
 .word 0xd2800b60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 210 0
+bl _p_55
+.loc 18 210 0
 .word 0xf9402bb1
 .word 0xf940e631
 .word 0xb4000051
@@ -15459,25 +16283,25 @@ bl _p_48
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x1, [x16, #1744]
+ldr x1, [x16, #1872]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1752]
+ldr x0, [x16, #1880]
 .word 0xeb00029f
 .word 0x54000040
 .word 0xd2800016
 .word 0xaa1603f8
-.loc 15 211 0
+.loc 18 211 0
 .word 0xf9402bb1
 .word 0xf9415631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1603e0
 .word 0xb4000256
-.loc 15 212 0
+.loc 18 212 0
 .word 0xf9402bb1
 .word 0xf9416e31
 .word 0xb4000051
@@ -15490,13 +16314,13 @@ ldr x0, [x16, #1752]
 .word 0xf9400303
 .word 0xf9407c70
 .word 0xd63f0200
-.loc 15 213 0
+.loc 18 213 0
 .word 0xf9402bb1
 .word 0xf9419e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x14000017
-.loc 15 215 0
+.loc 18 215 0
 .word 0xf9402bb1
 .word 0xf941b231
 .word 0xb4000051
@@ -15505,7 +16329,7 @@ ldr x0, [x16, #1752]
 .word 0xaa1a03e0
 .word 0x910123a0
 .word 0xf94037a0
-bl _p_121
+bl _p_127
 .word 0x93407f40
 .word 0xd37df000
 .word 0x8b000320
@@ -15531,17 +16355,17 @@ bl _p_10
 .word 0xa8c87bfd
 .word 0xd65f03c0
 
-Lme_6f:
+Lme_77:
 .text
-ut_112:
+ut_120:
 add x0, x0, 16
 b System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
 .text
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
 System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_:
-.file 18 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
-.loc 18 72 0 prologue_end
+.file 21 "/Users/builder/data/lanes/3969/8b53676d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.loc 21 72 0 prologue_end
 .word 0xa9b07bfd
 .word 0x910003fd
 .word 0xa9015fb6
@@ -15553,12 +16377,12 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAR
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1760]
+ldr x16, [x16, #1888]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
 .word 0xf9403fa0
-bl _p_122
+bl _p_128
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -15616,8 +16440,8 @@ bl _p_122
 .word 0xeb1e02ff
 .word 0x54000360
 .word 0xf9403fa0
-bl _p_123
-bl _p_89
+bl _p_129
+bl _p_95
 .word 0xb9802b21
 .word 0xaa1803e2
 .word 0x8b010301
@@ -15628,7 +16452,7 @@ bl _p_89
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf9403fa0
-bl _p_124
+bl _p_130
 .word 0xaa0003e2
 .word 0xf94077a0
 .word 0xf9407ba1
@@ -15658,15 +16482,15 @@ bl _mono_gsharedvt_value_copy
 .word 0xd63f0220
 .word 0xd29ba640
 .word 0xd29ba640
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b40
 .word 0xf2a04000
 .word 0xd2800b40
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 18 79 0
+bl _p_55
+.loc 21 79 0
 .word 0xf94027b1
 .word 0xf9400231
 .word 0xb4000051
@@ -15701,13 +16525,13 @@ bl _p_48
 .word 0xf9005ba0
 .word 0xf9403ba0
 .word 0xf9005fa0
-.loc 18 80 0
+.loc 21 80 0
 .word 0xf94023b1
 .word 0xf9428231
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_125
-.loc 18 83 0
+bl _p_131
+.loc 21 83 0
 .word 0xf94027b1
 .word 0xf9400231
 .word 0xb4000051
@@ -15717,8 +16541,8 @@ bl _p_125
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910283a0
-bl _p_126
-.loc 18 84 0
+bl _p_132
+.loc 21 84 0
 .word 0xf94023b1
 .word 0xf942be31
 .word 0xb4000051
@@ -15727,10 +16551,10 @@ bl _p_126
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1768]
+ldr x0, [x16, #1896]
 .word 0xf90073a0
 .word 0xf9403fa0
-bl _p_124
+bl _p_130
 .word 0xaa0003e2
 .word 0xf94073a1
 .word 0xd2800000
@@ -15738,7 +16562,7 @@ bl _p_124
 .word 0xaa1a03e0
 .word 0xd2800003
 .word 0xd2800004
-bl _p_127
+bl _p_133
 .word 0xf94023b1
 .word 0xf9430a31
 .word 0xb4000051
@@ -15746,13 +16570,13 @@ bl _p_127
 .word 0x94000002
 .word 0x1400000e
 .word 0xf9006bbe
-.loc 18 88 0
+.loc 21 88 0
 .word 0xf94023b1
 .word 0xf9432631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910283a0
-bl _p_128
+bl _p_134
 .word 0xf94023b1
 .word 0xf9433e31
 .word 0xb4000051
@@ -15770,16 +16594,16 @@ bl _p_128
 .word 0xa8d07bfd
 .word 0xd65f03c0
 
-Lme_70:
+Lme_78:
 .text
-ut_113:
+ut_121:
 add x0, x0, 16
 b System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
 .text
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
 System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_:
-.loc 18 161 0 prologue_end
+.loc 21 161 0 prologue_end
 .word 0xa9af7bfd
 .word 0x910003fd
 .word 0xa90153b3
@@ -15793,12 +16617,12 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TA
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1776]
+ldr x16, [x16, #1904]
 .word 0xf90033b0
 .word 0xf9400a11
 .word 0xf90037b1
 .word 0xf9403fa0
-bl _p_129
+bl _p_135
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0x91003c10
@@ -15831,7 +16655,7 @@ bl _p_129
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf90043bf
-.loc 18 162 0
+.loc 21 162 0
 .word 0xf94033b1
 .word 0xf940d631
 .word 0xb4000051
@@ -15839,7 +16663,7 @@ bl _p_129
 .word 0xaa1803e0
 .word 0x91002300
 .word 0xf9006fa0
-bl _p_130
+bl _p_136
 .word 0x53001c00
 .word 0xf9006ba0
 .word 0xf94033b1
@@ -15853,7 +16677,7 @@ bl _p_130
 .word 0xaa1403e0
 .word 0xaa1803e0
 .word 0xaa1803e0
-bl _p_131
+bl _p_137
 .word 0xf9006ba0
 .word 0xf94033b1
 .word 0xf9413231
@@ -15872,7 +16696,7 @@ bl _p_131
 .word 0x910203a2
 .word 0xaa1303e0
 .word 0xaa1a03e1
-bl _p_132
+bl _p_138
 .word 0xf9006ba0
 .word 0xf94033b1
 .word 0xf9417e31
@@ -15880,7 +16704,7 @@ bl _p_132
 .word 0xd63f0220
 .word 0xf9406ba0
 .word 0xaa0003f5
-.loc 18 166 0
+.loc 21 166 0
 .word 0xf94033b1
 .word 0xf9419631
 .word 0xb4000051
@@ -15889,7 +16713,7 @@ bl _p_132
 .word 0x91002300
 .word 0xf9400700
 .word 0xb50013e0
-.loc 18 168 0
+.loc 21 168 0
 .word 0xf94037b1
 .word 0xf9400231
 .word 0xb4000051
@@ -15898,7 +16722,7 @@ bl _p_132
 .word 0xf941c631
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_130
+bl _p_136
 .word 0x53001c00
 .word 0xf9006ba0
 .word 0xf94033b1
@@ -15907,7 +16731,7 @@ bl _p_130
 .word 0xd63f0220
 .word 0xf9406ba0
 .word 0x340009a0
-.loc 18 169 0
+.loc 21 169 0
 .word 0xf94037b1
 .word 0xf9400231
 .word 0xb4000051
@@ -15919,7 +16743,7 @@ bl _p_130
 .word 0xd2800000
 .word 0xaa1803e0
 .word 0xaa1803e0
-bl _p_131
+bl _p_137
 .word 0xf90087a0
 .word 0xf94033b1
 .word 0xf9422e31
@@ -15928,7 +16752,7 @@ bl _p_131
 .word 0xf94087a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_133
+bl _p_139
 .word 0x93407c00
 .word 0xf9006ba0
 .word 0xf94033b1
@@ -15938,17 +16762,17 @@ bl _p_133
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1784]
+ldr x0, [x16, #1912]
 .word 0xf90073a0
 .word 0xf9402fa0
 .word 0xf9007fa0
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1792]
+ldr x0, [x16, #1920]
 .word 0xf90083a0
 .word 0xf9403fa0
-bl _p_134
+bl _p_140
 .word 0xaa0003e2
 .word 0xf9407fa0
 .word 0xf94083a1
@@ -15956,7 +16780,7 @@ bl _p_134
 .word 0xd2800003
 .word 0xd2800003
 .word 0xd2800004
-bl _p_127
+bl _p_133
 .word 0xf9007ba0
 .word 0xf94033b1
 .word 0xf942ba31
@@ -15974,7 +16798,7 @@ bl _p_127
 .word 0xd63f0220
 .word 0xf94073a0
 .word 0xf94077a1
-bl _p_135
+bl _p_141
 .word 0xf9006fa0
 .word 0xf94033b1
 .word 0xf9430231
@@ -15985,8 +16809,8 @@ bl _p_135
 .word 0xd2800000
 .word 0xd2800000
 .word 0xd2800003
-bl _p_136
-.loc 18 174 0
+bl _p_142
+.loc 21 174 0
 .word 0xf94037b1
 .word 0xf9400231
 .word 0xb4000051
@@ -16013,8 +16837,8 @@ bl _p_136
 .word 0xeb1e033f
 .word 0x54000380
 .word 0xf9403fa0
-bl _p_137
-bl _p_89
+bl _p_143
+bl _p_95
 .word 0xb9802ae1
 .word 0xaa1603e2
 .word 0x8b0102c1
@@ -16025,7 +16849,7 @@ bl _p_89
 .word 0xf9400ee0
 .word 0xf94012e0
 .word 0xf9403fa0
-bl _p_134
+bl _p_140
 .word 0xaa0003e2
 .word 0xf9406fa0
 .word 0xf94073a1
@@ -16051,8 +16875,8 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9404ba0
 .word 0xf9404fa1
 .word 0xd2800003
-bl _p_138
-.loc 18 177 0
+bl _p_144
+.loc 21 177 0
 .word 0xf94037b1
 .word 0xf9400231
 .word 0xb4000051
@@ -16067,10 +16891,10 @@ bl _p_138
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x0, [x16, #1800]
+ldr x0, [x16, #1928]
 .word 0xf9006fa0
 .word 0xf9403fa0
-bl _p_139
+bl _p_145
 .word 0xaa0003e2
 .word 0xf9406ba0
 .word 0xf9406fa1
@@ -16080,8 +16904,8 @@ bl _p_139
 .word 0xd2800003
 .word 0xf9000095
 .word 0xd2800003
-bl _p_127
-.loc 18 179 0
+bl _p_133
+.loc 21 179 0
 .word 0xf94033b1
 .word 0xf9449a31
 .word 0xb4000051
@@ -16090,7 +16914,7 @@ bl _p_127
 .word 0xf90053a0
 .word 0xf94053a0
 .word 0xf90047a0
-.loc 18 181 0
+.loc 21 181 0
 .word 0xf94033b1
 .word 0xf944ba31
 .word 0xb4000051
@@ -16098,17 +16922,17 @@ bl _p_127
 .word 0xf94047a0
 .word 0xd2800001
 .word 0xd2800001
-bl _p_140
+bl _p_146
 .word 0xf94033b1
 .word 0xf944da31
 .word 0xb4000051
 .word 0xd63f0220
-bl _p_47
+bl _p_54
 .word 0xf90063a0
 .word 0xf94063a0
 .word 0xb4000060
 .word 0xf94063a0
-bl _p_48
+bl _p_55
 .word 0x14000001
 .word 0xf94033b1
 .word 0xf9450631
@@ -16122,16 +16946,16 @@ bl _p_48
 .word 0xa8d17bfd
 .word 0xd65f03c0
 
-Lme_71:
+Lme_79:
 .text
-ut_114:
+ut_122:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-.loc 15 239 0 prologue_end
+.loc 18 239 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb9
@@ -16141,7 +16965,7 @@ System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1808]
+ldr x16, [x16, #1936]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -16165,7 +16989,7 @@ ldr x16, [x16, #1808]
 .word 0xaa1903e0
 bl _p_10
 .word 0xf94023a0
-.loc 15 240 0
+.loc 18 240 0
 .word 0xf94013b1
 .word 0xf9408e31
 .word 0xb4000051
@@ -16185,12 +17009,12 @@ bl _p_10
 .word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_72:
+Lme_7a:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INST_int
 System_Array_InternalArray__get_Item_T_INST_int:
-.loc 15 197 0 prologue_end
+.loc 18 197 0 prologue_end
 .word 0xa9b67bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -16200,7 +17024,7 @@ System_Array_InternalArray__get_Item_T_INST_int:
 
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1816]
+ldr x16, [x16, #1944]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -16231,22 +17055,22 @@ ldr x16, [x16, #1816]
 .word 0xf94043a0
 .word 0x6b00035f
 .word 0x540001e3
-.loc 15 198 0
+.loc 18 198 0
 .word 0xf9401bb1
 .word 0xf940aa31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xd284c700
 .word 0xd284c700
-bl _p_77
+bl _p_83
 .word 0xaa0003e1
 .word 0xd2800b60
 .word 0xf2a04000
 .word 0xd2800b60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_48
-.loc 15 201 0
+bl _p_55
+.loc 18 201 0
 .word 0xf9401bb1
 .word 0xf940e231
 .word 0xb4000051
@@ -16256,7 +17080,7 @@ bl _p_48
 .word 0x9101c3a0
 .word 0xf9004fa0
 .word 0xf94037a0
-bl _p_141
+bl _p_147
 .word 0xf9404fa1
 .word 0x93407f40
 .word 0xd37cec00
@@ -16282,7 +17106,7 @@ bl _p_10
 .word 0xf9000001
 bl _p_10
 .word 0xf94043a0
-.loc 15 202 0
+.loc 18 202 0
 .word 0xf9401bb1
 .word 0xf9416e31
 .word 0xb4000051
@@ -16310,7 +17134,7 @@ bl _p_10
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 
-Lme_73:
+Lme_7b:
 .text
 	.align 3
 jit_code_end:
@@ -16336,12 +17160,16 @@ bl MapsExample_Report_get_ImageUrl
 bl MapsExample_Report_set_ImageUrl_string
 bl MapsExample_MapPage__ctor
 bl MapsExample_MapPage_Handle_Clicked_object_System_EventArgs
+bl MapsExample_MapPage_ShowModal_MapsExample_Report
 bl MapsExample_MapPage_InitializeComponent
-bl MapsExample_MapPage__MapPagem__0_object_System_EventArgs
-bl MapsExample_MapPage__MapPagem__1_object_System_EventArgs
+bl MapsExample_MapPage__MapPagec__AnonStorey2__ctor
+bl MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs
+bl MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs
 bl MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
 bl MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 bl MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
+bl MapsExample_MapPage__ShowModalc__async1_MoveNext
+bl MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 bl MapsExample_LostPage__ctor
 bl MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
 bl MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
@@ -16353,6 +17181,10 @@ bl MapsExample_SettingsPage__ctor
 bl MapsExample_SettingsPage_InitializeComponent
 bl MapsExample_LostDetailPage__ctor_MapsExample_Report
 bl MapsExample_LostDetailPage_InitializeComponent
+bl MapsExample_ViewReportModalPage__ctor_MapsExample_Report
+bl MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs
+bl MapsExample_ViewReportModalPage_InitializeComponent
+bl MapsExample_PinReport__ctor
 bl method_addresses
 bl System_Array_InternalArray__ICollection_get_Count
 bl System_Array_InternalArray__ICollection_get_IsReadOnly
@@ -16442,39 +17274,42 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 19,20,21,27,28,42,43,44
-	.long 45,46,47,48,49,50,51,69
-	.long 70,71,72,73,74,112,113,114
+	.long 21,22,23,24,25,31,32,50
+	.long 51,52,53,54,55,56,57,58
+	.long 59,77,78,79,80,81,82,120
+	.long 121,122
 unbox_trampolines_end:
 
 	.long 0
 .text
 	.align 3
 unbox_trampoline_addresses:
-bl ut_19
-bl ut_20
 bl ut_21
-bl ut_27
-bl ut_28
-bl ut_42
-bl ut_43
-bl ut_44
-bl ut_45
-bl ut_46
-bl ut_47
-bl ut_48
-bl ut_49
+bl ut_22
+bl ut_23
+bl ut_24
+bl ut_25
+bl ut_31
+bl ut_32
 bl ut_50
 bl ut_51
-bl ut_69
-bl ut_70
-bl ut_71
-bl ut_72
-bl ut_73
-bl ut_74
-bl ut_112
-bl ut_113
-bl ut_114
+bl ut_52
+bl ut_53
+bl ut_54
+bl ut_55
+bl ut_56
+bl ut_57
+bl ut_58
+bl ut_59
+bl ut_77
+bl ut_78
+bl ut_79
+bl ut_80
+bl ut_81
+bl ut_82
+bl ut_120
+bl ut_121
+bl ut_122
 
 	.long 0
 .section __TEXT, __const
@@ -16484,30 +17319,32 @@ unwind_info:
 	.byte 0,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,13,12,31,0,68,14,48,157,6,158,5,68,13,29
 	.byte 13,12,31,0,68,14,64,157,8,158,7,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,16
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,13,12,31,0,68,14,80,157,10,158,9,68,13,29,24,12
-	.byte 31,0,68,14,144,3,157,50,158,49,68,13,29,68,151,48,152,47,68,153,46,154,45,14,12,31,0,68,14,128,2,157
-	.byte 32,158,31,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,22,12,31,0,68,14,128,1,157
-	.byte 16,158,15,68,13,29,68,150,14,151,13,68,152,12,22,12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,152,40
-	.byte 153,39,68,154,38,22,12,31,0,84,14,224,5,157,92,158,91,68,13,29,68,152,90,153,89,68,154,88,21,12,31,0
-	.byte 68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9,154,8,27,12,31,0,68,14,144,1,157,18,158,17,68,13
-	.byte 29,68,148,16,149,15,68,150,14,151,13,68,152,12,27,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26
-	.byte 151,25,68,152,24,153,23,68,154,22,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,21,12,31,0,68
-	.byte 14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,30,12,31,0,68,14,240,1,157,30,158,29,68,13,29
-	.byte 68,148,28,149,27,68,150,26,68,152,25,153,24,68,154,23,34,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68
-	.byte 147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,16,12,31,0,68,14,96,157,12,158,11,68,13
-	.byte 29,68,154,10,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,16,12,31,0
-	.byte 68,14,112,157,14,158,13,68,13,29,68,154,12,17,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16,34
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7,14,12,31,0,68,14,144,1,157,18,158,17,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68
-	.byte 153,8,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,13,12,31
-	.byte 0,68,14,96,157,12,158,11,68,13,29,29,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,148,16,149,15,68
-	.byte 151,14,152,13,68,153,12,154,11,32,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,150,16
-	.byte 151,15,68,152,14,153,13,68,154,12,32,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150
-	.byte 28,151,27,68,152,26,153,25,68,154,24,29,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68
-	.byte 151,18,152,17,68,153,16,154,15,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,32,12,31,0
-	.byte 68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8,27,12,31
-	.byte 0,68,14,128,2,157,32,158,31,68,13,29,68,150,30,151,29,68,152,28,153,27,68,154,26,34,12,31,0,68,14,144
-	.byte 2,157,34,158,33,68,13,29,68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26,154,25,19,12,31,0
-	.byte 68,14,160,1,157,20,158,19,68,13,29,68,153,18,154,17
+	.byte 31,0,68,14,208,3,157,58,158,57,68,13,29,68,151,56,152,55,68,153,54,154,53,14,12,31,0,68,14,128,2,157
+	.byte 32,158,31,68,13,29,14,12,31,0,68,14,240,1,157,30,158,29,68,13,29,16,12,31,0,68,14,80,157,10,158,9
+	.byte 68,13,29,68,154,8,25,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19,68,151,18,68,153,17
+	.byte 22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,22,12,31,0,68,14,208,2,157
+	.byte 42,158,41,68,13,29,68,152,40,153,39,68,154,38,19,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,153,22
+	.byte 154,21,22,12,31,0,84,14,224,5,157,92,158,91,68,13,29,68,152,90,153,89,68,154,88,21,12,31,0,68,14,96
+	.byte 157,12,158,11,68,13,29,68,151,10,68,153,9,154,8,27,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,148
+	.byte 16,149,15,68,150,14,151,13,68,152,12,27,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26,151,25,68
+	.byte 152,24,153,23,68,154,22,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,21,12,31,0,68,14,112,157
+	.byte 14,158,13,68,13,29,68,152,12,153,11,68,154,10,30,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,148,28
+	.byte 149,27,68,150,26,68,152,25,153,24,68,154,23,34,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148
+	.byte 15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154
+	.byte 10,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,16,12,31,0,68,14,112
+	.byte 157,14,158,13,68,13,29,68,154,12,17,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16,34,12,31,0
+	.byte 68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8,154,7,14
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,26
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,13,12,31,0,68,14
+	.byte 96,157,12,158,11,68,13,29,29,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,148,16,149,15,68,151,14,152
+	.byte 13,68,153,12,154,11,32,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,150,16,151,15,68
+	.byte 152,14,153,13,68,154,12,32,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150,28,151,27
+	.byte 68,152,26,153,25,68,154,24,29,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,151,18,152
+	.byte 17,68,153,16,154,15,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,32,12,31,0,68,14,128
+	.byte 1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8,27,12,31,0,68,14
+	.byte 128,2,157,32,158,31,68,13,29,68,150,30,151,29,68,152,28,153,27,68,154,26,34,12,31,0,68,14,144,2,157,34
+	.byte 158,33,68,13,29,68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26,154,25,19,12,31,0,68,14,160
+	.byte 1,157,20,158,19,68,13,29,68,153,18,154,17
 
 .text
 	.align 4
@@ -16518,1133 +17355,1181 @@ plt_Xamarin_Forms_Application__ctor:
 _p_1:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1832]
+ldr x16, [x16, #1960]
 br x16
-.word 3379
+.word 3503
 	.no_dead_strip plt_MapsExample_App_InitializeComponent
 plt_MapsExample_App_InitializeComponent:
 _p_2:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1840]
+ldr x16, [x16, #1968]
 br x16
-.word 3384
+.word 3508
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_fast
 plt__jit_icall_ves_icall_object_new_fast:
 _p_3:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1848]
+ldr x16, [x16, #1976]
 br x16
-.word 3389
+.word 3513
 	.no_dead_strip plt_MapsExample_MapsExamplePage__ctor
 plt_MapsExample_MapsExamplePage__ctor:
 _p_4:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1856]
+ldr x16, [x16, #1984]
 br x16
-.word 3417
+.word 3541
 	.no_dead_strip plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page
 plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page:
 _p_5:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1864]
+ldr x16, [x16, #1992]
 br x16
-.word 3422
+.word 3546
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_App_MapsExample_App_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_App_MapsExample_App_System_Type:
 _p_6:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1872]
+ldr x16, [x16, #2000]
 br x16
-.word 3427
+.word 3551
 	.no_dead_strip plt_Xamarin_Forms_TabbedPage__ctor
 plt_Xamarin_Forms_TabbedPage__ctor:
 _p_7:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1880]
+ldr x16, [x16, #2008]
 br x16
-.word 3439
+.word 3563
 	.no_dead_strip plt_MapsExample_MapsExamplePage_InitializeComponent
 plt_MapsExample_MapsExamplePage_InitializeComponent:
 _p_8:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1888]
+ldr x16, [x16, #2016]
 br x16
-.word 3444
+.word 3568
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapsExamplePage_MapsExample_MapsExamplePage_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapsExamplePage_MapsExample_MapsExamplePage_System_Type:
 _p_9:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1896]
+ldr x16, [x16, #2024]
 br x16
-.word 3449
+.word 3573
 	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_noconc_intptr
 plt_wrapper_write_barrier_object_wbarrier_noconc_intptr:
 _p_10:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1904]
-br x16
-.word 3461
-	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
-plt_Xamarin_Forms_ContentPage__ctor:
-_p_11:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1912]
-br x16
-.word 3468
-	.no_dead_strip plt_MapsExample_MapPage_InitializeComponent
-plt_MapsExample_MapPage_InitializeComponent:
-_p_12:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1920]
-br x16
-.word 3473
-	.no_dead_strip plt_Xamarin_Forms_Maps_Position__ctor_double_double
-plt_Xamarin_Forms_Maps_Position__ctor_double_double:
-_p_13:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1928]
-br x16
-.word 3478
-	.no_dead_strip plt_Xamarin_Forms_Maps_Distance_FromKilometers_double
-plt_Xamarin_Forms_Maps_Distance_FromKilometers_double:
-_p_14:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1936]
-br x16
-.word 3483
-	.no_dead_strip plt_Xamarin_Forms_Maps_MapSpan_FromCenterAndRadius_Xamarin_Forms_Maps_Position_Xamarin_Forms_Maps_Distance
-plt_Xamarin_Forms_Maps_MapSpan_FromCenterAndRadius_Xamarin_Forms_Maps_Position_Xamarin_Forms_Maps_Distance:
-_p_15:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1944]
-br x16
-.word 3488
-	.no_dead_strip plt_Xamarin_Forms_Maps_Map_MoveToRegion_Xamarin_Forms_Maps_MapSpan
-plt_Xamarin_Forms_Maps_Map_MoveToRegion_Xamarin_Forms_Maps_MapSpan:
-_p_16:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1952]
-br x16
-.word 3493
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin__ctor
-plt_Xamarin_Forms_Maps_Pin__ctor:
-_p_17:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1960]
-br x16
-.word 3498
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Position_Xamarin_Forms_Maps_Position
-plt_Xamarin_Forms_Maps_Pin_set_Position_Xamarin_Forms_Maps_Position:
-_p_18:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1968]
-br x16
-.word 3503
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Address_string
-plt_Xamarin_Forms_Maps_Pin_set_Address_string:
-_p_19:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1976]
-br x16
-.word 3508
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Label_string
-plt_Xamarin_Forms_Maps_Pin_set_Label_string:
-_p_20:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1984]
-br x16
-.word 3513
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_add_Clicked_System_EventHandler
-plt_Xamarin_Forms_Maps_Pin_add_Clicked_System_EventHandler:
-_p_21:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #1992]
-br x16
-.word 3518
-	.no_dead_strip plt_Xamarin_Forms_Maps_Map_get_Pins
-plt_Xamarin_Forms_Maps_Map_get_Pins:
-_p_22:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #2000]
-br x16
-.word 3523
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_23:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #2008]
-br x16
-.word 3528
-	.no_dead_strip plt_string_memset_byte__int_int
-plt_string_memset_byte__int_int:
-_p_24:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #2016]
-br x16
-.word 3563
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
-_p_25:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
-ldr x16, [x16, #2024]
-br x16
-.word 3566
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__Handle_Clickedc__async0_MapsExample_MapPage__Handle_Clickedc__async0_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__Handle_Clickedc__async0_MapsExample_MapPage__Handle_Clickedc__async0_:
-_p_26:
-adrp x16, mono_aot_MapsExample_got@PAGE+0
-add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 3569
-	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapPage_MapsExample_MapPage_System_Type
-plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapPage_MapsExample_MapPage_System_Type:
-_p_27:
+.word 3585
+	.no_dead_strip plt_MapsExample_MapPage__MapPagec__AnonStorey2__ctor
+plt_MapsExample_MapPage__MapPagec__AnonStorey2__ctor:
+_p_11:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 3581
-	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Maps_Map_Xamarin_Forms_Element_string
-plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Maps_Map_Xamarin_Forms_Element_string:
-_p_28:
+.word 3592
+	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
+plt_Xamarin_Forms_ContentPage__ctor:
+_p_12:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 3593
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_get_Label
-plt_Xamarin_Forms_Maps_Pin_get_Label:
-_p_29:
+.word 3597
+	.no_dead_strip plt_MapsExample_MapPage_InitializeComponent
+plt_MapsExample_MapPage_InitializeComponent:
+_p_13:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 3605
-	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_get_Address
-plt_Xamarin_Forms_Maps_Pin_get_Address:
-_p_30:
+.word 3602
+	.no_dead_strip plt_Xamarin_Forms_Maps_Position__ctor_double_double
+plt_Xamarin_Forms_Maps_Position__ctor_double_double:
+_p_14:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 3610
-	.no_dead_strip plt_Xamarin_Forms_Page_DisplayAlert_string_string_string
-plt_Xamarin_Forms_Page_DisplayAlert_string_string_string:
-_p_31:
+.word 3607
+	.no_dead_strip plt_Xamarin_Forms_Maps_Distance_FromKilometers_double
+plt_Xamarin_Forms_Maps_Distance_FromKilometers_double:
+_p_15:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 3615
-	.no_dead_strip plt_Plugin_Geolocator_CrossGeolocator_get_Current
-plt_Plugin_Geolocator_CrossGeolocator_get_Current:
-_p_32:
+.word 3612
+	.no_dead_strip plt_Xamarin_Forms_Maps_MapSpan_FromCenterAndRadius_Xamarin_Forms_Maps_Position_Xamarin_Forms_Maps_Distance
+plt_Xamarin_Forms_Maps_MapSpan_FromCenterAndRadius_Xamarin_Forms_Maps_Position_Xamarin_Forms_Maps_Distance:
+_p_16:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 3620
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_GetAwaiter
-plt_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_GetAwaiter:
-_p_33:
+.word 3617
+	.no_dead_strip plt_Xamarin_Forms_Maps_Map_MoveToRegion_Xamarin_Forms_Maps_MapSpan
+plt_Xamarin_Forms_Maps_Map_MoveToRegion_Xamarin_Forms_Maps_MapSpan:
+_p_17:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 3625
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_get_IsCompleted
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_get_IsCompleted:
-_p_34:
+.word 3622
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin__ctor
+plt_Xamarin_Forms_Maps_Pin__ctor:
+_p_18:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 3636
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position__MapsExample_MapPage__Handle_Clickedc__async0_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position__MapsExample_MapPage__Handle_Clickedc__async0_:
-_p_35:
+.word 3627
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Position_Xamarin_Forms_Maps_Position
+plt_Xamarin_Forms_Maps_Pin_set_Position_Xamarin_Forms_Maps_Position:
+_p_19:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 3647
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_GetResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_GetResult:
-_p_36:
+.word 3632
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Address_string
+plt_Xamarin_Forms_Maps_Pin_set_Address_string:
+_p_20:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 3659
-	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Timestamp
-plt_Plugin_Geolocator_Abstractions_Position_get_Timestamp:
-_p_37:
+.word 3637
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_set_Label_string
+plt_Xamarin_Forms_Maps_Pin_set_Label_string:
+_p_21:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 3670
-	.no_dead_strip plt_System_DateTimeOffset_ToString
-plt_System_DateTimeOffset_ToString:
-_p_38:
+.word 3642
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_add_Clicked_System_EventHandler
+plt_Xamarin_Forms_Maps_Pin_add_Clicked_System_EventHandler:
+_p_22:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 3675
-	.no_dead_strip plt_System_Threading_Tasks_Task_GetAwaiter
-plt_System_Threading_Tasks_Task_GetAwaiter:
-_p_39:
+.word 3647
+	.no_dead_strip plt_Xamarin_Forms_Maps_Map_get_Pins
+plt_Xamarin_Forms_Maps_Map_get_Pins:
+_p_23:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 3678
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted
-plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted:
-_p_40:
+.word 3652
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_24:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 3681
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__Handle_Clickedc__async0_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__Handle_Clickedc__async0_:
-_p_41:
+.word 3657
+	.no_dead_strip plt_string_memset_byte__int_int
+plt_string_memset_byte__int_int:
+_p_25:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 3684
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
-_p_42:
+.word 3692
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
+_p_26:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 3696
-	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Latitude
-plt_Plugin_Geolocator_Abstractions_Position_get_Latitude:
-_p_43:
+.word 3695
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__Handle_Clickedc__async0_MapsExample_MapPage__Handle_Clickedc__async0_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__Handle_Clickedc__async0_MapsExample_MapPage__Handle_Clickedc__async0_:
+_p_27:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 3699
-	.no_dead_strip plt_double_ToString
-plt_double_ToString:
-_p_44:
+.word 3698
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__ShowModalc__async1_MapsExample_MapPage__ShowModalc__async1_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_MapPage__ShowModalc__async1_MapsExample_MapPage__ShowModalc__async1_:
+_p_28:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 3704
-	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Longitude
-plt_Plugin_Geolocator_Abstractions_Position_get_Longitude:
-_p_45:
+.word 3710
+	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapPage_MapsExample_MapPage_System_Type
+plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_MapPage_MapsExample_MapPage_System_Type:
+_p_29:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 3707
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
-_p_46:
+.word 3722
+	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Maps_Map_Xamarin_Forms_Element_string
+plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Maps_Map_Xamarin_Forms_Element_string:
+_p_30:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 3712
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
-_p_47:
+.word 3734
+	.no_dead_strip plt_MapsExample_Report__ctor
+plt_MapsExample_Report__ctor:
+_p_31:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 3715
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_48:
+.word 3746
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_get_Address
+plt_Xamarin_Forms_Maps_Pin_get_Address:
+_p_32:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 3754
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
-_p_49:
+.word 3751
+	.no_dead_strip plt_MapsExample_Report_set_Name_string
+plt_MapsExample_Report_set_Name_string:
+_p_33:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 3782
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
-_p_50:
+.word 3756
+	.no_dead_strip plt_MapsExample_Report_set_ImageUrl_string
+plt_MapsExample_Report_set_ImageUrl_string:
+_p_34:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 3785
-	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_object
-plt_System_Diagnostics_Debug_WriteLine_object:
-_p_51:
+.word 3761
+	.no_dead_strip plt_MapsExample_Report_set_Status_string
+plt_MapsExample_Report_set_Status_string:
+_p_35:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 3788
-	.no_dead_strip plt_MapsExample_LostPage_InitializeComponent
-plt_MapsExample_LostPage_InitializeComponent:
-_p_52:
+.word 3766
+	.no_dead_strip plt_MapsExample_MapPage_ShowModal_MapsExample_Report
+plt_MapsExample_MapPage_ShowModal_MapsExample_Report:
+_p_36:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 3793
-	.no_dead_strip plt_System_Collections_Generic_List_1_MapsExample_Report__ctor
-plt_System_Collections_Generic_List_1_MapsExample_Report__ctor:
-_p_53:
+.word 3771
+	.no_dead_strip plt_Xamarin_Forms_Maps_Pin_get_Label
+plt_Xamarin_Forms_Maps_Pin_get_Label:
+_p_37:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 3798
-	.no_dead_strip plt_MapsExample_Report__ctor
-plt_MapsExample_Report__ctor:
-_p_54:
+.word 3776
+	.no_dead_strip plt_Xamarin_Forms_Page_DisplayAlert_string_string_string
+plt_Xamarin_Forms_Page_DisplayAlert_string_string_string:
+_p_38:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 3809
-	.no_dead_strip plt_MapsExample_Report_set_Name_string
-plt_MapsExample_Report_set_Name_string:
-_p_55:
+.word 3781
+	.no_dead_strip plt_Plugin_Geolocator_CrossGeolocator_get_Current
+plt_Plugin_Geolocator_CrossGeolocator_get_Current:
+_p_39:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 3814
-	.no_dead_strip plt_MapsExample_Report_set_Status_string
-plt_MapsExample_Report_set_Status_string:
-_p_56:
+.word 3786
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_GetAwaiter
+plt_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_GetAwaiter:
+_p_40:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 3819
-	.no_dead_strip plt_MapsExample_Report_set_ImageUrl_string
-plt_MapsExample_Report_set_ImageUrl_string:
-_p_57:
+.word 3791
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_get_IsCompleted
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_get_IsCompleted:
+_p_41:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 3824
-	.no_dead_strip plt_System_Collections_Generic_List_1_MapsExample_Report_Add_MapsExample_Report
-plt_System_Collections_Generic_List_1_MapsExample_Report_Add_MapsExample_Report:
-_p_58:
+.word 3802
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position__MapsExample_MapPage__Handle_Clickedc__async0_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position__MapsExample_MapPage__Handle_Clickedc__async0_:
+_p_42:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 3829
-	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable
-plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable:
-_p_59:
+.word 3813
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_GetResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Geolocator_Abstractions_Position_GetResult:
+_p_43:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 3840
-	.no_dead_strip plt_Xamarin_Forms_SelectedItemChangedEventArgs_get_SelectedItem
-plt_Xamarin_Forms_SelectedItemChangedEventArgs_get_SelectedItem:
-_p_60:
+.word 3825
+	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Timestamp
+plt_Plugin_Geolocator_Abstractions_Position_get_Timestamp:
+_p_44:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 3851
-	.no_dead_strip plt_Xamarin_Forms_ListView_set_SelectedItem_object
-plt_Xamarin_Forms_ListView_set_SelectedItem_object:
-_p_61:
+.word 3836
+	.no_dead_strip plt_System_DateTimeOffset_ToString
+plt_System_DateTimeOffset_ToString:
+_p_45:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 3856
-	.no_dead_strip plt_MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
-plt_MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs:
-_p_62:
+.word 3841
+	.no_dead_strip plt_System_Threading_Tasks_Task_GetAwaiter
+plt_System_Threading_Tasks_Task_GetAwaiter:
+_p_46:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 3861
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_LostPage__NavigateToLostc__async0_MapsExample_LostPage__NavigateToLostc__async0_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_LostPage__NavigateToLostc__async0_MapsExample_LostPage__NavigateToLostc__async0_:
-_p_63:
+.word 3844
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted
+plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted:
+_p_47:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 3866
-	.no_dead_strip plt_Xamarin_Forms_MenuItem_get_CommandParameter
-plt_Xamarin_Forms_MenuItem_get_CommandParameter:
-_p_64:
+.word 3847
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__Handle_Clickedc__async0_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__Handle_Clickedc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__Handle_Clickedc__async0_:
+_p_48:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 3878
-	.no_dead_strip plt_MapsExample_Report_get_Name
-plt_MapsExample_Report_get_Name:
-_p_65:
+.word 3850
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
+_p_49:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 3883
-	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostPage_MapsExample_LostPage_System_Type
-plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostPage_MapsExample_LostPage_System_Type:
-_p_66:
+.word 3862
+	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Latitude
+plt_Plugin_Geolocator_Abstractions_Position_get_Latitude:
+_p_50:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 3888
-	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_ListView_Xamarin_Forms_Element_string
-plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_ListView_Xamarin_Forms_Element_string:
-_p_67:
+.word 3865
+	.no_dead_strip plt_double_ToString
+plt_double_ToString:
+_p_51:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 3900
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Navigation
-plt_Xamarin_Forms_VisualElement_get_Navigation:
-_p_68:
+.word 3870
+	.no_dead_strip plt_Plugin_Geolocator_Abstractions_Position_get_Longitude
+plt_Plugin_Geolocator_Abstractions_Position_get_Longitude:
+_p_52:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 3912
-	.no_dead_strip plt_MapsExample_LostDetailPage__ctor_MapsExample_Report
-plt_MapsExample_LostDetailPage__ctor_MapsExample_Report:
-_p_69:
+.word 3873
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
+_p_53:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 3917
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_LostPage__NavigateToLostc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_LostPage__NavigateToLostc__async0_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_LostPage__NavigateToLostc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_LostPage__NavigateToLostc__async0_:
-_p_70:
+.word 3878
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
+_p_54:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 3922
-	.no_dead_strip plt_MapsExample_SettingsPage_InitializeComponent
-plt_MapsExample_SettingsPage_InitializeComponent:
-_p_71:
+.word 3881
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_55:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 3934
-	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_SettingsPage_MapsExample_SettingsPage_System_Type
-plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_SettingsPage_MapsExample_SettingsPage_System_Type:
-_p_72:
+.word 3920
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
+_p_56:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 3939
-	.no_dead_strip plt_MapsExample_LostDetailPage_InitializeComponent
-plt_MapsExample_LostDetailPage_InitializeComponent:
-_p_73:
+.word 3948
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+_p_57:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
 .word 3951
-	.no_dead_strip plt_Xamarin_Forms_Label_set_Text_string
-plt_Xamarin_Forms_Label_set_Text_string:
-_p_74:
+	.no_dead_strip plt_System_Diagnostics_Debug_WriteLine_object
+plt_System_Diagnostics_Debug_WriteLine_object:
+_p_58:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 3956
-	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostDetailPage_MapsExample_LostDetailPage_System_Type
-plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostDetailPage_MapsExample_LostDetailPage_System_Type:
-_p_75:
+.word 3954
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Navigation
+plt_Xamarin_Forms_VisualElement_get_Navigation:
+_p_59:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 3961
-	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string
-plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string:
-_p_76:
+.word 3959
+	.no_dead_strip plt_MapsExample_LostDetailPage__ctor_MapsExample_Report
+plt_MapsExample_LostDetailPage__ctor_MapsExample_Report:
+_p_60:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 3973
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_77:
+.word 3964
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__ShowModalc__async1_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__ShowModalc__async1_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_MapPage__ShowModalc__async1_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_MapPage__ShowModalc__async1_:
+_p_61:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 3985
-	.no_dead_strip plt_Locale_GetText_string
-plt_Locale_GetText_string:
-_p_78:
+.word 3969
+	.no_dead_strip plt_MapsExample_LostPage_InitializeComponent
+plt_MapsExample_LostPage_InitializeComponent:
+_p_62:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 4014
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_79:
+.word 3981
+	.no_dead_strip plt_System_Collections_Generic_List_1_MapsExample_Report__ctor
+plt_System_Collections_Generic_List_1_MapsExample_Report__ctor:
+_p_63:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 4034
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_80:
+.word 3986
+	.no_dead_strip plt_System_Collections_Generic_List_1_MapsExample_Report_Add_MapsExample_Report
+plt_System_Collections_Generic_List_1_MapsExample_Report_Add_MapsExample_Report:
+_p_64:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 4057
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_81:
+.word 3997
+	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable
+plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable:
+_p_65:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 4060
-	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken_Unbox_object
-plt_System_Nullable_1_System_Threading_CancellationToken_Unbox_object:
-_p_82:
+.word 4008
+	.no_dead_strip plt_Xamarin_Forms_SelectedItemChangedEventArgs_get_SelectedItem
+plt_Xamarin_Forms_SelectedItemChangedEventArgs_get_SelectedItem:
+_p_66:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 4098
-	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
-plt_System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken:
-_p_83:
+.word 4019
+	.no_dead_strip plt_Xamarin_Forms_ListView_set_SelectedItem_object
+plt_Xamarin_Forms_ListView_set_SelectedItem_object:
+_p_67:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 4119
-	.no_dead_strip plt_System_Threading_CancellationToken_Equals_object
-plt_System_Threading_CancellationToken_Equals_object:
-_p_84:
+.word 4024
+	.no_dead_strip plt_MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
+plt_MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs:
+_p_68:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 4140
-	.no_dead_strip plt_System_Threading_CancellationToken_GetHashCode
-plt_System_Threading_CancellationToken_GetHashCode:
-_p_85:
+.word 4029
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_LostPage__NavigateToLostc__async0_MapsExample_LostPage__NavigateToLostc__async0_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_MapsExample_LostPage__NavigateToLostc__async0_MapsExample_LostPage__NavigateToLostc__async0_:
+_p_69:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 4143
-	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
-plt_System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken:
-_p_86:
+.word 4034
+	.no_dead_strip plt_Xamarin_Forms_MenuItem_get_CommandParameter
+plt_Xamarin_Forms_MenuItem_get_CommandParameter:
+_p_70:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 4146
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_87:
+.word 4046
+	.no_dead_strip plt_MapsExample_Report_get_Name
+plt_MapsExample_Report_get_Name:
+_p_71:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 4193
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_88:
+.word 4051
+	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostPage_MapsExample_LostPage_System_Type
+plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostPage_MapsExample_LostPage_System_Type:
+_p_72:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 4201
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
-_p_89:
+.word 4056
+	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_ListView_Xamarin_Forms_Element_string
+plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_ListView_Xamarin_Forms_Element_string:
+_p_73:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 4220
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_90:
+.word 4068
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_LostPage__NavigateToLostc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_LostPage__NavigateToLostc__async0_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_MapsExample_LostPage__NavigateToLostc__async0_System_Runtime_CompilerServices_TaskAwaiter__MapsExample_LostPage__NavigateToLostc__async0_:
+_p_74:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 4270
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_91:
+.word 4080
+	.no_dead_strip plt_MapsExample_SettingsPage_InitializeComponent
+plt_MapsExample_SettingsPage_InitializeComponent:
+_p_75:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 4293
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_92:
+.word 4092
+	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_SettingsPage_MapsExample_SettingsPage_System_Type
+plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_SettingsPage_MapsExample_SettingsPage_System_Type:
+_p_76:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 4334
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_93:
+.word 4097
+	.no_dead_strip plt_MapsExample_LostDetailPage_InitializeComponent
+plt_MapsExample_LostDetailPage_InitializeComponent:
+_p_77:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 4342
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_94:
+.word 4109
+	.no_dead_strip plt_Xamarin_Forms_Label_set_Text_string
+plt_Xamarin_Forms_Label_set_Text_string:
+_p_78:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 4365
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_95:
+.word 4114
+	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostDetailPage_MapsExample_LostDetailPage_System_Type
+plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_LostDetailPage_MapsExample_LostDetailPage_System_Type:
+_p_79:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 4399
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_96:
+.word 4119
+	.no_dead_strip plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string
+plt_Xamarin_Forms_NameScopeExtensions_FindByName_Xamarin_Forms_Label_Xamarin_Forms_Element_string:
+_p_80:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 4407
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
-plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
-_p_97:
+.word 4131
+	.no_dead_strip plt_MapsExample_ViewReportModalPage_InitializeComponent
+plt_MapsExample_ViewReportModalPage_InitializeComponent:
+_p_81:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 4430
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_98:
+.word 4143
+	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_ViewReportModalPage_MapsExample_ViewReportModalPage_System_Type
+plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_MapsExample_ViewReportModalPage_MapsExample_ViewReportModalPage_System_Type:
+_p_82:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 4470
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_99:
+.word 4148
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_83:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 4478
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_100:
+.word 4160
+	.no_dead_strip plt_Locale_GetText_string
+plt_Locale_GetText_string:
+_p_84:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 4486
-	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
-plt_System_Collections_Generic_Comparer_1_object_get_Default:
-_p_101:
+.word 4189
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_85:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 4494
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_102:
+.word 4209
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_86:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 4534
-	.no_dead_strip plt__jit_icall_ves_icall_array_new_specific
-plt__jit_icall_ves_icall_array_new_specific:
-_p_103:
+.word 4232
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_87:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 4542
-	.no_dead_strip plt_System_Environment_GetResourceString_string_object__
-plt_System_Environment_GetResourceString_string_object__:
-_p_104:
+.word 4235
+	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken_Unbox_object
+plt_System_Nullable_1_System_Threading_CancellationToken_Unbox_object:
+_p_88:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 4573
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_105:
+.word 4273
+	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
+plt_System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken:
+_p_89:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 4576
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_106:
+.word 4294
+	.no_dead_strip plt_System_Threading_CancellationToken_Equals_object
+plt_System_Threading_CancellationToken_Equals_object:
+_p_90:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 4584
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_107:
+.word 4315
+	.no_dead_strip plt_System_Threading_CancellationToken_GetHashCode
+plt_System_Threading_CancellationToken_GetHashCode:
+_p_91:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 4613
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_108:
+.word 4318
+	.no_dead_strip plt_System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
+plt_System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken:
+_p_92:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 4621
-	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
-plt_System_Tuple_CombineHashCodes_int_int:
-_p_109:
+.word 4321
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_93:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 4629
-	.no_dead_strip plt_System_Text_StringBuilder__ctor
-plt_System_Text_StringBuilder__ctor:
-_p_110:
+.word 4368
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_94:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 4632
-	.no_dead_strip plt_System_Text_StringBuilder_Append_string
-plt_System_Text_StringBuilder_Append_string:
-_p_111:
+.word 4376
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
+_p_95:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 4635
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_112:
+.word 4395
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_96:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 4659
-	.no_dead_strip plt_System_Text_StringBuilder_Append_object
-plt_System_Text_StringBuilder_Append_object:
-_p_113:
+.word 4445
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_97:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 4667
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_114:
+.word 4468
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_98:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 4670
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_115:
+.word 4509
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_99:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 4696
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_116:
+.word 4517
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_100:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 4719
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_117:
+.word 4540
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_101:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 4727
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_118:
+.word 4574
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_102:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 4739
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_119:
+.word 4582
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
+plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
+_p_103:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 4769
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_120:
+.word 4605
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_104:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 4810
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_121:
+.word 4645
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_105:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 4851
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_122:
+.word 4653
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_106:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 4892
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_123:
+.word 4661
+	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
+plt_System_Collections_Generic_Comparer_1_object_get_Default:
+_p_107:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 4938
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_124:
+.word 4669
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_108:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 4946
-	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
-plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
-_p_125:
+.word 4709
+	.no_dead_strip plt__jit_icall_ves_icall_array_new_specific
+plt__jit_icall_ves_icall_array_new_specific:
+_p_109:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 4954
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
-_p_126:
+.word 4717
+	.no_dead_strip plt_System_Environment_GetResourceString_string_object__
+plt_System_Environment_GetResourceString_string_object__:
+_p_110:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 4957
-	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
-plt__jit_icall_mono_gsharedvt_constrained_call:
-_p_127:
+.word 4748
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_111:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 4960
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
-_p_128:
+.word 4751
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_112:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 4994
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_129:
+.word 4759
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_113:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 5018
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
-plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
-_p_130:
+.word 4788
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_114:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 5067
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
-_p_131:
+.word 4796
+	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
+plt_System_Tuple_CombineHashCodes_int_int:
+_p_115:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 5070
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
-_p_132:
+.word 4804
+	.no_dead_strip plt_System_Text_StringBuilder__ctor
+plt_System_Text_StringBuilder__ctor:
+_p_116:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 5073
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
-plt_System_Threading_Tasks_Task_get_Id:
-_p_133:
+.word 4807
+	.no_dead_strip plt_System_Text_StringBuilder_Append_string
+plt_System_Text_StringBuilder_Append_string:
+_p_117:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 5076
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_134:
+.word 4810
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_118:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 5079
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
-_p_135:
+.word 4834
+	.no_dead_strip plt_System_Text_StringBuilder_Append_object
+plt_System_Text_StringBuilder_Append_object:
+_p_119:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 5087
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
-_p_136:
+.word 4842
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_120:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 5090
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_137:
+.word 4845
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_121:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 5093
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
-_p_138:
+.word 4871
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_122:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 5101
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_139:
+.word 4894
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_123:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 5104
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
-_p_140:
+.word 4902
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_124:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 5112
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_141:
+.word 4914
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_125:
 adrp x16, mono_aot_MapsExample_got@PAGE+0
 add x16, x16, mono_aot_MapsExample_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 5133
+.word 4944
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_126:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #2960]
+br x16
+.word 4985
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_127:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #2968]
+br x16
+.word 5026
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_128:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #2976]
+br x16
+.word 5067
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_129:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #2984]
+br x16
+.word 5113
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_130:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #2992]
+br x16
+.word 5121
+	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
+plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
+_p_131:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3000]
+br x16
+.word 5129
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+_p_132:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3008]
+br x16
+.word 5132
+	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
+plt__jit_icall_mono_gsharedvt_constrained_call:
+_p_133:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3016]
+br x16
+.word 5135
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
+_p_134:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3024]
+br x16
+.word 5169
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_135:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3032]
+br x16
+.word 5193
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
+plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
+_p_136:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3040]
+br x16
+.word 5242
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
+_p_137:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3048]
+br x16
+.word 5245
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+_p_138:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3056]
+br x16
+.word 5248
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
+plt_System_Threading_Tasks_Task_get_Id:
+_p_139:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3064]
+br x16
+.word 5251
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_140:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3072]
+br x16
+.word 5254
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
+_p_141:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3080]
+br x16
+.word 5262
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
+_p_142:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3088]
+br x16
+.word 5265
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_143:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3096]
+br x16
+.word 5268
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+_p_144:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3104]
+br x16
+.word 5276
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_145:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3112]
+br x16
+.word 5279
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+_p_146:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3120]
+br x16
+.word 5287
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_147:
+adrp x16, mono_aot_MapsExample_got@PAGE+0
+add x16, x16, mono_aot_MapsExample_got@PAGEOFF
+ldr x16, [x16, #3128]
+br x16
+.word 5308
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_MapsExample_got, 2960
+.lcomm mono_aot_MapsExample_got, 3136
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -17675,7 +18560,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "8968F6DF-F592-41AA-8900-47BA44D9DF3D"
+	.asciz "5D05C6A5-CD73-4B20-8D2D-574022F9450F"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -17752,13 +18637,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 228,2960,142,116,70,923871743,0,28614
-	.long 128,8,8,10,0,14,33032,4408
-	.long 3736,3040,0,3456,3696,3136,0,2376
-	.long 184,0,0,0,0,0,0,0
+	.long 244,3136,148,124,70,923871743,0,30114
+	.long 128,8,8,10,0,14,34656,4536
+	.long 3864,3048,0,3560,3816,3224,0,2384
+	.long 192,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 119,93,69,58,242,6,148,131,104,125,75,205,127,209,106,164
+	.byte 240,72,70,225,2,170,65,86,196,112,92,3,192,142,161,213
 	.globl _mono_aot_module_MapsExample_info
 	.align 3
 _mono_aot_module_MapsExample_info:
@@ -24483,7 +25368,7 @@ LTDIE_164_REFERENCE:
 	.byte 14
 LDIFF_SYM1168=LTDIE_164 - Ldebug_info_start
 	.long LDIFF_SYM1168
-LTDIE_178:
+LTDIE_179:
 
 	.byte 5
 	.asciz "Xamarin_Forms_Maps_Pin"
@@ -24509,89 +25394,122 @@ LDIFF_SYM1172=LTDIE_17_REFERENCE - Ldebug_info_start
 	.byte 2,35,80,0,7
 	.asciz "Xamarin_Forms_Maps_Pin"
 
-LDIFF_SYM1173=LTDIE_178 - Ldebug_info_start
+LDIFF_SYM1173=LTDIE_179 - Ldebug_info_start
 	.long LDIFF_SYM1173
+LTDIE_179_POINTER:
+
+	.byte 13
+LDIFF_SYM1174=LTDIE_179 - Ldebug_info_start
+	.long LDIFF_SYM1174
+LTDIE_179_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1175=LTDIE_179 - Ldebug_info_start
+	.long LDIFF_SYM1175
+LTDIE_178:
+
+	.byte 5
+	.asciz "_<MapPage>c__AnonStorey2"
+
+	.byte 32,16
+LDIFF_SYM1176=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1176
+	.byte 2,35,0,6
+	.asciz "pin"
+
+LDIFF_SYM1177=LTDIE_179_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1177
+	.byte 2,35,16,6
+	.asciz "$this"
+
+LDIFF_SYM1178=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1178
+	.byte 2,35,24,0,7
+	.asciz "_<MapPage>c__AnonStorey2"
+
+LDIFF_SYM1179=LTDIE_178 - Ldebug_info_start
+	.long LDIFF_SYM1179
 LTDIE_178_POINTER:
 
 	.byte 13
-LDIFF_SYM1174=LTDIE_178 - Ldebug_info_start
-	.long LDIFF_SYM1174
+LDIFF_SYM1180=LTDIE_178 - Ldebug_info_start
+	.long LDIFF_SYM1180
 LTDIE_178_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1175=LTDIE_178 - Ldebug_info_start
-	.long LDIFF_SYM1175
+LDIFF_SYM1181=LTDIE_178 - Ldebug_info_start
+	.long LDIFF_SYM1181
 	.byte 2
 	.asciz "MapsExample.MapPage:.ctor"
 	.asciz "MapsExample_MapPage__ctor"
 
-	.byte 6,12
+	.byte 6,13
 	.quad MapsExample_MapPage__ctor
 	.quad Lme_e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1176=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1176
+LDIFF_SYM1182=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1182
 	.byte 1,106,11
-	.asciz "pin"
+	.asciz "$locvar0"
 
-LDIFF_SYM1177=LTDIE_178_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1177
+LDIFF_SYM1183=LTDIE_178_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1183
 	.byte 1,105,11
 	.asciz ""
 
-LDIFF_SYM1178=LTDIE_178_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1178
+LDIFF_SYM1184=LTDIE_179_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1184
 	.byte 1,104,11
 	.asciz "pin2"
 
-LDIFF_SYM1179=LTDIE_178_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1179
+LDIFF_SYM1185=LTDIE_179_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1185
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1180=Lfde14_end - Lfde14_start
-	.long LDIFF_SYM1180
+LDIFF_SYM1186=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM1186
 Lfde14_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_MapPage__ctor
 
-LDIFF_SYM1181=Lme_e - MapsExample_MapPage__ctor
-	.long LDIFF_SYM1181
+LDIFF_SYM1187=Lme_e - MapsExample_MapPage__ctor
+	.long LDIFF_SYM1187
 	.long 0
-	.byte 12,31,0,68,14,144,3,157,50,158,49,68,13,29,68,151,48,152,47,68,153,46,154,45
+	.byte 12,31,0,68,14,208,3,157,58,158,57,68,13,29,68,151,56,152,55,68,153,54,154,53
 	.align 3
 Lfde14_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_179:
+LTDIE_180:
 
 	.byte 5
 	.asciz "System_EventArgs"
 
 	.byte 16,16
-LDIFF_SYM1182=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1182
+LDIFF_SYM1188=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1188
 	.byte 2,35,0,0,7
 	.asciz "System_EventArgs"
 
-LDIFF_SYM1183=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1183
-LTDIE_179_POINTER:
+LDIFF_SYM1189=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1189
+LTDIE_180_POINTER:
 
 	.byte 13
-LDIFF_SYM1184=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1184
-LTDIE_179_REFERENCE:
+LDIFF_SYM1190=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1190
+LTDIE_180_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1185=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1185
+LDIFF_SYM1191=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1191
 	.byte 2
 	.asciz "MapsExample.MapPage:Handle_Clicked"
 	.asciz "MapsExample_MapPage_Handle_Clicked_object_System_EventArgs"
@@ -24603,41 +25521,85 @@ LDIFF_SYM1185=LTDIE_179 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1186=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1186
+LDIFF_SYM1192=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1192
 	.byte 2,141,16,3
 	.asciz "sender"
 
-LDIFF_SYM1187=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1187
+LDIFF_SYM1193=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1193
 	.byte 2,141,24,3
 	.asciz "e"
 
-LDIFF_SYM1188=LTDIE_179_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1188
+LDIFF_SYM1194=LTDIE_180_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1194
 	.byte 2,141,32,11
 	.asciz "V_0"
 
-LDIFF_SYM1189=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1189
+LDIFF_SYM1195=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1195
 	.byte 3,141,224,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1190=Lfde15_end - Lfde15_start
-	.long LDIFF_SYM1190
+LDIFF_SYM1196=Lfde15_end - Lfde15_start
+	.long LDIFF_SYM1196
 Lfde15_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_MapPage_Handle_Clicked_object_System_EventArgs
 
-LDIFF_SYM1191=Lme_f - MapsExample_MapPage_Handle_Clicked_object_System_EventArgs
-	.long LDIFF_SYM1191
+LDIFF_SYM1197=Lme_f - MapsExample_MapPage_Handle_Clicked_object_System_EventArgs
+	.long LDIFF_SYM1197
 	.long 0
 	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29
 	.align 3
 Lfde15_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "MapsExample.MapPage:ShowModal"
+	.asciz "MapsExample_MapPage_ShowModal_MapsExample_Report"
+
+	.byte 0,0
+	.quad MapsExample_MapPage_ShowModal_MapsExample_Report
+	.quad Lme_10
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1198=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1198
+	.byte 2,141,16,3
+	.asciz "report"
+
+LDIFF_SYM1199=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1199
+	.byte 2,141,24,11
+	.asciz "V_0"
+
+LDIFF_SYM1200=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1200
+	.byte 3,141,216,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1201=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM1201
+Lfde16_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_MapPage_ShowModal_MapsExample_Report
+
+LDIFF_SYM1202=Lme_10 - MapsExample_MapPage_ShowModal_MapsExample_Report
+	.long LDIFF_SYM1202
+	.long 0
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29
+	.align 3
+Lfde16_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -24647,132 +25609,171 @@ Lfde15_end:
 
 	.byte 7,23
 	.quad MapsExample_MapPage_InitializeComponent
-	.quad Lme_10
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1192=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1192
-	.byte 1,106,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1193=Lfde16_end - Lfde16_start
-	.long LDIFF_SYM1193
-Lfde16_start:
-
-	.long 0
-	.align 3
-	.quad MapsExample_MapPage_InitializeComponent
-
-LDIFF_SYM1194=Lme_10 - MapsExample_MapPage_InitializeComponent
-	.long LDIFF_SYM1194
-	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
-	.align 3
-Lfde16_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "MapsExample.MapPage:<MapPage>m__0"
-	.asciz "MapsExample_MapPage__MapPagem__0_object_System_EventArgs"
-
-	.byte 6,34
-	.quad MapsExample_MapPage__MapPagem__0_object_System_EventArgs
 	.quad Lme_11
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1195=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1195
-	.byte 2,141,40,3
-	.asciz "sender"
-
-LDIFF_SYM1196=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1196
-	.byte 2,141,48,3
-	.asciz "e"
-
-LDIFF_SYM1197=LTDIE_179_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1197
-	.byte 2,141,56,11
-	.asciz "selectedPin"
-
-LDIFF_SYM1198=LTDIE_178_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1198
-	.byte 1,104,0
+LDIFF_SYM1203=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1203
+	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1199=Lfde17_end - Lfde17_start
-	.long LDIFF_SYM1199
+LDIFF_SYM1204=Lfde17_end - Lfde17_start
+	.long LDIFF_SYM1204
 Lfde17_start:
 
 	.long 0
 	.align 3
-	.quad MapsExample_MapPage__MapPagem__0_object_System_EventArgs
+	.quad MapsExample_MapPage_InitializeComponent
 
-LDIFF_SYM1200=Lme_11 - MapsExample_MapPage__MapPagem__0_object_System_EventArgs
-	.long LDIFF_SYM1200
+LDIFF_SYM1205=Lme_11 - MapsExample_MapPage_InitializeComponent
+	.long LDIFF_SYM1205
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
 Lfde17_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "MapsExample.MapPage:<MapPage>m__1"
-	.asciz "MapsExample_MapPage__MapPagem__1_object_System_EventArgs"
+	.asciz "MapsExample.MapPage/<MapPage>c__AnonStorey2:.ctor"
+	.asciz "MapsExample_MapPage__MapPagec__AnonStorey2__ctor"
 
-	.byte 6,40
-	.quad MapsExample_MapPage__MapPagem__1_object_System_EventArgs
+	.byte 0,0
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__ctor
 	.quad Lme_12
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1201=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1201
-	.byte 2,141,40,3
-	.asciz "sender"
-
-LDIFF_SYM1202=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1202
-	.byte 2,141,48,3
-	.asciz "e"
-
-LDIFF_SYM1203=LTDIE_179_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1203
-	.byte 2,141,56,11
-	.asciz "selectedPin"
-
-LDIFF_SYM1204=LTDIE_178_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1204
-	.byte 1,104,0
+LDIFF_SYM1206=LTDIE_178_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1206
+	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1205=Lfde18_end - Lfde18_start
-	.long LDIFF_SYM1205
+LDIFF_SYM1207=Lfde18_end - Lfde18_start
+	.long LDIFF_SYM1207
 Lfde18_start:
 
 	.long 0
 	.align 3
-	.quad MapsExample_MapPage__MapPagem__1_object_System_EventArgs
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__ctor
 
-LDIFF_SYM1206=Lme_12 - MapsExample_MapPage__MapPagem__1_object_System_EventArgs
-	.long LDIFF_SYM1206
+LDIFF_SYM1208=Lme_12 - MapsExample_MapPage__MapPagec__AnonStorey2__ctor
+	.long LDIFF_SYM1208
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde18_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_181:
+
+	.byte 2
+	.asciz "MapsExample.MapPage/<MapPage>c__AnonStorey2:<>m__0"
+	.asciz "MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs"
+
+	.byte 6,34
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs
+	.quad Lme_13
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1209=LTDIE_178_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1209
+	.byte 1,105,3
+	.asciz "sender"
+
+LDIFF_SYM1210=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1210
+	.byte 2,141,48,3
+	.asciz "e"
+
+LDIFF_SYM1211=LTDIE_180_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1211
+	.byte 2,141,56,11
+	.asciz "selectedPin"
+
+LDIFF_SYM1212=LTDIE_179_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1212
+	.byte 3,141,216,0,11
+	.asciz ""
+
+LDIFF_SYM1213=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1213
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1214=Lfde19_end - Lfde19_start
+	.long LDIFF_SYM1214
+Lfde19_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs
+
+LDIFF_SYM1215=Lme_13 - MapsExample_MapPage__MapPagec__AnonStorey2__m__0_object_System_EventArgs
+	.long LDIFF_SYM1215
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19,68,151,18,68,153,17
+	.align 3
+Lfde19_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "MapsExample.MapPage/<MapPage>c__AnonStorey2:<>m__1"
+	.asciz "MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs"
+
+	.byte 6,41
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs
+	.quad Lme_14
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1216=LTDIE_178_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1216
+	.byte 2,141,40,3
+	.asciz "sender"
+
+LDIFF_SYM1217=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1217
+	.byte 2,141,48,3
+	.asciz "e"
+
+LDIFF_SYM1218=LTDIE_180_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1218
+	.byte 2,141,56,11
+	.asciz "selectedPin"
+
+LDIFF_SYM1219=LTDIE_179_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1219
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1220=Lfde20_end - Lfde20_start
+	.long LDIFF_SYM1220
+Lfde20_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs
+
+LDIFF_SYM1221=Lme_14 - MapsExample_MapPage__MapPagec__AnonStorey2__m__1_object_System_EventArgs
+	.long LDIFF_SYM1221
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12
+	.align 3
+Lfde20_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_182:
 
 	.byte 17
 	.asciz "Plugin_Geolocator_Abstractions_IGeolocator"
@@ -24780,231 +25781,231 @@ LTDIE_181:
 	.byte 16,7
 	.asciz "Plugin_Geolocator_Abstractions_IGeolocator"
 
-LDIFF_SYM1207=LTDIE_181 - Ldebug_info_start
-	.long LDIFF_SYM1207
-LTDIE_181_POINTER:
+LDIFF_SYM1222=LTDIE_182 - Ldebug_info_start
+	.long LDIFF_SYM1222
+LTDIE_182_POINTER:
 
 	.byte 13
-LDIFF_SYM1208=LTDIE_181 - Ldebug_info_start
-	.long LDIFF_SYM1208
-LTDIE_181_REFERENCE:
+LDIFF_SYM1223=LTDIE_182 - Ldebug_info_start
+	.long LDIFF_SYM1223
+LTDIE_182_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1209=LTDIE_181 - Ldebug_info_start
-	.long LDIFF_SYM1209
-LTDIE_182:
+LDIFF_SYM1224=LTDIE_182 - Ldebug_info_start
+	.long LDIFF_SYM1224
+LTDIE_183:
 
 	.byte 5
 	.asciz "Plugin_Geolocator_Abstractions_Position"
 
 	.byte 88,16
-LDIFF_SYM1210=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1210
+LDIFF_SYM1225=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1225
 	.byte 2,35,0,6
 	.asciz "<Timestamp>k__BackingField"
 
-LDIFF_SYM1211=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1211
+LDIFF_SYM1226=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1226
 	.byte 2,35,16,6
 	.asciz "<Latitude>k__BackingField"
 
-LDIFF_SYM1212=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1212
+LDIFF_SYM1227=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1227
 	.byte 2,35,32,6
 	.asciz "<Longitude>k__BackingField"
 
-LDIFF_SYM1213=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1213
+LDIFF_SYM1228=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1228
 	.byte 2,35,40,6
 	.asciz "<Altitude>k__BackingField"
 
-LDIFF_SYM1214=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1214
+LDIFF_SYM1229=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1229
 	.byte 2,35,48,6
 	.asciz "<Accuracy>k__BackingField"
 
-LDIFF_SYM1215=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1215
+LDIFF_SYM1230=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1230
 	.byte 2,35,56,6
 	.asciz "<AltitudeAccuracy>k__BackingField"
 
-LDIFF_SYM1216=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1216
+LDIFF_SYM1231=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1231
 	.byte 2,35,64,6
 	.asciz "<Heading>k__BackingField"
 
-LDIFF_SYM1217=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1217
+LDIFF_SYM1232=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1232
 	.byte 2,35,72,6
 	.asciz "<Speed>k__BackingField"
 
-LDIFF_SYM1218=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1218
+LDIFF_SYM1233=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1233
 	.byte 2,35,80,0,7
 	.asciz "Plugin_Geolocator_Abstractions_Position"
 
-LDIFF_SYM1219=LTDIE_182 - Ldebug_info_start
-	.long LDIFF_SYM1219
-LTDIE_182_POINTER:
+LDIFF_SYM1234=LTDIE_183 - Ldebug_info_start
+	.long LDIFF_SYM1234
+LTDIE_183_POINTER:
 
 	.byte 13
-LDIFF_SYM1220=LTDIE_182 - Ldebug_info_start
-	.long LDIFF_SYM1220
-LTDIE_182_REFERENCE:
+LDIFF_SYM1235=LTDIE_183 - Ldebug_info_start
+	.long LDIFF_SYM1235
+LTDIE_183_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1221=LTDIE_182 - Ldebug_info_start
-	.long LDIFF_SYM1221
-LTDIE_180:
+LDIFF_SYM1236=LTDIE_183 - Ldebug_info_start
+	.long LDIFF_SYM1236
+LTDIE_181:
 
 	.byte 5
 	.asciz "_<Handle_Clicked>c__async0"
 
 	.byte 96,16
-LDIFF_SYM1222=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM1222
+LDIFF_SYM1237=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1237
 	.byte 2,35,0,6
 	.asciz "<locator>__1"
 
-LDIFF_SYM1223=LTDIE_181_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1223
+LDIFF_SYM1238=LTDIE_182_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1238
 	.byte 2,35,0,6
 	.asciz "<position>__1"
 
-LDIFF_SYM1224=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1224
+LDIFF_SYM1239=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1239
 	.byte 2,35,8,6
 	.asciz "$this"
 
-LDIFF_SYM1225=LTDIE_164_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1225
+LDIFF_SYM1240=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1240
 	.byte 2,35,16,6
 	.asciz "$builder"
 
-LDIFF_SYM1226=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1226
+LDIFF_SYM1241=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1241
 	.byte 2,35,24,6
 	.asciz "$PC"
 
-LDIFF_SYM1227=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1227
+LDIFF_SYM1242=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1242
 	.byte 2,35,56,6
 	.asciz "$awaiter0"
 
-LDIFF_SYM1228=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1228
+LDIFF_SYM1243=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1243
 	.byte 2,35,64,6
 	.asciz "$awaiter1"
 
-LDIFF_SYM1229=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1229
+LDIFF_SYM1244=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1244
 	.byte 2,35,72,0,7
 	.asciz "_<Handle_Clicked>c__async0"
 
-LDIFF_SYM1230=LTDIE_180 - Ldebug_info_start
-	.long LDIFF_SYM1230
-LTDIE_180_POINTER:
+LDIFF_SYM1245=LTDIE_181 - Ldebug_info_start
+	.long LDIFF_SYM1245
+LTDIE_181_POINTER:
 
 	.byte 13
-LDIFF_SYM1231=LTDIE_180 - Ldebug_info_start
-	.long LDIFF_SYM1231
-LTDIE_180_REFERENCE:
+LDIFF_SYM1246=LTDIE_181 - Ldebug_info_start
+	.long LDIFF_SYM1246
+LTDIE_181_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1232=LTDIE_180 - Ldebug_info_start
-	.long LDIFF_SYM1232
-LTDIE_183:
+LDIFF_SYM1247=LTDIE_181 - Ldebug_info_start
+	.long LDIFF_SYM1247
+LTDIE_184:
 
 	.byte 5
 	.asciz "System_UInt32"
 
 	.byte 20,16
-LDIFF_SYM1233=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM1233
+LDIFF_SYM1248=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1248
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM1234=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM1234
+LDIFF_SYM1249=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM1249
 	.byte 2,35,16,0,7
 	.asciz "System_UInt32"
 
-LDIFF_SYM1235=LTDIE_183 - Ldebug_info_start
-	.long LDIFF_SYM1235
-LTDIE_183_POINTER:
+LDIFF_SYM1250=LTDIE_184 - Ldebug_info_start
+	.long LDIFF_SYM1250
+LTDIE_184_POINTER:
 
 	.byte 13
-LDIFF_SYM1236=LTDIE_183 - Ldebug_info_start
-	.long LDIFF_SYM1236
-LTDIE_183_REFERENCE:
+LDIFF_SYM1251=LTDIE_184 - Ldebug_info_start
+	.long LDIFF_SYM1251
+LTDIE_184_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1237=LTDIE_183 - Ldebug_info_start
-	.long LDIFF_SYM1237
+LDIFF_SYM1252=LTDIE_184 - Ldebug_info_start
+	.long LDIFF_SYM1252
 	.byte 2
 	.asciz "MapsExample.MapPage/<Handle_Clicked>c__async0:MoveNext"
 	.asciz "MapsExample_MapPage__Handle_Clickedc__async0_MoveNext"
 
 	.byte 0,0
 	.quad MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
-	.quad Lme_13
+	.quad Lme_15
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1238=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1238
+LDIFF_SYM1253=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1253
 	.byte 2,141,40,11
 	.asciz ""
 
-LDIFF_SYM1239=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM1239
+LDIFF_SYM1254=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM1254
 	.byte 1,106,11
 	.asciz ""
 
-LDIFF_SYM1240=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1240
+LDIFF_SYM1255=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1255
 	.byte 3,141,152,1,11
 	.asciz ""
 
-LDIFF_SYM1241=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1241
+LDIFF_SYM1256=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1256
 	.byte 3,141,136,1,11
 	.asciz ""
 
-LDIFF_SYM1242=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1242
+LDIFF_SYM1257=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1257
 	.byte 3,141,168,1,11
 	.asciz ""
 
-LDIFF_SYM1243=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1243
+LDIFF_SYM1258=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1258
 	.byte 3,141,176,1,11
 	.asciz ""
 
-LDIFF_SYM1244=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1244
+LDIFF_SYM1259=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1259
 	.byte 3,141,184,1,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1245=Lfde19_end - Lfde19_start
-	.long LDIFF_SYM1245
-Lfde19_start:
+LDIFF_SYM1260=Lfde21_end - Lfde21_start
+	.long LDIFF_SYM1260
+Lfde21_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
 
-LDIFF_SYM1246=Lme_13 - MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
-	.long LDIFF_SYM1246
+LDIFF_SYM1261=Lme_15 - MapsExample_MapPage__Handle_Clickedc__async0_MoveNext
+	.long LDIFF_SYM1261
 	.long 0
 	.byte 12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,152,40,153,39,68,154,38
 	.align 3
-Lfde19_end:
+Lfde21_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_184:
+LTDIE_185:
 
 	.byte 17
 	.asciz "System_Runtime_CompilerServices_IAsyncStateMachine"
@@ -25012,295 +26013,425 @@ LTDIE_184:
 	.byte 16,7
 	.asciz "System_Runtime_CompilerServices_IAsyncStateMachine"
 
-LDIFF_SYM1247=LTDIE_184 - Ldebug_info_start
-	.long LDIFF_SYM1247
-LTDIE_184_POINTER:
+LDIFF_SYM1262=LTDIE_185 - Ldebug_info_start
+	.long LDIFF_SYM1262
+LTDIE_185_POINTER:
 
 	.byte 13
-LDIFF_SYM1248=LTDIE_184 - Ldebug_info_start
-	.long LDIFF_SYM1248
-LTDIE_184_REFERENCE:
+LDIFF_SYM1263=LTDIE_185 - Ldebug_info_start
+	.long LDIFF_SYM1263
+LTDIE_185_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1249=LTDIE_184 - Ldebug_info_start
-	.long LDIFF_SYM1249
+LDIFF_SYM1264=LTDIE_185 - Ldebug_info_start
+	.long LDIFF_SYM1264
 	.byte 2
 	.asciz "MapsExample.MapPage/<Handle_Clicked>c__async0:SetStateMachine"
 	.asciz "MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine"
 
 	.byte 0,0
 	.quad MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-	.quad Lme_14
+	.quad Lme_16
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1250=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1250
+LDIFF_SYM1265=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1265
 	.byte 2,141,16,3
 	.asciz "stateMachine"
 
-LDIFF_SYM1251=LTDIE_184_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1251
+LDIFF_SYM1266=LTDIE_185_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1266
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1252=Lfde20_end - Lfde20_start
-	.long LDIFF_SYM1252
-Lfde20_start:
+LDIFF_SYM1267=Lfde22_end - Lfde22_start
+	.long LDIFF_SYM1267
+Lfde22_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 
-LDIFF_SYM1253=Lme_14 - MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-	.long LDIFF_SYM1253
+LDIFF_SYM1268=Lme_16 - MapsExample_MapPage__Handle_Clickedc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+	.long LDIFF_SYM1268
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde20_end:
+Lfde22_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_185:
+LTDIE_186:
 
 	.byte 5
 	.asciz "Plugin_Geolocator_Abstractions_PositionEventArgs"
 
 	.byte 24,16
-LDIFF_SYM1254=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1254
+LDIFF_SYM1269=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1269
 	.byte 2,35,0,6
 	.asciz "<Position>k__BackingField"
 
-LDIFF_SYM1255=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1255
+LDIFF_SYM1270=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1270
 	.byte 2,35,16,0,7
 	.asciz "Plugin_Geolocator_Abstractions_PositionEventArgs"
 
-LDIFF_SYM1256=LTDIE_185 - Ldebug_info_start
-	.long LDIFF_SYM1256
-LTDIE_185_POINTER:
+LDIFF_SYM1271=LTDIE_186 - Ldebug_info_start
+	.long LDIFF_SYM1271
+LTDIE_186_POINTER:
 
 	.byte 13
-LDIFF_SYM1257=LTDIE_185 - Ldebug_info_start
-	.long LDIFF_SYM1257
-LTDIE_185_REFERENCE:
+LDIFF_SYM1272=LTDIE_186 - Ldebug_info_start
+	.long LDIFF_SYM1272
+LTDIE_186_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1258=LTDIE_185 - Ldebug_info_start
-	.long LDIFF_SYM1258
+LDIFF_SYM1273=LTDIE_186 - Ldebug_info_start
+	.long LDIFF_SYM1273
 	.byte 2
 	.asciz "MapsExample.MapPage/<Handle_Clicked>c__async0:<>m__0"
 	.asciz "MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs"
 
-	.byte 6,54
+	.byte 6,55
 	.quad MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
-	.quad Lme_15
+	.quad Lme_17
 
 	.byte 2,118,16,3
 	.asciz "senderEv"
 
-LDIFF_SYM1259=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1259
+LDIFF_SYM1274=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1274
 	.byte 2,141,16,3
 	.asciz "ev"
 
-LDIFF_SYM1260=LTDIE_185_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1260
+LDIFF_SYM1275=LTDIE_186_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1275
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1261=Lfde21_end - Lfde21_start
-	.long LDIFF_SYM1261
-Lfde21_start:
+LDIFF_SYM1276=Lfde23_end - Lfde23_start
+	.long LDIFF_SYM1276
+Lfde23_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
 
-LDIFF_SYM1262=Lme_15 - MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
-	.long LDIFF_SYM1262
+LDIFF_SYM1277=Lme_17 - MapsExample_MapPage__Handle_Clickedc__async0__m__0_object_Plugin_Geolocator_Abstractions_PositionEventArgs
+	.long LDIFF_SYM1277
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
-Lfde21_end:
+Lfde23_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_190:
+LTDIE_187:
+
+	.byte 5
+	.asciz "_<ShowModal>c__async1"
+
+	.byte 80,16
+LDIFF_SYM1278=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1278
+	.byte 2,35,0,6
+	.asciz "report"
+
+LDIFF_SYM1279=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1279
+	.byte 2,35,0,6
+	.asciz "$this"
+
+LDIFF_SYM1280=LTDIE_164_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1280
+	.byte 2,35,8,6
+	.asciz "$builder"
+
+LDIFF_SYM1281=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1281
+	.byte 2,35,16,6
+	.asciz "$PC"
+
+LDIFF_SYM1282=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1282
+	.byte 2,35,48,6
+	.asciz "$awaiter0"
+
+LDIFF_SYM1283=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1283
+	.byte 2,35,56,0,7
+	.asciz "_<ShowModal>c__async1"
+
+LDIFF_SYM1284=LTDIE_187 - Ldebug_info_start
+	.long LDIFF_SYM1284
+LTDIE_187_POINTER:
+
+	.byte 13
+LDIFF_SYM1285=LTDIE_187 - Ldebug_info_start
+	.long LDIFF_SYM1285
+LTDIE_187_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1286=LTDIE_187 - Ldebug_info_start
+	.long LDIFF_SYM1286
+	.byte 2
+	.asciz "MapsExample.MapPage/<ShowModal>c__async1:MoveNext"
+	.asciz "MapsExample_MapPage__ShowModalc__async1_MoveNext"
+
+	.byte 0,0
+	.quad MapsExample_MapPage__ShowModalc__async1_MoveNext
+	.quad Lme_18
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1287=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1287
+	.byte 2,141,32,11
+	.asciz ""
+
+LDIFF_SYM1288=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM1288
+	.byte 1,106,11
+	.asciz ""
+
+LDIFF_SYM1289=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1289
+	.byte 3,141,200,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1290=Lfde24_end - Lfde24_start
+	.long LDIFF_SYM1290
+Lfde24_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_MapPage__ShowModalc__async1_MoveNext
+
+LDIFF_SYM1291=Lme_18 - MapsExample_MapPage__ShowModalc__async1_MoveNext
+	.long LDIFF_SYM1291
+	.long 0
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,153,22,154,21
+	.align 3
+Lfde24_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "MapsExample.MapPage/<ShowModal>c__async1:SetStateMachine"
+	.asciz "MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine"
+
+	.byte 0,0
+	.quad MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+	.quad Lme_19
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1292=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1292
+	.byte 2,141,16,3
+	.asciz "stateMachine"
+
+LDIFF_SYM1293=LTDIE_185_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1293
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1294=Lfde25_end - Lfde25_start
+	.long LDIFF_SYM1294
+Lfde25_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+
+LDIFF_SYM1295=Lme_19 - MapsExample_MapPage__ShowModalc__async1_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+	.long LDIFF_SYM1295
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde25_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_192:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 40,16
-LDIFF_SYM1263=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1263
+LDIFF_SYM1296=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1296
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM1264=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1264
+LDIFF_SYM1297=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1297
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM1265=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1265
+LDIFF_SYM1298=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1298
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM1266=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1266
+LDIFF_SYM1299=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1299
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1267=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1267
+LDIFF_SYM1300=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1300
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM1268=LTDIE_190 - Ldebug_info_start
-	.long LDIFF_SYM1268
-LTDIE_190_POINTER:
+LDIFF_SYM1301=LTDIE_192 - Ldebug_info_start
+	.long LDIFF_SYM1301
+LTDIE_192_POINTER:
 
 	.byte 13
-LDIFF_SYM1269=LTDIE_190 - Ldebug_info_start
-	.long LDIFF_SYM1269
-LTDIE_190_REFERENCE:
+LDIFF_SYM1302=LTDIE_192 - Ldebug_info_start
+	.long LDIFF_SYM1302
+LTDIE_192_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1270=LTDIE_190 - Ldebug_info_start
-	.long LDIFF_SYM1270
-LTDIE_193:
+LDIFF_SYM1303=LTDIE_192 - Ldebug_info_start
+	.long LDIFF_SYM1303
+LTDIE_195:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM1271=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1271
+LDIFF_SYM1304=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1304
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM1272=LTDIE_192_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1272
+LDIFF_SYM1305=LTDIE_194_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1305
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM1273=LTDIE_193 - Ldebug_info_start
-	.long LDIFF_SYM1273
-LTDIE_193_POINTER:
+LDIFF_SYM1306=LTDIE_195 - Ldebug_info_start
+	.long LDIFF_SYM1306
+LTDIE_195_POINTER:
 
 	.byte 13
-LDIFF_SYM1274=LTDIE_193 - Ldebug_info_start
-	.long LDIFF_SYM1274
-LTDIE_193_REFERENCE:
+LDIFF_SYM1307=LTDIE_195 - Ldebug_info_start
+	.long LDIFF_SYM1307
+LTDIE_195_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1275=LTDIE_193 - Ldebug_info_start
-	.long LDIFF_SYM1275
+LDIFF_SYM1308=LTDIE_195 - Ldebug_info_start
+	.long LDIFF_SYM1308
+LTDIE_196:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM1309=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1309
+	.byte 2,35,0,6
+	.asciz "dictionary"
+
+LDIFF_SYM1310=LTDIE_194_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1310
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM1311=LTDIE_196 - Ldebug_info_start
+	.long LDIFF_SYM1311
+LTDIE_196_POINTER:
+
+	.byte 13
+LDIFF_SYM1312=LTDIE_196 - Ldebug_info_start
+	.long LDIFF_SYM1312
+LTDIE_196_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1313=LTDIE_196 - Ldebug_info_start
+	.long LDIFF_SYM1313
 LTDIE_194:
-
-	.byte 5
-	.asciz "_ValueCollection"
-
-	.byte 24,16
-LDIFF_SYM1276=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1276
-	.byte 2,35,0,6
-	.asciz "dictionary"
-
-LDIFF_SYM1277=LTDIE_192_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1277
-	.byte 2,35,16,0,7
-	.asciz "_ValueCollection"
-
-LDIFF_SYM1278=LTDIE_194 - Ldebug_info_start
-	.long LDIFF_SYM1278
-LTDIE_194_POINTER:
-
-	.byte 13
-LDIFF_SYM1279=LTDIE_194 - Ldebug_info_start
-	.long LDIFF_SYM1279
-LTDIE_194_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1280=LTDIE_194 - Ldebug_info_start
-	.long LDIFF_SYM1280
-LTDIE_192:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM1281=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1281
+LDIFF_SYM1314=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1314
 	.byte 2,35,0,6
 	.asciz "buckets"
 
-LDIFF_SYM1282=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1282
+LDIFF_SYM1315=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1315
 	.byte 2,35,16,6
 	.asciz "entries"
 
-LDIFF_SYM1283=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1283
+LDIFF_SYM1316=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1316
 	.byte 2,35,24,6
 	.asciz "count"
 
-LDIFF_SYM1284=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1284
+LDIFF_SYM1317=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1317
 	.byte 2,35,64,6
 	.asciz "version"
 
-LDIFF_SYM1285=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1285
+LDIFF_SYM1318=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1318
 	.byte 2,35,68,6
 	.asciz "freeList"
 
-LDIFF_SYM1286=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1286
+LDIFF_SYM1319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1319
 	.byte 2,35,72,6
 	.asciz "freeCount"
 
-LDIFF_SYM1287=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1287
+LDIFF_SYM1320=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1320
 	.byte 2,35,76,6
 	.asciz "comparer"
 
-LDIFF_SYM1288=LTDIE_143_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1288
+LDIFF_SYM1321=LTDIE_143_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1321
 	.byte 2,35,32,6
 	.asciz "keys"
 
-LDIFF_SYM1289=LTDIE_193_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1289
+LDIFF_SYM1322=LTDIE_195_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1322
 	.byte 2,35,40,6
 	.asciz "values"
 
-LDIFF_SYM1290=LTDIE_194_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1290
+LDIFF_SYM1323=LTDIE_196_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1323
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1291=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1291
+LDIFF_SYM1324=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1324
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM1292=LTDIE_192 - Ldebug_info_start
-	.long LDIFF_SYM1292
-LTDIE_192_POINTER:
+LDIFF_SYM1325=LTDIE_194 - Ldebug_info_start
+	.long LDIFF_SYM1325
+LTDIE_194_POINTER:
 
 	.byte 13
-LDIFF_SYM1293=LTDIE_192 - Ldebug_info_start
-	.long LDIFF_SYM1293
-LTDIE_192_REFERENCE:
+LDIFF_SYM1326=LTDIE_194 - Ldebug_info_start
+	.long LDIFF_SYM1326
+LTDIE_194_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1294=LTDIE_192 - Ldebug_info_start
-	.long LDIFF_SYM1294
-LTDIE_195:
+LDIFF_SYM1327=LTDIE_194 - Ldebug_info_start
+	.long LDIFF_SYM1327
+LTDIE_197:
 
 	.byte 17
 	.asciz "System_Collections_Generic_ICollection`1"
@@ -25308,95 +26439,95 @@ LTDIE_195:
 	.byte 16,7
 	.asciz "System_Collections_Generic_ICollection`1"
 
-LDIFF_SYM1295=LTDIE_195 - Ldebug_info_start
-	.long LDIFF_SYM1295
-LTDIE_195_POINTER:
+LDIFF_SYM1328=LTDIE_197 - Ldebug_info_start
+	.long LDIFF_SYM1328
+LTDIE_197_POINTER:
 
 	.byte 13
-LDIFF_SYM1296=LTDIE_195 - Ldebug_info_start
-	.long LDIFF_SYM1296
-LTDIE_195_REFERENCE:
+LDIFF_SYM1329=LTDIE_197 - Ldebug_info_start
+	.long LDIFF_SYM1329
+LTDIE_197_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1297=LTDIE_195 - Ldebug_info_start
-	.long LDIFF_SYM1297
-LTDIE_196:
+LDIFF_SYM1330=LTDIE_197 - Ldebug_info_start
+	.long LDIFF_SYM1330
+LTDIE_198:
 
 	.byte 5
 	.asciz "_ReadOnlyValueCollection"
 
 	.byte 24,16
-LDIFF_SYM1298=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1298
+LDIFF_SYM1331=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1331
 	.byte 2,35,0,6
 	.asciz "_odict"
 
-LDIFF_SYM1299=LTDIE_191_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1299
+LDIFF_SYM1332=LTDIE_193_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1332
 	.byte 2,35,16,0,7
 	.asciz "_ReadOnlyValueCollection"
 
-LDIFF_SYM1300=LTDIE_196 - Ldebug_info_start
-	.long LDIFF_SYM1300
-LTDIE_196_POINTER:
+LDIFF_SYM1333=LTDIE_198 - Ldebug_info_start
+	.long LDIFF_SYM1333
+LTDIE_198_POINTER:
 
 	.byte 13
-LDIFF_SYM1301=LTDIE_196 - Ldebug_info_start
-	.long LDIFF_SYM1301
-LTDIE_196_REFERENCE:
+LDIFF_SYM1334=LTDIE_198 - Ldebug_info_start
+	.long LDIFF_SYM1334
+LTDIE_198_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1302=LTDIE_196 - Ldebug_info_start
-	.long LDIFF_SYM1302
-LTDIE_191:
+LDIFF_SYM1335=LTDIE_198 - Ldebug_info_start
+	.long LDIFF_SYM1335
+LTDIE_193:
 
 	.byte 5
 	.asciz "Cadenza_Collections_OrderedDictionary`2"
 
 	.byte 56,16
-LDIFF_SYM1303=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1303
+LDIFF_SYM1336=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1336
 	.byte 2,35,0,6
 	.asciz "_dict"
 
-LDIFF_SYM1304=LTDIE_192_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1304
+LDIFF_SYM1337=LTDIE_194_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1337
 	.byte 2,35,16,6
 	.asciz "_keyOrder"
 
-LDIFF_SYM1305=LTDIE_146_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1305
+LDIFF_SYM1338=LTDIE_146_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1338
 	.byte 2,35,24,6
 	.asciz "_kvpCollection"
 
-LDIFF_SYM1306=LTDIE_195_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1306
+LDIFF_SYM1339=LTDIE_197_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1339
 	.byte 2,35,32,6
 	.asciz "_roKeys"
 
-LDIFF_SYM1307=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1307
+LDIFF_SYM1340=LTDIE_148_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1340
 	.byte 2,35,40,6
 	.asciz "_roValues"
 
-LDIFF_SYM1308=LTDIE_196_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1308
+LDIFF_SYM1341=LTDIE_198_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1341
 	.byte 2,35,48,0,7
 	.asciz "Cadenza_Collections_OrderedDictionary`2"
 
-LDIFF_SYM1309=LTDIE_191 - Ldebug_info_start
-	.long LDIFF_SYM1309
-LTDIE_191_POINTER:
+LDIFF_SYM1342=LTDIE_193 - Ldebug_info_start
+	.long LDIFF_SYM1342
+LTDIE_193_POINTER:
 
 	.byte 13
-LDIFF_SYM1310=LTDIE_191 - Ldebug_info_start
-	.long LDIFF_SYM1310
-LTDIE_191_REFERENCE:
+LDIFF_SYM1343=LTDIE_193 - Ldebug_info_start
+	.long LDIFF_SYM1343
+LTDIE_193_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1311=LTDIE_191 - Ldebug_info_start
-	.long LDIFF_SYM1311
-LTDIE_199:
+LDIFF_SYM1344=LTDIE_193 - Ldebug_info_start
+	.long LDIFF_SYM1344
+LTDIE_201:
 
 	.byte 17
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
@@ -25404,458 +26535,458 @@ LTDIE_199:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
 
-LDIFF_SYM1312=LTDIE_199 - Ldebug_info_start
-	.long LDIFF_SYM1312
-LTDIE_199_POINTER:
+LDIFF_SYM1345=LTDIE_201 - Ldebug_info_start
+	.long LDIFF_SYM1345
+LTDIE_201_POINTER:
 
 	.byte 13
-LDIFF_SYM1313=LTDIE_199 - Ldebug_info_start
-	.long LDIFF_SYM1313
-LTDIE_199_REFERENCE:
+LDIFF_SYM1346=LTDIE_201 - Ldebug_info_start
+	.long LDIFF_SYM1346
+LTDIE_201_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1314=LTDIE_199 - Ldebug_info_start
-	.long LDIFF_SYM1314
-LTDIE_198:
+LDIFF_SYM1347=LTDIE_201 - Ldebug_info_start
+	.long LDIFF_SYM1347
+LTDIE_200:
 
 	.byte 5
 	.asciz "System_Collections_Generic_HashSet`1"
 
 	.byte 64,16
-LDIFF_SYM1315=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1315
+LDIFF_SYM1348=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1348
 	.byte 2,35,0,6
 	.asciz "m_buckets"
 
-LDIFF_SYM1316=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1316
+LDIFF_SYM1349=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1349
 	.byte 2,35,16,6
 	.asciz "m_slots"
 
-LDIFF_SYM1317=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1317
+LDIFF_SYM1350=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1350
 	.byte 2,35,24,6
 	.asciz "m_count"
 
-LDIFF_SYM1318=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1318
+LDIFF_SYM1351=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1351
 	.byte 2,35,48,6
 	.asciz "m_lastIndex"
 
-LDIFF_SYM1319=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1319
+LDIFF_SYM1352=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1352
 	.byte 2,35,52,6
 	.asciz "m_freeList"
 
-LDIFF_SYM1320=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1320
+LDIFF_SYM1353=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1353
 	.byte 2,35,56,6
 	.asciz "m_comparer"
 
-LDIFF_SYM1321=LTDIE_199_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1321
+LDIFF_SYM1354=LTDIE_201_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1354
 	.byte 2,35,32,6
 	.asciz "m_version"
 
-LDIFF_SYM1322=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1322
+LDIFF_SYM1355=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1355
 	.byte 2,35,60,6
 	.asciz "m_siInfo"
 
-LDIFF_SYM1323=LTDIE_67_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1323
+LDIFF_SYM1356=LTDIE_67_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1356
 	.byte 2,35,40,0,7
 	.asciz "System_Collections_Generic_HashSet`1"
 
-LDIFF_SYM1324=LTDIE_198 - Ldebug_info_start
-	.long LDIFF_SYM1324
-LTDIE_198_POINTER:
+LDIFF_SYM1357=LTDIE_200 - Ldebug_info_start
+	.long LDIFF_SYM1357
+LTDIE_200_POINTER:
 
 	.byte 13
-LDIFF_SYM1325=LTDIE_198 - Ldebug_info_start
-	.long LDIFF_SYM1325
-LTDIE_198_REFERENCE:
+LDIFF_SYM1358=LTDIE_200 - Ldebug_info_start
+	.long LDIFF_SYM1358
+LTDIE_200_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1326=LTDIE_198 - Ldebug_info_start
-	.long LDIFF_SYM1326
-LTDIE_201:
+LDIFF_SYM1359=LTDIE_200 - Ldebug_info_start
+	.long LDIFF_SYM1359
+LTDIE_203:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM1327=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1327
+LDIFF_SYM1360=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1360
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM1328=LTDIE_200_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1328
+LDIFF_SYM1361=LTDIE_202_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1361
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM1329=LTDIE_201 - Ldebug_info_start
-	.long LDIFF_SYM1329
-LTDIE_201_POINTER:
+LDIFF_SYM1362=LTDIE_203 - Ldebug_info_start
+	.long LDIFF_SYM1362
+LTDIE_203_POINTER:
 
 	.byte 13
-LDIFF_SYM1330=LTDIE_201 - Ldebug_info_start
-	.long LDIFF_SYM1330
-LTDIE_201_REFERENCE:
+LDIFF_SYM1363=LTDIE_203 - Ldebug_info_start
+	.long LDIFF_SYM1363
+LTDIE_203_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1331=LTDIE_201 - Ldebug_info_start
-	.long LDIFF_SYM1331
+LDIFF_SYM1364=LTDIE_203 - Ldebug_info_start
+	.long LDIFF_SYM1364
+LTDIE_204:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM1365=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1365
+	.byte 2,35,0,6
+	.asciz "dictionary"
+
+LDIFF_SYM1366=LTDIE_202_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1366
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM1367=LTDIE_204 - Ldebug_info_start
+	.long LDIFF_SYM1367
+LTDIE_204_POINTER:
+
+	.byte 13
+LDIFF_SYM1368=LTDIE_204 - Ldebug_info_start
+	.long LDIFF_SYM1368
+LTDIE_204_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1369=LTDIE_204 - Ldebug_info_start
+	.long LDIFF_SYM1369
 LTDIE_202:
-
-	.byte 5
-	.asciz "_ValueCollection"
-
-	.byte 24,16
-LDIFF_SYM1332=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1332
-	.byte 2,35,0,6
-	.asciz "dictionary"
-
-LDIFF_SYM1333=LTDIE_200_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1333
-	.byte 2,35,16,0,7
-	.asciz "_ValueCollection"
-
-LDIFF_SYM1334=LTDIE_202 - Ldebug_info_start
-	.long LDIFF_SYM1334
-LTDIE_202_POINTER:
-
-	.byte 13
-LDIFF_SYM1335=LTDIE_202 - Ldebug_info_start
-	.long LDIFF_SYM1335
-LTDIE_202_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1336=LTDIE_202 - Ldebug_info_start
-	.long LDIFF_SYM1336
-LTDIE_200:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 80,16
-LDIFF_SYM1337=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1337
+LDIFF_SYM1370=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1370
 	.byte 2,35,0,6
 	.asciz "buckets"
 
-LDIFF_SYM1338=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1338
+LDIFF_SYM1371=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1371
 	.byte 2,35,16,6
 	.asciz "entries"
 
-LDIFF_SYM1339=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1339
+LDIFF_SYM1372=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1372
 	.byte 2,35,24,6
 	.asciz "count"
 
-LDIFF_SYM1340=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1340
+LDIFF_SYM1373=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1373
 	.byte 2,35,64,6
 	.asciz "version"
 
-LDIFF_SYM1341=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1341
+LDIFF_SYM1374=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1374
 	.byte 2,35,68,6
 	.asciz "freeList"
 
-LDIFF_SYM1342=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1342
+LDIFF_SYM1375=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1375
 	.byte 2,35,72,6
 	.asciz "freeCount"
 
-LDIFF_SYM1343=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1343
+LDIFF_SYM1376=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1376
 	.byte 2,35,76,6
 	.asciz "comparer"
 
-LDIFF_SYM1344=LTDIE_199_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1344
+LDIFF_SYM1377=LTDIE_201_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1377
 	.byte 2,35,32,6
 	.asciz "keys"
 
-LDIFF_SYM1345=LTDIE_201_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1345
+LDIFF_SYM1378=LTDIE_203_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1378
 	.byte 2,35,40,6
 	.asciz "values"
 
-LDIFF_SYM1346=LTDIE_202_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1346
+LDIFF_SYM1379=LTDIE_204_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1379
 	.byte 2,35,48,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1347=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1347
+LDIFF_SYM1380=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1380
 	.byte 2,35,56,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM1348=LTDIE_200 - Ldebug_info_start
-	.long LDIFF_SYM1348
-LTDIE_200_POINTER:
+LDIFF_SYM1381=LTDIE_202 - Ldebug_info_start
+	.long LDIFF_SYM1381
+LTDIE_202_POINTER:
 
 	.byte 13
-LDIFF_SYM1349=LTDIE_200 - Ldebug_info_start
-	.long LDIFF_SYM1349
-LTDIE_200_REFERENCE:
+LDIFF_SYM1382=LTDIE_202 - Ldebug_info_start
+	.long LDIFF_SYM1382
+LTDIE_202_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1350=LTDIE_200 - Ldebug_info_start
-	.long LDIFF_SYM1350
-LTDIE_197:
+LDIFF_SYM1383=LTDIE_202 - Ldebug_info_start
+	.long LDIFF_SYM1383
+LTDIE_199:
 
 	.byte 5
 	.asciz "_ShortNamesProxy"
 
 	.byte 56,16
-LDIFF_SYM1351=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1351
+LDIFF_SYM1384=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1384
 	.byte 2,35,0,6
 	.asciz "_attachedItems"
 
-LDIFF_SYM1352=LTDIE_198_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1352
+LDIFF_SYM1385=LTDIE_200_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1385
 	.byte 2,35,16,6
 	.asciz "_itemsList"
 
-LDIFF_SYM1353=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1353
+LDIFF_SYM1386=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1386
 	.byte 2,35,24,6
 	.asciz "_oldNames"
 
-LDIFF_SYM1354=LTDIE_200_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1354
+LDIFF_SYM1387=LTDIE_202_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1387
 	.byte 2,35,32,6
 	.asciz "_disposed"
 
-LDIFF_SYM1355=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1355
+LDIFF_SYM1388=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1388
 	.byte 2,35,48,6
 	.asciz "CollectionChanged"
 
-LDIFF_SYM1356=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1356
+LDIFF_SYM1389=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1389
 	.byte 2,35,40,0,7
 	.asciz "_ShortNamesProxy"
 
-LDIFF_SYM1357=LTDIE_197 - Ldebug_info_start
-	.long LDIFF_SYM1357
-LTDIE_197_POINTER:
+LDIFF_SYM1390=LTDIE_199 - Ldebug_info_start
+	.long LDIFF_SYM1390
+LTDIE_199_POINTER:
 
 	.byte 13
-LDIFF_SYM1358=LTDIE_197 - Ldebug_info_start
-	.long LDIFF_SYM1358
-LTDIE_197_REFERENCE:
+LDIFF_SYM1391=LTDIE_199 - Ldebug_info_start
+	.long LDIFF_SYM1391
+LTDIE_199_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1359=LTDIE_197 - Ldebug_info_start
-	.long LDIFF_SYM1359
-LTDIE_189:
+LDIFF_SYM1392=LTDIE_199 - Ldebug_info_start
+	.long LDIFF_SYM1392
+LTDIE_191:
 
 	.byte 5
 	.asciz "Xamarin_Forms_TemplatedItemsList`2"
 
 	.byte 192,1,16
-LDIFF_SYM1360=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM1360
+LDIFF_SYM1393=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM1393
 	.byte 2,35,0,6
 	.asciz "_itemSourceProperty"
 
-LDIFF_SYM1361=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1361
+LDIFF_SYM1394=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1394
 	.byte 2,35,64,6
 	.asciz "_itemTemplateProperty"
 
-LDIFF_SYM1362=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1362
+LDIFF_SYM1395=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1395
 	.byte 2,35,72,6
 	.asciz "_itemsView"
 
-LDIFF_SYM1363=LTDIE_188_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1363
+LDIFF_SYM1396=LTDIE_190_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1396
 	.byte 2,35,80,6
 	.asciz "_templatedObjects"
 
-LDIFF_SYM1364=LTDIE_190_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1364
+LDIFF_SYM1397=LTDIE_192_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1397
 	.byte 2,35,88,6
 	.asciz "_disposed"
 
-LDIFF_SYM1365=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1365
+LDIFF_SYM1398=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1398
 	.byte 3,35,184,1,6
 	.asciz "_groupDisplayBinding"
 
-LDIFF_SYM1366=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1366
+LDIFF_SYM1399=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1399
 	.byte 2,35,96,6
 	.asciz "_groupedItems"
 
-LDIFF_SYM1367=LTDIE_191_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1367
+LDIFF_SYM1400=LTDIE_193_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1400
 	.byte 2,35,104,6
 	.asciz "_groupHeaderTemplate"
 
-LDIFF_SYM1368=LTDIE_150_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1368
+LDIFF_SYM1401=LTDIE_150_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1401
 	.byte 2,35,112,6
 	.asciz "_groupShortNameBinding"
 
-LDIFF_SYM1369=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1369
+LDIFF_SYM1402=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1402
 	.byte 2,35,120,6
 	.asciz "_shortNames"
 
-LDIFF_SYM1370=LTDIE_197_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1370
+LDIFF_SYM1403=LTDIE_199_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1403
 	.byte 3,35,128,1,6
 	.asciz "<GroupHeaderTemplateProperty>k__BackingField"
 
-LDIFF_SYM1371=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1371
+LDIFF_SYM1404=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1404
 	.byte 3,35,136,1,6
 	.asciz "<IsGroupingEnabledProperty>k__BackingField"
 
-LDIFF_SYM1372=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1372
+LDIFF_SYM1405=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1405
 	.byte 3,35,144,1,6
 	.asciz "<Parent>k__BackingField"
 
-LDIFF_SYM1373=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1373
+LDIFF_SYM1406=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1406
 	.byte 3,35,152,1,6
 	.asciz "<ProgressiveLoadingProperty>k__BackingField"
 
-LDIFF_SYM1374=LTDIE_131_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1374
+LDIFF_SYM1407=LTDIE_131_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1407
 	.byte 3,35,160,1,6
 	.asciz "CollectionChanged"
 
-LDIFF_SYM1375=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1375
+LDIFF_SYM1408=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1408
 	.byte 3,35,168,1,6
 	.asciz "GroupedCollectionChanged"
 
-LDIFF_SYM1376=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1376
+LDIFF_SYM1409=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1409
 	.byte 3,35,176,1,0,7
 	.asciz "Xamarin_Forms_TemplatedItemsList`2"
 
-LDIFF_SYM1377=LTDIE_189 - Ldebug_info_start
-	.long LDIFF_SYM1377
-LTDIE_189_POINTER:
+LDIFF_SYM1410=LTDIE_191 - Ldebug_info_start
+	.long LDIFF_SYM1410
+LTDIE_191_POINTER:
 
 	.byte 13
-LDIFF_SYM1378=LTDIE_189 - Ldebug_info_start
-	.long LDIFF_SYM1378
-LTDIE_189_REFERENCE:
+LDIFF_SYM1411=LTDIE_191 - Ldebug_info_start
+	.long LDIFF_SYM1411
+LTDIE_191_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1379=LTDIE_189 - Ldebug_info_start
-	.long LDIFF_SYM1379
-LTDIE_188:
+LDIFF_SYM1412=LTDIE_191 - Ldebug_info_start
+	.long LDIFF_SYM1412
+LTDIE_190:
 
 	.byte 5
 	.asciz "Xamarin_Forms_ItemsView`1"
 
 	.byte 240,2,16
-LDIFF_SYM1380=LTDIE_168 - Ldebug_info_start
-	.long LDIFF_SYM1380
+LDIFF_SYM1413=LTDIE_168 - Ldebug_info_start
+	.long LDIFF_SYM1413
 	.byte 2,35,0,6
 	.asciz "<TemplatedItems>k__BackingField"
 
-LDIFF_SYM1381=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1381
+LDIFF_SYM1414=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1414
 	.byte 3,35,232,2,0,7
 	.asciz "Xamarin_Forms_ItemsView`1"
 
-LDIFF_SYM1382=LTDIE_188 - Ldebug_info_start
-	.long LDIFF_SYM1382
-LTDIE_188_POINTER:
+LDIFF_SYM1415=LTDIE_190 - Ldebug_info_start
+	.long LDIFF_SYM1415
+LTDIE_190_POINTER:
 
 	.byte 13
-LDIFF_SYM1383=LTDIE_188 - Ldebug_info_start
-	.long LDIFF_SYM1383
-LTDIE_188_REFERENCE:
+LDIFF_SYM1416=LTDIE_190 - Ldebug_info_start
+	.long LDIFF_SYM1416
+LTDIE_190_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1384=LTDIE_188 - Ldebug_info_start
-	.long LDIFF_SYM1384
-LTDIE_204:
+LDIFF_SYM1417=LTDIE_190 - Ldebug_info_start
+	.long LDIFF_SYM1417
+LTDIE_206:
 
 	.byte 5
 	.asciz "System_Func`1"
 
 	.byte 112,16
-LDIFF_SYM1385=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1385
+LDIFF_SYM1418=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1418
 	.byte 2,35,0,0,7
 	.asciz "System_Func`1"
 
-LDIFF_SYM1386=LTDIE_204 - Ldebug_info_start
-	.long LDIFF_SYM1386
-LTDIE_204_POINTER:
+LDIFF_SYM1419=LTDIE_206 - Ldebug_info_start
+	.long LDIFF_SYM1419
+LTDIE_206_POINTER:
 
 	.byte 13
-LDIFF_SYM1387=LTDIE_204 - Ldebug_info_start
-	.long LDIFF_SYM1387
-LTDIE_204_REFERENCE:
+LDIFF_SYM1420=LTDIE_206 - Ldebug_info_start
+	.long LDIFF_SYM1420
+LTDIE_206_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1388=LTDIE_204 - Ldebug_info_start
-	.long LDIFF_SYM1388
-LTDIE_203:
+LDIFF_SYM1421=LTDIE_206 - Ldebug_info_start
+	.long LDIFF_SYM1421
+LTDIE_205:
 
 	.byte 5
 	.asciz "System_Lazy`1"
 
 	.byte 40,16
-LDIFF_SYM1389=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1389
+LDIFF_SYM1422=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1422
 	.byte 2,35,0,6
 	.asciz "m_boxed"
 
-LDIFF_SYM1390=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1390
+LDIFF_SYM1423=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1423
 	.byte 2,35,16,6
 	.asciz "m_valueFactory"
 
-LDIFF_SYM1391=LTDIE_204_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1391
+LDIFF_SYM1424=LTDIE_206_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1424
 	.byte 2,35,24,6
 	.asciz "m_threadSafeObj"
 
-LDIFF_SYM1392=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1392
+LDIFF_SYM1425=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1425
 	.byte 2,35,32,0,7
 	.asciz "System_Lazy`1"
 
-LDIFF_SYM1393=LTDIE_203 - Ldebug_info_start
-	.long LDIFF_SYM1393
-LTDIE_203_POINTER:
+LDIFF_SYM1426=LTDIE_205 - Ldebug_info_start
+	.long LDIFF_SYM1426
+LTDIE_205_POINTER:
 
 	.byte 13
-LDIFF_SYM1394=LTDIE_203 - Ldebug_info_start
-	.long LDIFF_SYM1394
-LTDIE_203_REFERENCE:
+LDIFF_SYM1427=LTDIE_205 - Ldebug_info_start
+	.long LDIFF_SYM1427
+LTDIE_205_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1395=LTDIE_203 - Ldebug_info_start
-	.long LDIFF_SYM1395
-LTDIE_206:
+LDIFF_SYM1428=LTDIE_205 - Ldebug_info_start
+	.long LDIFF_SYM1428
+LTDIE_208:
 
 	.byte 8
 	.asciz "Xamarin_Forms_ScrollToMode"
 
 	.byte 4
-LDIFF_SYM1396=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1396
+LDIFF_SYM1429=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1429
 	.byte 9
 	.asciz "Element"
 
@@ -25865,26 +26996,26 @@ LDIFF_SYM1396=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "Xamarin_Forms_ScrollToMode"
 
-LDIFF_SYM1397=LTDIE_206 - Ldebug_info_start
-	.long LDIFF_SYM1397
-LTDIE_206_POINTER:
+LDIFF_SYM1430=LTDIE_208 - Ldebug_info_start
+	.long LDIFF_SYM1430
+LTDIE_208_POINTER:
 
 	.byte 13
-LDIFF_SYM1398=LTDIE_206 - Ldebug_info_start
-	.long LDIFF_SYM1398
-LTDIE_206_REFERENCE:
+LDIFF_SYM1431=LTDIE_208 - Ldebug_info_start
+	.long LDIFF_SYM1431
+LTDIE_208_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1399=LTDIE_206 - Ldebug_info_start
-	.long LDIFF_SYM1399
-LTDIE_207:
+LDIFF_SYM1432=LTDIE_208 - Ldebug_info_start
+	.long LDIFF_SYM1432
+LTDIE_209:
 
 	.byte 8
 	.asciz "Xamarin_Forms_ScrollToPosition"
 
 	.byte 4
-LDIFF_SYM1400=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1400
+LDIFF_SYM1433=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1433
 	.byte 9
 	.asciz "MakeVisible"
 
@@ -25900,89 +27031,89 @@ LDIFF_SYM1400=LDIE_I4 - Ldebug_info_start
 	.byte 3,0,7
 	.asciz "Xamarin_Forms_ScrollToPosition"
 
-LDIFF_SYM1401=LTDIE_207 - Ldebug_info_start
-	.long LDIFF_SYM1401
-LTDIE_207_POINTER:
+LDIFF_SYM1434=LTDIE_209 - Ldebug_info_start
+	.long LDIFF_SYM1434
+LTDIE_209_POINTER:
 
 	.byte 13
-LDIFF_SYM1402=LTDIE_207 - Ldebug_info_start
-	.long LDIFF_SYM1402
-LTDIE_207_REFERENCE:
+LDIFF_SYM1435=LTDIE_209 - Ldebug_info_start
+	.long LDIFF_SYM1435
+LTDIE_209_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1403=LTDIE_207 - Ldebug_info_start
-	.long LDIFF_SYM1403
-LTDIE_205:
+LDIFF_SYM1436=LTDIE_209 - Ldebug_info_start
+	.long LDIFF_SYM1436
+LTDIE_207:
 
 	.byte 5
 	.asciz "Xamarin_Forms_ScrollToRequestedEventArgs"
 
 	.byte 72,16
-LDIFF_SYM1404=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1404
+LDIFF_SYM1437=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1437
 	.byte 2,35,0,6
 	.asciz "<Element>k__BackingField"
 
-LDIFF_SYM1405=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1405
+LDIFF_SYM1438=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1438
 	.byte 2,35,16,6
 	.asciz "<Mode>k__BackingField"
 
-LDIFF_SYM1406=LTDIE_206 - Ldebug_info_start
-	.long LDIFF_SYM1406
+LDIFF_SYM1439=LTDIE_208 - Ldebug_info_start
+	.long LDIFF_SYM1439
 	.byte 2,35,40,6
 	.asciz "<Position>k__BackingField"
 
-LDIFF_SYM1407=LTDIE_207 - Ldebug_info_start
-	.long LDIFF_SYM1407
+LDIFF_SYM1440=LTDIE_209 - Ldebug_info_start
+	.long LDIFF_SYM1440
 	.byte 2,35,44,6
 	.asciz "<ScrollX>k__BackingField"
 
-LDIFF_SYM1408=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1408
+LDIFF_SYM1441=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1441
 	.byte 2,35,48,6
 	.asciz "<ScrollY>k__BackingField"
 
-LDIFF_SYM1409=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1409
+LDIFF_SYM1442=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM1442
 	.byte 2,35,56,6
 	.asciz "<ShouldAnimate>k__BackingField"
 
-LDIFF_SYM1410=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1410
+LDIFF_SYM1443=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1443
 	.byte 2,35,64,6
 	.asciz "<Group>k__BackingField"
 
-LDIFF_SYM1411=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1411
+LDIFF_SYM1444=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1444
 	.byte 2,35,24,6
 	.asciz "<Item>k__BackingField"
 
-LDIFF_SYM1412=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1412
+LDIFF_SYM1445=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1445
 	.byte 2,35,32,0,7
 	.asciz "Xamarin_Forms_ScrollToRequestedEventArgs"
 
-LDIFF_SYM1413=LTDIE_205 - Ldebug_info_start
-	.long LDIFF_SYM1413
-LTDIE_205_POINTER:
+LDIFF_SYM1446=LTDIE_207 - Ldebug_info_start
+	.long LDIFF_SYM1446
+LTDIE_207_POINTER:
 
 	.byte 13
-LDIFF_SYM1414=LTDIE_205 - Ldebug_info_start
-	.long LDIFF_SYM1414
-LTDIE_205_REFERENCE:
+LDIFF_SYM1447=LTDIE_207 - Ldebug_info_start
+	.long LDIFF_SYM1447
+LTDIE_207_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1415=LTDIE_205 - Ldebug_info_start
-	.long LDIFF_SYM1415
-LTDIE_208:
+LDIFF_SYM1448=LTDIE_207 - Ldebug_info_start
+	.long LDIFF_SYM1448
+LTDIE_210:
 
 	.byte 8
 	.asciz "Xamarin_Forms_ListViewCachingStrategy"
 
 	.byte 4
-LDIFF_SYM1416=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1416
+LDIFF_SYM1449=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1449
 	.byte 9
 	.asciz "RetainElement"
 
@@ -25992,396 +27123,396 @@ LDIFF_SYM1416=LDIE_I4 - Ldebug_info_start
 	.byte 1,0,7
 	.asciz "Xamarin_Forms_ListViewCachingStrategy"
 
-LDIFF_SYM1417=LTDIE_208 - Ldebug_info_start
-	.long LDIFF_SYM1417
-LTDIE_208_POINTER:
-
-	.byte 13
-LDIFF_SYM1418=LTDIE_208 - Ldebug_info_start
-	.long LDIFF_SYM1418
-LTDIE_208_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1419=LTDIE_208 - Ldebug_info_start
-	.long LDIFF_SYM1419
-LTDIE_209:
-
-	.byte 5
-	.asciz "System_EventHandler`1"
-
-	.byte 112,16
-LDIFF_SYM1420=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1420
-	.byte 2,35,0,0,7
-	.asciz "System_EventHandler`1"
-
-LDIFF_SYM1421=LTDIE_209 - Ldebug_info_start
-	.long LDIFF_SYM1421
-LTDIE_209_POINTER:
-
-	.byte 13
-LDIFF_SYM1422=LTDIE_209 - Ldebug_info_start
-	.long LDIFF_SYM1422
-LTDIE_209_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1423=LTDIE_209 - Ldebug_info_start
-	.long LDIFF_SYM1423
-LTDIE_210:
-
-	.byte 5
-	.asciz "System_EventHandler`1"
-
-	.byte 112,16
-LDIFF_SYM1424=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1424
-	.byte 2,35,0,0,7
-	.asciz "System_EventHandler`1"
-
-LDIFF_SYM1425=LTDIE_210 - Ldebug_info_start
-	.long LDIFF_SYM1425
+LDIFF_SYM1450=LTDIE_210 - Ldebug_info_start
+	.long LDIFF_SYM1450
 LTDIE_210_POINTER:
 
 	.byte 13
-LDIFF_SYM1426=LTDIE_210 - Ldebug_info_start
-	.long LDIFF_SYM1426
+LDIFF_SYM1451=LTDIE_210 - Ldebug_info_start
+	.long LDIFF_SYM1451
 LTDIE_210_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1427=LTDIE_210 - Ldebug_info_start
-	.long LDIFF_SYM1427
+LDIFF_SYM1452=LTDIE_210 - Ldebug_info_start
+	.long LDIFF_SYM1452
 LTDIE_211:
 
 	.byte 5
 	.asciz "System_EventHandler`1"
 
 	.byte 112,16
-LDIFF_SYM1428=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1428
+LDIFF_SYM1453=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1453
 	.byte 2,35,0,0,7
 	.asciz "System_EventHandler`1"
 
-LDIFF_SYM1429=LTDIE_211 - Ldebug_info_start
-	.long LDIFF_SYM1429
+LDIFF_SYM1454=LTDIE_211 - Ldebug_info_start
+	.long LDIFF_SYM1454
 LTDIE_211_POINTER:
 
 	.byte 13
-LDIFF_SYM1430=LTDIE_211 - Ldebug_info_start
-	.long LDIFF_SYM1430
+LDIFF_SYM1455=LTDIE_211 - Ldebug_info_start
+	.long LDIFF_SYM1455
 LTDIE_211_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1431=LTDIE_211 - Ldebug_info_start
-	.long LDIFF_SYM1431
+LDIFF_SYM1456=LTDIE_211 - Ldebug_info_start
+	.long LDIFF_SYM1456
 LTDIE_212:
 
 	.byte 5
 	.asciz "System_EventHandler`1"
 
 	.byte 112,16
-LDIFF_SYM1432=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1432
+LDIFF_SYM1457=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1457
 	.byte 2,35,0,0,7
 	.asciz "System_EventHandler`1"
 
-LDIFF_SYM1433=LTDIE_212 - Ldebug_info_start
-	.long LDIFF_SYM1433
+LDIFF_SYM1458=LTDIE_212 - Ldebug_info_start
+	.long LDIFF_SYM1458
 LTDIE_212_POINTER:
 
 	.byte 13
-LDIFF_SYM1434=LTDIE_212 - Ldebug_info_start
-	.long LDIFF_SYM1434
+LDIFF_SYM1459=LTDIE_212 - Ldebug_info_start
+	.long LDIFF_SYM1459
 LTDIE_212_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1435=LTDIE_212 - Ldebug_info_start
-	.long LDIFF_SYM1435
-LTDIE_187:
+LDIFF_SYM1460=LTDIE_212 - Ldebug_info_start
+	.long LDIFF_SYM1460
+LTDIE_213:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 112,16
+LDIFF_SYM1461=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1461
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM1462=LTDIE_213 - Ldebug_info_start
+	.long LDIFF_SYM1462
+LTDIE_213_POINTER:
+
+	.byte 13
+LDIFF_SYM1463=LTDIE_213 - Ldebug_info_start
+	.long LDIFF_SYM1463
+LTDIE_213_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1464=LTDIE_213 - Ldebug_info_start
+	.long LDIFF_SYM1464
+LTDIE_214:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 112,16
+LDIFF_SYM1465=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1465
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM1466=LTDIE_214 - Ldebug_info_start
+	.long LDIFF_SYM1466
+LTDIE_214_POINTER:
+
+	.byte 13
+LDIFF_SYM1467=LTDIE_214 - Ldebug_info_start
+	.long LDIFF_SYM1467
+LTDIE_214_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1468=LTDIE_214 - Ldebug_info_start
+	.long LDIFF_SYM1468
+LTDIE_189:
 
 	.byte 5
 	.asciz "Xamarin_Forms_ListView"
 
 	.byte 224,3,16
-LDIFF_SYM1436=LTDIE_188 - Ldebug_info_start
-	.long LDIFF_SYM1436
+LDIFF_SYM1469=LTDIE_190 - Ldebug_info_start
+	.long LDIFF_SYM1469
 	.byte 2,35,0,6
 	.asciz "_platformConfigurationRegistry"
 
-LDIFF_SYM1437=LTDIE_203_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1437
+LDIFF_SYM1470=LTDIE_205_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1470
 	.byte 3,35,240,2,6
 	.asciz "_groupDisplayBinding"
 
-LDIFF_SYM1438=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1438
+LDIFF_SYM1471=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1471
 	.byte 3,35,248,2,6
 	.asciz "_groupShortNameBinding"
 
-LDIFF_SYM1439=LTDIE_140_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1439
+LDIFF_SYM1472=LTDIE_140_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1472
 	.byte 3,35,128,3,6
 	.asciz "_headerElement"
 
-LDIFF_SYM1440=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1440
+LDIFF_SYM1473=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1473
 	.byte 3,35,136,3,6
 	.asciz "_footerElement"
 
-LDIFF_SYM1441=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1441
+LDIFF_SYM1474=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1474
 	.byte 3,35,144,3,6
 	.asciz "_pendingScroll"
 
-LDIFF_SYM1442=LTDIE_205_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1442
+LDIFF_SYM1475=LTDIE_207_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1475
 	.byte 3,35,152,3,6
 	.asciz "_previousGroupSelected"
 
-LDIFF_SYM1443=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1443
+LDIFF_SYM1476=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1476
 	.byte 3,35,208,3,6
 	.asciz "_previousRowSelected"
 
-LDIFF_SYM1444=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1444
+LDIFF_SYM1477=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1477
 	.byte 3,35,212,3,6
 	.asciz "_refreshAllowed"
 
-LDIFF_SYM1445=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1445
+LDIFF_SYM1478=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1478
 	.byte 3,35,216,3,6
 	.asciz "<CachingStrategy>k__BackingField"
 
-LDIFF_SYM1446=LTDIE_208 - Ldebug_info_start
-	.long LDIFF_SYM1446
+LDIFF_SYM1479=LTDIE_210 - Ldebug_info_start
+	.long LDIFF_SYM1479
 	.byte 3,35,220,3,6
 	.asciz "ItemAppearing"
 
-LDIFF_SYM1447=LTDIE_209_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1447
+LDIFF_SYM1480=LTDIE_211_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1480
 	.byte 3,35,160,3,6
 	.asciz "ItemDisappearing"
 
-LDIFF_SYM1448=LTDIE_209_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1448
+LDIFF_SYM1481=LTDIE_211_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1481
 	.byte 3,35,168,3,6
 	.asciz "ItemSelected"
 
-LDIFF_SYM1449=LTDIE_210_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1449
+LDIFF_SYM1482=LTDIE_212_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1482
 	.byte 3,35,176,3,6
 	.asciz "ItemTapped"
 
-LDIFF_SYM1450=LTDIE_211_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1450
+LDIFF_SYM1483=LTDIE_213_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1483
 	.byte 3,35,184,3,6
 	.asciz "Refreshing"
 
-LDIFF_SYM1451=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1451
+LDIFF_SYM1484=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1484
 	.byte 3,35,192,3,6
 	.asciz "ScrollToRequested"
 
-LDIFF_SYM1452=LTDIE_212_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1452
+LDIFF_SYM1485=LTDIE_214_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1485
 	.byte 3,35,200,3,0,7
 	.asciz "Xamarin_Forms_ListView"
 
-LDIFF_SYM1453=LTDIE_187 - Ldebug_info_start
-	.long LDIFF_SYM1453
-LTDIE_187_POINTER:
+LDIFF_SYM1486=LTDIE_189 - Ldebug_info_start
+	.long LDIFF_SYM1486
+LTDIE_189_POINTER:
 
 	.byte 13
-LDIFF_SYM1454=LTDIE_187 - Ldebug_info_start
-	.long LDIFF_SYM1454
-LTDIE_187_REFERENCE:
+LDIFF_SYM1487=LTDIE_189 - Ldebug_info_start
+	.long LDIFF_SYM1487
+LTDIE_189_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1455=LTDIE_187 - Ldebug_info_start
-	.long LDIFF_SYM1455
-LTDIE_186:
+LDIFF_SYM1488=LTDIE_189 - Ldebug_info_start
+	.long LDIFF_SYM1488
+LTDIE_188:
 
 	.byte 5
 	.asciz "MapsExample_LostPage"
 
 	.byte 208,3,16
-LDIFF_SYM1456=LTDIE_165 - Ldebug_info_start
-	.long LDIFF_SYM1456
+LDIFF_SYM1489=LTDIE_165 - Ldebug_info_start
+	.long LDIFF_SYM1489
 	.byte 2,35,0,6
 	.asciz "listView"
 
-LDIFF_SYM1457=LTDIE_187_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1457
+LDIFF_SYM1490=LTDIE_189_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1490
 	.byte 3,35,200,3,0,7
 	.asciz "MapsExample_LostPage"
 
-LDIFF_SYM1458=LTDIE_186 - Ldebug_info_start
-	.long LDIFF_SYM1458
-LTDIE_186_POINTER:
+LDIFF_SYM1491=LTDIE_188 - Ldebug_info_start
+	.long LDIFF_SYM1491
+LTDIE_188_POINTER:
 
 	.byte 13
-LDIFF_SYM1459=LTDIE_186 - Ldebug_info_start
-	.long LDIFF_SYM1459
-LTDIE_186_REFERENCE:
+LDIFF_SYM1492=LTDIE_188 - Ldebug_info_start
+	.long LDIFF_SYM1492
+LTDIE_188_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1460=LTDIE_186 - Ldebug_info_start
-	.long LDIFF_SYM1460
-LTDIE_213:
+LDIFF_SYM1493=LTDIE_188 - Ldebug_info_start
+	.long LDIFF_SYM1493
+LTDIE_215:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 40,16
-LDIFF_SYM1461=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1461
+LDIFF_SYM1494=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1494
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM1462=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1462
+LDIFF_SYM1495=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1495
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM1463=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1463
+LDIFF_SYM1496=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1496
 	.byte 2,35,32,6
 	.asciz "_version"
 
-LDIFF_SYM1464=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1464
+LDIFF_SYM1497=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1497
 	.byte 2,35,36,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1465=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1465
+LDIFF_SYM1498=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1498
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM1466=LTDIE_213 - Ldebug_info_start
-	.long LDIFF_SYM1466
-LTDIE_213_POINTER:
+LDIFF_SYM1499=LTDIE_215 - Ldebug_info_start
+	.long LDIFF_SYM1499
+LTDIE_215_POINTER:
 
 	.byte 13
-LDIFF_SYM1467=LTDIE_213 - Ldebug_info_start
-	.long LDIFF_SYM1467
-LTDIE_213_REFERENCE:
+LDIFF_SYM1500=LTDIE_215 - Ldebug_info_start
+	.long LDIFF_SYM1500
+LTDIE_215_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1468=LTDIE_213 - Ldebug_info_start
-	.long LDIFF_SYM1468
+LDIFF_SYM1501=LTDIE_215 - Ldebug_info_start
+	.long LDIFF_SYM1501
 	.byte 2
 	.asciz "MapsExample.LostPage:.ctor"
 	.asciz "MapsExample_LostPage__ctor"
 
 	.byte 8,10
 	.quad MapsExample_LostPage__ctor
-	.quad Lme_16
+	.quad Lme_1a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1469=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1469
+LDIFF_SYM1502=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1502
 	.byte 1,106,11
 	.asciz ""
 
-LDIFF_SYM1470=LTDIE_213_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1470
+LDIFF_SYM1503=LTDIE_215_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1503
 	.byte 1,105,11
 	.asciz ""
 
-LDIFF_SYM1471=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1471
+LDIFF_SYM1504=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1504
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1472=Lfde22_end - Lfde22_start
-	.long LDIFF_SYM1472
-Lfde22_start:
+LDIFF_SYM1505=Lfde26_end - Lfde26_start
+	.long LDIFF_SYM1505
+Lfde26_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage__ctor
 
-LDIFF_SYM1473=Lme_16 - MapsExample_LostPage__ctor
-	.long LDIFF_SYM1473
+LDIFF_SYM1506=Lme_1a - MapsExample_LostPage__ctor
+	.long LDIFF_SYM1506
 	.long 0
 	.byte 12,31,0,84,14,224,5,157,92,158,91,68,13,29,68,152,90,153,89,68,154,88
 	.align 3
-Lfde22_end:
+Lfde26_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_214:
+LTDIE_216:
 
 	.byte 5
 	.asciz "Xamarin_Forms_SelectedItemChangedEventArgs"
 
 	.byte 24,16
-LDIFF_SYM1474=LTDIE_179 - Ldebug_info_start
-	.long LDIFF_SYM1474
+LDIFF_SYM1507=LTDIE_180 - Ldebug_info_start
+	.long LDIFF_SYM1507
 	.byte 2,35,0,6
 	.asciz "<SelectedItem>k__BackingField"
 
-LDIFF_SYM1475=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1475
+LDIFF_SYM1508=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1508
 	.byte 2,35,16,0,7
 	.asciz "Xamarin_Forms_SelectedItemChangedEventArgs"
 
-LDIFF_SYM1476=LTDIE_214 - Ldebug_info_start
-	.long LDIFF_SYM1476
-LTDIE_214_POINTER:
+LDIFF_SYM1509=LTDIE_216 - Ldebug_info_start
+	.long LDIFF_SYM1509
+LTDIE_216_POINTER:
 
 	.byte 13
-LDIFF_SYM1477=LTDIE_214 - Ldebug_info_start
-	.long LDIFF_SYM1477
-LTDIE_214_REFERENCE:
+LDIFF_SYM1510=LTDIE_216 - Ldebug_info_start
+	.long LDIFF_SYM1510
+LTDIE_216_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1478=LTDIE_214 - Ldebug_info_start
-	.long LDIFF_SYM1478
+LDIFF_SYM1511=LTDIE_216 - Ldebug_info_start
+	.long LDIFF_SYM1511
 	.byte 2
 	.asciz "MapsExample.LostPage:OnItemSelected"
 	.asciz "MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs"
 
 	.byte 8,29
 	.quad MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
-	.quad Lme_17
+	.quad Lme_1b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1479=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1479
+LDIFF_SYM1512=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1512
 	.byte 2,141,40,3
 	.asciz "sender"
 
-LDIFF_SYM1480=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1480
+LDIFF_SYM1513=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1513
 	.byte 1,105,3
 	.asciz "e"
 
-LDIFF_SYM1481=LTDIE_214_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1481
+LDIFF_SYM1514=LTDIE_216_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1514
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1482=Lfde23_end - Lfde23_start
-	.long LDIFF_SYM1482
-Lfde23_start:
+LDIFF_SYM1515=Lfde27_end - Lfde27_start
+	.long LDIFF_SYM1515
+Lfde27_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
 
-LDIFF_SYM1483=Lme_17 - MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
-	.long LDIFF_SYM1483
+LDIFF_SYM1516=Lme_1b - MapsExample_LostPage_OnItemSelected_object_Xamarin_Forms_SelectedItemChangedEventArgs
+	.long LDIFF_SYM1516
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,68,153,9,154,8
 	.align 3
-Lfde23_end:
+Lfde27_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26391,46 +27522,46 @@ Lfde23_end:
 
 	.byte 0,0
 	.quad MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
-	.quad Lme_18
+	.quad Lme_1c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1484=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1484
+LDIFF_SYM1517=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1517
 	.byte 2,141,16,3
 	.asciz "sender"
 
-LDIFF_SYM1485=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1485
+LDIFF_SYM1518=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1518
 	.byte 2,141,24,3
 	.asciz "e"
 
-LDIFF_SYM1486=LTDIE_214_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1486
+LDIFF_SYM1519=LTDIE_216_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1519
 	.byte 2,141,32,11
 	.asciz "V_0"
 
-LDIFF_SYM1487=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1487
+LDIFF_SYM1520=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1520
 	.byte 3,141,224,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1488=Lfde24_end - Lfde24_start
-	.long LDIFF_SYM1488
-Lfde24_start:
+LDIFF_SYM1521=Lfde28_end - Lfde28_start
+	.long LDIFF_SYM1521
+Lfde28_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
 
-LDIFF_SYM1489=Lme_18 - MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
-	.long LDIFF_SYM1489
+LDIFF_SYM1522=Lme_1c - MapsExample_LostPage_NavigateToLost_object_Xamarin_Forms_SelectedItemChangedEventArgs
+	.long LDIFF_SYM1522
 	.long 0
 	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29
 	.align 3
-Lfde24_end:
+Lfde28_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26440,46 +27571,46 @@ Lfde24_end:
 
 	.byte 8,46
 	.quad MapsExample_LostPage_ListView_Clicked_object_System_EventArgs
-	.quad Lme_19
+	.quad Lme_1d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1490=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1490
+LDIFF_SYM1523=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1523
 	.byte 2,141,56,3
 	.asciz "sender"
 
-LDIFF_SYM1491=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1491
+LDIFF_SYM1524=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1524
 	.byte 3,141,192,0,3
 	.asciz "e"
 
-LDIFF_SYM1492=LTDIE_179_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1492
+LDIFF_SYM1525=LTDIE_180_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1525
 	.byte 3,141,200,0,11
 	.asciz "report"
 
-LDIFF_SYM1493=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1493
+LDIFF_SYM1526=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1526
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1494=Lfde25_end - Lfde25_start
-	.long LDIFF_SYM1494
-Lfde25_start:
+LDIFF_SYM1527=Lfde29_end - Lfde29_start
+	.long LDIFF_SYM1527
+Lfde29_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage_ListView_Clicked_object_System_EventArgs
 
-LDIFF_SYM1495=Lme_19 - MapsExample_LostPage_ListView_Clicked_object_System_EventArgs
-	.long LDIFF_SYM1495
+LDIFF_SYM1528=Lme_1d - MapsExample_LostPage_ListView_Clicked_object_System_EventArgs
+	.long LDIFF_SYM1528
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,148,16,149,15,68,150,14,151,13,68,152,12
 	.align 3
-Lfde25_end:
+Lfde29_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26489,127 +27620,127 @@ Lfde25_end:
 
 	.byte 9,23
 	.quad MapsExample_LostPage_InitializeComponent
-	.quad Lme_1a
+	.quad Lme_1e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1496=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1496
+LDIFF_SYM1529=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1529
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1497=Lfde26_end - Lfde26_start
-	.long LDIFF_SYM1497
-Lfde26_start:
+LDIFF_SYM1530=Lfde30_end - Lfde30_start
+	.long LDIFF_SYM1530
+Lfde30_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage_InitializeComponent
 
-LDIFF_SYM1498=Lme_1a - MapsExample_LostPage_InitializeComponent
-	.long LDIFF_SYM1498
+LDIFF_SYM1531=Lme_1e - MapsExample_LostPage_InitializeComponent
+	.long LDIFF_SYM1531
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde26_end:
+Lfde30_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_215:
+LTDIE_217:
 
 	.byte 5
 	.asciz "_<NavigateToLost>c__async0"
 
 	.byte 88,16
-LDIFF_SYM1499=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM1499
+LDIFF_SYM1532=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1532
 	.byte 2,35,0,6
 	.asciz "e"
 
-LDIFF_SYM1500=LTDIE_214_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1500
+LDIFF_SYM1533=LTDIE_216_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1533
 	.byte 2,35,0,6
 	.asciz "<report>__1"
 
-LDIFF_SYM1501=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1501
+LDIFF_SYM1534=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1534
 	.byte 2,35,8,6
 	.asciz "$this"
 
-LDIFF_SYM1502=LTDIE_186_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1502
+LDIFF_SYM1535=LTDIE_188_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1535
 	.byte 2,35,16,6
 	.asciz "$builder"
 
-LDIFF_SYM1503=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1503
+LDIFF_SYM1536=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1536
 	.byte 2,35,24,6
 	.asciz "$PC"
 
-LDIFF_SYM1504=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1504
+LDIFF_SYM1537=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1537
 	.byte 2,35,56,6
 	.asciz "$awaiter0"
 
-LDIFF_SYM1505=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1505
+LDIFF_SYM1538=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1538
 	.byte 2,35,64,0,7
 	.asciz "_<NavigateToLost>c__async0"
 
-LDIFF_SYM1506=LTDIE_215 - Ldebug_info_start
-	.long LDIFF_SYM1506
-LTDIE_215_POINTER:
+LDIFF_SYM1539=LTDIE_217 - Ldebug_info_start
+	.long LDIFF_SYM1539
+LTDIE_217_POINTER:
 
 	.byte 13
-LDIFF_SYM1507=LTDIE_215 - Ldebug_info_start
-	.long LDIFF_SYM1507
-LTDIE_215_REFERENCE:
+LDIFF_SYM1540=LTDIE_217 - Ldebug_info_start
+	.long LDIFF_SYM1540
+LTDIE_217_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1508=LTDIE_215 - Ldebug_info_start
-	.long LDIFF_SYM1508
+LDIFF_SYM1541=LTDIE_217 - Ldebug_info_start
+	.long LDIFF_SYM1541
 	.byte 2
 	.asciz "MapsExample.LostPage/<NavigateToLost>c__async0:MoveNext"
 	.asciz "MapsExample_LostPage__NavigateToLostc__async0_MoveNext"
 
 	.byte 0,0
 	.quad MapsExample_LostPage__NavigateToLostc__async0_MoveNext
-	.quad Lme_1b
+	.quad Lme_1f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1509=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1509
+LDIFF_SYM1542=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1542
 	.byte 2,141,56,11
 	.asciz ""
 
-LDIFF_SYM1510=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM1510
+LDIFF_SYM1543=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM1543
 	.byte 1,106,11
 	.asciz ""
 
-LDIFF_SYM1511=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1511
+LDIFF_SYM1544=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1544
 	.byte 3,141,224,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1512=Lfde27_end - Lfde27_start
-	.long LDIFF_SYM1512
-Lfde27_start:
+LDIFF_SYM1545=Lfde31_end - Lfde31_start
+	.long LDIFF_SYM1545
+Lfde31_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage__NavigateToLostc__async0_MoveNext
 
-LDIFF_SYM1513=Lme_1b - MapsExample_LostPage__NavigateToLostc__async0_MoveNext
-	.long LDIFF_SYM1513
+LDIFF_SYM1546=Lme_1f - MapsExample_LostPage__NavigateToLostc__async0_MoveNext
+	.long LDIFF_SYM1546
 	.long 0
 	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26,151,25,68,152,24,153,23,68,154,22
 	.align 3
-Lfde27_end:
+Lfde31_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26619,92 +27750,92 @@ Lfde27_end:
 
 	.byte 0,0
 	.quad MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-	.quad Lme_1c
+	.quad Lme_20
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1514=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1514
+LDIFF_SYM1547=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1547
 	.byte 2,141,16,3
 	.asciz "stateMachine"
 
-LDIFF_SYM1515=LTDIE_184_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1515
+LDIFF_SYM1548=LTDIE_185_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1548
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1516=Lfde28_end - Lfde28_start
-	.long LDIFF_SYM1516
-Lfde28_start:
+LDIFF_SYM1549=Lfde32_end - Lfde32_start
+	.long LDIFF_SYM1549
+Lfde32_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 
-LDIFF_SYM1517=Lme_1c - MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-	.long LDIFF_SYM1517
+LDIFF_SYM1550=Lme_20 - MapsExample_LostPage__NavigateToLostc__async0_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+	.long LDIFF_SYM1550
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde28_end:
+Lfde32_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_216:
+LTDIE_218:
 
 	.byte 5
 	.asciz "MapsExample_SettingsPage"
 
 	.byte 200,3,16
-LDIFF_SYM1518=LTDIE_165 - Ldebug_info_start
-	.long LDIFF_SYM1518
+LDIFF_SYM1551=LTDIE_165 - Ldebug_info_start
+	.long LDIFF_SYM1551
 	.byte 2,35,0,0,7
 	.asciz "MapsExample_SettingsPage"
 
-LDIFF_SYM1519=LTDIE_216 - Ldebug_info_start
-	.long LDIFF_SYM1519
-LTDIE_216_POINTER:
+LDIFF_SYM1552=LTDIE_218 - Ldebug_info_start
+	.long LDIFF_SYM1552
+LTDIE_218_POINTER:
 
 	.byte 13
-LDIFF_SYM1520=LTDIE_216 - Ldebug_info_start
-	.long LDIFF_SYM1520
-LTDIE_216_REFERENCE:
+LDIFF_SYM1553=LTDIE_218 - Ldebug_info_start
+	.long LDIFF_SYM1553
+LTDIE_218_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1521=LTDIE_216 - Ldebug_info_start
-	.long LDIFF_SYM1521
+LDIFF_SYM1554=LTDIE_218 - Ldebug_info_start
+	.long LDIFF_SYM1554
 	.byte 2
 	.asciz "MapsExample.SettingsPage:.ctor"
 	.asciz "MapsExample_SettingsPage__ctor"
 
 	.byte 10,10
 	.quad MapsExample_SettingsPage__ctor
-	.quad Lme_1d
+	.quad Lme_21
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1522=LTDIE_216_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1522
+LDIFF_SYM1555=LTDIE_218_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1555
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1523=Lfde29_end - Lfde29_start
-	.long LDIFF_SYM1523
-Lfde29_start:
+LDIFF_SYM1556=Lfde33_end - Lfde33_start
+	.long LDIFF_SYM1556
+Lfde33_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_SettingsPage__ctor
 
-LDIFF_SYM1524=Lme_1d - MapsExample_SettingsPage__ctor
-	.long LDIFF_SYM1524
+LDIFF_SYM1557=Lme_21 - MapsExample_SettingsPage__ctor
+	.long LDIFF_SYM1557
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde29_end:
+Lfde33_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26714,191 +27845,191 @@ Lfde29_end:
 
 	.byte 11,20
 	.quad MapsExample_SettingsPage_InitializeComponent
-	.quad Lme_1e
+	.quad Lme_22
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1525=LTDIE_216_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1525
+LDIFF_SYM1558=LTDIE_218_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1558
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1526=Lfde30_end - Lfde30_start
-	.long LDIFF_SYM1526
-Lfde30_start:
+LDIFF_SYM1559=Lfde34_end - Lfde34_start
+	.long LDIFF_SYM1559
+Lfde34_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_SettingsPage_InitializeComponent
 
-LDIFF_SYM1527=Lme_1e - MapsExample_SettingsPage_InitializeComponent
-	.long LDIFF_SYM1527
+LDIFF_SYM1560=Lme_22 - MapsExample_SettingsPage_InitializeComponent
+	.long LDIFF_SYM1560
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde30_end:
+Lfde34_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_220:
+LTDIE_222:
 
 	.byte 5
 	.asciz "System_Func`1"
 
 	.byte 112,16
-LDIFF_SYM1528=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1528
+LDIFF_SYM1561=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1561
 	.byte 2,35,0,0,7
 	.asciz "System_Func`1"
 
-LDIFF_SYM1529=LTDIE_220 - Ldebug_info_start
-	.long LDIFF_SYM1529
-LTDIE_220_POINTER:
+LDIFF_SYM1562=LTDIE_222 - Ldebug_info_start
+	.long LDIFF_SYM1562
+LTDIE_222_POINTER:
 
 	.byte 13
-LDIFF_SYM1530=LTDIE_220 - Ldebug_info_start
-	.long LDIFF_SYM1530
-LTDIE_220_REFERENCE:
+LDIFF_SYM1563=LTDIE_222 - Ldebug_info_start
+	.long LDIFF_SYM1563
+LTDIE_222_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1531=LTDIE_220 - Ldebug_info_start
-	.long LDIFF_SYM1531
-LTDIE_219:
+LDIFF_SYM1564=LTDIE_222 - Ldebug_info_start
+	.long LDIFF_SYM1564
+LTDIE_221:
 
 	.byte 5
 	.asciz "System_Lazy`1"
 
 	.byte 40,16
-LDIFF_SYM1532=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1532
+LDIFF_SYM1565=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1565
 	.byte 2,35,0,6
 	.asciz "m_boxed"
 
-LDIFF_SYM1533=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1533
+LDIFF_SYM1566=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1566
 	.byte 2,35,16,6
 	.asciz "m_valueFactory"
 
-LDIFF_SYM1534=LTDIE_220_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1534
+LDIFF_SYM1567=LTDIE_222_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1567
 	.byte 2,35,24,6
 	.asciz "m_threadSafeObj"
 
-LDIFF_SYM1535=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1535
+LDIFF_SYM1568=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1568
 	.byte 2,35,32,0,7
 	.asciz "System_Lazy`1"
 
-LDIFF_SYM1536=LTDIE_219 - Ldebug_info_start
-	.long LDIFF_SYM1536
-LTDIE_219_POINTER:
+LDIFF_SYM1569=LTDIE_221 - Ldebug_info_start
+	.long LDIFF_SYM1569
+LTDIE_221_POINTER:
 
 	.byte 13
-LDIFF_SYM1537=LTDIE_219 - Ldebug_info_start
-	.long LDIFF_SYM1537
-LTDIE_219_REFERENCE:
+LDIFF_SYM1570=LTDIE_221 - Ldebug_info_start
+	.long LDIFF_SYM1570
+LTDIE_221_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1538=LTDIE_219 - Ldebug_info_start
-	.long LDIFF_SYM1538
-LTDIE_218:
+LDIFF_SYM1571=LTDIE_221 - Ldebug_info_start
+	.long LDIFF_SYM1571
+LTDIE_220:
 
 	.byte 5
 	.asciz "Xamarin_Forms_Label"
 
 	.byte 248,2,16
-LDIFF_SYM1539=LTDIE_168 - Ldebug_info_start
-	.long LDIFF_SYM1539
+LDIFF_SYM1572=LTDIE_168 - Ldebug_info_start
+	.long LDIFF_SYM1572
 	.byte 2,35,0,6
 	.asciz "_platformConfigurationRegistry"
 
-LDIFF_SYM1540=LTDIE_219_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1540
+LDIFF_SYM1573=LTDIE_221_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1573
 	.byte 3,35,232,2,6
 	.asciz "_cancelEvents"
 
-LDIFF_SYM1541=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1541
+LDIFF_SYM1574=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1574
 	.byte 3,35,240,2,0,7
 	.asciz "Xamarin_Forms_Label"
 
-LDIFF_SYM1542=LTDIE_218 - Ldebug_info_start
-	.long LDIFF_SYM1542
-LTDIE_218_POINTER:
+LDIFF_SYM1575=LTDIE_220 - Ldebug_info_start
+	.long LDIFF_SYM1575
+LTDIE_220_POINTER:
 
 	.byte 13
-LDIFF_SYM1543=LTDIE_218 - Ldebug_info_start
-	.long LDIFF_SYM1543
-LTDIE_218_REFERENCE:
+LDIFF_SYM1576=LTDIE_220 - Ldebug_info_start
+	.long LDIFF_SYM1576
+LTDIE_220_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1544=LTDIE_218 - Ldebug_info_start
-	.long LDIFF_SYM1544
-LTDIE_217:
+LDIFF_SYM1577=LTDIE_220 - Ldebug_info_start
+	.long LDIFF_SYM1577
+LTDIE_219:
 
 	.byte 5
 	.asciz "MapsExample_LostDetailPage"
 
 	.byte 208,3,16
-LDIFF_SYM1545=LTDIE_165 - Ldebug_info_start
-	.long LDIFF_SYM1545
+LDIFF_SYM1578=LTDIE_165 - Ldebug_info_start
+	.long LDIFF_SYM1578
 	.byte 2,35,0,6
 	.asciz "nameLabel"
 
-LDIFF_SYM1546=LTDIE_218_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1546
+LDIFF_SYM1579=LTDIE_220_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1579
 	.byte 3,35,200,3,0,7
 	.asciz "MapsExample_LostDetailPage"
 
-LDIFF_SYM1547=LTDIE_217 - Ldebug_info_start
-	.long LDIFF_SYM1547
-LTDIE_217_POINTER:
+LDIFF_SYM1580=LTDIE_219 - Ldebug_info_start
+	.long LDIFF_SYM1580
+LTDIE_219_POINTER:
 
 	.byte 13
-LDIFF_SYM1548=LTDIE_217 - Ldebug_info_start
-	.long LDIFF_SYM1548
-LTDIE_217_REFERENCE:
+LDIFF_SYM1581=LTDIE_219 - Ldebug_info_start
+	.long LDIFF_SYM1581
+LTDIE_219_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1549=LTDIE_217 - Ldebug_info_start
-	.long LDIFF_SYM1549
+LDIFF_SYM1582=LTDIE_219 - Ldebug_info_start
+	.long LDIFF_SYM1582
 	.byte 2
 	.asciz "MapsExample.LostDetailPage:.ctor"
 	.asciz "MapsExample_LostDetailPage__ctor_MapsExample_Report"
 
 	.byte 12,10
 	.quad MapsExample_LostDetailPage__ctor_MapsExample_Report
-	.quad Lme_1f
+	.quad Lme_23
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1550=LTDIE_217_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1550
+LDIFF_SYM1583=LTDIE_219_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1583
 	.byte 1,105,3
 	.asciz "report"
 
-LDIFF_SYM1551=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1551
+LDIFF_SYM1584=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1584
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1552=Lfde31_end - Lfde31_start
-	.long LDIFF_SYM1552
-Lfde31_start:
+LDIFF_SYM1585=Lfde35_end - Lfde35_start
+	.long LDIFF_SYM1585
+Lfde35_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostDetailPage__ctor_MapsExample_Report
 
-LDIFF_SYM1553=Lme_1f - MapsExample_LostDetailPage__ctor_MapsExample_Report
-	.long LDIFF_SYM1553
+LDIFF_SYM1586=Lme_23 - MapsExample_LostDetailPage__ctor_MapsExample_Report
+	.long LDIFF_SYM1586
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10
 	.align 3
-Lfde31_end:
+Lfde35_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26908,87 +28039,287 @@ Lfde31_end:
 
 	.byte 13,23
 	.quad MapsExample_LostDetailPage_InitializeComponent
-	.quad Lme_20
+	.quad Lme_24
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1554=LTDIE_217_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1554
+LDIFF_SYM1587=LTDIE_219_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1587
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1555=Lfde32_end - Lfde32_start
-	.long LDIFF_SYM1555
-Lfde32_start:
+LDIFF_SYM1588=Lfde36_end - Lfde36_start
+	.long LDIFF_SYM1588
+Lfde36_start:
 
 	.long 0
 	.align 3
 	.quad MapsExample_LostDetailPage_InitializeComponent
 
-LDIFF_SYM1556=Lme_20 - MapsExample_LostDetailPage_InitializeComponent
-	.long LDIFF_SYM1556
+LDIFF_SYM1589=Lme_24 - MapsExample_LostDetailPage_InitializeComponent
+	.long LDIFF_SYM1589
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde32_end:
+Lfde36_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_221:
+LTDIE_223:
+
+	.byte 5
+	.asciz "MapsExample_ViewReportModalPage"
+
+	.byte 208,3,16
+LDIFF_SYM1590=LTDIE_165 - Ldebug_info_start
+	.long LDIFF_SYM1590
+	.byte 2,35,0,6
+	.asciz "nameLabel"
+
+LDIFF_SYM1591=LTDIE_220_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1591
+	.byte 3,35,200,3,0,7
+	.asciz "MapsExample_ViewReportModalPage"
+
+LDIFF_SYM1592=LTDIE_223 - Ldebug_info_start
+	.long LDIFF_SYM1592
+LTDIE_223_POINTER:
+
+	.byte 13
+LDIFF_SYM1593=LTDIE_223 - Ldebug_info_start
+	.long LDIFF_SYM1593
+LTDIE_223_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1594=LTDIE_223 - Ldebug_info_start
+	.long LDIFF_SYM1594
+	.byte 2
+	.asciz "MapsExample.ViewReportModalPage:.ctor"
+	.asciz "MapsExample_ViewReportModalPage__ctor_MapsExample_Report"
+
+	.byte 14,10
+	.quad MapsExample_ViewReportModalPage__ctor_MapsExample_Report
+	.quad Lme_25
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1595=LTDIE_223_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1595
+	.byte 1,105,3
+	.asciz "report"
+
+LDIFF_SYM1596=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1596
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1597=Lfde37_end - Lfde37_start
+	.long LDIFF_SYM1597
+Lfde37_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_ViewReportModalPage__ctor_MapsExample_Report
+
+LDIFF_SYM1598=Lme_25 - MapsExample_ViewReportModalPage__ctor_MapsExample_Report
+	.long LDIFF_SYM1598
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10
+	.align 3
+Lfde37_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "MapsExample.ViewReportModalPage:BackButton_Clicked"
+	.asciz "MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs"
+
+	.byte 14,17
+	.quad MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs
+	.quad Lme_26
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1599=LTDIE_223_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1599
+	.byte 2,141,16,3
+	.asciz "sender"
+
+LDIFF_SYM1600=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1600
+	.byte 2,141,24,3
+	.asciz "e"
+
+LDIFF_SYM1601=LTDIE_180_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1601
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1602=Lfde38_end - Lfde38_start
+	.long LDIFF_SYM1602
+Lfde38_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs
+
+LDIFF_SYM1603=Lme_26 - MapsExample_ViewReportModalPage_BackButton_Clicked_object_System_EventArgs
+	.long LDIFF_SYM1603
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.align 3
+Lfde38_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "MapsExample.ViewReportModalPage:InitializeComponent"
+	.asciz "MapsExample_ViewReportModalPage_InitializeComponent"
+
+	.byte 15,23
+	.quad MapsExample_ViewReportModalPage_InitializeComponent
+	.quad Lme_27
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1604=LTDIE_223_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1604
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1605=Lfde39_end - Lfde39_start
+	.long LDIFF_SYM1605
+Lfde39_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_ViewReportModalPage_InitializeComponent
+
+LDIFF_SYM1606=Lme_27 - MapsExample_ViewReportModalPage_InitializeComponent
+	.long LDIFF_SYM1606
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
+	.align 3
+Lfde39_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_224:
+
+	.byte 5
+	.asciz "MapsExample_PinReport"
+
+	.byte 40,16
+LDIFF_SYM1607=LTDIE_163 - Ldebug_info_start
+	.long LDIFF_SYM1607
+	.byte 2,35,0,0,7
+	.asciz "MapsExample_PinReport"
+
+LDIFF_SYM1608=LTDIE_224 - Ldebug_info_start
+	.long LDIFF_SYM1608
+LTDIE_224_POINTER:
+
+	.byte 13
+LDIFF_SYM1609=LTDIE_224 - Ldebug_info_start
+	.long LDIFF_SYM1609
+LTDIE_224_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1610=LTDIE_224 - Ldebug_info_start
+	.long LDIFF_SYM1610
+	.byte 2
+	.asciz "MapsExample.PinReport:.ctor"
+	.asciz "MapsExample_PinReport__ctor"
+
+	.byte 16,6
+	.quad MapsExample_PinReport__ctor
+	.quad Lme_28
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1611=LTDIE_224_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1611
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1612=Lfde40_end - Lfde40_start
+	.long LDIFF_SYM1612
+Lfde40_start:
+
+	.long 0
+	.align 3
+	.quad MapsExample_PinReport__ctor
+
+LDIFF_SYM1613=Lme_28 - MapsExample_PinReport__ctor
+	.long LDIFF_SYM1613
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde40_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_225:
 
 	.byte 5
 	.asciz "System_Array"
 
 	.byte 16,16
-LDIFF_SYM1557=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1557
+LDIFF_SYM1614=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1614
 	.byte 2,35,0,0,7
 	.asciz "System_Array"
 
-LDIFF_SYM1558=LTDIE_221 - Ldebug_info_start
-	.long LDIFF_SYM1558
-LTDIE_221_POINTER:
+LDIFF_SYM1615=LTDIE_225 - Ldebug_info_start
+	.long LDIFF_SYM1615
+LTDIE_225_POINTER:
 
 	.byte 13
-LDIFF_SYM1559=LTDIE_221 - Ldebug_info_start
-	.long LDIFF_SYM1559
-LTDIE_221_REFERENCE:
+LDIFF_SYM1616=LTDIE_225 - Ldebug_info_start
+	.long LDIFF_SYM1616
+LTDIE_225_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1560=LTDIE_221 - Ldebug_info_start
-	.long LDIFF_SYM1560
+LDIFF_SYM1617=LTDIE_225 - Ldebug_info_start
+	.long LDIFF_SYM1617
 	.byte 2
 	.asciz "System.Array:InternalArray__ICollection_get_Count"
 	.asciz "System_Array_InternalArray__ICollection_get_Count"
 
-	.byte 14,68
+	.byte 17,68
 	.quad System_Array_InternalArray__ICollection_get_Count
-	.quad Lme_22
+	.quad Lme_2a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1561=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1561
+LDIFF_SYM1618=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1618
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1562=Lfde33_end - Lfde33_start
-	.long LDIFF_SYM1562
-Lfde33_start:
+LDIFF_SYM1619=Lfde41_end - Lfde41_start
+	.long LDIFF_SYM1619
+Lfde41_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__ICollection_get_Count
 
-LDIFF_SYM1563=Lme_22 - System_Array_InternalArray__ICollection_get_Count
-	.long LDIFF_SYM1563
+LDIFF_SYM1620=Lme_2a - System_Array_InternalArray__ICollection_get_Count
+	.long LDIFF_SYM1620
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde33_end:
+Lfde41_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -26996,436 +28327,29 @@ Lfde33_end:
 	.asciz "System.Array:InternalArray__ICollection_get_IsReadOnly"
 	.asciz "System_Array_InternalArray__ICollection_get_IsReadOnly"
 
-	.byte 14,73
+	.byte 17,73
 	.quad System_Array_InternalArray__ICollection_get_IsReadOnly
-	.quad Lme_23
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1564=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1564
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1565=Lfde34_end - Lfde34_start
-	.long LDIFF_SYM1565
-Lfde34_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_get_IsReadOnly
-
-LDIFF_SYM1566=Lme_23 - System_Array_InternalArray__ICollection_get_IsReadOnly
-	.long LDIFF_SYM1566
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde34_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Clear"
-	.asciz "System_Array_InternalArray__ICollection_Clear"
-
-	.byte 14,83
-	.quad System_Array_InternalArray__ICollection_Clear
-	.quad Lme_24
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1567=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1567
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1568=Lfde35_end - Lfde35_start
-	.long LDIFF_SYM1568
-Lfde35_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Clear
-
-LDIFF_SYM1569=Lme_24 - System_Array_InternalArray__ICollection_Clear
-	.long LDIFF_SYM1569
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde35_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Add<T_REF>"
-	.asciz "System_Array_InternalArray__ICollection_Add_T_REF_T_REF"
-
-	.byte 14,88
-	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
-	.quad Lme_25
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1570=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1570
-	.byte 2,141,16,3
-	.asciz "item"
-
-LDIFF_SYM1571=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1571
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1572=Lfde36_end - Lfde36_start
-	.long LDIFF_SYM1572
-Lfde36_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
-
-LDIFF_SYM1573=Lme_25 - System_Array_InternalArray__ICollection_Add_T_REF_T_REF
-	.long LDIFF_SYM1573
-	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
-	.align 3
-Lfde36_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Remove<T_REF>"
-	.asciz "System_Array_InternalArray__ICollection_Remove_T_REF_T_REF"
-
-	.byte 14,93
-	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
-	.quad Lme_26
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1574=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1574
-	.byte 2,141,16,3
-	.asciz "item"
-
-LDIFF_SYM1575=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1575
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1576=Lfde37_end - Lfde37_start
-	.long LDIFF_SYM1576
-Lfde37_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
-
-LDIFF_SYM1577=Lme_26 - System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
-	.long LDIFF_SYM1577
-	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
-	.align 3
-Lfde37_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Contains<T_REF>"
-	.asciz "System_Array_InternalArray__ICollection_Contains_T_REF_T_REF"
-
-	.byte 14,98
-	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
-	.quad Lme_27
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1578=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1578
-	.byte 1,106,3
-	.asciz "item"
-
-LDIFF_SYM1579=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1579
-	.byte 2,141,40,11
-	.asciz "length"
-
-LDIFF_SYM1580=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1580
-	.byte 1,105,11
-	.asciz "i"
-
-LDIFF_SYM1581=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1581
-	.byte 1,104,11
-	.asciz "value"
-
-LDIFF_SYM1582=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1582
-	.byte 3,141,208,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1583=Lfde38_end - Lfde38_start
-	.long LDIFF_SYM1583
-Lfde38_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
-
-LDIFF_SYM1584=Lme_27 - System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
-	.long LDIFF_SYM1584
-	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10
-	.align 3
-Lfde38_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_REF>"
-	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int"
-
-	.byte 14,123
-	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
-	.quad Lme_28
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1585=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1585
-	.byte 1,104,3
-	.asciz "array"
-
-LDIFF_SYM1586=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1586
-	.byte 1,105,3
-	.asciz "index"
-
-LDIFF_SYM1587=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1587
-	.byte 3,141,192,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1588=Lfde39_end - Lfde39_start
-	.long LDIFF_SYM1588
-Lfde39_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
-
-LDIFF_SYM1589=Lme_28 - System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
-	.long LDIFF_SYM1589
-	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,148,28,149,27,68,150,26,68,152,25,153,24,68,154,23
-	.align 3
-Lfde39_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_222:
-
-	.byte 5
-	.asciz "System_EventHandler`1"
-
-	.byte 112,16
-LDIFF_SYM1590=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1590
-	.byte 2,35,0,0,7
-	.asciz "System_EventHandler`1"
-
-LDIFF_SYM1591=LTDIE_222 - Ldebug_info_start
-	.long LDIFF_SYM1591
-LTDIE_222_POINTER:
-
-	.byte 13
-LDIFF_SYM1592=LTDIE_222 - Ldebug_info_start
-	.long LDIFF_SYM1592
-LTDIE_222_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1593=LTDIE_222 - Ldebug_info_start
-	.long LDIFF_SYM1593
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.EventHandler`1<Plugin.Geolocator.Abstractions.PositionEventArgs>:invoke_void_object_TEventArgs"
-	.asciz "wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
-	.quad Lme_29
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1594=LTDIE_222_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1594
-	.byte 1,104,3
-	.asciz "param0"
-
-LDIFF_SYM1595=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1595
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM1596=LTDIE_185_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1596
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1597=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1597
-	.byte 1,103,11
-	.asciz "V_1"
-
-LDIFF_SYM1598=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1598
-	.byte 1,102,11
-	.asciz "V_2"
-
-LDIFF_SYM1599=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1599
-	.byte 1,101,11
-	.asciz "V_3"
-
-LDIFF_SYM1600=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1600
-	.byte 1,100,11
-	.asciz "V_4"
-
-LDIFF_SYM1601=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1601
-	.byte 1,99,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1602=Lfde40_end - Lfde40_start
-	.long LDIFF_SYM1602
-Lfde40_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
-
-LDIFF_SYM1603=Lme_29 - wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
-	.long LDIFF_SYM1603
-	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
-	.align 3
-Lfde40_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_223:
-
-	.byte 5
-	.asciz "System_Nullable`1"
-
-	.byte 32,16
-LDIFF_SYM1604=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM1604
-	.byte 2,35,0,6
-	.asciz "value"
-
-LDIFF_SYM1605=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1605
-	.byte 2,35,16,6
-	.asciz "has_value"
-
-LDIFF_SYM1606=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1606
-	.byte 2,35,24,0,7
-	.asciz "System_Nullable`1"
-
-LDIFF_SYM1607=LTDIE_223 - Ldebug_info_start
-	.long LDIFF_SYM1607
-LTDIE_223_POINTER:
-
-	.byte 13
-LDIFF_SYM1608=LTDIE_223 - Ldebug_info_start
-	.long LDIFF_SYM1608
-LTDIE_223_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1609=LTDIE_223 - Ldebug_info_start
-	.long LDIFF_SYM1609
-	.byte 2
-	.asciz "System.Nullable`1<System.Threading.CancellationToken>:.ctor"
-	.asciz "System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken"
-
-	.byte 15,94
-	.quad System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
-	.quad Lme_2a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1610=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1610
-	.byte 1,106,3
-	.asciz "value"
-
-LDIFF_SYM1611=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1611
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1612=Lfde41_end - Lfde41_start
-	.long LDIFF_SYM1612
-Lfde41_start:
-
-	.long 0
-	.align 3
-	.quad System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
-
-LDIFF_SYM1613=Lme_2a - System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
-	.long LDIFF_SYM1613
-	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
-	.align 3
-Lfde41_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Nullable`1<System.Threading.CancellationToken>:get_HasValue"
-	.asciz "System_Nullable_1_System_Threading_CancellationToken_get_HasValue"
-
-	.byte 15,99
-	.quad System_Nullable_1_System_Threading_CancellationToken_get_HasValue
 	.quad Lme_2b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1614=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1614
+LDIFF_SYM1621=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1621
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1615=Lfde42_end - Lfde42_start
-	.long LDIFF_SYM1615
+LDIFF_SYM1622=Lfde42_end - Lfde42_start
+	.long LDIFF_SYM1622
 Lfde42_start:
 
 	.long 0
 	.align 3
-	.quad System_Nullable_1_System_Threading_CancellationToken_get_HasValue
+	.quad System_Array_InternalArray__ICollection_get_IsReadOnly
 
-LDIFF_SYM1616=Lme_2b - System_Nullable_1_System_Threading_CancellationToken_get_HasValue
-	.long LDIFF_SYM1616
+LDIFF_SYM1623=Lme_2b - System_Array_InternalArray__ICollection_get_IsReadOnly
+	.long LDIFF_SYM1623
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
@@ -27434,36 +28358,443 @@ Lfde42_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Nullable`1<System.Threading.CancellationToken>:get_Value"
-	.asciz "System_Nullable_1_System_Threading_CancellationToken_get_Value"
+	.asciz "System.Array:InternalArray__ICollection_Clear"
+	.asciz "System_Array_InternalArray__ICollection_Clear"
 
-	.byte 15,104
-	.quad System_Nullable_1_System_Threading_CancellationToken_get_Value
+	.byte 17,83
+	.quad System_Array_InternalArray__ICollection_Clear
 	.quad Lme_2c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1617=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1617
+LDIFF_SYM1624=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1624
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1625=Lfde43_end - Lfde43_start
+	.long LDIFF_SYM1625
+Lfde43_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_Clear
+
+LDIFF_SYM1626=Lme_2c - System_Array_InternalArray__ICollection_Clear
+	.long LDIFF_SYM1626
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde43_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__ICollection_Add<T_REF>"
+	.asciz "System_Array_InternalArray__ICollection_Add_T_REF_T_REF"
+
+	.byte 17,88
+	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
+	.quad Lme_2d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1627=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1627
+	.byte 2,141,16,3
+	.asciz "item"
+
+LDIFF_SYM1628=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1628
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1629=Lfde44_end - Lfde44_start
+	.long LDIFF_SYM1629
+Lfde44_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
+
+LDIFF_SYM1630=Lme_2d - System_Array_InternalArray__ICollection_Add_T_REF_T_REF
+	.long LDIFF_SYM1630
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde44_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__ICollection_Remove<T_REF>"
+	.asciz "System_Array_InternalArray__ICollection_Remove_T_REF_T_REF"
+
+	.byte 17,93
+	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
+	.quad Lme_2e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1631=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1631
+	.byte 2,141,16,3
+	.asciz "item"
+
+LDIFF_SYM1632=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1632
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1633=Lfde45_end - Lfde45_start
+	.long LDIFF_SYM1633
+Lfde45_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
+
+LDIFF_SYM1634=Lme_2e - System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
+	.long LDIFF_SYM1634
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde45_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__ICollection_Contains<T_REF>"
+	.asciz "System_Array_InternalArray__ICollection_Contains_T_REF_T_REF"
+
+	.byte 17,98
+	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
+	.quad Lme_2f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1635=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1635
+	.byte 1,106,3
+	.asciz "item"
+
+LDIFF_SYM1636=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1636
+	.byte 2,141,40,11
+	.asciz "length"
+
+LDIFF_SYM1637=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1637
+	.byte 1,105,11
+	.asciz "i"
+
+LDIFF_SYM1638=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1638
+	.byte 1,104,11
+	.asciz "value"
+
+LDIFF_SYM1639=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1639
+	.byte 3,141,208,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1640=Lfde46_end - Lfde46_start
+	.long LDIFF_SYM1640
+Lfde46_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
+
+LDIFF_SYM1641=Lme_2f - System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
+	.long LDIFF_SYM1641
+	.long 0
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10
+	.align 3
+Lfde46_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_REF>"
+	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int"
+
+	.byte 17,123
+	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
+	.quad Lme_30
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1642=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1642
+	.byte 1,104,3
+	.asciz "array"
+
+LDIFF_SYM1643=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1643
+	.byte 1,105,3
+	.asciz "index"
+
+LDIFF_SYM1644=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1644
+	.byte 3,141,192,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1645=Lfde47_end - Lfde47_start
+	.long LDIFF_SYM1645
+Lfde47_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
+
+LDIFF_SYM1646=Lme_30 - System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
+	.long LDIFF_SYM1646
+	.long 0
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,148,28,149,27,68,150,26,68,152,25,153,24,68,154,23
+	.align 3
+Lfde47_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_226:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 112,16
+LDIFF_SYM1647=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1647
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM1648=LTDIE_226 - Ldebug_info_start
+	.long LDIFF_SYM1648
+LTDIE_226_POINTER:
+
+	.byte 13
+LDIFF_SYM1649=LTDIE_226 - Ldebug_info_start
+	.long LDIFF_SYM1649
+LTDIE_226_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1650=LTDIE_226 - Ldebug_info_start
+	.long LDIFF_SYM1650
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.EventHandler`1<Plugin.Geolocator.Abstractions.PositionEventArgs>:invoke_void_object_TEventArgs"
+	.asciz "wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
+	.quad Lme_31
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1651=LTDIE_226_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1651
+	.byte 1,104,3
+	.asciz "param0"
+
+LDIFF_SYM1652=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1652
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM1653=LTDIE_186_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1653
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1654=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1654
+	.byte 1,103,11
+	.asciz "V_1"
+
+LDIFF_SYM1655=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1655
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM1656=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1656
+	.byte 1,101,11
+	.asciz "V_3"
+
+LDIFF_SYM1657=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1657
+	.byte 1,100,11
+	.asciz "V_4"
+
+LDIFF_SYM1658=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1658
+	.byte 1,99,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1659=Lfde48_end - Lfde48_start
+	.long LDIFF_SYM1659
+Lfde48_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
+
+LDIFF_SYM1660=Lme_31 - wrapper_delegate_invoke_System_EventHandler_1_Plugin_Geolocator_Abstractions_PositionEventArgs_invoke_void_object_TEventArgs_object_Plugin_Geolocator_Abstractions_PositionEventArgs
+	.long LDIFF_SYM1660
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
+	.align 3
+Lfde48_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_227:
+
+	.byte 5
+	.asciz "System_Nullable`1"
+
+	.byte 32,16
+LDIFF_SYM1661=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1661
+	.byte 2,35,0,6
+	.asciz "value"
+
+LDIFF_SYM1662=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1662
+	.byte 2,35,16,6
+	.asciz "has_value"
+
+LDIFF_SYM1663=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1663
+	.byte 2,35,24,0,7
+	.asciz "System_Nullable`1"
+
+LDIFF_SYM1664=LTDIE_227 - Ldebug_info_start
+	.long LDIFF_SYM1664
+LTDIE_227_POINTER:
+
+	.byte 13
+LDIFF_SYM1665=LTDIE_227 - Ldebug_info_start
+	.long LDIFF_SYM1665
+LTDIE_227_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1666=LTDIE_227 - Ldebug_info_start
+	.long LDIFF_SYM1666
+	.byte 2
+	.asciz "System.Nullable`1<System.Threading.CancellationToken>:.ctor"
+	.asciz "System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken"
+
+	.byte 18,94
+	.quad System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
+	.quad Lme_32
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1667=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1667
+	.byte 1,106,3
+	.asciz "value"
+
+LDIFF_SYM1668=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1668
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1669=Lfde49_end - Lfde49_start
+	.long LDIFF_SYM1669
+Lfde49_start:
+
+	.long 0
+	.align 3
+	.quad System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
+
+LDIFF_SYM1670=Lme_32 - System_Nullable_1_System_Threading_CancellationToken__ctor_System_Threading_CancellationToken
+	.long LDIFF_SYM1670
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
+	.align 3
+Lfde49_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Nullable`1<System.Threading.CancellationToken>:get_HasValue"
+	.asciz "System_Nullable_1_System_Threading_CancellationToken_get_HasValue"
+
+	.byte 18,99
+	.quad System_Nullable_1_System_Threading_CancellationToken_get_HasValue
+	.quad Lme_33
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1671=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1671
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1672=Lfde50_end - Lfde50_start
+	.long LDIFF_SYM1672
+Lfde50_start:
+
+	.long 0
+	.align 3
+	.quad System_Nullable_1_System_Threading_CancellationToken_get_HasValue
+
+LDIFF_SYM1673=Lme_33 - System_Nullable_1_System_Threading_CancellationToken_get_HasValue
+	.long LDIFF_SYM1673
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde50_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Nullable`1<System.Threading.CancellationToken>:get_Value"
+	.asciz "System_Nullable_1_System_Threading_CancellationToken_get_Value"
+
+	.byte 18,104
+	.quad System_Nullable_1_System_Threading_CancellationToken_get_Value
+	.quad Lme_34
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1674=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1674
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1618=Lfde43_end - Lfde43_start
-	.long LDIFF_SYM1618
-Lfde43_start:
+LDIFF_SYM1675=Lfde51_end - Lfde51_start
+	.long LDIFF_SYM1675
+Lfde51_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_get_Value
 
-LDIFF_SYM1619=Lme_2c - System_Nullable_1_System_Threading_CancellationToken_get_Value
-	.long LDIFF_SYM1619
+LDIFF_SYM1676=Lme_34 - System_Nullable_1_System_Threading_CancellationToken_get_Value
+	.long LDIFF_SYM1676
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde43_end:
+Lfde51_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27471,38 +28802,38 @@ Lfde43_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:Equals"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_Equals_object"
 
-	.byte 15,113
+	.byte 18,113
 	.quad System_Nullable_1_System_Threading_CancellationToken_Equals_object
-	.quad Lme_2d
+	.quad Lme_35
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1620=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1620
+LDIFF_SYM1677=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1677
 	.byte 1,105,3
 	.asciz "other"
 
-LDIFF_SYM1621=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1621
+LDIFF_SYM1678=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1678
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1622=Lfde44_end - Lfde44_start
-	.long LDIFF_SYM1622
-Lfde44_start:
+LDIFF_SYM1679=Lfde52_end - Lfde52_start
+	.long LDIFF_SYM1679
+Lfde52_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_Equals_object
 
-LDIFF_SYM1623=Lme_2d - System_Nullable_1_System_Threading_CancellationToken_Equals_object
-	.long LDIFF_SYM1623
+LDIFF_SYM1680=Lme_35 - System_Nullable_1_System_Threading_CancellationToken_Equals_object
+	.long LDIFF_SYM1680
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9
 	.align 3
-Lfde44_end:
+Lfde52_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27510,38 +28841,38 @@ Lfde44_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:Equals"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken"
 
-	.byte 15,123
+	.byte 18,123
 	.quad System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
-	.quad Lme_2e
+	.quad Lme_36
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1624=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1624
+LDIFF_SYM1681=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1681
 	.byte 1,106,3
 	.asciz "other"
 
-LDIFF_SYM1625=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1625
+LDIFF_SYM1682=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1682
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1626=Lfde45_end - Lfde45_start
-	.long LDIFF_SYM1626
-Lfde45_start:
+LDIFF_SYM1683=Lfde53_end - Lfde53_start
+	.long LDIFF_SYM1683
+Lfde53_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
 
-LDIFF_SYM1627=Lme_2e - System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
-	.long LDIFF_SYM1627
+LDIFF_SYM1684=Lme_36 - System_Nullable_1_System_Threading_CancellationToken_Equals_System_Nullable_1_System_Threading_CancellationToken
+	.long LDIFF_SYM1684
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12
 	.align 3
-Lfde45_end:
+Lfde53_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27549,33 +28880,33 @@ Lfde45_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:GetHashCode"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_GetHashCode"
 
-	.byte 15,134,1
+	.byte 18,134,1
 	.quad System_Nullable_1_System_Threading_CancellationToken_GetHashCode
-	.quad Lme_2f
+	.quad Lme_37
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1628=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1628
+LDIFF_SYM1685=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1685
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1629=Lfde46_end - Lfde46_start
-	.long LDIFF_SYM1629
-Lfde46_start:
+LDIFF_SYM1686=Lfde54_end - Lfde54_start
+	.long LDIFF_SYM1686
+Lfde54_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_GetHashCode
 
-LDIFF_SYM1630=Lme_2f - System_Nullable_1_System_Threading_CancellationToken_GetHashCode
-	.long LDIFF_SYM1630
+LDIFF_SYM1687=Lme_37 - System_Nullable_1_System_Threading_CancellationToken_GetHashCode
+	.long LDIFF_SYM1687
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
 	.align 3
-Lfde46_end:
+Lfde54_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27583,33 +28914,33 @@ Lfde46_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:GetValueOrDefault"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault"
 
-	.byte 15,142,1
+	.byte 18,142,1
 	.quad System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
-	.quad Lme_30
+	.quad Lme_38
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1631=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1631
+LDIFF_SYM1688=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1688
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1632=Lfde47_end - Lfde47_start
-	.long LDIFF_SYM1632
-Lfde47_start:
+LDIFF_SYM1689=Lfde55_end - Lfde55_start
+	.long LDIFF_SYM1689
+Lfde55_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
 
-LDIFF_SYM1633=Lme_30 - System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
-	.long LDIFF_SYM1633
+LDIFF_SYM1690=Lme_38 - System_Nullable_1_System_Threading_CancellationToken_GetValueOrDefault
+	.long LDIFF_SYM1690
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
-Lfde47_end:
+Lfde55_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27617,33 +28948,33 @@ Lfde47_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:ToString"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_ToString"
 
-	.byte 15,152,1
+	.byte 18,152,1
 	.quad System_Nullable_1_System_Threading_CancellationToken_ToString
-	.quad Lme_31
+	.quad Lme_39
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1634=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1634
+LDIFF_SYM1691=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1691
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1635=Lfde48_end - Lfde48_start
-	.long LDIFF_SYM1635
-Lfde48_start:
+LDIFF_SYM1692=Lfde56_end - Lfde56_start
+	.long LDIFF_SYM1692
+Lfde56_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_ToString
 
-LDIFF_SYM1636=Lme_31 - System_Nullable_1_System_Threading_CancellationToken_ToString
-	.long LDIFF_SYM1636
+LDIFF_SYM1693=Lme_39 - System_Nullable_1_System_Threading_CancellationToken_ToString
+	.long LDIFF_SYM1693
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
-Lfde48_end:
+Lfde56_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27651,33 +28982,33 @@ Lfde48_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:Box"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken"
 
-	.byte 15,177,1
+	.byte 18,177,1
 	.quad System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
-	.quad Lme_32
+	.quad Lme_3a
 
 	.byte 2,118,16,3
 	.asciz "o"
 
-LDIFF_SYM1637=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1637
+LDIFF_SYM1694=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1694
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1638=Lfde49_end - Lfde49_start
-	.long LDIFF_SYM1638
-Lfde49_start:
+LDIFF_SYM1695=Lfde57_end - Lfde57_start
+	.long LDIFF_SYM1695
+Lfde57_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
 
-LDIFF_SYM1639=Lme_32 - System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
-	.long LDIFF_SYM1639
+LDIFF_SYM1696=Lme_3a - System_Nullable_1_System_Threading_CancellationToken_Box_System_Nullable_1_System_Threading_CancellationToken
+	.long LDIFF_SYM1696
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
-Lfde49_end:
+Lfde57_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -27685,332 +29016,38 @@ Lfde49_end:
 	.asciz "System.Nullable`1<System.Threading.CancellationToken>:Unbox"
 	.asciz "System_Nullable_1_System_Threading_CancellationToken_Unbox_object"
 
-	.byte 15,185,1
+	.byte 18,185,1
 	.quad System_Nullable_1_System_Threading_CancellationToken_Unbox_object
-	.quad Lme_33
+	.quad Lme_3b
 
 	.byte 2,118,16,3
 	.asciz "o"
 
-LDIFF_SYM1640=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1640
+LDIFF_SYM1697=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1697
 	.byte 1,106,11
 	.asciz ""
 
-LDIFF_SYM1641=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1641
+LDIFF_SYM1698=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1698
 	.byte 3,141,248,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1642=Lfde50_end - Lfde50_start
-	.long LDIFF_SYM1642
-Lfde50_start:
+LDIFF_SYM1699=Lfde58_end - Lfde58_start
+	.long LDIFF_SYM1699
+Lfde58_start:
 
 	.long 0
 	.align 3
 	.quad System_Nullable_1_System_Threading_CancellationToken_Unbox_object
 
-LDIFF_SYM1643=Lme_33 - System_Nullable_1_System_Threading_CancellationToken_Unbox_object
-	.long LDIFF_SYM1643
+LDIFF_SYM1700=Lme_3b - System_Nullable_1_System_Threading_CancellationToken_Unbox_object
+	.long LDIFF_SYM1700
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16
 	.align 3
-Lfde50_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_224:
-
-	.byte 5
-	.asciz "System_Func`2"
-
-	.byte 112,16
-LDIFF_SYM1644=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1644
-	.byte 2,35,0,0,7
-	.asciz "System_Func`2"
-
-LDIFF_SYM1645=LTDIE_224 - Ldebug_info_start
-	.long LDIFF_SYM1645
-LTDIE_224_POINTER:
-
-	.byte 13
-LDIFF_SYM1646=LTDIE_224 - Ldebug_info_start
-	.long LDIFF_SYM1646
-LTDIE_224_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1647=LTDIE_224 - Ldebug_info_start
-	.long LDIFF_SYM1647
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Func`2<object,_Plugin.Geolocator.Abstractions.Position>:invoke_TResult_T"
-	.asciz "wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
-	.quad Lme_34
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1648=LTDIE_224_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1648
-	.byte 1,105,3
-	.asciz "param0"
-
-LDIFF_SYM1649=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1649
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1650=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1650
-	.byte 1,104,11
-	.asciz "V_1"
-
-LDIFF_SYM1651=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1651
-	.byte 1,103,11
-	.asciz "V_2"
-
-LDIFF_SYM1652=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1652
-	.byte 1,102,11
-	.asciz "V_3"
-
-LDIFF_SYM1653=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1653
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM1654=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1654
-	.byte 1,100,11
-	.asciz "V_5"
-
-LDIFF_SYM1655=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1655
-	.byte 1,99,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1656=Lfde51_end - Lfde51_start
-	.long LDIFF_SYM1656
-Lfde51_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
-
-LDIFF_SYM1657=Lme_34 - wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
-	.long LDIFF_SYM1657
-	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
-	.align 3
-Lfde51_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_225:
-
-	.byte 5
-	.asciz "System_Func`1"
-
-	.byte 112,16
-LDIFF_SYM1658=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1658
-	.byte 2,35,0,0,7
-	.asciz "System_Func`1"
-
-LDIFF_SYM1659=LTDIE_225 - Ldebug_info_start
-	.long LDIFF_SYM1659
-LTDIE_225_POINTER:
-
-	.byte 13
-LDIFF_SYM1660=LTDIE_225 - Ldebug_info_start
-	.long LDIFF_SYM1660
-LTDIE_225_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1661=LTDIE_225 - Ldebug_info_start
-	.long LDIFF_SYM1661
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Func`1<Plugin.Geolocator.Abstractions.Position>:invoke_TResult"
-	.asciz "wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
-	.quad Lme_35
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1662=LTDIE_225_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1662
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1663=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1663
-	.byte 1,105,11
-	.asciz "V_1"
-
-LDIFF_SYM1664=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1664
-	.byte 1,104,11
-	.asciz "V_2"
-
-LDIFF_SYM1665=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1665
-	.byte 1,103,11
-	.asciz "V_3"
-
-LDIFF_SYM1666=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1666
-	.byte 1,102,11
-	.asciz "V_4"
-
-LDIFF_SYM1667=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1667
-	.byte 1,101,11
-	.asciz "V_5"
-
-LDIFF_SYM1668=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1668
-	.byte 1,100,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1669=Lfde52_end - Lfde52_start
-	.long LDIFF_SYM1669
-Lfde52_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
-
-LDIFF_SYM1670=Lme_35 - wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
-	.long LDIFF_SYM1670
-	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7
-	.align 3
-Lfde52_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_226:
-
-	.byte 5
-	.asciz "System_Action`1"
-
-	.byte 112,16
-LDIFF_SYM1671=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1671
-	.byte 2,35,0,0,7
-	.asciz "System_Action`1"
-
-LDIFF_SYM1672=LTDIE_226 - Ldebug_info_start
-	.long LDIFF_SYM1672
-LTDIE_226_POINTER:
-
-	.byte 13
-LDIFF_SYM1673=LTDIE_226 - Ldebug_info_start
-	.long LDIFF_SYM1673
-LTDIE_226_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1674=LTDIE_226 - Ldebug_info_start
-	.long LDIFF_SYM1674
-LTDIE_227:
-
-	.byte 5
-	.asciz "System_Threading_Tasks_Task`1"
-
-	.byte 80,16
-LDIFF_SYM1675=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM1675
-	.byte 2,35,0,6
-	.asciz "m_result"
-
-LDIFF_SYM1676=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1676
-	.byte 2,35,72,0,7
-	.asciz "System_Threading_Tasks_Task`1"
-
-LDIFF_SYM1677=LTDIE_227 - Ldebug_info_start
-	.long LDIFF_SYM1677
-LTDIE_227_POINTER:
-
-	.byte 13
-LDIFF_SYM1678=LTDIE_227 - Ldebug_info_start
-	.long LDIFF_SYM1678
-LTDIE_227_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1679=LTDIE_227 - Ldebug_info_start
-	.long LDIFF_SYM1679
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Action`1<System.Threading.Tasks.Task`1<Plugin.Geolocator.Abstractions.Position>>:invoke_void_T"
-	.asciz "wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
-	.quad Lme_36
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1680=LTDIE_226_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1680
-	.byte 1,105,3
-	.asciz "param0"
-
-LDIFF_SYM1681=LTDIE_227_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1681
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM1682=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1682
-	.byte 1,104,11
-	.asciz "V_1"
-
-LDIFF_SYM1683=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1683
-	.byte 1,103,11
-	.asciz "V_2"
-
-LDIFF_SYM1684=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1684
-	.byte 1,102,11
-	.asciz "V_3"
-
-LDIFF_SYM1685=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1685
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM1686=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1686
-	.byte 1,100,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1687=Lfde53_end - Lfde53_start
-	.long LDIFF_SYM1687
-Lfde53_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
-
-LDIFF_SYM1688=Lme_36 - wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
-	.long LDIFF_SYM1688
-	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7
-	.align 3
-Lfde53_end:
+Lfde58_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_228:
@@ -28019,90 +29056,90 @@ LTDIE_228:
 	.asciz "System_Func`2"
 
 	.byte 112,16
-LDIFF_SYM1689=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1689
+LDIFF_SYM1701=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1701
 	.byte 2,35,0,0,7
 	.asciz "System_Func`2"
 
-LDIFF_SYM1690=LTDIE_228 - Ldebug_info_start
-	.long LDIFF_SYM1690
+LDIFF_SYM1702=LTDIE_228 - Ldebug_info_start
+	.long LDIFF_SYM1702
 LTDIE_228_POINTER:
 
 	.byte 13
-LDIFF_SYM1691=LTDIE_228 - Ldebug_info_start
-	.long LDIFF_SYM1691
+LDIFF_SYM1703=LTDIE_228 - Ldebug_info_start
+	.long LDIFF_SYM1703
 LTDIE_228_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1692=LTDIE_228 - Ldebug_info_start
-	.long LDIFF_SYM1692
+LDIFF_SYM1704=LTDIE_228 - Ldebug_info_start
+	.long LDIFF_SYM1704
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Func`2<object,_System.Threading.Tasks.Task>:invoke_TResult_T"
-	.asciz "wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object"
+	.asciz "(wrapper_delegate-invoke)_System.Func`2<object,_Plugin.Geolocator.Abstractions.Position>:invoke_TResult_T"
+	.asciz "wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
-	.quad Lme_37
+	.quad wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
+	.quad Lme_3c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1693=LTDIE_228_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1693
+LDIFF_SYM1705=LTDIE_228_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1705
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1694=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1694
+LDIFF_SYM1706=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1706
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1695=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1695
+LDIFF_SYM1707=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1707
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1696=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1696
+LDIFF_SYM1708=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1708
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1697=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1697
+LDIFF_SYM1709=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1709
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1698=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1698
+LDIFF_SYM1710=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1710
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1699=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1699
+LDIFF_SYM1711=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1711
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1700=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1700
+LDIFF_SYM1712=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1712
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1701=Lfde54_end - Lfde54_start
-	.long LDIFF_SYM1701
-Lfde54_start:
+LDIFF_SYM1713=Lfde59_end - Lfde59_start
+	.long LDIFF_SYM1713
+Lfde59_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
+	.quad wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
 
-LDIFF_SYM1702=Lme_37 - wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
-	.long LDIFF_SYM1702
+LDIFF_SYM1714=Lme_3c - wrapper_delegate_invoke_System_Func_2_object_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_object
+	.long LDIFF_SYM1714
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde54_end:
+Lfde59_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_229:
@@ -28111,85 +29148,85 @@ LTDIE_229:
 	.asciz "System_Func`1"
 
 	.byte 112,16
-LDIFF_SYM1703=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1703
+LDIFF_SYM1715=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1715
 	.byte 2,35,0,0,7
 	.asciz "System_Func`1"
 
-LDIFF_SYM1704=LTDIE_229 - Ldebug_info_start
-	.long LDIFF_SYM1704
+LDIFF_SYM1716=LTDIE_229 - Ldebug_info_start
+	.long LDIFF_SYM1716
 LTDIE_229_POINTER:
 
 	.byte 13
-LDIFF_SYM1705=LTDIE_229 - Ldebug_info_start
-	.long LDIFF_SYM1705
+LDIFF_SYM1717=LTDIE_229 - Ldebug_info_start
+	.long LDIFF_SYM1717
 LTDIE_229_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1706=LTDIE_229 - Ldebug_info_start
-	.long LDIFF_SYM1706
+LDIFF_SYM1718=LTDIE_229 - Ldebug_info_start
+	.long LDIFF_SYM1718
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Func`1<System.Threading.Tasks.Task>:invoke_TResult"
-	.asciz "wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult"
+	.asciz "(wrapper_delegate-invoke)_System.Func`1<Plugin.Geolocator.Abstractions.Position>:invoke_TResult"
+	.asciz "wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
-	.quad Lme_38
+	.quad wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
+	.quad Lme_3d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1707=LTDIE_229_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1707
+LDIFF_SYM1719=LTDIE_229_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1719
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1708=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1708
+LDIFF_SYM1720=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1720
 	.byte 1,105,11
 	.asciz "V_1"
 
-LDIFF_SYM1709=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1709
+LDIFF_SYM1721=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1721
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM1710=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1710
+LDIFF_SYM1722=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1722
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM1711=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1711
+LDIFF_SYM1723=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1723
 	.byte 1,102,11
 	.asciz "V_4"
 
-LDIFF_SYM1712=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1712
+LDIFF_SYM1724=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1724
 	.byte 1,101,11
 	.asciz "V_5"
 
-LDIFF_SYM1713=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1713
+LDIFF_SYM1725=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1725
 	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1714=Lfde55_end - Lfde55_start
-	.long LDIFF_SYM1714
-Lfde55_start:
+LDIFF_SYM1726=Lfde60_end - Lfde60_start
+	.long LDIFF_SYM1726
+Lfde60_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
+	.quad wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
 
-LDIFF_SYM1715=Lme_38 - wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
-	.long LDIFF_SYM1715
+LDIFF_SYM1727=Lme_3d - wrapper_delegate_invoke_System_Func_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult
+	.long LDIFF_SYM1727
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7
 	.align 3
-Lfde55_end:
+Lfde60_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_230:
@@ -28198,113 +29235,113 @@ LTDIE_230:
 	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM1716=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1716
+LDIFF_SYM1728=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1728
 	.byte 2,35,0,0,7
 	.asciz "System_Action`1"
 
-LDIFF_SYM1717=LTDIE_230 - Ldebug_info_start
-	.long LDIFF_SYM1717
+LDIFF_SYM1729=LTDIE_230 - Ldebug_info_start
+	.long LDIFF_SYM1729
 LTDIE_230_POINTER:
 
 	.byte 13
-LDIFF_SYM1718=LTDIE_230 - Ldebug_info_start
-	.long LDIFF_SYM1718
+LDIFF_SYM1730=LTDIE_230 - Ldebug_info_start
+	.long LDIFF_SYM1730
 LTDIE_230_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1719=LTDIE_230 - Ldebug_info_start
-	.long LDIFF_SYM1719
+LDIFF_SYM1731=LTDIE_230 - Ldebug_info_start
+	.long LDIFF_SYM1731
 LTDIE_231:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM1720=LTDIE_32 - Ldebug_info_start
-	.long LDIFF_SYM1720
+LDIFF_SYM1732=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM1732
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM1721=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1721
+LDIFF_SYM1733=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1733
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM1722=LTDIE_231 - Ldebug_info_start
-	.long LDIFF_SYM1722
+LDIFF_SYM1734=LTDIE_231 - Ldebug_info_start
+	.long LDIFF_SYM1734
 LTDIE_231_POINTER:
 
 	.byte 13
-LDIFF_SYM1723=LTDIE_231 - Ldebug_info_start
-	.long LDIFF_SYM1723
+LDIFF_SYM1735=LTDIE_231 - Ldebug_info_start
+	.long LDIFF_SYM1735
 LTDIE_231_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1724=LTDIE_231 - Ldebug_info_start
-	.long LDIFF_SYM1724
+LDIFF_SYM1736=LTDIE_231 - Ldebug_info_start
+	.long LDIFF_SYM1736
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Action`1<System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>>:invoke_void_T"
-	.asciz "wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task"
+	.asciz "(wrapper_delegate-invoke)_System.Action`1<System.Threading.Tasks.Task`1<Plugin.Geolocator.Abstractions.Position>>:invoke_void_T"
+	.asciz "wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.quad Lme_39
+	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
+	.quad Lme_3e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1725=LTDIE_230_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1725
+LDIFF_SYM1737=LTDIE_230_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1737
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1726=LTDIE_231_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1726
+LDIFF_SYM1738=LTDIE_231_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1738
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1727=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1727
+LDIFF_SYM1739=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1739
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1728=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1728
+LDIFF_SYM1740=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1740
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1729=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1729
+LDIFF_SYM1741=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1741
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1730=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1730
+LDIFF_SYM1742=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1742
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1731=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1731
+LDIFF_SYM1743=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1743
 	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1732=Lfde56_end - Lfde56_start
-	.long LDIFF_SYM1732
-Lfde56_start:
+LDIFF_SYM1744=Lfde61_end - Lfde61_start
+	.long LDIFF_SYM1744
+Lfde61_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
 
-LDIFF_SYM1733=Lme_39 - wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.long LDIFF_SYM1733
+LDIFF_SYM1745=Lme_3e - wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_void_T_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position
+	.long LDIFF_SYM1745
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7
 	.align 3
-Lfde56_end:
+Lfde61_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_232:
@@ -28313,110 +29350,177 @@ LTDIE_232:
 	.asciz "System_Func`2"
 
 	.byte 112,16
-LDIFF_SYM1734=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1734
+LDIFF_SYM1746=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1746
 	.byte 2,35,0,0,7
 	.asciz "System_Func`2"
 
-LDIFF_SYM1735=LTDIE_232 - Ldebug_info_start
-	.long LDIFF_SYM1735
+LDIFF_SYM1747=LTDIE_232 - Ldebug_info_start
+	.long LDIFF_SYM1747
 LTDIE_232_POINTER:
 
 	.byte 13
-LDIFF_SYM1736=LTDIE_232 - Ldebug_info_start
-	.long LDIFF_SYM1736
+LDIFF_SYM1748=LTDIE_232 - Ldebug_info_start
+	.long LDIFF_SYM1748
 LTDIE_232_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1737=LTDIE_232 - Ldebug_info_start
-	.long LDIFF_SYM1737
-LTDIE_233:
-
-	.byte 17
-	.asciz "System_IAsyncResult"
-
-	.byte 16,7
-	.asciz "System_IAsyncResult"
-
-LDIFF_SYM1738=LTDIE_233 - Ldebug_info_start
-	.long LDIFF_SYM1738
-LTDIE_233_POINTER:
-
-	.byte 13
-LDIFF_SYM1739=LTDIE_233 - Ldebug_info_start
-	.long LDIFF_SYM1739
-LTDIE_233_REFERENCE:
-
-	.byte 14
-LDIFF_SYM1740=LTDIE_233 - Ldebug_info_start
-	.long LDIFF_SYM1740
+LDIFF_SYM1749=LTDIE_232 - Ldebug_info_start
+	.long LDIFF_SYM1749
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Func`2<System.IAsyncResult,_System.Threading.Tasks.Task>:invoke_TResult_T"
-	.asciz "wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult"
+	.asciz "(wrapper_delegate-invoke)_System.Func`2<object,_System.Threading.Tasks.Task>:invoke_TResult_T"
+	.asciz "wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
-	.quad Lme_3a
+	.quad wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
+	.quad Lme_3f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1741=LTDIE_232_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1741
+LDIFF_SYM1750=LTDIE_232_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1750
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1742=LTDIE_233_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1742
+LDIFF_SYM1751=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1751
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1743=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1743
+LDIFF_SYM1752=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1752
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1744=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1744
+LDIFF_SYM1753=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1753
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1745=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1745
+LDIFF_SYM1754=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1754
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1746=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1746
+LDIFF_SYM1755=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1755
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1747=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1747
+LDIFF_SYM1756=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1756
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1748=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1748
+LDIFF_SYM1757=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1757
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1749=Lfde57_end - Lfde57_start
-	.long LDIFF_SYM1749
-Lfde57_start:
+LDIFF_SYM1758=Lfde62_end - Lfde62_start
+	.long LDIFF_SYM1758
+Lfde62_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
+	.quad wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
 
-LDIFF_SYM1750=Lme_3a - wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
-	.long LDIFF_SYM1750
+LDIFF_SYM1759=Lme_3f - wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_TResult_T_object
+	.long LDIFF_SYM1759
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde57_end:
+Lfde62_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_233:
+
+	.byte 5
+	.asciz "System_Func`1"
+
+	.byte 112,16
+LDIFF_SYM1760=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1760
+	.byte 2,35,0,0,7
+	.asciz "System_Func`1"
+
+LDIFF_SYM1761=LTDIE_233 - Ldebug_info_start
+	.long LDIFF_SYM1761
+LTDIE_233_POINTER:
+
+	.byte 13
+LDIFF_SYM1762=LTDIE_233 - Ldebug_info_start
+	.long LDIFF_SYM1762
+LTDIE_233_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1763=LTDIE_233 - Ldebug_info_start
+	.long LDIFF_SYM1763
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Func`1<System.Threading.Tasks.Task>:invoke_TResult"
+	.asciz "wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
+	.quad Lme_40
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1764=LTDIE_233_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1764
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1765=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1765
+	.byte 1,105,11
+	.asciz "V_1"
+
+LDIFF_SYM1766=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1766
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1767=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1767
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM1768=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1768
+	.byte 1,102,11
+	.asciz "V_4"
+
+LDIFF_SYM1769=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1769
+	.byte 1,101,11
+	.asciz "V_5"
+
+LDIFF_SYM1770=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1770
+	.byte 1,100,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1771=Lfde63_end - Lfde63_start
+	.long LDIFF_SYM1771
+Lfde63_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
+
+LDIFF_SYM1772=Lme_40 - wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
+	.long LDIFF_SYM1772
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7
+	.align 3
+Lfde63_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_234:
@@ -28425,481 +29529,708 @@ LTDIE_234:
 	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM1751=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1751
+LDIFF_SYM1773=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1773
 	.byte 2,35,0,0,7
 	.asciz "System_Action`1"
 
-LDIFF_SYM1752=LTDIE_234 - Ldebug_info_start
-	.long LDIFF_SYM1752
+LDIFF_SYM1774=LTDIE_234 - Ldebug_info_start
+	.long LDIFF_SYM1774
 LTDIE_234_POINTER:
 
 	.byte 13
-LDIFF_SYM1753=LTDIE_234 - Ldebug_info_start
-	.long LDIFF_SYM1753
+LDIFF_SYM1775=LTDIE_234 - Ldebug_info_start
+	.long LDIFF_SYM1775
 LTDIE_234_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1754=LTDIE_234 - Ldebug_info_start
-	.long LDIFF_SYM1754
+LDIFF_SYM1776=LTDIE_234 - Ldebug_info_start
+	.long LDIFF_SYM1776
+LTDIE_235:
+
+	.byte 5
+	.asciz "System_Threading_Tasks_Task`1"
+
+	.byte 80,16
+LDIFF_SYM1777=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM1777
+	.byte 2,35,0,6
+	.asciz "m_result"
+
+LDIFF_SYM1778=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1778
+	.byte 2,35,72,0,7
+	.asciz "System_Threading_Tasks_Task`1"
+
+LDIFF_SYM1779=LTDIE_235 - Ldebug_info_start
+	.long LDIFF_SYM1779
+LTDIE_235_POINTER:
+
+	.byte 13
+LDIFF_SYM1780=LTDIE_235 - Ldebug_info_start
+	.long LDIFF_SYM1780
+LTDIE_235_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1781=LTDIE_235 - Ldebug_info_start
+	.long LDIFF_SYM1781
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Action`1<System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>>:invoke_void_T"
+	.asciz "wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+	.quad Lme_41
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1782=LTDIE_234_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1782
+	.byte 1,105,3
+	.asciz "param0"
+
+LDIFF_SYM1783=LTDIE_235_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1783
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1784=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1784
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM1785=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1785
+	.byte 1,103,11
+	.asciz "V_2"
+
+LDIFF_SYM1786=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1786
+	.byte 1,102,11
+	.asciz "V_3"
+
+LDIFF_SYM1787=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1787
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM1788=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1788
+	.byte 1,100,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1789=Lfde64_end - Lfde64_start
+	.long LDIFF_SYM1789
+Lfde64_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+
+LDIFF_SYM1790=Lme_41 - wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_void_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+	.long LDIFF_SYM1790
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7
+	.align 3
+Lfde64_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_236:
+
+	.byte 5
+	.asciz "System_Func`2"
+
+	.byte 112,16
+LDIFF_SYM1791=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1791
+	.byte 2,35,0,0,7
+	.asciz "System_Func`2"
+
+LDIFF_SYM1792=LTDIE_236 - Ldebug_info_start
+	.long LDIFF_SYM1792
+LTDIE_236_POINTER:
+
+	.byte 13
+LDIFF_SYM1793=LTDIE_236 - Ldebug_info_start
+	.long LDIFF_SYM1793
+LTDIE_236_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1794=LTDIE_236 - Ldebug_info_start
+	.long LDIFF_SYM1794
+LTDIE_237:
+
+	.byte 17
+	.asciz "System_IAsyncResult"
+
+	.byte 16,7
+	.asciz "System_IAsyncResult"
+
+LDIFF_SYM1795=LTDIE_237 - Ldebug_info_start
+	.long LDIFF_SYM1795
+LTDIE_237_POINTER:
+
+	.byte 13
+LDIFF_SYM1796=LTDIE_237 - Ldebug_info_start
+	.long LDIFF_SYM1796
+LTDIE_237_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1797=LTDIE_237 - Ldebug_info_start
+	.long LDIFF_SYM1797
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Func`2<System.IAsyncResult,_System.Threading.Tasks.Task>:invoke_TResult_T"
+	.asciz "wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
+	.quad Lme_42
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1798=LTDIE_236_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1798
+	.byte 1,105,3
+	.asciz "param0"
+
+LDIFF_SYM1799=LTDIE_237_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1799
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1800=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1800
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM1801=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1801
+	.byte 1,103,11
+	.asciz "V_2"
+
+LDIFF_SYM1802=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1802
+	.byte 1,102,11
+	.asciz "V_3"
+
+LDIFF_SYM1803=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1803
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM1804=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1804
+	.byte 1,100,11
+	.asciz "V_5"
+
+LDIFF_SYM1805=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1805
+	.byte 1,99,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1806=Lfde65_end - Lfde65_start
+	.long LDIFF_SYM1806
+Lfde65_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
+
+LDIFF_SYM1807=Lme_42 - wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_Task_invoke_TResult_T_System_IAsyncResult
+	.long LDIFF_SYM1807
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
+	.align 3
+Lfde65_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_238:
+
+	.byte 5
+	.asciz "System_Action`1"
+
+	.byte 112,16
+LDIFF_SYM1808=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1808
+	.byte 2,35,0,0,7
+	.asciz "System_Action`1"
+
+LDIFF_SYM1809=LTDIE_238 - Ldebug_info_start
+	.long LDIFF_SYM1809
+LTDIE_238_POINTER:
+
+	.byte 13
+LDIFF_SYM1810=LTDIE_238 - Ldebug_info_start
+	.long LDIFF_SYM1810
+LTDIE_238_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1811=LTDIE_238 - Ldebug_info_start
+	.long LDIFF_SYM1811
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Action`1<System.IAsyncResult>:invoke_void_T"
 	.asciz "wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
-	.quad Lme_3b
+	.quad Lme_43
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1755=LTDIE_234_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1755
+LDIFF_SYM1812=LTDIE_238_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1812
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1756=LTDIE_233_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1756
+LDIFF_SYM1813=LTDIE_237_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1813
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1757=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1757
+LDIFF_SYM1814=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1814
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1758=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1758
+LDIFF_SYM1815=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1815
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1759=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1759
+LDIFF_SYM1816=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1816
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1760=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1760
+LDIFF_SYM1817=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1817
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1761=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1761
+LDIFF_SYM1818=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1818
 	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1762=Lfde58_end - Lfde58_start
-	.long LDIFF_SYM1762
-Lfde58_start:
+LDIFF_SYM1819=Lfde66_end - Lfde66_start
+	.long LDIFF_SYM1819
+Lfde66_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
 
-LDIFF_SYM1763=Lme_3b - wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
-	.long LDIFF_SYM1763
+LDIFF_SYM1820=Lme_43 - wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System_IAsyncResult
+	.long LDIFF_SYM1820
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7
 	.align 3
-Lfde58_end:
+Lfde66_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_235:
+LTDIE_239:
 
 	.byte 5
 	.asciz "System_Func`3"
 
 	.byte 112,16
-LDIFF_SYM1764=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1764
+LDIFF_SYM1821=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1821
 	.byte 2,35,0,0,7
 	.asciz "System_Func`3"
 
-LDIFF_SYM1765=LTDIE_235 - Ldebug_info_start
-	.long LDIFF_SYM1765
-LTDIE_235_POINTER:
+LDIFF_SYM1822=LTDIE_239 - Ldebug_info_start
+	.long LDIFF_SYM1822
+LTDIE_239_POINTER:
 
 	.byte 13
-LDIFF_SYM1766=LTDIE_235 - Ldebug_info_start
-	.long LDIFF_SYM1766
-LTDIE_235_REFERENCE:
+LDIFF_SYM1823=LTDIE_239 - Ldebug_info_start
+	.long LDIFF_SYM1823
+LTDIE_239_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1767=LTDIE_235 - Ldebug_info_start
-	.long LDIFF_SYM1767
-LTDIE_236:
+LDIFF_SYM1824=LTDIE_239 - Ldebug_info_start
+	.long LDIFF_SYM1824
+LTDIE_240:
 
 	.byte 5
 	.asciz "System_AsyncCallback"
 
 	.byte 112,16
-LDIFF_SYM1768=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1768
+LDIFF_SYM1825=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1825
 	.byte 2,35,0,0,7
 	.asciz "System_AsyncCallback"
 
-LDIFF_SYM1769=LTDIE_236 - Ldebug_info_start
-	.long LDIFF_SYM1769
-LTDIE_236_POINTER:
+LDIFF_SYM1826=LTDIE_240 - Ldebug_info_start
+	.long LDIFF_SYM1826
+LTDIE_240_POINTER:
 
 	.byte 13
-LDIFF_SYM1770=LTDIE_236 - Ldebug_info_start
-	.long LDIFF_SYM1770
-LTDIE_236_REFERENCE:
+LDIFF_SYM1827=LTDIE_240 - Ldebug_info_start
+	.long LDIFF_SYM1827
+LTDIE_240_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1771=LTDIE_236 - Ldebug_info_start
-	.long LDIFF_SYM1771
+LDIFF_SYM1828=LTDIE_240 - Ldebug_info_start
+	.long LDIFF_SYM1828
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Func`3<System.AsyncCallback,_object,_System.IAsyncResult>:invoke_TResult_T1_T2"
 	.asciz "wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
-	.quad Lme_3c
+	.quad Lme_44
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1772=LTDIE_235_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1772
+LDIFF_SYM1829=LTDIE_239_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1829
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1773=LTDIE_236_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1773
+LDIFF_SYM1830=LTDIE_240_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1830
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1774=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1774
+LDIFF_SYM1831=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1831
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1775=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1775
+LDIFF_SYM1832=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1832
 	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM1776=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1776
+LDIFF_SYM1833=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1833
 	.byte 1,102,11
 	.asciz "V_2"
 
-LDIFF_SYM1777=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1777
+LDIFF_SYM1834=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1834
 	.byte 1,101,11
 	.asciz "V_3"
 
-LDIFF_SYM1778=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1778
+LDIFF_SYM1835=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1835
 	.byte 1,100,11
 	.asciz "V_4"
 
-LDIFF_SYM1779=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1779
+LDIFF_SYM1836=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1836
 	.byte 1,99,11
 	.asciz "V_5"
 
-LDIFF_SYM1780=LTDIE_233_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1780
+LDIFF_SYM1837=LTDIE_237_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1837
 	.byte 3,141,232,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1781=Lfde59_end - Lfde59_start
-	.long LDIFF_SYM1781
-Lfde59_start:
+LDIFF_SYM1838=Lfde67_end - Lfde67_start
+	.long LDIFF_SYM1838
+Lfde67_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
 
-LDIFF_SYM1782=Lme_3c - wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
-	.long LDIFF_SYM1782
+LDIFF_SYM1839=Lme_44 - wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_invoke_TResult_T1_T2_System_AsyncCallback_object
+	.long LDIFF_SYM1839
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde59_end:
+Lfde67_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_237:
+LTDIE_241:
 
 	.byte 5
 	.asciz "System_Func`2"
 
 	.byte 112,16
-LDIFF_SYM1783=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1783
+LDIFF_SYM1840=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1840
 	.byte 2,35,0,0,7
 	.asciz "System_Func`2"
 
-LDIFF_SYM1784=LTDIE_237 - Ldebug_info_start
-	.long LDIFF_SYM1784
-LTDIE_237_POINTER:
+LDIFF_SYM1841=LTDIE_241 - Ldebug_info_start
+	.long LDIFF_SYM1841
+LTDIE_241_POINTER:
 
 	.byte 13
-LDIFF_SYM1785=LTDIE_237 - Ldebug_info_start
-	.long LDIFF_SYM1785
-LTDIE_237_REFERENCE:
+LDIFF_SYM1842=LTDIE_241 - Ldebug_info_start
+	.long LDIFF_SYM1842
+LTDIE_241_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1786=LTDIE_237 - Ldebug_info_start
-	.long LDIFF_SYM1786
+LDIFF_SYM1843=LTDIE_241 - Ldebug_info_start
+	.long LDIFF_SYM1843
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Func`2<System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>,_System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>>:invoke_TResult_T"
 	.asciz "wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.quad Lme_3d
+	.quad Lme_45
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1787=LTDIE_237_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1787
+LDIFF_SYM1844=LTDIE_241_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1844
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1788=LTDIE_231_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1788
+LDIFF_SYM1845=LTDIE_235_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1845
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1789=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1789
+LDIFF_SYM1846=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1846
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1790=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1790
+LDIFF_SYM1847=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1847
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1791=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1791
+LDIFF_SYM1848=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1848
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1792=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1792
+LDIFF_SYM1849=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1849
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1793=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1793
+LDIFF_SYM1850=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1850
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1794=LTDIE_231_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1794
+LDIFF_SYM1851=LTDIE_235_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1851
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1795=Lfde60_end - Lfde60_start
-	.long LDIFF_SYM1795
-Lfde60_start:
+LDIFF_SYM1852=Lfde68_end - Lfde68_start
+	.long LDIFF_SYM1852
+Lfde68_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
 
-LDIFF_SYM1796=Lme_3d - wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.long LDIFF_SYM1796
+LDIFF_SYM1853=Lme_45 - wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+	.long LDIFF_SYM1853
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde60_end:
+Lfde68_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_238:
+LTDIE_242:
 
 	.byte 5
 	.asciz "System_Func`2"
 
 	.byte 112,16
-LDIFF_SYM1797=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1797
+LDIFF_SYM1854=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1854
 	.byte 2,35,0,0,7
 	.asciz "System_Func`2"
 
-LDIFF_SYM1798=LTDIE_238 - Ldebug_info_start
-	.long LDIFF_SYM1798
-LTDIE_238_POINTER:
+LDIFF_SYM1855=LTDIE_242 - Ldebug_info_start
+	.long LDIFF_SYM1855
+LTDIE_242_POINTER:
 
 	.byte 13
-LDIFF_SYM1799=LTDIE_238 - Ldebug_info_start
-	.long LDIFF_SYM1799
-LTDIE_238_REFERENCE:
+LDIFF_SYM1856=LTDIE_242 - Ldebug_info_start
+	.long LDIFF_SYM1856
+LTDIE_242_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1800=LTDIE_238 - Ldebug_info_start
-	.long LDIFF_SYM1800
+LDIFF_SYM1857=LTDIE_242 - Ldebug_info_start
+	.long LDIFF_SYM1857
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Func`2<System.IAsyncResult,_Plugin.Geolocator.Abstractions.Position>:invoke_TResult_T"
 	.asciz "wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult
-	.quad Lme_3e
+	.quad Lme_46
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1801=LTDIE_238_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1801
+LDIFF_SYM1858=LTDIE_242_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1858
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1802=LTDIE_233_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1802
+LDIFF_SYM1859=LTDIE_237_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1859
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1803=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1803
+LDIFF_SYM1860=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1860
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1804=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1804
+LDIFF_SYM1861=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1861
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1805=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1805
+LDIFF_SYM1862=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1862
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1806=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1806
+LDIFF_SYM1863=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1863
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1807=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1807
+LDIFF_SYM1864=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1864
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1808=LTDIE_182_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1808
+LDIFF_SYM1865=LTDIE_183_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1865
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1809=Lfde61_end - Lfde61_start
-	.long LDIFF_SYM1809
-Lfde61_start:
+LDIFF_SYM1866=Lfde69_end - Lfde69_start
+	.long LDIFF_SYM1866
+Lfde69_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult
 
-LDIFF_SYM1810=Lme_3e - wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult
-	.long LDIFF_SYM1810
+LDIFF_SYM1867=Lme_46 - wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_IAsyncResult
+	.long LDIFF_SYM1867
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde61_end:
+Lfde69_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_239:
+LTDIE_243:
 
 	.byte 5
 	.asciz "System_Func`2"
 
 	.byte 112,16
-LDIFF_SYM1811=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1811
+LDIFF_SYM1868=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1868
 	.byte 2,35,0,0,7
 	.asciz "System_Func`2"
 
-LDIFF_SYM1812=LTDIE_239 - Ldebug_info_start
-	.long LDIFF_SYM1812
-LTDIE_239_POINTER:
+LDIFF_SYM1869=LTDIE_243 - Ldebug_info_start
+	.long LDIFF_SYM1869
+LTDIE_243_POINTER:
 
 	.byte 13
-LDIFF_SYM1813=LTDIE_239 - Ldebug_info_start
-	.long LDIFF_SYM1813
-LTDIE_239_REFERENCE:
+LDIFF_SYM1870=LTDIE_243 - Ldebug_info_start
+	.long LDIFF_SYM1870
+LTDIE_243_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1814=LTDIE_239 - Ldebug_info_start
-	.long LDIFF_SYM1814
+LDIFF_SYM1871=LTDIE_243 - Ldebug_info_start
+	.long LDIFF_SYM1871
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Func`2<System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>,_System.Threading.Tasks.Task`1<Plugin.Geolocator.Abstractions.Position>>:invoke_TResult_T"
 	.asciz "wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.quad Lme_3f
+	.quad Lme_47
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1815=LTDIE_239_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1815
+LDIFF_SYM1872=LTDIE_243_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1872
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1816=LTDIE_231_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1816
+LDIFF_SYM1873=LTDIE_235_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1873
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1817=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1817
+LDIFF_SYM1874=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1874
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1818=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1818
+LDIFF_SYM1875=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1875
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1819=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1819
+LDIFF_SYM1876=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1876
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1820=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1820
+LDIFF_SYM1877=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1877
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1821=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1821
+LDIFF_SYM1878=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1878
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1822=LTDIE_227_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1822
+LDIFF_SYM1879=LTDIE_231_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1879
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1823=Lfde62_end - Lfde62_start
-	.long LDIFF_SYM1823
-Lfde62_start:
+LDIFF_SYM1880=Lfde70_end - Lfde70_start
+	.long LDIFF_SYM1880
+Lfde70_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
 
-LDIFF_SYM1824=Lme_3f - wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
-	.long LDIFF_SYM1824
+LDIFF_SYM1881=Lme_47 - wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_Plugin_Geolocator_Abstractions_Position_invoke_TResult_T_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
+	.long LDIFF_SYM1881
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde62_end:
+Lfde70_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -28907,380 +30238,380 @@ Lfde62_end:
 	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_REF>"
 	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF"
 
-	.byte 14,78
+	.byte 17,78
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
-	.quad Lme_40
+	.quad Lme_48
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1825=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1825
+LDIFF_SYM1882=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1882
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1826=Lfde63_end - Lfde63_start
-	.long LDIFF_SYM1826
-Lfde63_start:
+LDIFF_SYM1883=Lfde71_end - Lfde71_start
+	.long LDIFF_SYM1883
+Lfde71_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 
-LDIFF_SYM1827=Lme_40 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
-	.long LDIFF_SYM1827
+LDIFF_SYM1884=Lme_48 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
+	.long LDIFF_SYM1884
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
-Lfde63_end:
+Lfde71_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_240:
+LTDIE_244:
 
 	.byte 5
 	.asciz "System_Predicate`1"
 
 	.byte 112,16
-LDIFF_SYM1828=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1828
+LDIFF_SYM1885=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1885
 	.byte 2,35,0,0,7
 	.asciz "System_Predicate`1"
 
-LDIFF_SYM1829=LTDIE_240 - Ldebug_info_start
-	.long LDIFF_SYM1829
-LTDIE_240_POINTER:
+LDIFF_SYM1886=LTDIE_244 - Ldebug_info_start
+	.long LDIFF_SYM1886
+LTDIE_244_POINTER:
 
 	.byte 13
-LDIFF_SYM1830=LTDIE_240 - Ldebug_info_start
-	.long LDIFF_SYM1830
-LTDIE_240_REFERENCE:
+LDIFF_SYM1887=LTDIE_244 - Ldebug_info_start
+	.long LDIFF_SYM1887
+LTDIE_244_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1831=LTDIE_240 - Ldebug_info_start
-	.long LDIFF_SYM1831
+LDIFF_SYM1888=LTDIE_244 - Ldebug_info_start
+	.long LDIFF_SYM1888
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<MapsExample.Report>:invoke_bool_T"
 	.asciz "wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report
-	.quad Lme_41
+	.quad Lme_49
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1832=LTDIE_240_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1832
+LDIFF_SYM1889=LTDIE_244_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1889
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1833=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1833
+LDIFF_SYM1890=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1890
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1834=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1834
+LDIFF_SYM1891=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1891
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1835=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1835
+LDIFF_SYM1892=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1892
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1836=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1836
+LDIFF_SYM1893=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1893
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1837=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1837
+LDIFF_SYM1894=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1894
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1838=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1838
+LDIFF_SYM1895=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1895
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM1839=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1839
+LDIFF_SYM1896=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1896
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1840=Lfde64_end - Lfde64_start
-	.long LDIFF_SYM1840
-Lfde64_start:
+LDIFF_SYM1897=Lfde72_end - Lfde72_start
+	.long LDIFF_SYM1897
+Lfde72_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report
 
-LDIFF_SYM1841=Lme_41 - wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report
-	.long LDIFF_SYM1841
+LDIFF_SYM1898=Lme_49 - wrapper_delegate_invoke_System_Predicate_1_MapsExample_Report_invoke_bool_T_MapsExample_Report
+	.long LDIFF_SYM1898
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde64_end:
+Lfde72_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_241:
+LTDIE_245:
 
 	.byte 5
 	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM1842=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1842
+LDIFF_SYM1899=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1899
 	.byte 2,35,0,0,7
 	.asciz "System_Action`1"
 
-LDIFF_SYM1843=LTDIE_241 - Ldebug_info_start
-	.long LDIFF_SYM1843
-LTDIE_241_POINTER:
+LDIFF_SYM1900=LTDIE_245 - Ldebug_info_start
+	.long LDIFF_SYM1900
+LTDIE_245_POINTER:
 
 	.byte 13
-LDIFF_SYM1844=LTDIE_241 - Ldebug_info_start
-	.long LDIFF_SYM1844
-LTDIE_241_REFERENCE:
+LDIFF_SYM1901=LTDIE_245 - Ldebug_info_start
+	.long LDIFF_SYM1901
+LTDIE_245_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1845=LTDIE_241 - Ldebug_info_start
-	.long LDIFF_SYM1845
+LDIFF_SYM1902=LTDIE_245 - Ldebug_info_start
+	.long LDIFF_SYM1902
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Action`1<MapsExample.Report>:invoke_void_T"
 	.asciz "wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report
-	.quad Lme_42
+	.quad Lme_4a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1846=LTDIE_241_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1846
+LDIFF_SYM1903=LTDIE_245_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1903
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM1847=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1847
+LDIFF_SYM1904=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1904
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1848=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1848
+LDIFF_SYM1905=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1905
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM1849=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1849
+LDIFF_SYM1906=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1906
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM1850=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1850
+LDIFF_SYM1907=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1907
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM1851=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1851
+LDIFF_SYM1908=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1908
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM1852=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1852
+LDIFF_SYM1909=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1909
 	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1853=Lfde65_end - Lfde65_start
-	.long LDIFF_SYM1853
-Lfde65_start:
+LDIFF_SYM1910=Lfde73_end - Lfde73_start
+	.long LDIFF_SYM1910
+Lfde73_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report
 
-LDIFF_SYM1854=Lme_42 - wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report
-	.long LDIFF_SYM1854
+LDIFF_SYM1911=Lme_4a - wrapper_delegate_invoke_System_Action_1_MapsExample_Report_invoke_void_T_MapsExample_Report
+	.long LDIFF_SYM1911
 	.long 0
 	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
 	.byte 154,7
 	.align 3
-Lfde65_end:
+Lfde73_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_242:
+LTDIE_246:
 
 	.byte 5
 	.asciz "System_Comparison`1"
 
 	.byte 112,16
-LDIFF_SYM1855=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1855
+LDIFF_SYM1912=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM1912
 	.byte 2,35,0,0,7
 	.asciz "System_Comparison`1"
 
-LDIFF_SYM1856=LTDIE_242 - Ldebug_info_start
-	.long LDIFF_SYM1856
-LTDIE_242_POINTER:
+LDIFF_SYM1913=LTDIE_246 - Ldebug_info_start
+	.long LDIFF_SYM1913
+LTDIE_246_POINTER:
 
 	.byte 13
-LDIFF_SYM1857=LTDIE_242 - Ldebug_info_start
-	.long LDIFF_SYM1857
-LTDIE_242_REFERENCE:
+LDIFF_SYM1914=LTDIE_246 - Ldebug_info_start
+	.long LDIFF_SYM1914
+LTDIE_246_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1858=LTDIE_242 - Ldebug_info_start
-	.long LDIFF_SYM1858
+LDIFF_SYM1915=LTDIE_246 - Ldebug_info_start
+	.long LDIFF_SYM1915
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<MapsExample.Report>:invoke_int_T_T"
 	.asciz "wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report
-	.quad Lme_43
+	.quad Lme_4b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1859=LTDIE_242_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1859
+LDIFF_SYM1916=LTDIE_246_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1916
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM1860=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1860
+LDIFF_SYM1917=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1917
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM1861=LTDIE_163_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1861
+LDIFF_SYM1918=LTDIE_163_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1918
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM1862=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1862
+LDIFF_SYM1919=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1919
 	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM1863=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1863
+LDIFF_SYM1920=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1920
 	.byte 1,102,11
 	.asciz "V_2"
 
-LDIFF_SYM1864=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1864
+LDIFF_SYM1921=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1921
 	.byte 1,101,11
 	.asciz "V_3"
 
-LDIFF_SYM1865=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1865
+LDIFF_SYM1922=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1922
 	.byte 1,100,11
 	.asciz "V_4"
 
-LDIFF_SYM1866=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1866
+LDIFF_SYM1923=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1923
 	.byte 1,99,11
 	.asciz "V_5"
 
-LDIFF_SYM1867=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1867
+LDIFF_SYM1924=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1924
 	.byte 3,141,232,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1868=Lfde66_end - Lfde66_start
-	.long LDIFF_SYM1868
-Lfde66_start:
+LDIFF_SYM1925=Lfde74_end - Lfde74_start
+	.long LDIFF_SYM1925
+Lfde74_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report
 
-LDIFF_SYM1869=Lme_43 - wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report
-	.long LDIFF_SYM1869
+LDIFF_SYM1926=Lme_4b - wrapper_delegate_invoke_System_Comparison_1_MapsExample_Report_invoke_int_T_T_MapsExample_Report_MapsExample_Report
+	.long LDIFF_SYM1926
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde66_end:
+Lfde74_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_243:
+LTDIE_247:
 
 	.byte 5
 	.asciz "_InternalEnumerator`1"
 
 	.byte 32,16
-LDIFF_SYM1870=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM1870
+LDIFF_SYM1927=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM1927
 	.byte 2,35,0,6
 	.asciz "array"
 
-LDIFF_SYM1871=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1871
+LDIFF_SYM1928=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1928
 	.byte 2,35,16,6
 	.asciz "idx"
 
-LDIFF_SYM1872=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1872
+LDIFF_SYM1929=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1929
 	.byte 2,35,24,0,7
 	.asciz "_InternalEnumerator`1"
 
-LDIFF_SYM1873=LTDIE_243 - Ldebug_info_start
-	.long LDIFF_SYM1873
-LTDIE_243_POINTER:
+LDIFF_SYM1930=LTDIE_247 - Ldebug_info_start
+	.long LDIFF_SYM1930
+LTDIE_247_POINTER:
 
 	.byte 13
-LDIFF_SYM1874=LTDIE_243 - Ldebug_info_start
-	.long LDIFF_SYM1874
-LTDIE_243_REFERENCE:
+LDIFF_SYM1931=LTDIE_247 - Ldebug_info_start
+	.long LDIFF_SYM1931
+LTDIE_247_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1875=LTDIE_243 - Ldebug_info_start
-	.long LDIFF_SYM1875
+LDIFF_SYM1932=LTDIE_247 - Ldebug_info_start
+	.long LDIFF_SYM1932
 	.byte 2
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_INST__ctor_System_Array"
 
-	.byte 14,239,1
+	.byte 17,239,1
 	.quad System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
-	.quad Lme_45
+	.quad Lme_4d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1876=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1876
+LDIFF_SYM1933=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1933
 	.byte 1,105,3
 	.asciz "array"
 
-LDIFF_SYM1877=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1877
+LDIFF_SYM1934=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1934
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1878=Lfde67_end - Lfde67_start
-	.long LDIFF_SYM1878
-Lfde67_start:
+LDIFF_SYM1935=Lfde75_end - Lfde75_start
+	.long LDIFF_SYM1935
+Lfde75_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 
-LDIFF_SYM1879=Lme_45 - System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
-	.long LDIFF_SYM1879
+LDIFF_SYM1936=Lme_4d - System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
+	.long LDIFF_SYM1936
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
 	.align 3
-Lfde67_end:
+Lfde75_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29288,33 +30619,33 @@ Lfde67_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_Dispose"
 
-	.byte 14,245,1
+	.byte 17,245,1
 	.quad System_Array_InternalEnumerator_1_T_INST_Dispose
-	.quad Lme_46
+	.quad Lme_4e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1880=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1880
+LDIFF_SYM1937=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1937
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1881=Lfde68_end - Lfde68_start
-	.long LDIFF_SYM1881
-Lfde68_start:
+LDIFF_SYM1938=Lfde76_end - Lfde76_start
+	.long LDIFF_SYM1938
+Lfde76_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST_Dispose
 
-LDIFF_SYM1882=Lme_46 - System_Array_InternalEnumerator_1_T_INST_Dispose
-	.long LDIFF_SYM1882
+LDIFF_SYM1939=Lme_4e - System_Array_InternalEnumerator_1_T_INST_Dispose
+	.long LDIFF_SYM1939
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde68_end:
+Lfde76_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29322,38 +30653,38 @@ Lfde68_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_MoveNext"
 
-	.byte 14,250,1
+	.byte 17,250,1
 	.quad System_Array_InternalEnumerator_1_T_INST_MoveNext
-	.quad Lme_47
+	.quad Lme_4f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1883=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1883
+LDIFF_SYM1940=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1940
 	.byte 1,106,11
 	.asciz ""
 
-LDIFF_SYM1884=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1884
+LDIFF_SYM1941=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1941
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1885=Lfde69_end - Lfde69_start
-	.long LDIFF_SYM1885
-Lfde69_start:
+LDIFF_SYM1942=Lfde77_end - Lfde77_start
+	.long LDIFF_SYM1942
+Lfde77_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST_MoveNext
 
-LDIFF_SYM1886=Lme_47 - System_Array_InternalEnumerator_1_T_INST_MoveNext
-	.long LDIFF_SYM1886
+LDIFF_SYM1943=Lme_4f - System_Array_InternalEnumerator_1_T_INST_MoveNext
+	.long LDIFF_SYM1943
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8
 	.align 3
-Lfde69_end:
+Lfde77_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29361,33 +30692,33 @@ Lfde69_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_get_Current"
 
-	.byte 14,130,2
+	.byte 17,130,2
 	.quad System_Array_InternalEnumerator_1_T_INST_get_Current
-	.quad Lme_48
+	.quad Lme_50
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1887=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1887
+LDIFF_SYM1944=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1944
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1888=Lfde70_end - Lfde70_start
-	.long LDIFF_SYM1888
-Lfde70_start:
+LDIFF_SYM1945=Lfde78_end - Lfde78_start
+	.long LDIFF_SYM1945
+Lfde78_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST_get_Current
 
-LDIFF_SYM1889=Lme_48 - System_Array_InternalEnumerator_1_T_INST_get_Current
-	.long LDIFF_SYM1889
+LDIFF_SYM1946=Lme_50 - System_Array_InternalEnumerator_1_T_INST_get_Current
+	.long LDIFF_SYM1946
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16
 	.align 3
-Lfde70_end:
+Lfde78_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29395,33 +30726,33 @@ Lfde70_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:System.Collections.IEnumerator.Reset"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset"
 
-	.byte 14,141,2
+	.byte 17,141,2
 	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
-	.quad Lme_49
+	.quad Lme_51
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1890=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1890
+LDIFF_SYM1947=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1947
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1891=Lfde71_end - Lfde71_start
-	.long LDIFF_SYM1891
-Lfde71_start:
+LDIFF_SYM1948=Lfde79_end - Lfde79_start
+	.long LDIFF_SYM1948
+Lfde79_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
 
-LDIFF_SYM1892=Lme_49 - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
-	.long LDIFF_SYM1892
+LDIFF_SYM1949=Lme_51 - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_Reset
+	.long LDIFF_SYM1949
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde71_end:
+Lfde79_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29429,33 +30760,33 @@ Lfde71_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:System.Collections.IEnumerator.get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current"
 
-	.byte 14,146,2
+	.byte 17,146,2
 	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-	.quad Lme_4a
+	.quad Lme_52
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1893=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1893
+LDIFF_SYM1950=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1950
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1894=Lfde72_end - Lfde72_start
-	.long LDIFF_SYM1894
-Lfde72_start:
+LDIFF_SYM1951=Lfde80_end - Lfde80_start
+	.long LDIFF_SYM1951
+Lfde80_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 
-LDIFF_SYM1895=Lme_4a - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-	.long LDIFF_SYM1895
+LDIFF_SYM1952=Lme_52 - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.long LDIFF_SYM1952
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
-Lfde72_end:
+Lfde80_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29463,109 +30794,109 @@ Lfde72_end:
 	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
 	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
 
-	.byte 14,78
+	.byte 17,78
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.quad Lme_4b
+	.quad Lme_53
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1896=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1896
+LDIFF_SYM1953=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1953
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1897=Lfde73_end - Lfde73_start
-	.long LDIFF_SYM1897
-Lfde73_start:
+LDIFF_SYM1954=Lfde81_end - Lfde81_start
+	.long LDIFF_SYM1954
+Lfde81_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 
-LDIFF_SYM1898=Lme_4b - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.long LDIFF_SYM1898
+LDIFF_SYM1955=Lme_53 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+	.long LDIFF_SYM1955
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
-Lfde73_end:
+Lfde81_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_244:
+LTDIE_248:
 
 	.byte 5
 	.asciz "System_Tuple`2"
 
 	.byte 24,16
-LDIFF_SYM1899=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1899
+LDIFF_SYM1956=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM1956
 	.byte 2,35,0,6
 	.asciz "m_Item1"
 
-LDIFF_SYM1900=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1900
+LDIFF_SYM1957=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1957
 	.byte 2,35,16,6
 	.asciz "m_Item2"
 
-LDIFF_SYM1901=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1901
+LDIFF_SYM1958=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1958
 	.byte 2,35,20,0,7
 	.asciz "System_Tuple`2"
 
-LDIFF_SYM1902=LTDIE_244 - Ldebug_info_start
-	.long LDIFF_SYM1902
-LTDIE_244_POINTER:
+LDIFF_SYM1959=LTDIE_248 - Ldebug_info_start
+	.long LDIFF_SYM1959
+LTDIE_248_POINTER:
 
 	.byte 13
-LDIFF_SYM1903=LTDIE_244 - Ldebug_info_start
-	.long LDIFF_SYM1903
-LTDIE_244_REFERENCE:
+LDIFF_SYM1960=LTDIE_248 - Ldebug_info_start
+	.long LDIFF_SYM1960
+LTDIE_248_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1904=LTDIE_244 - Ldebug_info_start
-	.long LDIFF_SYM1904
+LDIFF_SYM1961=LTDIE_248 - Ldebug_info_start
+	.long LDIFF_SYM1961
 	.byte 2
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:.ctor"
 	.asciz "System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT"
 
-	.byte 16,164,1
+	.byte 19,164,1
 	.quad System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
-	.quad Lme_4c
+	.quad Lme_54
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1905=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1905
+LDIFF_SYM1962=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1962
 	.byte 2,141,16,3
 	.asciz "item1"
 
-LDIFF_SYM1906=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1906
+LDIFF_SYM1963=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1963
 	.byte 2,141,24,3
 	.asciz "item2"
 
-LDIFF_SYM1907=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1907
+LDIFF_SYM1964=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1964
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1908=Lfde74_end - Lfde74_start
-	.long LDIFF_SYM1908
-Lfde74_start:
+LDIFF_SYM1965=Lfde82_end - Lfde82_start
+	.long LDIFF_SYM1965
+Lfde82_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
 
-LDIFF_SYM1909=Lme_4c - System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
-	.long LDIFF_SYM1909
+LDIFF_SYM1966=Lme_54 - System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
+	.long LDIFF_SYM1966
 	.long 0
 	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
-Lfde74_end:
+Lfde82_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29573,33 +30904,33 @@ Lfde74_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:get_Item1"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_get_Item1"
 
-	.byte 16,161,1
+	.byte 19,161,1
 	.quad System_Tuple_2_T1_INT_T2_INT_get_Item1
-	.quad Lme_4d
+	.quad Lme_55
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1910=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1910
+LDIFF_SYM1967=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1967
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1911=Lfde75_end - Lfde75_start
-	.long LDIFF_SYM1911
-Lfde75_start:
+LDIFF_SYM1968=Lfde83_end - Lfde83_start
+	.long LDIFF_SYM1968
+Lfde83_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_get_Item1
 
-LDIFF_SYM1912=Lme_4d - System_Tuple_2_T1_INT_T2_INT_get_Item1
-	.long LDIFF_SYM1912
+LDIFF_SYM1969=Lme_55 - System_Tuple_2_T1_INT_T2_INT_get_Item1
+	.long LDIFF_SYM1969
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde75_end:
+Lfde83_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29607,33 +30938,33 @@ Lfde75_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:get_Item2"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_get_Item2"
 
-	.byte 16,162,1
+	.byte 19,162,1
 	.quad System_Tuple_2_T1_INT_T2_INT_get_Item2
-	.quad Lme_4e
+	.quad Lme_56
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1913=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1913
+LDIFF_SYM1970=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1970
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1914=Lfde76_end - Lfde76_start
-	.long LDIFF_SYM1914
-Lfde76_start:
+LDIFF_SYM1971=Lfde84_end - Lfde84_start
+	.long LDIFF_SYM1971
+Lfde84_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_get_Item2
 
-LDIFF_SYM1915=Lme_4e - System_Tuple_2_T1_INT_T2_INT_get_Item2
-	.long LDIFF_SYM1915
+LDIFF_SYM1972=Lme_56 - System_Tuple_2_T1_INT_T2_INT_get_Item2
+	.long LDIFF_SYM1972
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde76_end:
+Lfde84_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29641,38 +30972,38 @@ Lfde76_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:Equals"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_Equals_object"
 
-	.byte 16,170,1
+	.byte 19,170,1
 	.quad System_Tuple_2_T1_INT_T2_INT_Equals_object
-	.quad Lme_4f
+	.quad Lme_57
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1916=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1916
+LDIFF_SYM1973=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1973
 	.byte 2,141,16,3
 	.asciz "obj"
 
-LDIFF_SYM1917=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1917
+LDIFF_SYM1974=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1974
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1918=Lfde77_end - Lfde77_start
-	.long LDIFF_SYM1918
-Lfde77_start:
+LDIFF_SYM1975=Lfde85_end - Lfde85_start
+	.long LDIFF_SYM1975
+Lfde85_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_Equals_object
 
-LDIFF_SYM1919=Lme_4f - System_Tuple_2_T1_INT_T2_INT_Equals_object
-	.long LDIFF_SYM1919
+LDIFF_SYM1976=Lme_57 - System_Tuple_2_T1_INT_T2_INT_Equals_object
+	.long LDIFF_SYM1976
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
-Lfde77_end:
+Lfde85_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29680,48 +31011,48 @@ Lfde77_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:System.Collections.IStructuralEquatable.Equals"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer"
 
-	.byte 16,174,1
+	.byte 19,174,1
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
-	.quad Lme_50
+	.quad Lme_58
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1920=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1920
+LDIFF_SYM1977=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1977
 	.byte 3,141,192,0,3
 	.asciz "other"
 
-LDIFF_SYM1921=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1921
+LDIFF_SYM1978=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1978
 	.byte 1,105,3
 	.asciz "comparer"
 
-LDIFF_SYM1922=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1922
+LDIFF_SYM1979=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1979
 	.byte 1,106,11
 	.asciz "objTuple"
 
-LDIFF_SYM1923=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1923
+LDIFF_SYM1980=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1980
 	.byte 1,104,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1924=Lfde78_end - Lfde78_start
-	.long LDIFF_SYM1924
-Lfde78_start:
+LDIFF_SYM1981=Lfde86_end - Lfde86_start
+	.long LDIFF_SYM1981
+Lfde86_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
 
-LDIFF_SYM1925=Lme_50 - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
-	.long LDIFF_SYM1925
+LDIFF_SYM1982=Lme_58 - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
+	.long LDIFF_SYM1982
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,148,16,149,15,68,151,14,152,13,68,153,12,154,11
 	.align 3
-Lfde78_end:
+Lfde86_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29729,41 +31060,41 @@ Lfde78_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:System.IComparable.CompareTo"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object"
 
-	.byte 16,186,1
+	.byte 19,186,1
 	.quad System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object
-	.quad Lme_51
+	.quad Lme_59
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1926=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1926
+LDIFF_SYM1983=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1983
 	.byte 2,141,16,3
 	.asciz "obj"
 
-LDIFF_SYM1927=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1927
+LDIFF_SYM1984=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1984
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1928=Lfde79_end - Lfde79_start
-	.long LDIFF_SYM1928
-Lfde79_start:
+LDIFF_SYM1985=Lfde87_end - Lfde87_start
+	.long LDIFF_SYM1985
+Lfde87_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object
 
-LDIFF_SYM1929=Lme_51 - System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object
-	.long LDIFF_SYM1929
+LDIFF_SYM1986=Lme_59 - System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object
+	.long LDIFF_SYM1986
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
 	.align 3
-Lfde79_end:
+Lfde87_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_245:
+LTDIE_249:
 
 	.byte 17
 	.asciz "System_Collections_IComparer"
@@ -29771,69 +31102,69 @@ LTDIE_245:
 	.byte 16,7
 	.asciz "System_Collections_IComparer"
 
-LDIFF_SYM1930=LTDIE_245 - Ldebug_info_start
-	.long LDIFF_SYM1930
-LTDIE_245_POINTER:
+LDIFF_SYM1987=LTDIE_249 - Ldebug_info_start
+	.long LDIFF_SYM1987
+LTDIE_249_POINTER:
 
 	.byte 13
-LDIFF_SYM1931=LTDIE_245 - Ldebug_info_start
-	.long LDIFF_SYM1931
-LTDIE_245_REFERENCE:
+LDIFF_SYM1988=LTDIE_249 - Ldebug_info_start
+	.long LDIFF_SYM1988
+LTDIE_249_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1932=LTDIE_245 - Ldebug_info_start
-	.long LDIFF_SYM1932
+LDIFF_SYM1989=LTDIE_249 - Ldebug_info_start
+	.long LDIFF_SYM1989
 	.byte 2
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:System.Collections.IStructuralComparable.CompareTo"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer"
 
-	.byte 16,190,1
+	.byte 19,190,1
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
-	.quad Lme_52
+	.quad Lme_5a
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1933=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1933
+LDIFF_SYM1990=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1990
 	.byte 3,141,200,0,3
 	.asciz "other"
 
-LDIFF_SYM1934=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1934
+LDIFF_SYM1991=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1991
 	.byte 1,105,3
 	.asciz "comparer"
 
-LDIFF_SYM1935=LTDIE_245_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1935
+LDIFF_SYM1992=LTDIE_249_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1992
 	.byte 1,106,11
 	.asciz "objTuple"
 
-LDIFF_SYM1936=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1936
+LDIFF_SYM1993=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1993
 	.byte 1,104,11
 	.asciz "c"
 
-LDIFF_SYM1937=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1937
+LDIFF_SYM1994=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1994
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1938=Lfde80_end - Lfde80_start
-	.long LDIFF_SYM1938
-Lfde80_start:
+LDIFF_SYM1995=Lfde88_end - Lfde88_start
+	.long LDIFF_SYM1995
+Lfde88_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
 
-LDIFF_SYM1939=Lme_52 - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
-	.long LDIFF_SYM1939
+LDIFF_SYM1996=Lme_5a - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
+	.long LDIFF_SYM1996
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,150,16,151,15,68,152,14,153,13,68,154,12
 	.align 3
-Lfde80_end:
+Lfde88_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29841,33 +31172,33 @@ Lfde80_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:GetHashCode"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_GetHashCode"
 
-	.byte 16,208,1
+	.byte 19,208,1
 	.quad System_Tuple_2_T1_INT_T2_INT_GetHashCode
-	.quad Lme_53
+	.quad Lme_5b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1940=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1940
+LDIFF_SYM1997=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1997
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1941=Lfde81_end - Lfde81_start
-	.long LDIFF_SYM1941
-Lfde81_start:
+LDIFF_SYM1998=Lfde89_end - Lfde89_start
+	.long LDIFF_SYM1998
+Lfde89_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_GetHashCode
 
-LDIFF_SYM1942=Lme_53 - System_Tuple_2_T1_INT_T2_INT_GetHashCode
-	.long LDIFF_SYM1942
+LDIFF_SYM1999=Lme_5b - System_Tuple_2_T1_INT_T2_INT_GetHashCode
+	.long LDIFF_SYM1999
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
-Lfde81_end:
+Lfde89_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -29875,124 +31206,124 @@ Lfde81_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:System.Collections.IStructuralEquatable.GetHashCode"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer"
 
-	.byte 16,212,1
+	.byte 19,212,1
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
-	.quad Lme_54
+	.quad Lme_5c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1943=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1943
+LDIFF_SYM2000=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2000
 	.byte 2,141,24,3
 	.asciz "comparer"
 
-LDIFF_SYM1944=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1944
+LDIFF_SYM2001=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2001
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1945=Lfde82_end - Lfde82_start
-	.long LDIFF_SYM1945
-Lfde82_start:
+LDIFF_SYM2002=Lfde90_end - Lfde90_start
+	.long LDIFF_SYM2002
+Lfde90_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
 
-LDIFF_SYM1946=Lme_54 - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
-	.long LDIFF_SYM1946
+LDIFF_SYM2003=Lme_5c - System_Tuple_2_T1_INT_T2_INT_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
+	.long LDIFF_SYM2003
 	.long 0
 	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12
 	.align 3
-Lfde82_end:
+Lfde90_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_246:
+LTDIE_250:
 
 	.byte 5
 	.asciz "System_Text_StringBuilder"
 
 	.byte 48,16
-LDIFF_SYM1947=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1947
+LDIFF_SYM2004=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM2004
 	.byte 2,35,0,6
 	.asciz "m_ChunkChars"
 
-LDIFF_SYM1948=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1948
+LDIFF_SYM2005=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2005
 	.byte 2,35,16,6
 	.asciz "m_ChunkPrevious"
 
-LDIFF_SYM1949=LTDIE_246_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1949
+LDIFF_SYM2006=LTDIE_250_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2006
 	.byte 2,35,24,6
 	.asciz "m_ChunkLength"
 
-LDIFF_SYM1950=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1950
+LDIFF_SYM2007=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2007
 	.byte 2,35,32,6
 	.asciz "m_ChunkOffset"
 
-LDIFF_SYM1951=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1951
+LDIFF_SYM2008=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2008
 	.byte 2,35,36,6
 	.asciz "m_MaxCapacity"
 
-LDIFF_SYM1952=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1952
+LDIFF_SYM2009=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2009
 	.byte 2,35,40,0,7
 	.asciz "System_Text_StringBuilder"
 
-LDIFF_SYM1953=LTDIE_246 - Ldebug_info_start
-	.long LDIFF_SYM1953
-LTDIE_246_POINTER:
+LDIFF_SYM2010=LTDIE_250 - Ldebug_info_start
+	.long LDIFF_SYM2010
+LTDIE_250_POINTER:
 
 	.byte 13
-LDIFF_SYM1954=LTDIE_246 - Ldebug_info_start
-	.long LDIFF_SYM1954
-LTDIE_246_REFERENCE:
+LDIFF_SYM2011=LTDIE_250 - Ldebug_info_start
+	.long LDIFF_SYM2011
+LTDIE_250_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1955=LTDIE_246 - Ldebug_info_start
-	.long LDIFF_SYM1955
+LDIFF_SYM2012=LTDIE_250 - Ldebug_info_start
+	.long LDIFF_SYM2012
 	.byte 2
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:ToString"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_ToString"
 
-	.byte 16,219,1
+	.byte 19,219,1
 	.quad System_Tuple_2_T1_INT_T2_INT_ToString
-	.quad Lme_55
+	.quad Lme_5d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1956=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1956
+LDIFF_SYM2013=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2013
 	.byte 2,141,24,11
 	.asciz "sb"
 
-LDIFF_SYM1957=LTDIE_246_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1957
+LDIFF_SYM2014=LTDIE_250_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2014
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1958=Lfde83_end - Lfde83_start
-	.long LDIFF_SYM1958
-Lfde83_start:
+LDIFF_SYM2015=Lfde91_end - Lfde91_start
+	.long LDIFF_SYM2015
+Lfde91_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_ToString
 
-LDIFF_SYM1959=Lme_55 - System_Tuple_2_T1_INT_T2_INT_ToString
-	.long LDIFF_SYM1959
+LDIFF_SYM2016=Lme_5d - System_Tuple_2_T1_INT_T2_INT_ToString
+	.long LDIFF_SYM2016
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
-Lfde83_end:
+Lfde91_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -30000,64 +31331,64 @@ Lfde83_end:
 	.asciz "System.Tuple`2<T1_INT,_T2_INT>:System.ITuple.ToString"
 	.asciz "System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder"
 
-	.byte 16,225,1
+	.byte 19,225,1
 	.quad System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder
-	.quad Lme_56
+	.quad Lme_5e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1960=LTDIE_244_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1960
+LDIFF_SYM2017=LTDIE_248_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2017
 	.byte 2,141,24,3
 	.asciz "sb"
 
-LDIFF_SYM1961=LTDIE_246_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1961
+LDIFF_SYM2018=LTDIE_250_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2018
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1962=Lfde84_end - Lfde84_start
-	.long LDIFF_SYM1962
-Lfde84_start:
+LDIFF_SYM2019=Lfde92_end - Lfde92_start
+	.long LDIFF_SYM2019
+Lfde92_start:
 
 	.long 0
 	.align 3
 	.quad System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder
 
-LDIFF_SYM1963=Lme_56 - System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder
-	.long LDIFF_SYM1963
+LDIFF_SYM2020=Lme_5e - System_Tuple_2_T1_INT_T2_INT_System_ITuple_ToString_System_Text_StringBuilder
+	.long LDIFF_SYM2020
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10
 	.align 3
-Lfde84_end:
+Lfde92_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_247:
+LTDIE_251:
 
 	.byte 5
 	.asciz "System_Predicate`1"
 
 	.byte 112,16
-LDIFF_SYM1964=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM1964
+LDIFF_SYM2021=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2021
 	.byte 2,35,0,0,7
 	.asciz "System_Predicate`1"
 
-LDIFF_SYM1965=LTDIE_247 - Ldebug_info_start
-	.long LDIFF_SYM1965
-LTDIE_247_POINTER:
+LDIFF_SYM2022=LTDIE_251 - Ldebug_info_start
+	.long LDIFF_SYM2022
+LTDIE_251_POINTER:
 
 	.byte 13
-LDIFF_SYM1966=LTDIE_247 - Ldebug_info_start
-	.long LDIFF_SYM1966
-LTDIE_247_REFERENCE:
+LDIFF_SYM2023=LTDIE_251 - Ldebug_info_start
+	.long LDIFF_SYM2023
+LTDIE_251_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1967=LTDIE_247 - Ldebug_info_start
-	.long LDIFF_SYM1967
-LTDIE_251:
+LDIFF_SYM2024=LTDIE_251 - Ldebug_info_start
+	.long LDIFF_SYM2024
+LTDIE_255:
 
 	.byte 17
 	.asciz "System_Collections_Generic_IList`1"
@@ -30065,876 +31396,327 @@ LTDIE_251:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IList`1"
 
-LDIFF_SYM1968=LTDIE_251 - Ldebug_info_start
-	.long LDIFF_SYM1968
-LTDIE_251_POINTER:
+LDIFF_SYM2025=LTDIE_255 - Ldebug_info_start
+	.long LDIFF_SYM2025
+LTDIE_255_POINTER:
 
 	.byte 13
-LDIFF_SYM1969=LTDIE_251 - Ldebug_info_start
-	.long LDIFF_SYM1969
-LTDIE_251_REFERENCE:
+LDIFF_SYM2026=LTDIE_255 - Ldebug_info_start
+	.long LDIFF_SYM2026
+LTDIE_255_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1970=LTDIE_251 - Ldebug_info_start
-	.long LDIFF_SYM1970
-LTDIE_250:
+LDIFF_SYM2027=LTDIE_255 - Ldebug_info_start
+	.long LDIFF_SYM2027
+LTDIE_254:
 
 	.byte 5
 	.asciz "System_Collections_ObjectModel_Collection`1"
 
 	.byte 32,16
-LDIFF_SYM1971=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1971
+LDIFF_SYM2028=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM2028
 	.byte 2,35,0,6
 	.asciz "items"
 
-LDIFF_SYM1972=LTDIE_251_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1972
+LDIFF_SYM2029=LTDIE_255_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2029
 	.byte 2,35,16,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM1973=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM1973
+LDIFF_SYM2030=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2030
 	.byte 2,35,24,0,7
 	.asciz "System_Collections_ObjectModel_Collection`1"
 
-LDIFF_SYM1974=LTDIE_250 - Ldebug_info_start
-	.long LDIFF_SYM1974
-LTDIE_250_POINTER:
+LDIFF_SYM2031=LTDIE_254 - Ldebug_info_start
+	.long LDIFF_SYM2031
+LTDIE_254_POINTER:
 
 	.byte 13
-LDIFF_SYM1975=LTDIE_250 - Ldebug_info_start
-	.long LDIFF_SYM1975
-LTDIE_250_REFERENCE:
+LDIFF_SYM2032=LTDIE_254 - Ldebug_info_start
+	.long LDIFF_SYM2032
+LTDIE_254_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1976=LTDIE_250 - Ldebug_info_start
-	.long LDIFF_SYM1976
-LTDIE_252:
+LDIFF_SYM2033=LTDIE_254 - Ldebug_info_start
+	.long LDIFF_SYM2033
+LTDIE_256:
 
 	.byte 5
 	.asciz "_SimpleMonitor"
 
 	.byte 20,16
-LDIFF_SYM1977=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM1977
+LDIFF_SYM2034=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM2034
 	.byte 2,35,0,6
 	.asciz "_busyCount"
 
-LDIFF_SYM1978=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1978
+LDIFF_SYM2035=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2035
 	.byte 2,35,16,0,7
 	.asciz "_SimpleMonitor"
 
-LDIFF_SYM1979=LTDIE_252 - Ldebug_info_start
-	.long LDIFF_SYM1979
-LTDIE_252_POINTER:
+LDIFF_SYM2036=LTDIE_256 - Ldebug_info_start
+	.long LDIFF_SYM2036
+LTDIE_256_POINTER:
 
 	.byte 13
-LDIFF_SYM1980=LTDIE_252 - Ldebug_info_start
-	.long LDIFF_SYM1980
-LTDIE_252_REFERENCE:
+LDIFF_SYM2037=LTDIE_256 - Ldebug_info_start
+	.long LDIFF_SYM2037
+LTDIE_256_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1981=LTDIE_252 - Ldebug_info_start
-	.long LDIFF_SYM1981
-LTDIE_249:
+LDIFF_SYM2038=LTDIE_256 - Ldebug_info_start
+	.long LDIFF_SYM2038
+LTDIE_253:
 
 	.byte 5
 	.asciz "System_Collections_ObjectModel_ObservableCollection`1"
 
 	.byte 56,16
-LDIFF_SYM1982=LTDIE_250 - Ldebug_info_start
-	.long LDIFF_SYM1982
+LDIFF_SYM2039=LTDIE_254 - Ldebug_info_start
+	.long LDIFF_SYM2039
 	.byte 2,35,0,6
 	.asciz "CollectionChanged"
 
-LDIFF_SYM1983=LTDIE_27_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1983
+LDIFF_SYM2040=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2040
 	.byte 2,35,32,6
 	.asciz "PropertyChanged"
 
-LDIFF_SYM1984=LTDIE_9_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1984
+LDIFF_SYM2041=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2041
 	.byte 2,35,40,6
 	.asciz "_monitor"
 
-LDIFF_SYM1985=LTDIE_252_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1985
+LDIFF_SYM2042=LTDIE_256_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2042
 	.byte 2,35,48,0,7
 	.asciz "System_Collections_ObjectModel_ObservableCollection`1"
 
-LDIFF_SYM1986=LTDIE_249 - Ldebug_info_start
-	.long LDIFF_SYM1986
-LTDIE_249_POINTER:
+LDIFF_SYM2043=LTDIE_253 - Ldebug_info_start
+	.long LDIFF_SYM2043
+LTDIE_253_POINTER:
 
 	.byte 13
-LDIFF_SYM1987=LTDIE_249 - Ldebug_info_start
-	.long LDIFF_SYM1987
-LTDIE_249_REFERENCE:
+LDIFF_SYM2044=LTDIE_253 - Ldebug_info_start
+	.long LDIFF_SYM2044
+LTDIE_253_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1988=LTDIE_249 - Ldebug_info_start
-	.long LDIFF_SYM1988
-LTDIE_248:
+LDIFF_SYM2045=LTDIE_253 - Ldebug_info_start
+	.long LDIFF_SYM2045
+LTDIE_252:
 
 	.byte 5
 	.asciz "Xamarin_Forms_Cell"
 
 	.byte 144,2,16
-LDIFF_SYM1989=LTDIE_2 - Ldebug_info_start
-	.long LDIFF_SYM1989
+LDIFF_SYM2046=LTDIE_2 - Ldebug_info_start
+	.long LDIFF_SYM2046
 	.byte 2,35,0,6
 	.asciz "_contextActions"
 
-LDIFF_SYM1990=LTDIE_249_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1990
+LDIFF_SYM2047=LTDIE_253_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2047
 	.byte 3,35,216,1,6
 	.asciz "_height"
 
-LDIFF_SYM1991=LDIE_R8 - Ldebug_info_start
-	.long LDIFF_SYM1991
+LDIFF_SYM2048=LDIE_R8 - Ldebug_info_start
+	.long LDIFF_SYM2048
 	.byte 3,35,128,2,6
 	.asciz "_nextCallToForceUpdateSizeQueued"
 
-LDIFF_SYM1992=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1992
+LDIFF_SYM2049=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2049
 	.byte 3,35,136,2,6
 	.asciz "Appearing"
 
-LDIFF_SYM1993=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1993
+LDIFF_SYM2050=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2050
 	.byte 3,35,224,1,6
 	.asciz "Disappearing"
 
-LDIFF_SYM1994=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1994
+LDIFF_SYM2051=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2051
 	.byte 3,35,232,1,6
 	.asciz "ForceUpdateSizeRequested"
 
-LDIFF_SYM1995=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1995
+LDIFF_SYM2052=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2052
 	.byte 3,35,240,1,6
 	.asciz "Tapped"
 
-LDIFF_SYM1996=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1996
+LDIFF_SYM2053=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2053
 	.byte 3,35,248,1,0,7
 	.asciz "Xamarin_Forms_Cell"
 
-LDIFF_SYM1997=LTDIE_248 - Ldebug_info_start
-	.long LDIFF_SYM1997
-LTDIE_248_POINTER:
+LDIFF_SYM2054=LTDIE_252 - Ldebug_info_start
+	.long LDIFF_SYM2054
+LTDIE_252_POINTER:
 
 	.byte 13
-LDIFF_SYM1998=LTDIE_248 - Ldebug_info_start
-	.long LDIFF_SYM1998
-LTDIE_248_REFERENCE:
+LDIFF_SYM2055=LTDIE_252 - Ldebug_info_start
+	.long LDIFF_SYM2055
+LTDIE_252_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1999=LTDIE_248 - Ldebug_info_start
-	.long LDIFF_SYM1999
+LDIFF_SYM2056=LTDIE_252 - Ldebug_info_start
+	.long LDIFF_SYM2056
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<Xamarin.Forms.Cell>:invoke_bool_T"
 	.asciz "wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell
-	.quad Lme_57
+	.quad Lme_5f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2000=LTDIE_247_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2000
+LDIFF_SYM2057=LTDIE_251_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2057
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM2001=LTDIE_248_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2001
+LDIFF_SYM2058=LTDIE_252_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2058
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2002=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2002
+LDIFF_SYM2059=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2059
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM2003=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2003
+LDIFF_SYM2060=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2060
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM2004=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2004
+LDIFF_SYM2061=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2061
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM2005=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2005
+LDIFF_SYM2062=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2062
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM2006=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2006
+LDIFF_SYM2063=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2063
 	.byte 1,100,11
 	.asciz "V_5"
 
-LDIFF_SYM2007=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM2007
+LDIFF_SYM2064=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2064
 	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2008=Lfde85_end - Lfde85_start
-	.long LDIFF_SYM2008
-Lfde85_start:
+LDIFF_SYM2065=Lfde93_end - Lfde93_start
+	.long LDIFF_SYM2065
+Lfde93_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell
 
-LDIFF_SYM2009=Lme_57 - wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell
-	.long LDIFF_SYM2009
+LDIFF_SYM2066=Lme_5f - wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_Cell
+	.long LDIFF_SYM2066
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
 	.align 3
-Lfde85_end:
+Lfde93_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_253:
+LTDIE_257:
 
 	.byte 5
 	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM2010=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2010
+LDIFF_SYM2067=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2067
 	.byte 2,35,0,0,7
 	.asciz "System_Action`1"
 
-LDIFF_SYM2011=LTDIE_253 - Ldebug_info_start
-	.long LDIFF_SYM2011
-LTDIE_253_POINTER:
+LDIFF_SYM2068=LTDIE_257 - Ldebug_info_start
+	.long LDIFF_SYM2068
+LTDIE_257_POINTER:
 
 	.byte 13
-LDIFF_SYM2012=LTDIE_253 - Ldebug_info_start
-	.long LDIFF_SYM2012
-LTDIE_253_REFERENCE:
+LDIFF_SYM2069=LTDIE_257 - Ldebug_info_start
+	.long LDIFF_SYM2069
+LTDIE_257_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2013=LTDIE_253 - Ldebug_info_start
-	.long LDIFF_SYM2013
+LDIFF_SYM2070=LTDIE_257 - Ldebug_info_start
+	.long LDIFF_SYM2070
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.Action`1<Xamarin.Forms.Cell>:invoke_void_T"
 	.asciz "wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell
-	.quad Lme_58
+	.quad Lme_60
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2014=LTDIE_253_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2014
+LDIFF_SYM2071=LTDIE_257_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2071
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM2015=LTDIE_248_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2015
+LDIFF_SYM2072=LTDIE_252_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2072
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2016=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2016
+LDIFF_SYM2073=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2073
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM2017=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2017
+LDIFF_SYM2074=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2074
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM2018=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2018
+LDIFF_SYM2075=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2075
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM2019=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2019
+LDIFF_SYM2076=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2076
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM2020=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2020
+LDIFF_SYM2077=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2077
 	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2021=Lfde86_end - Lfde86_start
-	.long LDIFF_SYM2021
-Lfde86_start:
+LDIFF_SYM2078=Lfde94_end - Lfde94_start
+	.long LDIFF_SYM2078
+Lfde94_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell
 
-LDIFF_SYM2022=Lme_58 - wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell
-	.long LDIFF_SYM2022
-	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7
-	.align 3
-Lfde86_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_254:
-
-	.byte 5
-	.asciz "System_Comparison`1"
-
-	.byte 112,16
-LDIFF_SYM2023=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2023
-	.byte 2,35,0,0,7
-	.asciz "System_Comparison`1"
-
-LDIFF_SYM2024=LTDIE_254 - Ldebug_info_start
-	.long LDIFF_SYM2024
-LTDIE_254_POINTER:
-
-	.byte 13
-LDIFF_SYM2025=LTDIE_254 - Ldebug_info_start
-	.long LDIFF_SYM2025
-LTDIE_254_REFERENCE:
-
-	.byte 14
-LDIFF_SYM2026=LTDIE_254 - Ldebug_info_start
-	.long LDIFF_SYM2026
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Xamarin.Forms.Cell>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.quad Lme_59
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2027=LTDIE_254_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2027
-	.byte 1,104,3
-	.asciz "param0"
-
-LDIFF_SYM2028=LTDIE_248_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2028
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM2029=LTDIE_248_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2029
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM2030=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2030
-	.byte 1,103,11
-	.asciz "V_1"
-
-LDIFF_SYM2031=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2031
-	.byte 1,102,11
-	.asciz "V_2"
-
-LDIFF_SYM2032=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2032
-	.byte 1,101,11
-	.asciz "V_3"
-
-LDIFF_SYM2033=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2033
-	.byte 1,100,11
-	.asciz "V_4"
-
-LDIFF_SYM2034=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2034
-	.byte 1,99,11
-	.asciz "V_5"
-
-LDIFF_SYM2035=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2035
-	.byte 3,141,232,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2036=Lfde87_end - Lfde87_start
-	.long LDIFF_SYM2036
-Lfde87_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-
-LDIFF_SYM2037=Lme_59 - wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.long LDIFF_SYM2037
-	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
-	.align 3
-Lfde87_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_255:
-
-	.byte 5
-	.asciz "System_Predicate`1"
-
-	.byte 112,16
-LDIFF_SYM2038=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2038
-	.byte 2,35,0,0,7
-	.asciz "System_Predicate`1"
-
-LDIFF_SYM2039=LTDIE_255 - Ldebug_info_start
-	.long LDIFF_SYM2039
-LTDIE_255_POINTER:
-
-	.byte 13
-LDIFF_SYM2040=LTDIE_255 - Ldebug_info_start
-	.long LDIFF_SYM2040
-LTDIE_255_REFERENCE:
-
-	.byte 14
-LDIFF_SYM2041=LTDIE_255 - Ldebug_info_start
-	.long LDIFF_SYM2041
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_bool_T"
-	.asciz "wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.quad Lme_5a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2042=LTDIE_255_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2042
-	.byte 1,105,3
-	.asciz "param0"
-
-LDIFF_SYM2043=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2043
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM2044=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2044
-	.byte 1,104,11
-	.asciz "V_1"
-
-LDIFF_SYM2045=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2045
-	.byte 1,103,11
-	.asciz "V_2"
-
-LDIFF_SYM2046=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2046
-	.byte 1,102,11
-	.asciz "V_3"
-
-LDIFF_SYM2047=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2047
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM2048=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2048
-	.byte 1,100,11
-	.asciz "V_5"
-
-LDIFF_SYM2049=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM2049
-	.byte 1,99,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2050=Lfde88_end - Lfde88_start
-	.long LDIFF_SYM2050
-Lfde88_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-
-LDIFF_SYM2051=Lme_5a - wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.long LDIFF_SYM2051
-	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
-	.align 3
-Lfde88_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_256:
-
-	.byte 5
-	.asciz "System_Action`1"
-
-	.byte 112,16
-LDIFF_SYM2052=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2052
-	.byte 2,35,0,0,7
-	.asciz "System_Action`1"
-
-LDIFF_SYM2053=LTDIE_256 - Ldebug_info_start
-	.long LDIFF_SYM2053
-LTDIE_256_POINTER:
-
-	.byte 13
-LDIFF_SYM2054=LTDIE_256 - Ldebug_info_start
-	.long LDIFF_SYM2054
-LTDIE_256_REFERENCE:
-
-	.byte 14
-LDIFF_SYM2055=LTDIE_256 - Ldebug_info_start
-	.long LDIFF_SYM2055
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Action`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_void_T"
-	.asciz "wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.quad Lme_5b
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2056=LTDIE_256_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2056
-	.byte 1,105,3
-	.asciz "param0"
-
-LDIFF_SYM2057=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2057
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM2058=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2058
-	.byte 1,104,11
-	.asciz "V_1"
-
-LDIFF_SYM2059=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2059
-	.byte 1,103,11
-	.asciz "V_2"
-
-LDIFF_SYM2060=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2060
-	.byte 1,102,11
-	.asciz "V_3"
-
-LDIFF_SYM2061=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2061
-	.byte 1,101,11
-	.asciz "V_4"
-
-LDIFF_SYM2062=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2062
-	.byte 1,100,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2063=Lfde89_end - Lfde89_start
-	.long LDIFF_SYM2063
-Lfde89_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-
-LDIFF_SYM2064=Lme_5b - wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.long LDIFF_SYM2064
-	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7
-	.align 3
-Lfde89_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_257:
-
-	.byte 5
-	.asciz "System_Comparison`1"
-
-	.byte 112,16
-LDIFF_SYM2065=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2065
-	.byte 2,35,0,0,7
-	.asciz "System_Comparison`1"
-
-LDIFF_SYM2066=LTDIE_257 - Ldebug_info_start
-	.long LDIFF_SYM2066
-LTDIE_257_POINTER:
-
-	.byte 13
-LDIFF_SYM2067=LTDIE_257 - Ldebug_info_start
-	.long LDIFF_SYM2067
-LTDIE_257_REFERENCE:
-
-	.byte 14
-LDIFF_SYM2068=LTDIE_257 - Ldebug_info_start
-	.long LDIFF_SYM2068
-	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
-
-	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-	.quad Lme_5c
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2069=LTDIE_257_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2069
-	.byte 1,104,3
-	.asciz "param0"
-
-LDIFF_SYM2070=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2070
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM2071=LTDIE_189_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2071
-	.byte 1,106,11
-	.asciz "V_0"
-
-LDIFF_SYM2072=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2072
-	.byte 1,103,11
-	.asciz "V_1"
-
-LDIFF_SYM2073=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2073
-	.byte 1,102,11
-	.asciz "V_2"
-
-LDIFF_SYM2074=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2074
-	.byte 1,101,11
-	.asciz "V_3"
-
-LDIFF_SYM2075=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2075
-	.byte 1,100,11
-	.asciz "V_4"
-
-LDIFF_SYM2076=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2076
-	.byte 1,99,11
-	.asciz "V_5"
-
-LDIFF_SYM2077=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2077
-	.byte 3,141,232,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2078=Lfde90_end - Lfde90_start
-	.long LDIFF_SYM2078
-Lfde90_start:
-
-	.long 0
-	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
-
-LDIFF_SYM2079=Lme_5c - wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+LDIFF_SYM2079=Lme_60 - wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_Cell
 	.long LDIFF_SYM2079
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
-	.align 3
-Lfde90_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Add<T_INST>"
-	.asciz "System_Array_InternalArray__ICollection_Add_T_INST_T_INST"
-
-	.byte 14,88
-	.quad System_Array_InternalArray__ICollection_Add_T_INST_T_INST
-	.quad Lme_64
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2080=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2080
-	.byte 2,141,16,3
-	.asciz "item"
-
-LDIFF_SYM2081=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2081
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2082=Lfde91_end - Lfde91_start
-	.long LDIFF_SYM2082
-Lfde91_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Add_T_INST_T_INST
-
-LDIFF_SYM2083=Lme_64 - System_Array_InternalArray__ICollection_Add_T_INST_T_INST
-	.long LDIFF_SYM2083
-	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
-	.align 3
-Lfde91_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Remove<T_INST>"
-	.asciz "System_Array_InternalArray__ICollection_Remove_T_INST_T_INST"
-
-	.byte 14,93
-	.quad System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
-	.quad Lme_65
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2084=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2084
-	.byte 2,141,16,3
-	.asciz "item"
-
-LDIFF_SYM2085=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2085
-	.byte 2,141,24,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2086=Lfde92_end - Lfde92_start
-	.long LDIFF_SYM2086
-Lfde92_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
-
-LDIFF_SYM2087=Lme_65 - System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
-	.long LDIFF_SYM2087
-	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
-	.align 3
-Lfde92_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Contains<T_INST>"
-	.asciz "System_Array_InternalArray__ICollection_Contains_T_INST_T_INST"
-
-	.byte 14,98
-	.quad System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
-	.quad Lme_66
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2088=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2088
-	.byte 1,106,3
-	.asciz "item"
-
-LDIFF_SYM2089=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2089
-	.byte 3,141,200,0,11
-	.asciz "length"
-
-LDIFF_SYM2090=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2090
-	.byte 1,105,11
-	.asciz "i"
-
-LDIFF_SYM2091=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2091
-	.byte 1,104,11
-	.asciz "value"
-
-LDIFF_SYM2092=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2092
-	.byte 3,141,200,1,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2093=Lfde93_end - Lfde93_start
-	.long LDIFF_SYM2093
-Lfde93_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
-
-LDIFF_SYM2094=Lme_66 - System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
-	.long LDIFF_SYM2094
-	.long 0
-	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150,28,151,27,68,152,26,153,25,68,154,24
-	.align 3
-Lfde93_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_INST>"
-	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int"
-
-	.byte 14,123
-	.quad System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
-	.quad Lme_67
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2095=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2095
-	.byte 1,104,3
-	.asciz "array"
-
-LDIFF_SYM2096=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM2096
-	.byte 1,105,3
-	.asciz "index"
-
-LDIFF_SYM2097=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2097
-	.byte 3,141,192,0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2098=Lfde94_end - Lfde94_start
-	.long LDIFF_SYM2098
-Lfde94_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
-
-LDIFF_SYM2099=Lme_67 - System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
-	.long LDIFF_SYM2099
-	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,148,28,149,27,68,150,26,68,152,25,153,24,68,154,23
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7
 	.align 3
 Lfde94_end:
 
@@ -30942,88 +31724,93 @@ Lfde94_end:
 LTDIE_258:
 
 	.byte 5
-	.asciz "System_Predicate`1"
+	.asciz "System_Comparison`1"
 
 	.byte 112,16
-LDIFF_SYM2100=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2100
+LDIFF_SYM2080=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2080
 	.byte 2,35,0,0,7
-	.asciz "System_Predicate`1"
+	.asciz "System_Comparison`1"
 
-LDIFF_SYM2101=LTDIE_258 - Ldebug_info_start
-	.long LDIFF_SYM2101
+LDIFF_SYM2081=LTDIE_258 - Ldebug_info_start
+	.long LDIFF_SYM2081
 LTDIE_258_POINTER:
 
 	.byte 13
-LDIFF_SYM2102=LTDIE_258 - Ldebug_info_start
-	.long LDIFF_SYM2102
+LDIFF_SYM2082=LTDIE_258 - Ldebug_info_start
+	.long LDIFF_SYM2082
 LTDIE_258_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2103=LTDIE_258 - Ldebug_info_start
-	.long LDIFF_SYM2103
+LDIFF_SYM2083=LTDIE_258 - Ldebug_info_start
+	.long LDIFF_SYM2083
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<object>:invoke_bool_T"
-	.asciz "wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object"
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Xamarin.Forms.Cell>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
-	.quad Lme_68
+	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.quad Lme_61
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2104=LTDIE_258_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2104
-	.byte 1,105,3
+LDIFF_SYM2084=LTDIE_258_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2084
+	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM2105=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2105
+LDIFF_SYM2085=LTDIE_252_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2085
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM2086=LTDIE_252_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2086
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2106=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2106
-	.byte 1,104,11
+LDIFF_SYM2087=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2087
+	.byte 1,103,11
 	.asciz "V_1"
 
-LDIFF_SYM2107=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2107
-	.byte 1,103,11
+LDIFF_SYM2088=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2088
+	.byte 1,102,11
 	.asciz "V_2"
 
-LDIFF_SYM2108=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2108
-	.byte 1,102,11
+LDIFF_SYM2089=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2089
+	.byte 1,101,11
 	.asciz "V_3"
 
-LDIFF_SYM2109=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2109
-	.byte 1,101,11
+LDIFF_SYM2090=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2090
+	.byte 1,100,11
 	.asciz "V_4"
 
-LDIFF_SYM2110=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2110
-	.byte 1,100,11
+LDIFF_SYM2091=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2091
+	.byte 1,99,11
 	.asciz "V_5"
 
-LDIFF_SYM2111=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM2111
-	.byte 1,99,0
+LDIFF_SYM2092=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2092
+	.byte 3,141,232,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2112=Lfde95_end - Lfde95_start
-	.long LDIFF_SYM2112
+LDIFF_SYM2093=Lfde95_end - Lfde95_start
+	.long LDIFF_SYM2093
 Lfde95_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
+	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
 
-LDIFF_SYM2113=Lme_68 - wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
-	.long LDIFF_SYM2113
+LDIFF_SYM2094=Lme_61 - wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.long LDIFF_SYM2094
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
 	.byte 154,9
@@ -31034,86 +31821,91 @@ Lfde95_end:
 LTDIE_259:
 
 	.byte 5
-	.asciz "System_Action`1"
+	.asciz "System_Predicate`1"
 
 	.byte 112,16
-LDIFF_SYM2114=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2114
+LDIFF_SYM2095=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2095
 	.byte 2,35,0,0,7
-	.asciz "System_Action`1"
+	.asciz "System_Predicate`1"
 
-LDIFF_SYM2115=LTDIE_259 - Ldebug_info_start
-	.long LDIFF_SYM2115
+LDIFF_SYM2096=LTDIE_259 - Ldebug_info_start
+	.long LDIFF_SYM2096
 LTDIE_259_POINTER:
 
 	.byte 13
-LDIFF_SYM2116=LTDIE_259 - Ldebug_info_start
-	.long LDIFF_SYM2116
+LDIFF_SYM2097=LTDIE_259 - Ldebug_info_start
+	.long LDIFF_SYM2097
 LTDIE_259_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2117=LTDIE_259 - Ldebug_info_start
-	.long LDIFF_SYM2117
+LDIFF_SYM2098=LTDIE_259 - Ldebug_info_start
+	.long LDIFF_SYM2098
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Action`1<object>:invoke_void_T"
-	.asciz "wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object"
+	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_bool_T"
+	.asciz "wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
-	.quad Lme_69
+	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.quad Lme_62
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2118=LTDIE_259_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2118
+LDIFF_SYM2099=LTDIE_259_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2099
 	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM2119=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2119
+LDIFF_SYM2100=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2100
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2120=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2120
+LDIFF_SYM2101=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2101
 	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM2121=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2121
+LDIFF_SYM2102=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2102
 	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM2122=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2122
+LDIFF_SYM2103=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2103
 	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM2123=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2123
+LDIFF_SYM2104=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2104
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM2124=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2124
-	.byte 1,100,0
+LDIFF_SYM2105=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2105
+	.byte 1,100,11
+	.asciz "V_5"
+
+LDIFF_SYM2106=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2106
+	.byte 1,99,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2125=Lfde96_end - Lfde96_start
-	.long LDIFF_SYM2125
+LDIFF_SYM2107=Lfde96_end - Lfde96_start
+	.long LDIFF_SYM2107
 Lfde96_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
+	.quad wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
 
-LDIFF_SYM2126=Lme_69 - wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
-	.long LDIFF_SYM2126
+LDIFF_SYM2108=Lme_62 - wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_bool_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.long LDIFF_SYM2108
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
-	.byte 154,7
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
 	.align 3
 Lfde96_end:
 
@@ -31121,527 +31913,538 @@ Lfde96_end:
 LTDIE_260:
 
 	.byte 5
-	.asciz "System_Comparison`1"
+	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM2127=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2127
+LDIFF_SYM2109=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2109
 	.byte 2,35,0,0,7
-	.asciz "System_Comparison`1"
+	.asciz "System_Action`1"
 
-LDIFF_SYM2128=LTDIE_260 - Ldebug_info_start
-	.long LDIFF_SYM2128
+LDIFF_SYM2110=LTDIE_260 - Ldebug_info_start
+	.long LDIFF_SYM2110
 LTDIE_260_POINTER:
 
 	.byte 13
-LDIFF_SYM2129=LTDIE_260 - Ldebug_info_start
-	.long LDIFF_SYM2129
+LDIFF_SYM2111=LTDIE_260 - Ldebug_info_start
+	.long LDIFF_SYM2111
 LTDIE_260_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2130=LTDIE_260 - Ldebug_info_start
-	.long LDIFF_SYM2130
+LDIFF_SYM2112=LTDIE_260 - Ldebug_info_start
+	.long LDIFF_SYM2112
 	.byte 2
-	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<object>:invoke_int_T_T"
-	.asciz "wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object"
+	.asciz "(wrapper_delegate-invoke)_System.Action`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_void_T"
+	.asciz "wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
 
 	.byte 0,0
-	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
-	.quad Lme_6a
+	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.quad Lme_63
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2131=LTDIE_260_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2131
-	.byte 1,104,3
+LDIFF_SYM2113=LTDIE_260_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2113
+	.byte 1,105,3
 	.asciz "param0"
 
-LDIFF_SYM2132=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2132
-	.byte 1,105,3
-	.asciz "param1"
-
-LDIFF_SYM2133=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2133
+LDIFF_SYM2114=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2114
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM2134=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2134
-	.byte 1,103,11
+LDIFF_SYM2115=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2115
+	.byte 1,104,11
 	.asciz "V_1"
 
-LDIFF_SYM2135=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2135
-	.byte 1,102,11
+LDIFF_SYM2116=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2116
+	.byte 1,103,11
 	.asciz "V_2"
 
-LDIFF_SYM2136=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2136
-	.byte 1,101,11
+LDIFF_SYM2117=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2117
+	.byte 1,102,11
 	.asciz "V_3"
 
-LDIFF_SYM2137=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2137
-	.byte 1,100,11
+LDIFF_SYM2118=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2118
+	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM2138=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM2138
-	.byte 1,99,11
-	.asciz "V_5"
-
-LDIFF_SYM2139=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2139
-	.byte 3,141,232,0,0
+LDIFF_SYM2119=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2119
+	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2140=Lfde97_end - Lfde97_start
-	.long LDIFF_SYM2140
+LDIFF_SYM2120=Lfde97_end - Lfde97_start
+	.long LDIFF_SYM2120
 Lfde97_start:
 
 	.long 0
 	.align 3
-	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+	.quad wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
 
-LDIFF_SYM2141=Lme_6a - wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
-	.long LDIFF_SYM2141
+LDIFF_SYM2121=Lme_63 - wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_void_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.long LDIFF_SYM2121
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
-	.byte 154,9
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7
 	.align 3
 Lfde97_end:
 
 .section __DWARF, __debug_info,regular,debug
+LTDIE_261:
 
+	.byte 5
+	.asciz "System_Comparison`1"
+
+	.byte 112,16
+LDIFF_SYM2122=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2122
+	.byte 2,35,0,0,7
+	.asciz "System_Comparison`1"
+
+LDIFF_SYM2123=LTDIE_261 - Ldebug_info_start
+	.long LDIFF_SYM2123
+LTDIE_261_POINTER:
+
+	.byte 13
+LDIFF_SYM2124=LTDIE_261 - Ldebug_info_start
+	.long LDIFF_SYM2124
+LTDIE_261_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2125=LTDIE_261 - Ldebug_info_start
+	.long LDIFF_SYM2125
 	.byte 2
-	.asciz "System.Array:InternalArray__Insert<T_REF>"
-	.asciz "System_Array_InternalArray__Insert_T_REF_int_T_REF"
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<Xamarin.Forms.TemplatedItemsList`2<Xamarin.Forms.ItemsView`1<Xamarin.Forms.Cell>,_Xamarin.Forms.Cell>>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell"
 
-	.byte 14,160,1
-	.quad System_Array_InternalArray__Insert_T_REF_int_T_REF
-	.quad Lme_6b
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.quad Lme_64
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2142=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2142
-	.byte 2,141,16,3
-	.asciz "index"
+LDIFF_SYM2126=LTDIE_261_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2126
+	.byte 1,104,3
+	.asciz "param0"
 
-LDIFF_SYM2143=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2143
-	.byte 2,141,24,3
-	.asciz "item"
+LDIFF_SYM2127=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2127
+	.byte 1,105,3
+	.asciz "param1"
 
-LDIFF_SYM2144=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2144
-	.byte 2,141,32,0
+LDIFF_SYM2128=LTDIE_191_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2128
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM2129=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2129
+	.byte 1,103,11
+	.asciz "V_1"
+
+LDIFF_SYM2130=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2130
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM2131=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2131
+	.byte 1,101,11
+	.asciz "V_3"
+
+LDIFF_SYM2132=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2132
+	.byte 1,100,11
+	.asciz "V_4"
+
+LDIFF_SYM2133=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2133
+	.byte 1,99,11
+	.asciz "V_5"
+
+LDIFF_SYM2134=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2134
+	.byte 3,141,232,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2145=Lfde98_end - Lfde98_start
-	.long LDIFF_SYM2145
+LDIFF_SYM2135=Lfde98_end - Lfde98_start
+	.long LDIFF_SYM2135
 Lfde98_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__Insert_T_REF_int_T_REF
+	.quad wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
 
-LDIFF_SYM2146=Lme_6b - System_Array_InternalArray__Insert_T_REF_int_T_REF
-	.long LDIFF_SYM2146
+LDIFF_SYM2136=Lme_64 - wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_invoke_int_T_T_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell_Xamarin_Forms_TemplatedItemsList_2_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_Xamarin_Forms_Cell
+	.long LDIFF_SYM2136
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
 	.align 3
 Lfde98_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__RemoveAt"
-	.asciz "System_Array_InternalArray__RemoveAt_int"
+	.asciz "System.Array:InternalArray__ICollection_Add<T_INST>"
+	.asciz "System_Array_InternalArray__ICollection_Add_T_INST_T_INST"
 
-	.byte 14,165,1
-	.quad System_Array_InternalArray__RemoveAt_int
+	.byte 17,88
+	.quad System_Array_InternalArray__ICollection_Add_T_INST_T_INST
 	.quad Lme_6c
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2147=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2147
+LDIFF_SYM2137=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2137
 	.byte 2,141,16,3
-	.asciz "index"
+	.asciz "item"
 
-LDIFF_SYM2148=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2148
+LDIFF_SYM2138=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2138
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2149=Lfde99_end - Lfde99_start
-	.long LDIFF_SYM2149
+LDIFF_SYM2139=Lfde99_end - Lfde99_start
+	.long LDIFF_SYM2139
 Lfde99_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__RemoveAt_int
+	.quad System_Array_InternalArray__ICollection_Add_T_INST_T_INST
 
-LDIFF_SYM2150=Lme_6c - System_Array_InternalArray__RemoveAt_int
-	.long LDIFF_SYM2150
+LDIFF_SYM2140=Lme_6c - System_Array_InternalArray__ICollection_Add_T_INST_T_INST
+	.long LDIFF_SYM2140
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde99_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__IndexOf<T_REF>"
-	.asciz "System_Array_InternalArray__IndexOf_T_REF_T_REF"
+	.asciz "System.Array:InternalArray__ICollection_Remove<T_INST>"
+	.asciz "System_Array_InternalArray__ICollection_Remove_T_INST_T_INST"
 
-	.byte 14,170,1
-	.quad System_Array_InternalArray__IndexOf_T_REF_T_REF
+	.byte 17,93
+	.quad System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
 	.quad Lme_6d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2151=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2151
-	.byte 1,105,3
+LDIFF_SYM2141=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2141
+	.byte 2,141,16,3
 	.asciz "item"
 
-LDIFF_SYM2152=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2152
-	.byte 1,106,11
-	.asciz "length"
-
-LDIFF_SYM2153=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2153
-	.byte 1,104,11
-	.asciz "i"
-
-LDIFF_SYM2154=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2154
-	.byte 1,103,11
-	.asciz "value"
-
-LDIFF_SYM2155=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2155
-	.byte 3,141,224,0,0
+LDIFF_SYM2142=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2142
+	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2156=Lfde100_end - Lfde100_start
-	.long LDIFF_SYM2156
+LDIFF_SYM2143=Lfde100_end - Lfde100_start
+	.long LDIFF_SYM2143
 Lfde100_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__IndexOf_T_REF_T_REF
+	.quad System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
 
-LDIFF_SYM2157=Lme_6d - System_Array_InternalArray__IndexOf_T_REF_T_REF
-	.long LDIFF_SYM2157
+LDIFF_SYM2144=Lme_6d - System_Array_InternalArray__ICollection_Remove_T_INST_T_INST
+	.long LDIFF_SYM2144
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,151,18,152,17,68,153,16,154,15
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde100_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__get_Item<T_REF>"
-	.asciz "System_Array_InternalArray__get_Item_T_REF_int"
+	.asciz "System.Array:InternalArray__ICollection_Contains<T_INST>"
+	.asciz "System_Array_InternalArray__ICollection_Contains_T_INST_T_INST"
 
-	.byte 14,197,1
-	.quad System_Array_InternalArray__get_Item_T_REF_int
+	.byte 17,98
+	.quad System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
 	.quad Lme_6e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2158=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2158
-	.byte 1,105,3
-	.asciz "index"
+LDIFF_SYM2145=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2145
+	.byte 1,106,3
+	.asciz "item"
 
-LDIFF_SYM2159=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2159
-	.byte 1,106,11
+LDIFF_SYM2146=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2146
+	.byte 3,141,200,0,11
+	.asciz "length"
+
+LDIFF_SYM2147=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2147
+	.byte 1,105,11
+	.asciz "i"
+
+LDIFF_SYM2148=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2148
+	.byte 1,104,11
 	.asciz "value"
 
-LDIFF_SYM2160=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2160
-	.byte 3,141,192,0,0
+LDIFF_SYM2149=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2149
+	.byte 3,141,200,1,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2161=Lfde101_end - Lfde101_start
-	.long LDIFF_SYM2161
+LDIFF_SYM2150=Lfde101_end - Lfde101_start
+	.long LDIFF_SYM2150
 Lfde101_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__get_Item_T_REF_int
+	.quad System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
 
-LDIFF_SYM2162=Lme_6e - System_Array_InternalArray__get_Item_T_REF_int
-	.long LDIFF_SYM2162
+LDIFF_SYM2151=Lme_6e - System_Array_InternalArray__ICollection_Contains_T_INST_T_INST
+	.long LDIFF_SYM2151
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150,28,151,27,68,152,26,153,25,68,154,24
 	.align 3
 Lfde101_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__set_Item<T_REF>"
-	.asciz "System_Array_InternalArray__set_Item_T_REF_int_T_REF"
+	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_INST>"
+	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int"
 
-	.byte 14,207,1
-	.quad System_Array_InternalArray__set_Item_T_REF_int_T_REF
+	.byte 17,123
+	.quad System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
 	.quad Lme_6f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2163=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2163
+LDIFF_SYM2152=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2152
+	.byte 1,104,3
+	.asciz "array"
+
+LDIFF_SYM2153=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2153
 	.byte 1,105,3
 	.asciz "index"
 
-LDIFF_SYM2164=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2164
-	.byte 1,106,3
-	.asciz "item"
-
-LDIFF_SYM2165=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2165
-	.byte 3,141,200,0,11
-	.asciz "oarray"
-
-LDIFF_SYM2166=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM2166
-	.byte 1,104,0
+LDIFF_SYM2154=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2154
+	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2167=Lfde102_end - Lfde102_start
-	.long LDIFF_SYM2167
+LDIFF_SYM2155=Lfde102_end - Lfde102_start
+	.long LDIFF_SYM2155
 Lfde102_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__set_Item_T_REF_int_T_REF
+	.quad System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
 
-LDIFF_SYM2168=Lme_6f - System_Array_InternalArray__set_Item_T_REF_int_T_REF
-	.long LDIFF_SYM2168
+LDIFF_SYM2156=Lme_6f - System_Array_InternalArray__ICollection_CopyTo_T_INST_T_INST___int
+	.long LDIFF_SYM2156
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8
+	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,148,28,149,27,68,150,26,68,152,25,153,24,68,154,23
 	.align 3
 Lfde102_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_261:
-
-	.byte 5
-	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder"
-
-	.byte 48,16
-LDIFF_SYM2169=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM2169
-	.byte 2,35,0,6
-	.asciz "m_synchronizationContext"
-
-LDIFF_SYM2170=LTDIE_36_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2170
-	.byte 2,35,0,6
-	.asciz "m_coreState"
-
-LDIFF_SYM2171=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2171
-	.byte 2,35,8,6
-	.asciz "m_task"
-
-LDIFF_SYM2172=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2172
-	.byte 2,35,24,0,7
-	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder"
-
-LDIFF_SYM2173=LTDIE_261 - Ldebug_info_start
-	.long LDIFF_SYM2173
-LTDIE_261_POINTER:
-
-	.byte 13
-LDIFF_SYM2174=LTDIE_261 - Ldebug_info_start
-	.long LDIFF_SYM2174
-LTDIE_261_REFERENCE:
-
-	.byte 14
-LDIFF_SYM2175=LTDIE_261 - Ldebug_info_start
-	.long LDIFF_SYM2175
-	.byte 2
-	.asciz "System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<TStateMachine_GSHAREDVT>"
-	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_"
-
-	.byte 17,72
-	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
-	.quad Lme_70
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM2176=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2176
-	.byte 2,141,56,3
-	.asciz "stateMachine"
-
-LDIFF_SYM2177=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2177
-	.byte 1,106,11
-	.asciz "ecs"
-
-LDIFF_SYM2178=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2178
-	.byte 3,141,160,1,11
-	.asciz ""
-
-LDIFF_SYM2179=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2179
-	.byte 3,141,128,1,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM2180=Lfde103_end - Lfde103_start
-	.long LDIFF_SYM2180
-Lfde103_start:
-
-	.long 0
-	.align 3
-	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
-
-LDIFF_SYM2181=Lme_70 - System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
-	.long LDIFF_SYM2181
-	.long 0
-	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,150,30,151,29,68,152,28,153,27,68,154,26
-	.align 3
-Lfde103_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_262:
 
 	.byte 5
-	.asciz "_MoveNextRunner"
+	.asciz "System_Predicate`1"
 
-	.byte 32,16
-LDIFF_SYM2182=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM2182
-	.byte 2,35,0,6
-	.asciz "m_context"
+	.byte 112,16
+LDIFF_SYM2157=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2157
+	.byte 2,35,0,0,7
+	.asciz "System_Predicate`1"
 
-LDIFF_SYM2183=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2183
-	.byte 2,35,16,6
-	.asciz "m_stateMachine"
-
-LDIFF_SYM2184=LTDIE_184_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2184
-	.byte 2,35,24,0,7
-	.asciz "_MoveNextRunner"
-
-LDIFF_SYM2185=LTDIE_262 - Ldebug_info_start
-	.long LDIFF_SYM2185
+LDIFF_SYM2158=LTDIE_262 - Ldebug_info_start
+	.long LDIFF_SYM2158
 LTDIE_262_POINTER:
 
 	.byte 13
-LDIFF_SYM2186=LTDIE_262 - Ldebug_info_start
-	.long LDIFF_SYM2186
+LDIFF_SYM2159=LTDIE_262 - Ldebug_info_start
+	.long LDIFF_SYM2159
 LTDIE_262_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2187=LTDIE_262 - Ldebug_info_start
-	.long LDIFF_SYM2187
+LDIFF_SYM2160=LTDIE_262 - Ldebug_info_start
+	.long LDIFF_SYM2160
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Predicate`1<object>:invoke_bool_T"
+	.asciz "wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
+	.quad Lme_70
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2161=LTDIE_262_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2161
+	.byte 1,105,3
+	.asciz "param0"
+
+LDIFF_SYM2162=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2162
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM2163=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2163
+	.byte 1,104,11
+	.asciz "V_1"
+
+LDIFF_SYM2164=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2164
+	.byte 1,103,11
+	.asciz "V_2"
+
+LDIFF_SYM2165=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2165
+	.byte 1,102,11
+	.asciz "V_3"
+
+LDIFF_SYM2166=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2166
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM2167=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2167
+	.byte 1,100,11
+	.asciz "V_5"
+
+LDIFF_SYM2168=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM2168
+	.byte 1,99,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2169=Lfde103_end - Lfde103_start
+	.long LDIFF_SYM2169
+Lfde103_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
+
+LDIFF_SYM2170=Lme_70 - wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object
+	.long LDIFF_SYM2170
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
+	.align 3
+Lfde103_end:
+
+.section __DWARF, __debug_info,regular,debug
 LTDIE_263:
 
 	.byte 5
-	.asciz "System_Action"
+	.asciz "System_Action`1"
 
 	.byte 112,16
-LDIFF_SYM2188=LTDIE_10 - Ldebug_info_start
-	.long LDIFF_SYM2188
+LDIFF_SYM2171=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2171
 	.byte 2,35,0,0,7
-	.asciz "System_Action"
+	.asciz "System_Action`1"
 
-LDIFF_SYM2189=LTDIE_263 - Ldebug_info_start
-	.long LDIFF_SYM2189
+LDIFF_SYM2172=LTDIE_263 - Ldebug_info_start
+	.long LDIFF_SYM2172
 LTDIE_263_POINTER:
 
 	.byte 13
-LDIFF_SYM2190=LTDIE_263 - Ldebug_info_start
-	.long LDIFF_SYM2190
+LDIFF_SYM2173=LTDIE_263 - Ldebug_info_start
+	.long LDIFF_SYM2173
 LTDIE_263_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2191=LTDIE_263 - Ldebug_info_start
-	.long LDIFF_SYM2191
+LDIFF_SYM2174=LTDIE_263 - Ldebug_info_start
+	.long LDIFF_SYM2174
 	.byte 2
-	.asciz "System.Runtime.CompilerServices.AsyncVoidMethodBuilder:AwaitUnsafeOnCompleted<TAwaiter_GSHAREDVT,_TStateMachine_GSHAREDVT>"
-	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_"
+	.asciz "(wrapper_delegate-invoke)_System.Action`1<object>:invoke_void_T"
+	.asciz "wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object"
 
-	.byte 17,161,1
-	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
 	.quad Lme_71
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2192=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2192
-	.byte 1,104,3
-	.asciz "awaiter"
+LDIFF_SYM2175=LTDIE_263_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2175
+	.byte 1,105,3
+	.asciz "param0"
 
-LDIFF_SYM2193=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2193
-	.byte 3,141,208,0,3
-	.asciz "stateMachine"
+LDIFF_SYM2176=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2176
+	.byte 1,106,11
+	.asciz "V_0"
 
-LDIFF_SYM2194=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2194
-	.byte 3,141,216,0,11
-	.asciz "runnerToInitialize"
+LDIFF_SYM2177=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2177
+	.byte 1,104,11
+	.asciz "V_1"
 
-LDIFF_SYM2195=LTDIE_262_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2195
-	.byte 3,141,128,1,11
-	.asciz "continuation"
+LDIFF_SYM2178=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2178
+	.byte 1,103,11
+	.asciz "V_2"
 
-LDIFF_SYM2196=LTDIE_263_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2196
+LDIFF_SYM2179=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2179
+	.byte 1,102,11
+	.asciz "V_3"
+
+LDIFF_SYM2180=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2180
 	.byte 1,101,11
-	.asciz "e"
+	.asciz "V_4"
 
-LDIFF_SYM2197=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2197
-	.byte 3,141,136,1,0
+LDIFF_SYM2181=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2181
+	.byte 1,100,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2198=Lfde104_end - Lfde104_start
-	.long LDIFF_SYM2198
+LDIFF_SYM2182=Lfde104_end - Lfde104_start
+	.long LDIFF_SYM2182
 Lfde104_start:
 
 	.long 0
 	.align 3
-	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
+	.quad wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
 
-LDIFF_SYM2199=Lme_71 - System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
-	.long LDIFF_SYM2199
+LDIFF_SYM2183=Lme_71 - wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object
+	.long LDIFF_SYM2183
 	.long 0
-	.byte 12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26
-	.byte 154,25
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7
 	.align 3
 Lfde104_end:
 
@@ -31649,72 +32452,600 @@ Lfde104_end:
 LTDIE_264:
 
 	.byte 5
-	.asciz "_InternalEnumerator`1"
+	.asciz "System_Comparison`1"
 
-	.byte 32,16
-LDIFF_SYM2200=LTDIE_7 - Ldebug_info_start
-	.long LDIFF_SYM2200
-	.byte 2,35,0,6
-	.asciz "array"
+	.byte 112,16
+LDIFF_SYM2184=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2184
+	.byte 2,35,0,0,7
+	.asciz "System_Comparison`1"
 
-LDIFF_SYM2201=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2201
-	.byte 2,35,16,6
-	.asciz "idx"
-
-LDIFF_SYM2202=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2202
-	.byte 2,35,24,0,7
-	.asciz "_InternalEnumerator`1"
-
-LDIFF_SYM2203=LTDIE_264 - Ldebug_info_start
-	.long LDIFF_SYM2203
+LDIFF_SYM2185=LTDIE_264 - Ldebug_info_start
+	.long LDIFF_SYM2185
 LTDIE_264_POINTER:
 
 	.byte 13
-LDIFF_SYM2204=LTDIE_264 - Ldebug_info_start
-	.long LDIFF_SYM2204
+LDIFF_SYM2186=LTDIE_264 - Ldebug_info_start
+	.long LDIFF_SYM2186
 LTDIE_264_REFERENCE:
 
 	.byte 14
-LDIFF_SYM2205=LTDIE_264 - Ldebug_info_start
-	.long LDIFF_SYM2205
+LDIFF_SYM2187=LTDIE_264 - Ldebug_info_start
+	.long LDIFF_SYM2187
 	.byte 2
-	.asciz "System.Array/InternalEnumerator`1<T_REF>:.ctor"
-	.asciz "System_Array_InternalEnumerator_1_T_REF__ctor_System_Array"
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<object>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object"
 
-	.byte 14,239,1
-	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
 	.quad Lme_72
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2206=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM2206
-	.byte 1,105,3
-	.asciz "array"
+LDIFF_SYM2188=LTDIE_264_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2188
+	.byte 1,104,3
+	.asciz "param0"
 
-LDIFF_SYM2207=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2207
+LDIFF_SYM2189=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2189
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM2190=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2190
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM2191=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2191
+	.byte 1,103,11
+	.asciz "V_1"
+
+LDIFF_SYM2192=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2192
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM2193=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2193
+	.byte 1,101,11
+	.asciz "V_3"
+
+LDIFF_SYM2194=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2194
+	.byte 1,100,11
+	.asciz "V_4"
+
+LDIFF_SYM2195=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM2195
+	.byte 1,99,11
+	.asciz "V_5"
+
+LDIFF_SYM2196=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2196
+	.byte 3,141,232,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2197=Lfde105_end - Lfde105_start
+	.long LDIFF_SYM2197
+Lfde105_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+
+LDIFF_SYM2198=Lme_72 - wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+	.long LDIFF_SYM2198
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9
+	.align 3
+Lfde105_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__Insert<T_REF>"
+	.asciz "System_Array_InternalArray__Insert_T_REF_int_T_REF"
+
+	.byte 17,160,1
+	.quad System_Array_InternalArray__Insert_T_REF_int_T_REF
+	.quad Lme_73
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2199=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2199
+	.byte 2,141,16,3
+	.asciz "index"
+
+LDIFF_SYM2200=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2200
+	.byte 2,141,24,3
+	.asciz "item"
+
+LDIFF_SYM2201=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2201
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2202=Lfde106_end - Lfde106_start
+	.long LDIFF_SYM2202
+Lfde106_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__Insert_T_REF_int_T_REF
+
+LDIFF_SYM2203=Lme_73 - System_Array_InternalArray__Insert_T_REF_int_T_REF
+	.long LDIFF_SYM2203
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.align 3
+Lfde106_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__RemoveAt"
+	.asciz "System_Array_InternalArray__RemoveAt_int"
+
+	.byte 17,165,1
+	.quad System_Array_InternalArray__RemoveAt_int
+	.quad Lme_74
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2204=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2204
+	.byte 2,141,16,3
+	.asciz "index"
+
+LDIFF_SYM2205=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2205
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2208=Lfde105_end - Lfde105_start
+LDIFF_SYM2206=Lfde107_end - Lfde107_start
+	.long LDIFF_SYM2206
+Lfde107_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__RemoveAt_int
+
+LDIFF_SYM2207=Lme_74 - System_Array_InternalArray__RemoveAt_int
+	.long LDIFF_SYM2207
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde107_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__IndexOf<T_REF>"
+	.asciz "System_Array_InternalArray__IndexOf_T_REF_T_REF"
+
+	.byte 17,170,1
+	.quad System_Array_InternalArray__IndexOf_T_REF_T_REF
+	.quad Lme_75
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2208=LTDIE_225_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2208
-Lfde105_start:
+	.byte 1,105,3
+	.asciz "item"
+
+LDIFF_SYM2209=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2209
+	.byte 1,106,11
+	.asciz "length"
+
+LDIFF_SYM2210=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2210
+	.byte 1,104,11
+	.asciz "i"
+
+LDIFF_SYM2211=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2211
+	.byte 1,103,11
+	.asciz "value"
+
+LDIFF_SYM2212=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2212
+	.byte 3,141,224,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2213=Lfde108_end - Lfde108_start
+	.long LDIFF_SYM2213
+Lfde108_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__IndexOf_T_REF_T_REF
+
+LDIFF_SYM2214=Lme_75 - System_Array_InternalArray__IndexOf_T_REF_T_REF
+	.long LDIFF_SYM2214
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,149,19,68,151,18,152,17,68,153,16,154,15
+	.align 3
+Lfde108_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__get_Item<T_REF>"
+	.asciz "System_Array_InternalArray__get_Item_T_REF_int"
+
+	.byte 17,197,1
+	.quad System_Array_InternalArray__get_Item_T_REF_int
+	.quad Lme_76
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2215=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2215
+	.byte 1,105,3
+	.asciz "index"
+
+LDIFF_SYM2216=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2216
+	.byte 1,106,11
+	.asciz "value"
+
+LDIFF_SYM2217=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2217
+	.byte 3,141,192,0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2218=Lfde109_end - Lfde109_start
+	.long LDIFF_SYM2218
+Lfde109_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__get_Item_T_REF_int
+
+LDIFF_SYM2219=Lme_76 - System_Array_InternalArray__get_Item_T_REF_int
+	.long LDIFF_SYM2219
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
+	.align 3
+Lfde109_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__set_Item<T_REF>"
+	.asciz "System_Array_InternalArray__set_Item_T_REF_int_T_REF"
+
+	.byte 17,207,1
+	.quad System_Array_InternalArray__set_Item_T_REF_int_T_REF
+	.quad Lme_77
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2220=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2220
+	.byte 1,105,3
+	.asciz "index"
+
+LDIFF_SYM2221=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2221
+	.byte 1,106,3
+	.asciz "item"
+
+LDIFF_SYM2222=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2222
+	.byte 3,141,200,0,11
+	.asciz "oarray"
+
+LDIFF_SYM2223=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM2223
+	.byte 1,104,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2224=Lfde110_end - Lfde110_start
+	.long LDIFF_SYM2224
+Lfde110_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__set_Item_T_REF_int_T_REF
+
+LDIFF_SYM2225=Lme_77 - System_Array_InternalArray__set_Item_T_REF_int_T_REF
+	.long LDIFF_SYM2225
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8
+	.align 3
+Lfde110_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_265:
+
+	.byte 5
+	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder"
+
+	.byte 48,16
+LDIFF_SYM2226=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM2226
+	.byte 2,35,0,6
+	.asciz "m_synchronizationContext"
+
+LDIFF_SYM2227=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2227
+	.byte 2,35,0,6
+	.asciz "m_coreState"
+
+LDIFF_SYM2228=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2228
+	.byte 2,35,8,6
+	.asciz "m_task"
+
+LDIFF_SYM2229=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2229
+	.byte 2,35,24,0,7
+	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder"
+
+LDIFF_SYM2230=LTDIE_265 - Ldebug_info_start
+	.long LDIFF_SYM2230
+LTDIE_265_POINTER:
+
+	.byte 13
+LDIFF_SYM2231=LTDIE_265 - Ldebug_info_start
+	.long LDIFF_SYM2231
+LTDIE_265_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2232=LTDIE_265 - Ldebug_info_start
+	.long LDIFF_SYM2232
+	.byte 2
+	.asciz "System.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<TStateMachine_GSHAREDVT>"
+	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_"
+
+	.byte 20,72
+	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
+	.quad Lme_78
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2233=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2233
+	.byte 2,141,56,3
+	.asciz "stateMachine"
+
+LDIFF_SYM2234=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2234
+	.byte 1,106,11
+	.asciz "ecs"
+
+LDIFF_SYM2235=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2235
+	.byte 3,141,160,1,11
+	.asciz ""
+
+LDIFF_SYM2236=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2236
+	.byte 3,141,128,1,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2237=Lfde111_end - Lfde111_start
+	.long LDIFF_SYM2237
+Lfde111_start:
+
+	.long 0
+	.align 3
+	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
+
+LDIFF_SYM2238=Lme_78 - System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
+	.long LDIFF_SYM2238
+	.long 0
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,150,30,151,29,68,152,28,153,27,68,154,26
+	.align 3
+Lfde111_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_266:
+
+	.byte 5
+	.asciz "_MoveNextRunner"
+
+	.byte 32,16
+LDIFF_SYM2239=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM2239
+	.byte 2,35,0,6
+	.asciz "m_context"
+
+LDIFF_SYM2240=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2240
+	.byte 2,35,16,6
+	.asciz "m_stateMachine"
+
+LDIFF_SYM2241=LTDIE_185_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2241
+	.byte 2,35,24,0,7
+	.asciz "_MoveNextRunner"
+
+LDIFF_SYM2242=LTDIE_266 - Ldebug_info_start
+	.long LDIFF_SYM2242
+LTDIE_266_POINTER:
+
+	.byte 13
+LDIFF_SYM2243=LTDIE_266 - Ldebug_info_start
+	.long LDIFF_SYM2243
+LTDIE_266_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2244=LTDIE_266 - Ldebug_info_start
+	.long LDIFF_SYM2244
+LTDIE_267:
+
+	.byte 5
+	.asciz "System_Action"
+
+	.byte 112,16
+LDIFF_SYM2245=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM2245
+	.byte 2,35,0,0,7
+	.asciz "System_Action"
+
+LDIFF_SYM2246=LTDIE_267 - Ldebug_info_start
+	.long LDIFF_SYM2246
+LTDIE_267_POINTER:
+
+	.byte 13
+LDIFF_SYM2247=LTDIE_267 - Ldebug_info_start
+	.long LDIFF_SYM2247
+LTDIE_267_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2248=LTDIE_267 - Ldebug_info_start
+	.long LDIFF_SYM2248
+	.byte 2
+	.asciz "System.Runtime.CompilerServices.AsyncVoidMethodBuilder:AwaitUnsafeOnCompleted<TAwaiter_GSHAREDVT,_TStateMachine_GSHAREDVT>"
+	.asciz "System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_"
+
+	.byte 20,161,1
+	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
+	.quad Lme_79
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2249=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2249
+	.byte 1,104,3
+	.asciz "awaiter"
+
+LDIFF_SYM2250=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2250
+	.byte 3,141,208,0,3
+	.asciz "stateMachine"
+
+LDIFF_SYM2251=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2251
+	.byte 3,141,216,0,11
+	.asciz "runnerToInitialize"
+
+LDIFF_SYM2252=LTDIE_266_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2252
+	.byte 3,141,128,1,11
+	.asciz "continuation"
+
+LDIFF_SYM2253=LTDIE_267_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2253
+	.byte 1,101,11
+	.asciz "e"
+
+LDIFF_SYM2254=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2254
+	.byte 3,141,136,1,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2255=Lfde112_end - Lfde112_start
+	.long LDIFF_SYM2255
+Lfde112_start:
+
+	.long 0
+	.align 3
+	.quad System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
+
+LDIFF_SYM2256=Lme_79 - System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TAwaiter_GSHAREDVT_TStateMachine_GSHAREDVT_TAwaiter_GSHAREDVT__TStateMachine_GSHAREDVT_
+	.long LDIFF_SYM2256
+	.long 0
+	.byte 12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,147,32,148,31,68,149,30,150,29,68,151,28,152,27,68,153,26
+	.byte 154,25
+	.align 3
+Lfde112_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_268:
+
+	.byte 5
+	.asciz "_InternalEnumerator`1"
+
+	.byte 32,16
+LDIFF_SYM2257=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM2257
+	.byte 2,35,0,6
+	.asciz "array"
+
+LDIFF_SYM2258=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2258
+	.byte 2,35,16,6
+	.asciz "idx"
+
+LDIFF_SYM2259=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2259
+	.byte 2,35,24,0,7
+	.asciz "_InternalEnumerator`1"
+
+LDIFF_SYM2260=LTDIE_268 - Ldebug_info_start
+	.long LDIFF_SYM2260
+LTDIE_268_POINTER:
+
+	.byte 13
+LDIFF_SYM2261=LTDIE_268 - Ldebug_info_start
+	.long LDIFF_SYM2261
+LTDIE_268_REFERENCE:
+
+	.byte 14
+LDIFF_SYM2262=LTDIE_268 - Ldebug_info_start
+	.long LDIFF_SYM2262
+	.byte 2
+	.asciz "System.Array/InternalEnumerator`1<T_REF>:.ctor"
+	.asciz "System_Array_InternalEnumerator_1_T_REF__ctor_System_Array"
+
+	.byte 17,239,1
+	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+	.quad Lme_7a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM2263=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM2263
+	.byte 1,105,3
+	.asciz "array"
+
+LDIFF_SYM2264=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2264
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM2265=Lfde113_end - Lfde113_start
+	.long LDIFF_SYM2265
+Lfde113_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 
-LDIFF_SYM2209=Lme_72 - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-	.long LDIFF_SYM2209
+LDIFF_SYM2266=Lme_7a - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+	.long LDIFF_SYM2266
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
 	.align 3
-Lfde105_end:
+Lfde113_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -31722,43 +33053,43 @@ Lfde105_end:
 	.asciz "System.Array:InternalArray__get_Item<T_INST>"
 	.asciz "System_Array_InternalArray__get_Item_T_INST_int"
 
-	.byte 14,197,1
+	.byte 17,197,1
 	.quad System_Array_InternalArray__get_Item_T_INST_int
-	.quad Lme_73
+	.quad Lme_7b
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM2210=LTDIE_221_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM2210
+LDIFF_SYM2267=LTDIE_225_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM2267
 	.byte 1,105,3
 	.asciz "index"
 
-LDIFF_SYM2211=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2211
+LDIFF_SYM2268=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2268
 	.byte 1,106,11
 	.asciz "value"
 
-LDIFF_SYM2212=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM2212
+LDIFF_SYM2269=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM2269
 	.byte 3,141,240,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM2213=Lfde106_end - Lfde106_start
-	.long LDIFF_SYM2213
-Lfde106_start:
+LDIFF_SYM2270=Lfde114_end - Lfde114_start
+	.long LDIFF_SYM2270
+Lfde114_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__get_Item_T_INST_int
 
-LDIFF_SYM2214=Lme_73 - System_Array_InternalArray__get_Item_T_INST_int
-	.long LDIFF_SYM2214
+LDIFF_SYM2271=Lme_7b - System_Array_InternalArray__get_Item_T_INST_int
+	.long LDIFF_SYM2271
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,153,18,154,17
 	.align 3
-Lfde106_end:
+Lfde114_end:
 
 .section __DWARF, __debug_info,regular,debug
 

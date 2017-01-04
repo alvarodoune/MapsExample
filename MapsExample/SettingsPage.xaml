@@ -8,7 +8,7 @@
 		</OnPlatform>
 	</ContentPage.Padding>
 	<ContentPage.Icon>
-		<OnPlatform x:TypeArguments="FileImageSource" iOS="settings.png" Android="android-settings.png">
+		<OnPlatform x:TypeArguments="FileImageSource" iOS="settings.png" Android="androidSettings.png">
 		</OnPlatform>
 	</ContentPage.Icon>
 	<ContentPage.Content>

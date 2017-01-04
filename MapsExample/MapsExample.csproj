@@ -42,6 +42,9 @@
     <EmbeddedResource Include="LostDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewReportModalPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -64,6 +67,10 @@
     <Compile Include="LostDetailPage.xaml.cs">
       <DependentUpon>LostDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewReportModalPage.xaml.cs">
+      <DependentUpon>ViewReportModalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PinReport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

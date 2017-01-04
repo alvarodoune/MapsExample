@@ -33,7 +33,8 @@ namespace MapsExample
 			pin.Clicked += (sender, e) =>
 			{
 				var selectedPin = sender as Pin;
-				DisplayAlert(selectedPin.Label, selectedPin.Address, "OK");
+				//DisplayAlert(selectedPin.Label, selectedPin.Address, "OK");
+				this.ShowModal(new Report { Name = pin.Address, ImageUrl=null, Status="lost"});
 			};
 
 			pin2.Clicked += (sender, e) =>
@@ -62,6 +63,11 @@ namespace MapsExample
 			await DisplayAlert("Position Status: {0}", position.Timestamp.ToString(), "OK");
 			await DisplayAlert("Position Latitude: {0}", position.Latitude.ToString(), "OK");
 			await DisplayAlert("Position Longitude: {0}", position.Longitude.ToString(), "OK");
+		}
+
+		async void ShowModal(Report report)
+		{
+			await Navigation.PushModalAsync(new LostDetailPage(report));
 		}
 	}
 }
