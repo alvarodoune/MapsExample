@@ -5,10 +5,10 @@
 		</OnPlatform>
 	</ContentPage.Padding>
 	<ContentPage.Content>
-		<StackLayout>
+		<StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="Aqua">
 			<Label x:Name="nameLabel">
 			</Label>
-			<Button Clicked="BackButton_Clicked">
+			<Button Clicked="BackButton_Clicked" Text="Back">
 			</Button>
 		</StackLayout>
 	</ContentPage.Content>

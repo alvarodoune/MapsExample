@@ -1,40 +1,16 @@
 ﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/SettingsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapsExamplePage.xaml">
     <Files>
-      <File FileName="MapsExample/MapsExamplePage.xaml" Line="4" Column="2" />
-      <File FileName="MapsExample/LostPage.xaml" Line="28" Column="15" />
-      <File FileName="MapsExample/MapPage.xaml" Line="16" Column="18" />
-      <File FileName="MapsExample/LostPage.xaml.cs" Line="42" Column="59" />
-      <File FileName="MapsExample/MapPage.xaml.cs" Line="47" Column="25" />
-      <File FileName="MapsExample/LostDetailPage.xaml" Line="4" Column="3" />
-      <File FileName="MapsExample/LostDetailPage.xaml.cs" Line="13" Column="27" />
-      <File FileName="MapsExample/ViewReportModalPage.xaml.cs" Line="22" Column="1" />
-      <File FileName="MapsExample/ViewReportModalPage.xaml" Line="8" Column="13" />
-      <File FileName="MapsExample/SettingsPage.xaml" Line="9" Column="24" />
+      <File FileName="MapsExample/MapsExamplePage.xaml" Line="15" Column="17" />
+      <File FileName="MapsExample/LostPage.xaml" Line="16" Column="35" />
+      <File FileName="MapsExample/MapPage.xaml" Line="26" Column="15" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MapsExample" expanded="True">
-            <Node name="MapsExample" expanded="True">
-              <Node name="LostDetailPage.xaml" expanded="True" />
-              <Node name="LostPage.xaml" expanded="True" />
-              <Node name="MapPage.xaml" expanded="True" />
-              <Node name="MapsExamplePage.xaml" expanded="True" />
-              <Node name="SettingsPage.xaml" selected="True" />
-              <Node name="ViewReportModalPage.xaml" expanded="True" />
-            </Node>
-            <Node name="MapsExample.Droid" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.67dc2ae47a684f9c72998b8af2525404ee8011d8" />
+  <MonoDevelop.Ide.ItemProperties.MapsExample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D6B9629-110E-4B0C-BDEB-9BC34218870F" />
 </Properties>

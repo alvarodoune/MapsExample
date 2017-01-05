@@ -3,7 +3,7 @@
 	<local:MapPage />
 	<NavigationPage Title="Lost">
 		<NavigationPage.Padding>
-			<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
+			<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" Android="0, 0, 0, 0">
 			</OnPlatform>
 		</NavigationPage.Padding>
 		<NavigationPage.Icon>
