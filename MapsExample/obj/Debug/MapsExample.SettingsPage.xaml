@@ -4,7 +4,7 @@
 		x:Class="MapsExample.SettingsPage"
 		Title="Settings">
 	<ContentPage.Padding>
-		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0">
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 0, 0, 0">
 		</OnPlatform>
 	</ContentPage.Padding>
 	<ContentPage.Icon>
