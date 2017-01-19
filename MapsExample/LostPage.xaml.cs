@@ -10,7 +10,7 @@ namespace MapsExample
 		public LostPage()
 		{
 			InitializeComponent();
-
+			NavigationPage.SetHasNavigationBar(this,false);
 			listView.ItemsSource = new List<Report> {
 				new Report { Name="Reporte1", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/1" },
 				new Report { Name="Reporte2", Status="lost", ImageUrl="http://lorempixel.com/100/100/animals/2" },
