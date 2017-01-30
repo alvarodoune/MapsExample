@@ -1,5 +1,6 @@
-﻿<Properties StartupConfiguration="{476AFAE8-819F-418E-BC74-46A6A8EE0F24}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample Status">
+﻿<Properties StartupConfiguration="{D7E058FF-8E60-4E7F-931B-746A652F534A}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.ItemProperties.MapsExample.Droid PreferredExecutionTarget="Android.Nexus7" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MapsExample/MapsExamplePage.xaml">
     <Files>
       <File FileName="MapsExample/MapsExamplePage.xaml" Line="1" Column="1" />
       <File FileName="MapsExample/LostPage.xaml" Line="1" Column="1" />
@@ -12,29 +13,7 @@
       <File FileName="MapsExample/MapPage.xaml.cs" Line="1" Column="1" />
       <File FileName="MapsExample/LostDetailPage.xaml.cs" Line="1" Column="1" />
       <File FileName="MapsExample/ViewReportModalPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="MapsExample Status" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MapsExample" expanded="True">
-            <Node name="MapsExample" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="LostDetailPage.xaml" expanded="True" />
-              <Node name="LostPage.xaml" expanded="True">
-                <Node name="LostPage.xaml.cs" selected="True" />
-              </Node>
-              <Node name="MapPage.xaml" expanded="True" />
-              <Node name="MapsExamplePage.xaml" expanded="True" />
-              <Node name="SettingsPage.xaml" expanded="True" />
-              <Node name="ViewReportModalPage.xaml" expanded="True" />
-            </Node>
-            <Node name="MapsExample.Droid" expanded="True" />
-            <Node name="MapsExample.iOS" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
